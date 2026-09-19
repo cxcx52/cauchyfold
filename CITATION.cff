@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying CauchyFold paper when using this artifact."
+type: software
+title: "CauchyFold: Residue-Optimal High-Arity Lattice Folding via Scaled Cauchy Challenges"
+license: MIT
+authors:
+  - name: cxcx52
+abstract: "Deterministic compiler and exact concrete-instantiation evidence for CF-dagger v2, Profile I, folding arity 16."

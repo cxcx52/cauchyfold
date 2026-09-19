@@ -1,0 +1,487 @@
+{
+  "arity": 16,
+  "checks": {
+    "all_committed_coordinates_covered_exactly_once": true,
+    "all_front_matrix_columns_match_segments": true,
+    "bit_and_canonical_constraints_complete": true,
+    "field_relations_match_v2_section_10": true,
+    "field_sumcheck_rounds_le_30": true,
+    "semantic_basis_checked": true,
+    "strict_fresh_constraints_complete": true,
+    "witness_fits_capacity": true
+  },
+  "compiler": {
+    "command": "python build_cfdagger_frontend.py --output-dir .",
+    "path": "build_cfdagger_frontend.py",
+    "sha256": "84128468bea74abf50232fc4f396cf2ef37137a54a8061ab9fc8260732525326",
+    "version": "1.0.0"
+  },
+  "encoding": {
+    "auxiliary_gate_K_values": 36,
+    "auxiliary_scalar_bits": 271488,
+    "base_coefficient_bits": 48,
+    "extension_degree": 4,
+    "helper_policy": "48 Boolean e_j prefix helpers per canonical Fq coefficient, including product-gate coefficients; e_48 aliases fixed one; affine forms inlined.",
+    "ring_degree": 64,
+    "segments": [
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "accumulator_state",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 0,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_01",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 14016,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_02",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 28032,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_03",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 42048,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_04",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 56064,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_05",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 70080,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_06",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 84096,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_07",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 98112,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_08",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 112128,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_09",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 126144,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_10",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 140160,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_11",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 154176,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_12",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 168192,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_13",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 182208,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_14",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 196224,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_15",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 210240,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "input",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "fresh_state_16",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 224256,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "post_cauchy_pre_field",
+        "encoded_bits": 14016,
+        "honest_squared_norm_bound": 14016,
+        "matrix_columns": 219,
+        "matrix_id": "A_st",
+        "segment_id": "folded_output_state",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 238272,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "pre_cauchy",
+        "encoded_bits": 12288,
+        "honest_squared_norm_bound": 12288,
+        "matrix_columns": 192,
+        "matrix_id": "A_H",
+        "segment_id": "carrier",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 252288,
+        "zero_padding_coefficients": 0
+      },
+      {
+        "commitment_phase": "post_cauchy_pre_field",
+        "encoded_bits": 278400,
+        "honest_squared_norm_bound": 278400,
+        "matrix_columns": 4350,
+        "matrix_id": "A_aux",
+        "segment_id": "field_auxiliary",
+        "source_bit_mapping_artifact": "compiler_artifacts/encoding_layout.json",
+        "start_coefficient": 264576,
+        "zero_padding_coefficients": 0
+      }
+    ],
+    "uncommitted_constant_coordinates": 1
+  },
+  "handoff": {
+    "capacity_coefficients": 1048576,
+    "extra_backend_block_padding": 320,
+    "fixed_one_coordinate_index": 542976,
+    "fixed_zero_coordinate_ranges": [
+      [
+        542977,
+        1048576
+      ]
+    ],
+    "fixed_zero_coordinates_count": 505599,
+    "linear_rows_after_backend_padding": 546892,
+    "linear_rows_before_backend_padding": 546572,
+    "unpadded_coefficients_including_segment_padding_and_constant": 542977
+  },
+  "operation_counts": [
+    {
+      "count": 36,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "semantic_Q_single_evaluation",
+      "scope": "one sparse Q evaluation",
+      "unit": "K_mul"
+    },
+    {
+      "count": 32,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "semantic_Q_single_evaluation",
+      "scope": "one sparse Q evaluation",
+      "unit": "K_add"
+    },
+    {
+      "count": 72,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "semantic_B_single_evaluation",
+      "scope": "one polarized B evaluation",
+      "unit": "K_mul"
+    },
+    {
+      "count": 68,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "semantic_B_single_evaluation",
+      "scope": "one polarized B evaluation",
+      "unit": "K_add"
+    },
+    {
+      "count": 271488,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "canonical_encoding",
+      "scope": "one bit extraction per canonical value bit; not a field operation",
+      "unit": "integer_operation"
+    },
+    {
+      "count": 271488,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "canonical_comparator_helpers",
+      "scope": "one bit comparison per e_j prefix update",
+      "unit": "bit_comparison"
+    },
+    {
+      "count": 271488,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "canonical_comparator_helpers",
+      "scope": "prefix update of Boolean integers, not a general field multiplication",
+      "unit": "integer_operation"
+    },
+    {
+      "count": 1232,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "folded_output_construction",
+      "scope": "fold z, source residuals, and preweighted carrier contribution",
+      "unit": "K_mul"
+    },
+    {
+      "count": 1232,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "folded_output_construction",
+      "scope": "fold z, source residuals, and preweighted carrier contribution",
+      "unit": "K_add"
+    },
+    {
+      "count": 36,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "output_product_gate_values",
+      "scope": "36 product gate values; affine constraints use existing output coordinates",
+      "unit": "K_mul"
+    },
+    {
+      "count": 96,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "public_challenge_coefficients",
+      "scope": "weights, squares, D inverse, carrier powers and folded public coordinates",
+      "unit": "K_add"
+    },
+    {
+      "count": 175,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "public_challenge_coefficients",
+      "scope": "weights, squares, D inverse, carrier powers and folded public coordinates",
+      "unit": "K_mul"
+    },
+    {
+      "count": 1,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "public_challenge_coefficients",
+      "scope": "weights, squares, D inverse, carrier powers and folded public coordinates",
+      "unit": "K_inv"
+    },
+    {
+      "count": 6876,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_A_application",
+      "scope": "row accumulation initialized with first term; scalar products reported separately in derivation",
+      "unit": "K_add"
+    },
+    {
+      "count": 1358814,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_A_transpose",
+      "scope": "K coefficient times K equality weight",
+      "unit": "K_mul"
+    },
+    {
+      "count": 815837,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_A_transpose",
+      "scope": "column accumulation initialized with first term",
+      "unit": "K_add"
+    },
+    {
+      "count": 1032895,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_B_application",
+      "scope": "row accumulation initialized with first term; scalar products reported separately in derivation",
+      "unit": "K_add"
+    },
+    {
+      "count": 2384833,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_B_transpose",
+      "scope": "K coefficient times K equality weight",
+      "unit": "K_mul"
+    },
+    {
+      "count": 1336257,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_B_transpose",
+      "scope": "column accumulation initialized with first term",
+      "unit": "K_add"
+    },
+    {
+      "count": 6876,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_C_application",
+      "scope": "row accumulation initialized with first term; scalar products reported separately in derivation",
+      "unit": "K_add"
+    },
+    {
+      "count": 278400,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_C_transpose",
+      "scope": "K coefficient times K equality weight",
+      "unit": "K_mul"
+    },
+    {
+      "count": 0,
+      "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+      "phase": "sparse_C_transpose",
+      "scope": "column accumulation initialized with first term",
+      "unit": "K_add"
+    }
+  ],
+  "parameter_file_sha256": "1c96801cd990889a26bc14ae8727c4ddec34129812223ee8ab5227ac95ce7291",
+  "parameter_id": "CFdagger-v2-I-k16-concrete-v1-compiler-conditional",
+  "profile": "I",
+  "protocol": "CFdagger_v2",
+  "r1cs": {
+    "coefficient_field": "K",
+    "constraint_count_padded": 2097152,
+    "constraint_count_unpadded": 1351938,
+    "matrix_artifacts": [
+      {
+        "format": "CFDCSR01 little-endian CSR with coefficient IDs resolved by compiler_artifacts/reference_coefficients.json; trailing zero rows implicit",
+        "matrix": "A",
+        "path": "compiler_artifacts/r1cs_A.csr",
+        "sha256": "61d250ef4a16eceadf4f4211986d053ef068317fb046580226454f00e54b2e01"
+      },
+      {
+        "format": "CFDCSR01 little-endian CSR with coefficient IDs resolved by compiler_artifacts/reference_coefficients.json; trailing zero rows implicit",
+        "matrix": "B",
+        "path": "compiler_artifacts/r1cs_B.csr",
+        "sha256": "7c887ed26f2c606729ddb165fb3f7b9338e180c9727d4f89cc21a0f9cfdfad7d"
+      },
+      {
+        "format": "CFDCSR01 little-endian CSR with coefficient IDs resolved by compiler_artifacts/reference_coefficients.json; trailing zero rows implicit",
+        "matrix": "C",
+        "path": "compiler_artifacts/r1cs_C.csr",
+        "sha256": "222601231a357243bcf77e7dcc049f4edc390ea75ea07aebcf5729d277423e3a"
+      }
+    ],
+    "shape_independent_of_c": true,
+    "sparse_nnz": {
+      "A": 1358814,
+      "B": 2384833,
+      "C": 278400
+    },
+    "sumcheck_rounds": 21,
+    "wire_to_bit_coordinate_map_artifact": "compiler_artifacts/wire_to_bits.json"
+  },
+  "resolved_dimensions": {
+    "auxiliary_honest_opening_bound_squared": 278400,
+    "auxiliary_ring_columns": 4350,
+    "bilinear_image_dimension_r": 4,
+    "carrier_honest_opening_bound_squared": 12288,
+    "carrier_ring_columns": 192,
+    "fixed_zero_coordinates_count": 505599,
+    "residual_dimension_y": 4,
+    "semantic_dimension_n": 69,
+    "state_honest_opening_bound_squared": 14016,
+    "state_ring_columns": 219,
+    "sumcheck_rounds": 21
+  },
+  "schema_version": 1,
+  "semantic": {
+    "basis_U_artifact": "compiler_artifacts/basis_U.json",
+    "basis_U_sha256": "8171396cca0f5ed40eba0a30149951ec509bf97afe99f2615f8af3654046e7dd",
+    "fresh_base_field_required": true,
+    "left_inverse_J_artifact": "compiler_artifacts/left_inverse_J.json",
+    "left_inverse_J_sha256": "8171396cca0f5ed40eba0a30149951ec509bf97afe99f2615f8af3654046e7dd",
+    "n": 69,
+    "public_input_K_coordinates": 4,
+    "r": 4,
+    "relation_Q_artifact": "compiler_artifacts/relation_Q.json",
+    "relation_Q_sha256": "f0f778b2118129c1b2e1fdcc0661f15408bad63ab3c388a2c301c7df86d9b686",
+    "y": 4
+  },
+  "status": "COMPLETE",
+  "unresolved_fields": []
+}

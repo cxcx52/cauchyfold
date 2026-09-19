@@ -1,0 +1,21 @@
+{
+  "beta": 181386952,
+  "columns": 318,
+  "d": 64,
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "expanded_sis": {
+    "length_bound": 181386952,
+    "m": 20352,
+    "n": 1536,
+    "norm": 2
+  },
+  "interpretation": "Generic q-ary lattice attacks on coefficient dimensions; structured matrix is NOT iid scalar matrix and structure-specific attacks are not certified absent.",
+  "matrix_id": "backend_5_A",
+  "norm_model": "coefficient_l2",
+  "q": 281474976710597,
+  "role_ids": [
+    "linear/5/A"
+  ],
+  "rows": 24,
+  "status": "READY"
+}

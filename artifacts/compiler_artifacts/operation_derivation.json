@@ -1,0 +1,137 @@
+{
+  "affine_inlining_justification": "Equation (10.1) permits arbitrary K-linear forms in each factor. Eliminating addition gates by substitution in those forms preserves equations and introduces no new commitment. Quadratic products still have canonical gate wires.",
+  "basis_maps": {
+    "J": {
+      "K_add": 0,
+      "K_mul": 0,
+      "coordinate_copies": 4
+    },
+    "U": {
+      "K_add": 0,
+      "K_mul": 0,
+      "coordinate_copies": 4
+    },
+    "reason": "Identity maps, implemented as views/copies, not arithmetic matrices."
+  },
+  "compiler_generation": {
+    "canonical_bit_extractions": 271488,
+    "coefficient_id_writes": 4022047,
+    "index_writes": 4022047,
+    "matrix_generation_not_protocol_online_arithmetic": true,
+    "prefix_steps": 271488,
+    "row_pointer_writes": 4055817
+  },
+  "constraint_sources": {
+    "R1CS": "v2 §10.2 (10.1)",
+    "canonical": "v2 §1.2",
+    "handoff": "v2 (10.4)",
+    "post_c_relation": "v2 §10.1",
+    "zero_row_padding": "v2 §10.3"
+  },
+  "constraints_by_category": {
+    "Q_linear_output": 4,
+    "Q_product_gates": 36,
+    "canonical_exclude_q": 5656,
+    "canonical_first_difference": 22624,
+    "canonical_prefix_recurrence": 271488,
+    "fixed_zero_handoff_coordinates": 505599,
+    "folded_E": 4,
+    "folded_z": 69,
+    "private_bit_boolean": 542976,
+    "public_coordinates": 90,
+    "strict_fresh_base_field": 3312,
+    "strict_fresh_u_and_E": 80
+  },
+  "encoding": {
+    "K_values": 1414,
+    "base_coefficients": 5656,
+    "canonical_value_bits": 271488,
+    "fixed_zeros": 505599,
+    "prefix_helper_bits": 271488,
+    "total_private_bits": 542976,
+    "uncommitted_one": 1
+  },
+  "matrix_application_model": "Each stored coefficient times an Fq witness coordinate is one K-by-Fq scalar product; row additions are stored_entries minus nonempty_rows. A transpose with K-valued equality weights uses one K multiplication per slot and stored_entries minus nonempty_columns additions. Explicit public zero slots are processed.",
+  "matrix_summary": {
+    "A": {
+      "actual_nonzero_entries": 1358814,
+      "base_field_entries": 1353630,
+      "coefficient_dictionary_entries_used": 192,
+      "columns": 1048576,
+      "extension_entries": 5184,
+      "nonempty_columns": 542977,
+      "nonempty_rows": 1351938,
+      "rows": 2097152,
+      "stored_entries": 1358814,
+      "stored_rows": 1351938
+    },
+    "B": {
+      "actual_nonzero_entries": 2384833,
+      "base_field_entries": 1992001,
+      "coefficient_dictionary_entries_used": 9690,
+      "columns": 1048576,
+      "extension_entries": 392832,
+      "nonempty_columns": 1048576,
+      "nonempty_rows": 1351938,
+      "rows": 2097152,
+      "stored_entries": 2384833,
+      "stored_rows": 1351938
+    },
+    "C": {
+      "actual_nonzero_entries": 278400,
+      "base_field_entries": 273216,
+      "coefficient_dictionary_entries_used": 192,
+      "columns": 1048576,
+      "extension_entries": 5184,
+      "nonempty_columns": 278400,
+      "nonempty_rows": 271524,
+      "rows": 2097152,
+      "stored_entries": 278400,
+      "stored_rows": 1351938
+    }
+  },
+  "public_coefficients": {
+    "challenge_data": {
+      "K_add": 96,
+      "K_inv": 1,
+      "K_mul": 175
+    },
+    "description": "16 c-pole subtractions; prefix 16 multiplies; backward batch inverse 32; 16 squares; 16 carrier Dinv*c^t multiplies and 15 powers; 5 public coordinates each 16 multiply/add. Inversion is a primitive K_inv.",
+    "dictionary_materialization": {
+      "literal_recipe_count": 384,
+      "public_recipe_count": 90,
+      "weighted_recipe_count": 9216
+    },
+    "dictionary_policy": "One K multiplication per weighted recipe in the literal implementation; signs/powers-of-two are public constants. Copy literal recipes; negate each public recipe with four Fq negations."
+  },
+  "semantic_B": {
+    "K_add": 68,
+    "K_mul": 72
+  },
+  "semantic_Q": {
+    "K_add": 32,
+    "K_mul": 36
+  },
+  "witness_construction": {
+    "carrier_contribution_using_public_Dinv_times_c_powers": {
+      "K_add": 64,
+      "K_mul": 64
+    },
+    "folded_E_from_sources": {
+      "K_add": 64,
+      "K_mul": 64
+    },
+    "folded_z": {
+      "K_add": 1104,
+      "K_mul": 1104
+    },
+    "output_Q_product_gate_values": {
+      "K_mul": 36
+    },
+    "scope": "Construct output and auxiliary witness from supplied source records and supplied honest carrier. Excludes synthetic fixture generation and literal pair carrier used only by regression.",
+    "total_fold_excluding_gate_values": {
+      "K_add": 1232,
+      "K_mul": 1232
+    }
+  }
+}

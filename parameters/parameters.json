@@ -1,0 +1,166 @@
+{
+  "backend": {
+    "auxiliary_B_rank": 16,
+    "auxiliary_D_rank": 16,
+    "blocks": [
+      9,
+      6,
+      5,
+      4,
+      4,
+      7
+    ],
+    "digit_count": 8,
+    "handoff_capacity_coefficients": 1048576,
+    "honest_initial_norm_squared_bound": 1048576,
+    "main_rank": 24,
+    "pivot_radix": 8,
+    "pivot_rank": 4,
+    "projection_retry_cap": 160,
+    "projection_rows": 864,
+    "radix": 64,
+    "response_retry_cap": 160,
+    "sigma": 4,
+    "tau": 3,
+    "terminal": "v2_section_19_pivot",
+    "terminal_codec": "canonical_six_byte_Fq_coefficients"
+  },
+  "cauchy": {
+    "arity": 16,
+    "carrier_algorithm": "pole_residue",
+    "internal_interpolation_nodes": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "poles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "scale_factors": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "support": "K_without_the_16_poles"
+  },
+  "compiler_contract": {
+    "actual_compiler_manifest": "compiler_manifest.json",
+    "field_sumcheck_round_cap": 30,
+    "padding_policy": "Actual committed bit segments and constant must fit N0=2^20; append fixed zero padding to this capacity before the first layer adds block padding.",
+    "requires": [
+      "actual CFdagger quadratic relation compiler",
+      "explicit Q and semantic dimensions",
+      "all bit segment boundaries",
+      "R1CS constraints and sparse-operation manifest"
+    ]
+  },
+  "field": {
+    "extension_basis": [
+      "1",
+      "u",
+      "u^2",
+      "u^3"
+    ],
+    "extension_degree": 4,
+    "extension_polynomial_low_to_high": [
+      2,
+      0,
+      -4,
+      0,
+      1
+    ],
+    "q": 281474976710597,
+    "ring_degree": 64,
+    "ring_modulus": "X^64+1"
+  },
+  "front_end": {
+    "auxiliary_commitment_rank": 32,
+    "carrier_commitment_rank": 32,
+    "encoding_base_coefficient_bits": 48,
+    "fresh_relation": "strict_fresh_base_field",
+    "rank_selection_provenance": "New explicit concrete-v1 parameter selection; not an inferred historical choice. Numerical columns require the actual compiler manifest.",
+    "state_commitment_rank": 32,
+    "state_matrix_shared_by": "accumulator, all 16 fresh states, and folded output",
+    "uncommitted_constant_coordinates": 1
+  },
+  "parameter_id": "CFdagger-v2-I-k16-concrete-v1-compiler-conditional",
+  "profile": "I",
+  "protocol": "CFdagger_v2",
+  "protocol_source": "source_v2/CauchyFold_theory_v2/CauchyFold_theory_v2.md",
+  "schema_version": 1,
+  "security": {
+    "computational_security_certification": false,
+    "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+    "known_attack_cost_screening_exponent_target": 128,
+    "statistical_error_target_exponent": 128
+  },
+  "serialization": {
+    "byte_order": "little",
+    "carrier_encoding_order": "T^0 through T^15; image-basis coordinates in declared U order; then same K/Fq bit order as states",
+    "field_coefficient_bytes": 6,
+    "profile_id_is_public_parameter": true,
+    "projection_trit_bits": 2,
+    "ring_coefficient_order": "constant_to_X^63",
+    "segment_padding": "minimal zero padding to a multiple of 64 coefficients; no additional per-segment padding",
+    "short_challenge_coefficient_bits": 3,
+    "state_encoding_order": "semantic z coordinates followed by E; each K value uses (1,u,u^2,u^3) coefficients; each canonical Fq coefficient contributes 48 bits least-significant first",
+    "sumcheck_coefficients_per_round": 4,
+    "sumcheck_polynomial_wire_order": "coefficients of powers 0,1,2,3; four canonical K elements",
+    "sumcheck_table_index_convention": "variable 0 is the most-significant bit of the table index; variable order follows successive sumcheck rounds"
+  },
+  "short_challenge": {
+    "coefficient_alphabet": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "distribution": "independent_uniform_coefficients",
+    "moment_mu": 128,
+    "operator_norm_bound": 128,
+    "terminal_first_coordinate_excludes_zero_ring_element": true
+  },
+  "status": "ONE_SELECTED_BACKEND_AND_FRONT_RANK_CONTRACT_REQUIRES_ACTUAL_FRONTEND_COMPILER"
+}

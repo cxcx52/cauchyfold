@@ -1,0 +1,406 @@
+{
+  "check_scope": "Exact input identity only; not a cryptographic security certificate.",
+  "checked_fields": [
+    "matrix_id",
+    "q",
+    "d",
+    "rows",
+    "columns",
+    "norm_model",
+    "beta",
+    "expanded_sis.n",
+    "expanded_sis.m",
+    "expanded_sis.norm",
+    "expanded_sis.length_bound"
+  ],
+  "frontend_matrix_count": 3,
+  "frontend_status": "DONE_FINITE",
+  "independent_backend_matrices": 17,
+  "raw_records_checked": 40,
+  "raw_results": [
+    {
+      "matrix_id": "backend_0_A",
+      "model": "classical",
+      "raw_path": "estimator_raw/00_0_A_classical.json",
+      "raw_sha256": "e79d1a3c412f978506814f87c90c42e78acae35bdfe749a47f94ddf6fb74585b",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_0_A",
+      "model": "quantum",
+      "raw_path": "estimator_raw/00_0_A_quantum.json",
+      "raw_sha256": "88cb66ac7d862700fda1577cbd850778237c527fab78cce25c753d6437f7969a",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_0_B",
+      "model": "classical",
+      "raw_path": "estimator_raw/01_0_B_classical.json",
+      "raw_sha256": "5de9bd634fcfdb38edede0d24f59b9102f8603911efc1ef636a16bb974dee2f2",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_0_B",
+      "model": "quantum",
+      "raw_path": "estimator_raw/01_0_B_quantum.json",
+      "raw_sha256": "bd0deb37fe1cda6a363a96f58df6fdde71f0706fe3f96b7e5e641ddcc5cc626e",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_0_D",
+      "model": "classical",
+      "raw_path": "estimator_raw/02_0_D_classical.json",
+      "raw_sha256": "d6af5e9c8c402a4429832d7e1a3db7bc46dd3e9e3e1c2be000c5b0aa31b7f5f6",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_0_D",
+      "model": "quantum",
+      "raw_path": "estimator_raw/02_0_D_quantum.json",
+      "raw_sha256": "b58d566a46085dcd6d23f1fbe9504f411606c81eb937125736cd8c795c1cdb14",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_1_A",
+      "model": "classical",
+      "raw_path": "estimator_raw/03_1_A_classical.json",
+      "raw_sha256": "fe797f2549a8a4692a4d7530571e676b9c15843da3b6d87607bb4ef813e9686e",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_1_A",
+      "model": "quantum",
+      "raw_path": "estimator_raw/03_1_A_quantum.json",
+      "raw_sha256": "10e5e1241d0fccd60b1eb67cd92280dcd0af00f63586184f9de124e25d7de79f",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_1_B",
+      "model": "classical",
+      "raw_path": "estimator_raw/04_1_B_classical.json",
+      "raw_sha256": "9ee7cda2dfc2aa2d30825dd45836c3df05f12f001d2eda26b40e28b03b8fed50",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_1_B",
+      "model": "quantum",
+      "raw_path": "estimator_raw/04_1_B_quantum.json",
+      "raw_sha256": "bcd418051b1af3627709e14acc4a6639c9d034e115e1aff87d825a89143f95a6",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_1_D",
+      "model": "classical",
+      "raw_path": "estimator_raw/05_1_D_classical.json",
+      "raw_sha256": "5d6b4dab10db9cbac01bd85e442fbb93aabe7fc30b36d65b2b09dcc4c2d4a6ed",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_1_D",
+      "model": "quantum",
+      "raw_path": "estimator_raw/05_1_D_quantum.json",
+      "raw_sha256": "b7c278129f435febca3c6bd366d2ce21a346890c17fcbe14b5cb7edfceedded7",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_2_A",
+      "model": "classical",
+      "raw_path": "estimator_raw/06_2_A_classical.json",
+      "raw_sha256": "39f5da7bb9802b29ad0790949fb4b850198acb72167e358db3844427816c6d26",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_2_A",
+      "model": "quantum",
+      "raw_path": "estimator_raw/06_2_A_quantum.json",
+      "raw_sha256": "9edbf2a4fc34e9423aad856d09db6ad6123aa4f4175c68b3d2dad970485c11b0",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_2_B",
+      "model": "classical",
+      "raw_path": "estimator_raw/07_2_B_classical.json",
+      "raw_sha256": "2d3562b029e48ba7dd204369d7ad2d1b700c7333b543fba49a793d5ceebb1dc1",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_2_B",
+      "model": "quantum",
+      "raw_path": "estimator_raw/07_2_B_quantum.json",
+      "raw_sha256": "16ac4df7b0e6240330c0417768a3cd18099916f98f26ff5693087a977d1f6ae7",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_2_D",
+      "model": "classical",
+      "raw_path": "estimator_raw/08_2_D_classical.json",
+      "raw_sha256": "ff9d49cb8889fddc086a065e050f0ba35ed7b5b08b2699c38d6defaaa6f04526",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_2_D",
+      "model": "quantum",
+      "raw_path": "estimator_raw/08_2_D_quantum.json",
+      "raw_sha256": "6a9fdd81fd088e55ea277ac1f75f28424be1362ca7df7a70a4b44704b9cbafc4",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_3_A",
+      "model": "classical",
+      "raw_path": "estimator_raw/09_3_A_classical.json",
+      "raw_sha256": "d9c8ea89367a8fa3dad991c228a7c0bf45cf95524179ce01d4d418f7638ccfd1",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_3_A",
+      "model": "quantum",
+      "raw_path": "estimator_raw/09_3_A_quantum.json",
+      "raw_sha256": "1d85c8dc0088f867d25f47939529a351e064f452f5ba2de143003097433a2f0c",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_3_B",
+      "model": "classical",
+      "raw_path": "estimator_raw/10_3_B_classical.json",
+      "raw_sha256": "364eb2e0dd9ce8143e4dfd340a9da97399cf1144c8fd9092901744aef49fde4e",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_3_B",
+      "model": "quantum",
+      "raw_path": "estimator_raw/10_3_B_quantum.json",
+      "raw_sha256": "1e0cc77f377c8810fb2db0ded2502ddbc458f8a0a002db9c278acb21254bef4c",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_3_D",
+      "model": "classical",
+      "raw_path": "estimator_raw/11_3_D_classical.json",
+      "raw_sha256": "67f761a15b996697d5da1337119066724ee3f9a57bc2c9a4b6382507537dfe6d",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_3_D",
+      "model": "quantum",
+      "raw_path": "estimator_raw/11_3_D_quantum.json",
+      "raw_sha256": "8a9b88f75a3c038c0009450f5854e0c79dd100e5b08d04c825884eedb4ed3e10",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_4_A",
+      "model": "classical",
+      "raw_path": "estimator_raw/12_4_A_classical.json",
+      "raw_sha256": "c2fe957874cbecb3a632a187ded1a2553e0a61b34f3aa3149b0b47face27607a",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_4_A",
+      "model": "quantum",
+      "raw_path": "estimator_raw/12_4_A_quantum.json",
+      "raw_sha256": "3d52b0e2ade1b1d33b5291f7785f1758c733e6e611996e6a2bea53145cd56f8c",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_4_B",
+      "model": "classical",
+      "raw_path": "estimator_raw/13_4_B_classical.json",
+      "raw_sha256": "bbedc3f2932882fb11f1de3fc2677eb5b44596173a1b36f1ce85cd3db67c660b",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_4_B",
+      "model": "quantum",
+      "raw_path": "estimator_raw/13_4_B_quantum.json",
+      "raw_sha256": "0cc187dba76679b8f8448ffa6d1ef775b75474c9c2be72b32a29f13ebeaf3a6f",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_4_D",
+      "model": "classical",
+      "raw_path": "estimator_raw/14_4_D_classical.json",
+      "raw_sha256": "ee9503509ce6a8b4f7c873a8eb33b001fea729791f15d9ca457358ddd9c301ba",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_4_D",
+      "model": "quantum",
+      "raw_path": "estimator_raw/14_4_D_quantum.json",
+      "raw_sha256": "ffc2ebc25598efa7f9a04e5f4a9a48b70ec89ade76fa4f55990e7d728ba97dc8",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_5_A",
+      "model": "classical",
+      "raw_path": "estimator_raw/15_5_A_classical.json",
+      "raw_sha256": "a68059e5c722d6eb71efe3b7c76cfd746edecb39451e4c29f17afa53d7b191cf",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_5_A",
+      "model": "quantum",
+      "raw_path": "estimator_raw/15_5_A_quantum.json",
+      "raw_sha256": "f1d8f594e09d4e705c7709b0b33f293b34bda55f7f1504d88958f79a4b34a192",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_5_pivot",
+      "model": "classical",
+      "raw_path": "estimator_raw/16_5_pivot_classical.json",
+      "raw_sha256": "c5f9b93b85bd070c175c1abffdc2dd7286c4495cb90bfba723b66afb6a339dc4",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "backend_5_pivot",
+      "model": "quantum",
+      "raw_path": "estimator_raw/16_5_pivot_quantum.json",
+      "raw_sha256": "9e51374234eddec4d236dce20c8966f9262154b65a34f311ef0ac658392c3dda",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "frontend_state",
+      "model": "classical",
+      "raw_path": "estimator_raw/frontend_state_classical.json",
+      "raw_sha256": "6d7575419a10231873c9852d1871b2d469bed02559c39d1d3f0e3f068e6db2e3",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "frontend_state",
+      "model": "quantum",
+      "raw_path": "estimator_raw/frontend_state_quantum.json",
+      "raw_sha256": "dd36353eb26b9a145967319c1031b428470eb80bec1f48efd003e090861f2129",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "frontend_carrier",
+      "model": "classical",
+      "raw_path": "estimator_raw/frontend_carrier_classical.json",
+      "raw_sha256": "742af778edddea75646b2139017e41978f616792345da09e34946d059da93d68",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "frontend_carrier",
+      "model": "quantum",
+      "raw_path": "estimator_raw/frontend_carrier_quantum.json",
+      "raw_sha256": "cf3826f3f7ccd11b8b94f8e059f0782afdb128648fe9413c06350c92f71be0d4",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "frontend_auxiliary",
+      "model": "classical",
+      "raw_path": "estimator_raw/frontend_auxiliary_classical.json",
+      "raw_sha256": "ca7153efb18a6931ab2563ae664630c55b319b4b7c28d6e3ab05c14840e09c73",
+      "status": "MATCH"
+    },
+    {
+      "matrix_id": "frontend_auxiliary",
+      "model": "quantum",
+      "raw_path": "estimator_raw/frontend_auxiliary_quantum.json",
+      "raw_sha256": "5376c1f2d2b894a0d3e9ad1b2390a988caf1b0b95ed532cc38249bfa9d9e5830",
+      "status": "MATCH"
+    }
+  ],
+  "ready_frontend_matrices": 3,
+  "registry_inputs": [
+    {
+      "input_sha256": "96cf53533160dd880035be6d4759a8347a58233b1980a16d699a74a432e561ce",
+      "matrix_id": "backend_0_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "1e517adc9b863c6fff46d08552ecc90d657bfdc6c23c06473a854b5a77603a20",
+      "matrix_id": "backend_0_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "7cacb204ed1c47390eb3eb76a4658137ef14c63931ce4d551f46e877aa3abc8d",
+      "matrix_id": "backend_0_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "a4ff48a000710ba51de9f0afdd88107398871a3b56bd78a5d3e5d7dabfe7e987",
+      "matrix_id": "backend_1_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "4b6740bc46cdc2c5bd5248f0395310649de633eebc15dd89438e1a5e6a1682f1",
+      "matrix_id": "backend_1_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "dd0a2085ae7384d684d2b2f1d84706598100e28885e6873b7acd6cae2f081395",
+      "matrix_id": "backend_1_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "3ea816de64a05f9e11099fd1d794f3946cd1cab9432bda35b6fa69d37bd11eca",
+      "matrix_id": "backend_2_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "1392adca4472de6552e50f8f495db2af5326f712610e7786dcd209b696d89d6b",
+      "matrix_id": "backend_2_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "72121d8dbc39c259896d8f089f136d5aae357a79a582682b89e48826a3579417",
+      "matrix_id": "backend_2_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "7e98461c304f00d92b101236f0a9cc0e62613e2569b6570e29f887bd7b198138",
+      "matrix_id": "backend_3_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "5b1dc08056867a0594389af5a194071e0caf3afb979e9200b041ccff66983f9a",
+      "matrix_id": "backend_3_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "243a6a233bb7c0bd66c81e9af567ca6327d90546aa17ed1740d85cdf89f823a3",
+      "matrix_id": "backend_3_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "689f6eb7fc3f075db0852ffcdc466681ec7541d66090316c5012af19d842f178",
+      "matrix_id": "backend_4_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "25cdf1d74109561e1c7dd2980d687849fa679a4d7b63b240bce18c948f0fa686",
+      "matrix_id": "backend_4_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "f2601d082ba351ee1660227850c4168bb16a6425cd1a1b5f1a730d0f342b798f",
+      "matrix_id": "backend_4_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "d8d584979d852c52fa8311e5601aab8339aec9d16610b18d1e703b4f84e1d2e8",
+      "matrix_id": "backend_5_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "0390724741e9da6901b3f2b44057baa49d4f09aaa4655969556ac175d0b8b86f",
+      "matrix_id": "backend_5_pivot",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "efc37fb77439fe481d785f16b61254e848b160f7976c54342bcfd1d8f212289c",
+      "matrix_id": "frontend_state",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "e9c9bb4fd2ad31c9a0fcdeb43d578ae425bd38e862c54970e657a9b5ccf4e437",
+      "matrix_id": "frontend_carrier",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "d9e1a8b10a62f8a129996ca61eea8d65c426ffd15792265a5233aef6524789e8",
+      "matrix_id": "frontend_auxiliary",
+      "status": "MATCH"
+    }
+  ],
+  "status": "PASS"
+}

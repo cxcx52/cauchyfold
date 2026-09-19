@@ -1,0 +1,3563 @@
+{
+  "backend_matrix_count": 17,
+  "best_known_attack_cost_scope": "Minimum among attacks returned by this pinned official estimator under each declared MATZOV model; not an exhaustive claim about all Module-SIS attacks.",
+  "coefficient_expansion": "n=d*rows; m=d*columns; length_bound=beta; norm=2; no l_infinity conversion",
+  "cost_model_count_per_matrix": 2,
+  "estimator_branch_note": "Pinned official SIS.estimate selects attacks using actual radius. Euclidean shape formula belongs to official estimator and is not replaced by a custom design proxy.",
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "frontend_records": [
+    {
+      "estimates": [
+        {
+          "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+          "attacks": [
+            {
+              "attack": "lattice",
+              "attack_lattice_dimension": 14016,
+              "blocksize": 10912,
+              "delta": "1.00029610735756",
+              "log2_rop": 3124.362637468118,
+              "raw_fields": {
+                "beta": "10912",
+                "d": "14016",
+                "delta": "1.00029610735756",
+                "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+                "red": "3.36411791479741e940",
+                "rop": "3.36411791479741e940",
+                "tag": "euclidean"
+              },
+              "raw_repr": "rop: ≈2^3124.4, red: ≈2^3124.4, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+              "rop": "3.36411791479741e940",
+              "status": "DONE_FINITE"
+            }
+          ],
+          "cpu_seconds": 4.680668699,
+          "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+          "estimator_api": "SIS.estimate",
+          "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+          "generated_input_sha256": "efc37fb77439fe481d785f16b61254e848b160f7976c54342bcfd1d8f212289c",
+          "large_norm_attack_applicable": false,
+          "lowest_reported_attack": {
+            "attack": "lattice",
+            "attack_lattice_dimension": 14016,
+            "blocksize": 10912,
+            "delta": "1.00029610735756",
+            "log2_rop": 3124.362637468118,
+            "raw_fields": {
+              "beta": "10912",
+              "d": "14016",
+              "delta": "1.00029610735756",
+              "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+              "red": "3.36411791479741e940",
+              "rop": "3.36411791479741e940",
+              "tag": "euclidean"
+            },
+            "raw_repr": "rop: ≈2^3124.4, red: ≈2^3124.4, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+            "rop": "3.36411791479741e940",
+            "status": "DONE_FINITE"
+          },
+          "memory": null,
+          "model": "classical",
+          "norm": 2,
+          "peak_rss_kib": 260864,
+          "role": {
+            "beta": 8192,
+            "coefficient_columns_m": 14016,
+            "coefficient_rows_n": 2048,
+            "columns": 219,
+            "matrix_id": "frontend_state",
+            "norm": "coefficient_l2",
+            "q": 281474976710597,
+            "ring_degree": 64,
+            "role_id": "frontend_state",
+            "rows": 32
+          },
+          "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+          "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+          "status": "DONE_FINITE",
+          "stdout_stderr": "",
+          "success_probability": null,
+          "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+          "wall_seconds": 2.957648034
+        },
+        {
+          "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+          "attacks": [
+            {
+              "attack": "lattice",
+              "attack_lattice_dimension": 14016,
+              "blocksize": 10912,
+              "delta": "1.00029610735756",
+              "log2_rop": 2819.195638594054,
+              "raw_fields": {
+                "beta": "10912",
+                "d": "14016",
+                "delta": "1.00029610735756",
+                "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+                "red": "4.59674975802851e848",
+                "rop": "4.59674975802851e848",
+                "tag": "euclidean"
+              },
+              "raw_repr": "rop: ≈2^2819.2, red: ≈2^2819.2, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+              "rop": "4.59674975802851e848",
+              "status": "DONE_FINITE"
+            }
+          ],
+          "cpu_seconds": 4.241295507999999,
+          "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+          "estimator_api": "SIS.estimate",
+          "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+          "generated_input_sha256": "efc37fb77439fe481d785f16b61254e848b160f7976c54342bcfd1d8f212289c",
+          "large_norm_attack_applicable": false,
+          "lowest_reported_attack": {
+            "attack": "lattice",
+            "attack_lattice_dimension": 14016,
+            "blocksize": 10912,
+            "delta": "1.00029610735756",
+            "log2_rop": 2819.195638594054,
+            "raw_fields": {
+              "beta": "10912",
+              "d": "14016",
+              "delta": "1.00029610735756",
+              "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+              "red": "4.59674975802851e848",
+              "rop": "4.59674975802851e848",
+              "tag": "euclidean"
+            },
+            "raw_repr": "rop: ≈2^2819.2, red: ≈2^2819.2, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+            "rop": "4.59674975802851e848",
+            "status": "DONE_FINITE"
+          },
+          "memory": null,
+          "model": "quantum",
+          "norm": 2,
+          "peak_rss_kib": 260776,
+          "role": {
+            "beta": 8192,
+            "coefficient_columns_m": 14016,
+            "coefficient_rows_n": 2048,
+            "columns": 219,
+            "matrix_id": "frontend_state",
+            "norm": "coefficient_l2",
+            "q": 281474976710597,
+            "ring_degree": 64,
+            "role_id": "frontend_state",
+            "rows": 32
+          },
+          "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+          "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+          "status": "DONE_FINITE",
+          "stdout_stderr": "",
+          "success_probability": null,
+          "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+          "wall_seconds": 1.6722936710000003
+        }
+      ],
+      "input_status": "READY",
+      "matrix_id": "frontend_state",
+      "status": "DONE_FINITE"
+    },
+    {
+      "estimates": [
+        {
+          "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+          "attacks": [
+            {
+              "attack": "lattice",
+              "attack_lattice_dimension": 12288,
+              "blocksize": 11555,
+              "delta": "1.00028210249416",
+              "log2_rop": 3305.5539782171386,
+              "raw_fields": {
+                "beta": "11555",
+                "d": "12288",
+                "delta": "1.00028210249416",
+                "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+                "red": "1.17733411834573e995",
+                "rop": "1.17733411834573e995",
+                "tag": "euclidean"
+              },
+              "raw_repr": "rop: ≈2^3305.6, red: ≈2^3305.6, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+              "rop": "1.17733411834573e995",
+              "status": "DONE_FINITE"
+            }
+          ],
+          "cpu_seconds": 4.258555335,
+          "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+          "estimator_api": "SIS.estimate",
+          "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+          "generated_input_sha256": "e9c9bb4fd2ad31c9a0fcdeb43d578ae425bd38e862c54970e657a9b5ccf4e437",
+          "large_norm_attack_applicable": false,
+          "lowest_reported_attack": {
+            "attack": "lattice",
+            "attack_lattice_dimension": 12288,
+            "blocksize": 11555,
+            "delta": "1.00028210249416",
+            "log2_rop": 3305.5539782171386,
+            "raw_fields": {
+              "beta": "11555",
+              "d": "12288",
+              "delta": "1.00028210249416",
+              "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+              "red": "1.17733411834573e995",
+              "rop": "1.17733411834573e995",
+              "tag": "euclidean"
+            },
+            "raw_repr": "rop: ≈2^3305.6, red: ≈2^3305.6, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+            "rop": "1.17733411834573e995",
+            "status": "DONE_FINITE"
+          },
+          "memory": null,
+          "model": "classical",
+          "norm": 2,
+          "peak_rss_kib": 259904,
+          "role": {
+            "beta": 8192,
+            "coefficient_columns_m": 12288,
+            "coefficient_rows_n": 2048,
+            "columns": 192,
+            "matrix_id": "frontend_carrier",
+            "norm": "coefficient_l2",
+            "q": 281474976710597,
+            "ring_degree": 64,
+            "role_id": "frontend_carrier",
+            "rows": 32
+          },
+          "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+          "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+          "status": "DONE_FINITE",
+          "stdout_stderr": "",
+          "success_probability": null,
+          "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+          "wall_seconds": 1.6350205790000008
+        },
+        {
+          "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+          "attacks": [
+            {
+              "attack": "lattice",
+              "attack_lattice_dimension": 12288,
+              "blocksize": 11555,
+              "delta": "1.00028210249416",
+              "log2_rop": 2981.964405960791,
+              "raw_fields": {
+                "beta": "11555",
+                "d": "12288",
+                "delta": "1.00028210249416",
+                "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+                "red": "4.57859465052249e897",
+                "rop": "4.57859465052249e897",
+                "tag": "euclidean"
+              },
+              "raw_repr": "rop: ≈2^2982.0, red: ≈2^2982.0, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+              "rop": "4.57859465052249e897",
+              "status": "DONE_FINITE"
+            }
+          ],
+          "cpu_seconds": 4.204584468,
+          "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+          "estimator_api": "SIS.estimate",
+          "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+          "generated_input_sha256": "e9c9bb4fd2ad31c9a0fcdeb43d578ae425bd38e862c54970e657a9b5ccf4e437",
+          "large_norm_attack_applicable": false,
+          "lowest_reported_attack": {
+            "attack": "lattice",
+            "attack_lattice_dimension": 12288,
+            "blocksize": 11555,
+            "delta": "1.00028210249416",
+            "log2_rop": 2981.964405960791,
+            "raw_fields": {
+              "beta": "11555",
+              "d": "12288",
+              "delta": "1.00028210249416",
+              "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+              "red": "4.57859465052249e897",
+              "rop": "4.57859465052249e897",
+              "tag": "euclidean"
+            },
+            "raw_repr": "rop: ≈2^2982.0, red: ≈2^2982.0, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+            "rop": "4.57859465052249e897",
+            "status": "DONE_FINITE"
+          },
+          "memory": null,
+          "model": "quantum",
+          "norm": 2,
+          "peak_rss_kib": 260392,
+          "role": {
+            "beta": 8192,
+            "coefficient_columns_m": 12288,
+            "coefficient_rows_n": 2048,
+            "columns": 192,
+            "matrix_id": "frontend_carrier",
+            "norm": "coefficient_l2",
+            "q": 281474976710597,
+            "ring_degree": 64,
+            "role_id": "frontend_carrier",
+            "rows": 32
+          },
+          "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+          "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+          "status": "DONE_FINITE",
+          "stdout_stderr": "",
+          "success_probability": null,
+          "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+          "wall_seconds": 1.4835041689999997
+        }
+      ],
+      "input_status": "READY",
+      "matrix_id": "frontend_carrier",
+      "status": "DONE_FINITE"
+    },
+    {
+      "estimates": [
+        {
+          "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+          "attacks": [
+            {
+              "attack": "lattice",
+              "attack_lattice_dimension": 15123,
+              "blocksize": 10832,
+              "delta": "1.00029795529655",
+              "log2_rop": 3102.0311691488055,
+              "raw_fields": {
+                "beta": "10832",
+                "d": "15123",
+                "delta": "1.00029795529655",
+                "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+                "red": "6.37425448783081e933",
+                "rop": "6.37425448783081e933",
+                "tag": "euclidean"
+              },
+              "raw_repr": "rop: ≈2^3102.0, red: ≈2^3102.0, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+              "rop": "6.37425448783081e933",
+              "status": "DONE_FINITE"
+            }
+          ],
+          "cpu_seconds": 4.223585428,
+          "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+          "estimator_api": "SIS.estimate",
+          "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+          "generated_input_sha256": "d9e1a8b10a62f8a129996ca61eea8d65c426ffd15792265a5233aef6524789e8",
+          "large_norm_attack_applicable": false,
+          "lowest_reported_attack": {
+            "attack": "lattice",
+            "attack_lattice_dimension": 15123,
+            "blocksize": 10832,
+            "delta": "1.00029795529655",
+            "log2_rop": 3102.0311691488055,
+            "raw_fields": {
+              "beta": "10832",
+              "d": "15123",
+              "delta": "1.00029795529655",
+              "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+              "red": "6.37425448783081e933",
+              "rop": "6.37425448783081e933",
+              "tag": "euclidean"
+            },
+            "raw_repr": "rop: ≈2^3102.0, red: ≈2^3102.0, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+            "rop": "6.37425448783081e933",
+            "status": "DONE_FINITE"
+          },
+          "memory": null,
+          "model": "classical",
+          "norm": 2,
+          "peak_rss_kib": 261016,
+          "role": {
+            "beta": 8192,
+            "coefficient_columns_m": 278400,
+            "coefficient_rows_n": 2048,
+            "columns": 4350,
+            "matrix_id": "frontend_auxiliary",
+            "norm": "coefficient_l2",
+            "q": 281474976710597,
+            "ring_degree": 64,
+            "role_id": "frontend_auxiliary",
+            "rows": 32
+          },
+          "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+          "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+          "status": "DONE_FINITE",
+          "stdout_stderr": "",
+          "success_probability": null,
+          "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+          "wall_seconds": 1.725815334
+        },
+        {
+          "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+          "attacks": [
+            {
+              "attack": "lattice",
+              "attack_lattice_dimension": 15123,
+              "blocksize": 10832,
+              "delta": "1.00029795529655",
+              "log2_rop": 2799.155880080865,
+              "raw_fields": {
+                "beta": "10832",
+                "d": "15123",
+                "delta": "1.00029795529655",
+                "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+                "red": "4.26464066293010e842",
+                "rop": "4.26464066293010e842",
+                "tag": "euclidean"
+              },
+              "raw_repr": "rop: ≈2^2799.2, red: ≈2^2799.2, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+              "rop": "4.26464066293010e842",
+              "status": "DONE_FINITE"
+            }
+          ],
+          "cpu_seconds": 4.211479826,
+          "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+          "estimator_api": "SIS.estimate",
+          "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+          "generated_input_sha256": "d9e1a8b10a62f8a129996ca61eea8d65c426ffd15792265a5233aef6524789e8",
+          "large_norm_attack_applicable": false,
+          "lowest_reported_attack": {
+            "attack": "lattice",
+            "attack_lattice_dimension": 15123,
+            "blocksize": 10832,
+            "delta": "1.00029795529655",
+            "log2_rop": 2799.155880080865,
+            "raw_fields": {
+              "beta": "10832",
+              "d": "15123",
+              "delta": "1.00029795529655",
+              "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+              "red": "4.26464066293010e842",
+              "rop": "4.26464066293010e842",
+              "tag": "euclidean"
+            },
+            "raw_repr": "rop: ≈2^2799.2, red: ≈2^2799.2, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+            "rop": "4.26464066293010e842",
+            "status": "DONE_FINITE"
+          },
+          "memory": null,
+          "model": "quantum",
+          "norm": 2,
+          "peak_rss_kib": 260748,
+          "role": {
+            "beta": 8192,
+            "coefficient_columns_m": 278400,
+            "coefficient_rows_n": 2048,
+            "columns": 4350,
+            "matrix_id": "frontend_auxiliary",
+            "norm": "coefficient_l2",
+            "q": 281474976710597,
+            "ring_degree": 64,
+            "role_id": "frontend_auxiliary",
+            "rows": 32
+          },
+          "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+          "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+          "status": "DONE_FINITE",
+          "stdout_stderr": "",
+          "success_probability": null,
+          "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+          "wall_seconds": 1.474657123
+        }
+      ],
+      "input_status": "READY",
+      "matrix_id": "frontend_auxiliary",
+      "status": "DONE_FINITE"
+    }
+  ],
+  "frontend_status": "DONE_FINITE",
+  "generated_registry_input_agreement": [
+    {
+      "input_sha256": "96cf53533160dd880035be6d4759a8347a58233b1980a16d699a74a432e561ce",
+      "matrix_id": "backend_0_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "1e517adc9b863c6fff46d08552ecc90d657bfdc6c23c06473a854b5a77603a20",
+      "matrix_id": "backend_0_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "7cacb204ed1c47390eb3eb76a4658137ef14c63931ce4d551f46e877aa3abc8d",
+      "matrix_id": "backend_0_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "a4ff48a000710ba51de9f0afdd88107398871a3b56bd78a5d3e5d7dabfe7e987",
+      "matrix_id": "backend_1_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "4b6740bc46cdc2c5bd5248f0395310649de633eebc15dd89438e1a5e6a1682f1",
+      "matrix_id": "backend_1_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "dd0a2085ae7384d684d2b2f1d84706598100e28885e6873b7acd6cae2f081395",
+      "matrix_id": "backend_1_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "3ea816de64a05f9e11099fd1d794f3946cd1cab9432bda35b6fa69d37bd11eca",
+      "matrix_id": "backend_2_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "1392adca4472de6552e50f8f495db2af5326f712610e7786dcd209b696d89d6b",
+      "matrix_id": "backend_2_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "72121d8dbc39c259896d8f089f136d5aae357a79a582682b89e48826a3579417",
+      "matrix_id": "backend_2_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "7e98461c304f00d92b101236f0a9cc0e62613e2569b6570e29f887bd7b198138",
+      "matrix_id": "backend_3_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "5b1dc08056867a0594389af5a194071e0caf3afb979e9200b041ccff66983f9a",
+      "matrix_id": "backend_3_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "243a6a233bb7c0bd66c81e9af567ca6327d90546aa17ed1740d85cdf89f823a3",
+      "matrix_id": "backend_3_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "689f6eb7fc3f075db0852ffcdc466681ec7541d66090316c5012af19d842f178",
+      "matrix_id": "backend_4_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "25cdf1d74109561e1c7dd2980d687849fa679a4d7b63b240bce18c948f0fa686",
+      "matrix_id": "backend_4_B",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "f2601d082ba351ee1660227850c4168bb16a6425cd1a1b5f1a730d0f342b798f",
+      "matrix_id": "backend_4_D",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "d8d584979d852c52fa8311e5601aab8339aec9d16610b18d1e703b4f84e1d2e8",
+      "matrix_id": "backend_5_A",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "0390724741e9da6901b3f2b44057baa49d4f09aaa4655969556ac175d0b8b86f",
+      "matrix_id": "backend_5_pivot",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "efc37fb77439fe481d785f16b61254e848b160f7976c54342bcfd1d8f212289c",
+      "matrix_id": "frontend_state",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "e9c9bb4fd2ad31c9a0fcdeb43d578ae425bd38e862c54970e657a9b5ccf4e437",
+      "matrix_id": "frontend_carrier",
+      "status": "MATCH"
+    },
+    {
+      "input_sha256": "d9e1a8b10a62f8a129996ca61eea8d65c426ffd15792265a5233aef6524789e8",
+      "matrix_id": "frontend_auxiliary",
+      "status": "MATCH"
+    }
+  ],
+  "independent_matrix_count": 20,
+  "k": 16,
+  "model_calibration_warning": "Pinned reduction.py states MATZOV fitted data cover block size up to 1024. Results above 1024 are finite official-model extrapolations, explicitly flagged; not a calibrated cryptanalytic guarantee.",
+  "models": {
+    "classical": "MATZOV(nn=classical): list_decoding-classical",
+    "quantum": "MATZOV(nn=quantum): list_decoding-dw (depth-times-width convention)"
+  },
+  "profile": "Profile I",
+  "ready_matrix_count": 20,
+  "records": [
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4595,
+          "blocksize": 797,
+          "delta": "1.00242302905131",
+          "log2_rop": 255.4902291848914,
+          "raw_fields": {
+            "beta": "797",
+            "d": "4595",
+            "delta": "1.00242302905131",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+            "red": "8.13247213166908e76",
+            "rop": "8.13247213166908e76",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^255.5, red: ≈2^255.5, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+          "rop": "8.13247213166908e76",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.5184216,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4595,
+        "blocksize": 797,
+        "delta": "1.00242302905131",
+        "log2_rop": 255.4902291848914,
+        "raw_fields": {
+          "beta": "797",
+          "d": "4595",
+          "delta": "1.00242302905131",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+          "red": "8.13247213166908e76",
+          "rop": "8.13247213166908e76",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^255.5, red: ≈2^255.5, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+        "rop": "8.13247213166908e76",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259828,
+      "role": {
+        "beta": 4567851477,
+        "coefficient_columns_m": 116544,
+        "coefficient_rows_n": 1536,
+        "columns": 1821,
+        "matrix_id": "backend_0_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "0/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 2.843404899999996
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4595,
+          "blocksize": 797,
+          "delta": "1.00242302905131",
+          "log2_rop": 238.7301805869087,
+          "raw_fields": {
+            "beta": "797",
+            "d": "4595",
+            "delta": "1.00242302905131",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+            "red": "7.32732115404418e71",
+            "rop": "7.32732115404418e71",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^238.7, red: ≈2^238.7, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+          "rop": "7.32732115404418e71",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.179935976,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4595,
+        "blocksize": 797,
+        "delta": "1.00242302905131",
+        "log2_rop": 238.7301805869087,
+        "raw_fields": {
+          "beta": "797",
+          "d": "4595",
+          "delta": "1.00242302905131",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+          "red": "7.32732115404418e71",
+          "rop": "7.32732115404418e71",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^238.7, red: ≈2^238.7, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+        "rop": "7.32732115404418e71",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259860,
+      "role": {
+        "beta": 4567851477,
+        "coefficient_columns_m": 116544,
+        "coefficient_rows_n": 1536,
+        "columns": 1821,
+        "matrix_id": "backend_0_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "0/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4254579520000021
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5752,
+          "blocksize": 2406,
+          "delta": "1.00102995947718",
+          "log2_rop": 708.0299994876228,
+          "raw_fields": {
+            "beta": "2406",
+            "d": "5752",
+            "delta": "1.00102995947718",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=110592, norm=2, tag='backend_0_B')",
+            "red": "1.37488912152145e213",
+            "rop": "1.37488912152145e213",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^708.0, red: ≈2^708.0, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+          "rop": "1.37488912152145e213",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.17576862,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5752,
+        "blocksize": 2406,
+        "delta": "1.00102995947718",
+        "log2_rop": 708.0299994876228,
+        "raw_fields": {
+          "beta": "2406",
+          "d": "5752",
+          "delta": "1.00102995947718",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=110592, norm=2, tag='backend_0_B')",
+          "red": "1.37488912152145e213",
+          "rop": "1.37488912152145e213",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^708.0, red: ≈2^708.0, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+        "rop": "1.37488912152145e213",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259272,
+      "role": {
+        "beta": 139383,
+        "coefficient_columns_m": 110592,
+        "coefficient_rows_n": 1024,
+        "columns": 1728,
+        "matrix_id": "backend_0_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "0/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4788713510000022
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5752,
+          "blocksize": 2406,
+          "delta": "1.00102995947718",
+          "log2_rop": 645.7624935285287,
+          "raw_fields": {
+            "beta": "2406",
+            "d": "5752",
+            "delta": "1.00102995947718",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=110592, norm=2, tag='backend_0_B')",
+            "red": "2.47674119007647e194",
+            "rop": "2.47674119007647e194",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^645.8, red: ≈2^645.8, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+          "rop": "2.47674119007647e194",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.162443078,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5752,
+        "blocksize": 2406,
+        "delta": "1.00102995947718",
+        "log2_rop": 645.7624935285287,
+        "raw_fields": {
+          "beta": "2406",
+          "d": "5752",
+          "delta": "1.00102995947718",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=110592, norm=2, tag='backend_0_B')",
+          "red": "2.47674119007647e194",
+          "rop": "2.47674119007647e194",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^645.8, red: ≈2^645.8, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+        "rop": "2.47674119007647e194",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 258612,
+      "role": {
+        "beta": 139383,
+        "coefficient_columns_m": 110592,
+        "coefficient_rows_n": 1024,
+        "columns": 1728,
+        "matrix_id": "backend_0_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "0/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.5050074239999987
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5752,
+          "blocksize": 2406,
+          "delta": "1.00102995947718",
+          "log2_rop": 708.0299994876228,
+          "raw_fields": {
+            "beta": "2406",
+            "d": "5752",
+            "delta": "1.00102995947718",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=69120, norm=2, tag='backend_0_D')",
+            "red": "1.37488912152145e213",
+            "rop": "1.37488912152145e213",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^708.0, red: ≈2^708.0, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+          "rop": "1.37488912152145e213",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.145055954,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5752,
+        "blocksize": 2406,
+        "delta": "1.00102995947718",
+        "log2_rop": 708.0299994876228,
+        "raw_fields": {
+          "beta": "2406",
+          "d": "5752",
+          "delta": "1.00102995947718",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=69120, norm=2, tag='backend_0_D')",
+          "red": "1.37488912152145e213",
+          "rop": "1.37488912152145e213",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^708.0, red: ≈2^708.0, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+        "rop": "1.37488912152145e213",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259652,
+      "role": {
+        "beta": 139383,
+        "coefficient_columns_m": 69120,
+        "coefficient_rows_n": 1024,
+        "columns": 1080,
+        "matrix_id": "backend_0_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "0/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3184973830000004
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5752,
+          "blocksize": 2406,
+          "delta": "1.00102995947718",
+          "log2_rop": 645.7624935285287,
+          "raw_fields": {
+            "beta": "2406",
+            "d": "5752",
+            "delta": "1.00102995947718",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=69120, norm=2, tag='backend_0_D')",
+            "red": "2.47674119007647e194",
+            "rop": "2.47674119007647e194",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^645.8, red: ≈2^645.8, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+          "rop": "2.47674119007647e194",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.192487157,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5752,
+        "blocksize": 2406,
+        "delta": "1.00102995947718",
+        "log2_rop": 645.7624935285287,
+        "raw_fields": {
+          "beta": "2406",
+          "d": "5752",
+          "delta": "1.00102995947718",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=139383, m=69120, norm=2, tag='backend_0_D')",
+          "red": "2.47674119007647e194",
+          "rop": "2.47674119007647e194",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^645.8, red: ≈2^645.8, δ: 1.001030, β: 2406, d: 5752, tag: euclidean",
+        "rop": "2.47674119007647e194",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259764,
+      "role": {
+        "beta": 139383,
+        "coefficient_columns_m": 69120,
+        "coefficient_rows_n": 1024,
+        "columns": 1080,
+        "matrix_id": "backend_0_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "0/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.303661585999997
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4630,
+          "blocksize": 814,
+          "delta": "1.00238520353181",
+          "log2_rop": 260.25304499967535,
+          "raw_fields": {
+            "beta": "814",
+            "d": "4630",
+            "delta": "1.00238520353181",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3861716751, m=68800, norm=2, tag='backend_1_A')",
+            "red": "2.20786750568243e78",
+            "rop": "2.20786750568243e78",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^260.3, red: ≈2^260.3, δ: 1.002385, β: 814, d: 4630, tag: euclidean",
+          "rop": "2.20786750568243e78",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.157831646,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4630,
+        "blocksize": 814,
+        "delta": "1.00238520353181",
+        "log2_rop": 260.25304499967535,
+        "raw_fields": {
+          "beta": "814",
+          "d": "4630",
+          "delta": "1.00238520353181",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3861716751, m=68800, norm=2, tag='backend_1_A')",
+          "red": "2.20786750568243e78",
+          "rop": "2.20786750568243e78",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^260.3, red: ≈2^260.3, δ: 1.002385, β: 814, d: 4630, tag: euclidean",
+        "rop": "2.20786750568243e78",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259972,
+      "role": {
+        "beta": 3861716751,
+        "coefficient_columns_m": 68800,
+        "coefficient_rows_n": 1536,
+        "columns": 1075,
+        "matrix_id": "backend_1_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "1/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.308923637999996
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4630,
+          "blocksize": 814,
+          "delta": "1.00238520353181",
+          "log2_rop": 243.0149260951378,
+          "raw_fields": {
+            "beta": "814",
+            "d": "4630",
+            "delta": "1.00238520353181",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3861716751, m=68800, norm=2, tag='backend_1_A')",
+            "red": "1.42817737482054e73",
+            "rop": "1.42817737482054e73",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^243.0, red: ≈2^243.0, δ: 1.002385, β: 814, d: 4630, tag: euclidean",
+          "rop": "1.42817737482054e73",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.196224458,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4630,
+        "blocksize": 814,
+        "delta": "1.00238520353181",
+        "log2_rop": 243.0149260951378,
+        "raw_fields": {
+          "beta": "814",
+          "d": "4630",
+          "delta": "1.00238520353181",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3861716751, m=68800, norm=2, tag='backend_1_A')",
+          "red": "1.42817737482054e73",
+          "rop": "1.42817737482054e73",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^243.0, red: ≈2^243.0, δ: 1.002385, β: 814, d: 4630, tag: euclidean",
+        "rop": "1.42817737482054e73",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259820,
+      "role": {
+        "beta": 3861716751,
+        "coefficient_columns_m": 68800,
+        "coefficient_rows_n": 1536,
+        "columns": 1075,
+        "matrix_id": "backend_1_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "1/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3520318229999972
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5835,
+          "blocksize": 2493,
+          "delta": "1.00100109495801",
+          "log2_rop": 732.600006054336,
+          "raw_fields": {
+            "beta": "2493",
+            "d": "5835",
+            "delta": "1.00100109495801",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=73728, norm=2, tag='backend_1_B')",
+            "red": "3.42433816337871e220",
+            "rop": "3.42433816337871e220",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^732.6, red: ≈2^732.6, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+          "rop": "3.42433816337871e220",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.226770452,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5835,
+        "blocksize": 2493,
+        "delta": "1.00100109495801",
+        "log2_rop": 732.600006054336,
+        "raw_fields": {
+          "beta": "2493",
+          "d": "5835",
+          "delta": "1.00100109495801",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=73728, norm=2, tag='backend_1_B')",
+          "red": "3.42433816337871e220",
+          "rop": "3.42433816337871e220",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^732.6, red: ≈2^732.6, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+        "rop": "3.42433816337871e220",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 258856,
+      "role": {
+        "beta": 117836,
+        "coefficient_columns_m": 73728,
+        "coefficient_rows_n": 1024,
+        "columns": 1152,
+        "matrix_id": "backend_1_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "1/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.6440655550000045
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5835,
+          "blocksize": 2493,
+          "delta": "1.00100109495801",
+          "log2_rop": 667.8625612712572,
+          "raw_fields": {
+            "beta": "2493",
+            "d": "5835",
+            "delta": "1.00100109495801",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=73728, norm=2, tag='backend_1_B')",
+            "red": "1.11343257649539e201",
+            "rop": "1.11343257649539e201",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^667.9, red: ≈2^667.9, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+          "rop": "1.11343257649539e201",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.066916518,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5835,
+        "blocksize": 2493,
+        "delta": "1.00100109495801",
+        "log2_rop": 667.8625612712572,
+        "raw_fields": {
+          "beta": "2493",
+          "d": "5835",
+          "delta": "1.00100109495801",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=73728, norm=2, tag='backend_1_B')",
+          "red": "1.11343257649539e201",
+          "rop": "1.11343257649539e201",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^667.9, red: ≈2^667.9, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+        "rop": "1.11343257649539e201",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259716,
+      "role": {
+        "beta": 117836,
+        "coefficient_columns_m": 73728,
+        "coefficient_rows_n": 1024,
+        "columns": 1152,
+        "matrix_id": "backend_1_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "1/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3812793490000033
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5835,
+          "blocksize": 2493,
+          "delta": "1.00100109495801",
+          "log2_rop": 732.600006054336,
+          "raw_fields": {
+            "beta": "2493",
+            "d": "5835",
+            "delta": "1.00100109495801",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=32256, norm=2, tag='backend_1_D')",
+            "red": "3.42433816337871e220",
+            "rop": "3.42433816337871e220",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^732.6, red: ≈2^732.6, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+          "rop": "3.42433816337871e220",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.147143163,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5835,
+        "blocksize": 2493,
+        "delta": "1.00100109495801",
+        "log2_rop": 732.600006054336,
+        "raw_fields": {
+          "beta": "2493",
+          "d": "5835",
+          "delta": "1.00100109495801",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=32256, norm=2, tag='backend_1_D')",
+          "red": "3.42433816337871e220",
+          "rop": "3.42433816337871e220",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^732.6, red: ≈2^732.6, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+        "rop": "3.42433816337871e220",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259944,
+      "role": {
+        "beta": 117836,
+        "coefficient_columns_m": 32256,
+        "coefficient_rows_n": 1024,
+        "columns": 504,
+        "matrix_id": "backend_1_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "1/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.481244807000003
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5835,
+          "blocksize": 2493,
+          "delta": "1.00100109495801",
+          "log2_rop": 667.8625612712572,
+          "raw_fields": {
+            "beta": "2493",
+            "d": "5835",
+            "delta": "1.00100109495801",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=32256, norm=2, tag='backend_1_D')",
+            "red": "1.11343257649539e201",
+            "rop": "1.11343257649539e201",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^667.9, red: ≈2^667.9, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+          "rop": "1.11343257649539e201",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.155825483,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5835,
+        "blocksize": 2493,
+        "delta": "1.00100109495801",
+        "log2_rop": 667.8625612712572,
+        "raw_fields": {
+          "beta": "2493",
+          "d": "5835",
+          "delta": "1.00100109495801",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=117836, m=32256, norm=2, tag='backend_1_D')",
+          "red": "1.11343257649539e201",
+          "rop": "1.11343257649539e201",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^667.9, red: ≈2^667.9, δ: 1.001001, β: 2493, d: 5835, tag: euclidean",
+        "rop": "1.11343257649539e201",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259328,
+      "role": {
+        "beta": 117836,
+        "coefficient_columns_m": 32256,
+        "coefficient_rows_n": 1024,
+        "columns": 504,
+        "matrix_id": "backend_1_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "1/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4135060210000034
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4659,
+          "blocksize": 828,
+          "delta": "1.00235502589921",
+          "log2_rop": 264.1761412030726,
+          "raw_fields": {
+            "beta": "828",
+            "d": "4659",
+            "delta": "1.00235502589921",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3353291926, m=48768, norm=2, tag='backend_2_A')",
+            "red": "3.34921201774826e79",
+            "rop": "3.34921201774826e79",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^264.2, red: ≈2^264.2, δ: 1.002355, β: 828, d: 4659, tag: euclidean",
+          "rop": "3.34921201774826e79",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.175142639,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4659,
+        "blocksize": 828,
+        "delta": "1.00235502589921",
+        "log2_rop": 264.1761412030726,
+        "raw_fields": {
+          "beta": "828",
+          "d": "4659",
+          "delta": "1.00235502589921",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3353291926, m=48768, norm=2, tag='backend_2_A')",
+          "red": "3.34921201774826e79",
+          "rop": "3.34921201774826e79",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^264.2, red: ≈2^264.2, δ: 1.002355, β: 828, d: 4659, tag: euclidean",
+        "rop": "3.34921201774826e79",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 260384,
+      "role": {
+        "beta": 3353291926,
+        "coefficient_columns_m": 48768,
+        "coefficient_rows_n": 1536,
+        "columns": 762,
+        "matrix_id": "backend_2_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "2/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4345915500000004
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4659,
+          "blocksize": 828,
+          "delta": "1.00235502589921",
+          "log2_rop": 246.54424346279444,
+          "raw_fields": {
+            "beta": "828",
+            "d": "4659",
+            "delta": "1.00235502589921",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3353291926, m=48768, norm=2, tag='backend_2_A')",
+            "red": "1.64896918770685e74",
+            "rop": "1.64896918770685e74",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^246.5, red: ≈2^246.5, δ: 1.002355, β: 828, d: 4659, tag: euclidean",
+          "rop": "1.64896918770685e74",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.169940459,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4659,
+        "blocksize": 828,
+        "delta": "1.00235502589921",
+        "log2_rop": 246.54424346279444,
+        "raw_fields": {
+          "beta": "828",
+          "d": "4659",
+          "delta": "1.00235502589921",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3353291926, m=48768, norm=2, tag='backend_2_A')",
+          "red": "1.64896918770685e74",
+          "rop": "1.64896918770685e74",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^246.5, red: ≈2^246.5, δ: 1.002355, β: 828, d: 4659, tag: euclidean",
+        "rop": "1.64896918770685e74",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 260248,
+      "role": {
+        "beta": 3353291926,
+        "coefficient_columns_m": 48768,
+        "coefficient_rows_n": 1536,
+        "columns": 762,
+        "matrix_id": "backend_2_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "2/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3963519149999968
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5906,
+          "blocksize": 2570,
+          "delta": "1.00097698231862",
+          "log2_rop": 754.35002046322,
+          "raw_fields": {
+            "beta": "2570",
+            "d": "5906",
+            "delta": "1.00097698231862",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=61440, norm=2, tag='backend_2_B')",
+            "red": "1.20776763970071e227",
+            "rop": "1.20776763970071e227",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^754.4, red: ≈2^754.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+          "rop": "1.20776763970071e227",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.156968057,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5906,
+        "blocksize": 2570,
+        "delta": "1.00097698231862",
+        "log2_rop": 754.35002046322,
+        "raw_fields": {
+          "beta": "2570",
+          "d": "5906",
+          "delta": "1.00097698231862",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=61440, norm=2, tag='backend_2_B')",
+          "red": "1.20776763970071e227",
+          "rop": "1.20776763970071e227",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^754.4, red: ≈2^754.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+        "rop": "1.20776763970071e227",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259328,
+      "role": {
+        "beta": 102322,
+        "coefficient_columns_m": 61440,
+        "coefficient_rows_n": 1024,
+        "columns": 960,
+        "matrix_id": "backend_2_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "2/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.437083857999994
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5906,
+          "blocksize": 2570,
+          "delta": "1.00097698231862",
+          "log2_rop": 687.4260140010149,
+          "raw_fields": {
+            "beta": "2570",
+            "d": "5906",
+            "delta": "1.00097698231862",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=61440, norm=2, tag='backend_2_B')",
+            "red": "8.62680564879484e206",
+            "rop": "8.62680564879484e206",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^687.4, red: ≈2^687.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+          "rop": "8.62680564879484e206",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.200935308,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5906,
+        "blocksize": 2570,
+        "delta": "1.00097698231862",
+        "log2_rop": 687.4260140010149,
+        "raw_fields": {
+          "beta": "2570",
+          "d": "5906",
+          "delta": "1.00097698231862",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=61440, norm=2, tag='backend_2_B')",
+          "red": "8.62680564879484e206",
+          "rop": "8.62680564879484e206",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^687.4, red: ≈2^687.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+        "rop": "8.62680564879484e206",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 260500,
+      "role": {
+        "beta": 102322,
+        "coefficient_columns_m": 61440,
+        "coefficient_rows_n": 1024,
+        "columns": 960,
+        "matrix_id": "backend_2_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "2/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.343163906000001
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5906,
+          "blocksize": 2570,
+          "delta": "1.00097698231862",
+          "log2_rop": 754.35002046322,
+          "raw_fields": {
+            "beta": "2570",
+            "d": "5906",
+            "delta": "1.00097698231862",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=23040, norm=2, tag='backend_2_D')",
+            "red": "1.20776763970071e227",
+            "rop": "1.20776763970071e227",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^754.4, red: ≈2^754.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+          "rop": "1.20776763970071e227",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.185748033,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5906,
+        "blocksize": 2570,
+        "delta": "1.00097698231862",
+        "log2_rop": 754.35002046322,
+        "raw_fields": {
+          "beta": "2570",
+          "d": "5906",
+          "delta": "1.00097698231862",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=23040, norm=2, tag='backend_2_D')",
+          "red": "1.20776763970071e227",
+          "rop": "1.20776763970071e227",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^754.4, red: ≈2^754.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+        "rop": "1.20776763970071e227",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 260140,
+      "role": {
+        "beta": 102322,
+        "coefficient_columns_m": 23040,
+        "coefficient_rows_n": 1024,
+        "columns": 360,
+        "matrix_id": "backend_2_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "2/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4257244799999995
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5906,
+          "blocksize": 2570,
+          "delta": "1.00097698231862",
+          "log2_rop": 687.4260140010149,
+          "raw_fields": {
+            "beta": "2570",
+            "d": "5906",
+            "delta": "1.00097698231862",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=23040, norm=2, tag='backend_2_D')",
+            "red": "8.62680564879484e206",
+            "rop": "8.62680564879484e206",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^687.4, red: ≈2^687.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+          "rop": "8.62680564879484e206",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.237818337999999,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5906,
+        "blocksize": 2570,
+        "delta": "1.00097698231862",
+        "log2_rop": 687.4260140010149,
+        "raw_fields": {
+          "beta": "2570",
+          "d": "5906",
+          "delta": "1.00097698231862",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=23040, norm=2, tag='backend_2_D')",
+          "red": "8.62680564879484e206",
+          "rop": "8.62680564879484e206",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^687.4, red: ≈2^687.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+        "rop": "8.62680564879484e206",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259772,
+      "role": {
+        "beta": 102322,
+        "coefficient_columns_m": 23040,
+        "coefficient_rows_n": 1024,
+        "columns": 360,
+        "matrix_id": "backend_2_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "2/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.5953213989999995
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4681,
+          "blocksize": 838,
+          "delta": "1.00233398552387",
+          "log2_rop": 266.97922006934147,
+          "raw_fields": {
+            "beta": "838",
+            "d": "4681",
+            "delta": "1.00233398552387",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3025014479, m=45504, norm=2, tag='backend_3_A')",
+            "red": "2.33750990506705e80",
+            "rop": "2.33750990506705e80",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^267.0, red: ≈2^267.0, δ: 1.002334, β: 838, d: 4681, tag: euclidean",
+          "rop": "2.33750990506705e80",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.177107371,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4681,
+        "blocksize": 838,
+        "delta": "1.00233398552387",
+        "log2_rop": 266.97922006934147,
+        "raw_fields": {
+          "beta": "838",
+          "d": "4681",
+          "delta": "1.00233398552387",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3025014479, m=45504, norm=2, tag='backend_3_A')",
+          "red": "2.33750990506705e80",
+          "rop": "2.33750990506705e80",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^267.0, red: ≈2^267.0, δ: 1.002334, β: 838, d: 4681, tag: euclidean",
+        "rop": "2.33750990506705e80",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259576,
+      "role": {
+        "beta": 3025014479,
+        "coefficient_columns_m": 45504,
+        "coefficient_rows_n": 1536,
+        "columns": 711,
+        "matrix_id": "backend_3_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "3/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.5359008860000074
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4681,
+          "blocksize": 838,
+          "delta": "1.00233398552387",
+          "log2_rop": 249.06601171579305,
+          "raw_fields": {
+            "beta": "838",
+            "d": "4681",
+            "delta": "1.00233398552387",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3025014479, m=45504, norm=2, tag='backend_3_A')",
+            "red": "9.46979171300137e74",
+            "rop": "9.46979171300137e74",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^249.1, red: ≈2^249.1, δ: 1.002334, β: 838, d: 4681, tag: euclidean",
+          "rop": "9.46979171300137e74",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.188969084,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4681,
+        "blocksize": 838,
+        "delta": "1.00233398552387",
+        "log2_rop": 249.06601171579305,
+        "raw_fields": {
+          "beta": "838",
+          "d": "4681",
+          "delta": "1.00233398552387",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=3025014479, m=45504, norm=2, tag='backend_3_A')",
+          "red": "9.46979171300137e74",
+          "rop": "9.46979171300137e74",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^249.1, red: ≈2^249.1, δ: 1.002334, β: 838, d: 4681, tag: euclidean",
+        "rop": "9.46979171300137e74",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259608,
+      "role": {
+        "beta": 3025014479,
+        "coefficient_columns_m": 45504,
+        "coefficient_rows_n": 1536,
+        "columns": 711,
+        "matrix_id": "backend_3_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "3/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3271129800000097
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5959,
+          "blocksize": 2628,
+          "delta": "1.00095964042117",
+          "log2_rop": 770.7360504984957,
+          "raw_fields": {
+            "beta": "2628",
+            "d": "5959",
+            "delta": "1.00095964042117",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=49152, norm=2, tag='backend_3_B')",
+            "red": "1.03435576570474e232",
+            "rop": "1.03435576570474e232",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^770.7, red: ≈2^770.7, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+          "rop": "1.03435576570474e232",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.214402156,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5959,
+        "blocksize": 2628,
+        "delta": "1.00095964042117",
+        "log2_rop": 770.7360504984957,
+        "raw_fields": {
+          "beta": "2628",
+          "d": "5959",
+          "delta": "1.00095964042117",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=49152, norm=2, tag='backend_3_B')",
+          "red": "1.03435576570474e232",
+          "rop": "1.03435576570474e232",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^770.7, red: ≈2^770.7, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+        "rop": "1.03435576570474e232",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259548,
+      "role": {
+        "beta": 92305,
+        "coefficient_columns_m": 49152,
+        "coefficient_rows_n": 1024,
+        "columns": 768,
+        "matrix_id": "backend_3_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "3/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4110656549999874
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5959,
+          "blocksize": 2628,
+          "delta": "1.00095964042117",
+          "log2_rop": 702.1647105848874,
+          "raw_fields": {
+            "beta": "2628",
+            "d": "5959",
+            "delta": "1.00095964042117",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=49152, norm=2, tag='backend_3_B')",
+            "red": "2.35852119149816e211",
+            "rop": "2.35852119149816e211",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^702.2, red: ≈2^702.2, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+          "rop": "2.35852119149816e211",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.162870928,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5959,
+        "blocksize": 2628,
+        "delta": "1.00095964042117",
+        "log2_rop": 702.1647105848874,
+        "raw_fields": {
+          "beta": "2628",
+          "d": "5959",
+          "delta": "1.00095964042117",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=49152, norm=2, tag='backend_3_B')",
+          "red": "2.35852119149816e211",
+          "rop": "2.35852119149816e211",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^702.2, red: ≈2^702.2, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+        "rop": "2.35852119149816e211",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259340,
+      "role": {
+        "beta": 92305,
+        "coefficient_columns_m": 49152,
+        "coefficient_rows_n": 1024,
+        "columns": 768,
+        "matrix_id": "backend_3_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "3/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3593165930000026
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5959,
+          "blocksize": 2628,
+          "delta": "1.00095964042117",
+          "log2_rop": 770.7360504984957,
+          "raw_fields": {
+            "beta": "2628",
+            "d": "5959",
+            "delta": "1.00095964042117",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=15360, norm=2, tag='backend_3_D')",
+            "red": "1.03435576570474e232",
+            "rop": "1.03435576570474e232",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^770.7, red: ≈2^770.7, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+          "rop": "1.03435576570474e232",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.172273274,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5959,
+        "blocksize": 2628,
+        "delta": "1.00095964042117",
+        "log2_rop": 770.7360504984957,
+        "raw_fields": {
+          "beta": "2628",
+          "d": "5959",
+          "delta": "1.00095964042117",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=15360, norm=2, tag='backend_3_D')",
+          "red": "1.03435576570474e232",
+          "rop": "1.03435576570474e232",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^770.7, red: ≈2^770.7, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+        "rop": "1.03435576570474e232",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 260080,
+      "role": {
+        "beta": 92305,
+        "coefficient_columns_m": 15360,
+        "coefficient_rows_n": 1024,
+        "columns": 240,
+        "matrix_id": "backend_3_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "3/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.355921692999999
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5959,
+          "blocksize": 2628,
+          "delta": "1.00095964042117",
+          "log2_rop": 702.1647105848874,
+          "raw_fields": {
+            "beta": "2628",
+            "d": "5959",
+            "delta": "1.00095964042117",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=15360, norm=2, tag='backend_3_D')",
+            "red": "2.35852119149816e211",
+            "rop": "2.35852119149816e211",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^702.2, red: ≈2^702.2, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+          "rop": "2.35852119149816e211",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.067323194,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5959,
+        "blocksize": 2628,
+        "delta": "1.00095964042117",
+        "log2_rop": 702.1647105848874,
+        "raw_fields": {
+          "beta": "2628",
+          "d": "5959",
+          "delta": "1.00095964042117",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=92305, m=15360, norm=2, tag='backend_3_D')",
+          "red": "2.35852119149816e211",
+          "rop": "2.35852119149816e211",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^702.2, red: ≈2^702.2, δ: 1.000960, β: 2628, d: 5959, tag: euclidean",
+        "rop": "2.35852119149816e211",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259116,
+      "role": {
+        "beta": 92305,
+        "coefficient_columns_m": 15360,
+        "coefficient_rows_n": 1024,
+        "columns": 240,
+        "matrix_id": "backend_3_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "3/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4563287189999983
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4690,
+          "blocksize": 843,
+          "delta": "1.00232362148642",
+          "log2_rop": 268.38012699849895,
+          "raw_fields": {
+            "beta": "843",
+            "d": "4690",
+            "delta": "1.00232362148642",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=2902545478, m=38912, norm=2, tag='backend_4_A')",
+            "red": "6.17260472086134e80",
+            "rop": "6.17260472086134e80",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^268.4, red: ≈2^268.4, δ: 1.002324, β: 843, d: 4690, tag: euclidean",
+          "rop": "6.17260472086134e80",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.161739725,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4690,
+        "blocksize": 843,
+        "delta": "1.00232362148642",
+        "log2_rop": 268.38012699849895,
+        "raw_fields": {
+          "beta": "843",
+          "d": "4690",
+          "delta": "1.00232362148642",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=2902545478, m=38912, norm=2, tag='backend_4_A')",
+          "red": "6.17260472086134e80",
+          "rop": "6.17260472086134e80",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^268.4, red: ≈2^268.4, δ: 1.002324, β: 843, d: 4690, tag: euclidean",
+        "rop": "6.17260472086134e80",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259728,
+      "role": {
+        "beta": 2902545478,
+        "coefficient_columns_m": 38912,
+        "coefficient_rows_n": 1536,
+        "columns": 608,
+        "matrix_id": "backend_4_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "4/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3465623329999943
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": false,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 4690,
+          "blocksize": 843,
+          "delta": "1.00232362148642",
+          "log2_rop": 250.3262510128014,
+          "raw_fields": {
+            "beta": "843",
+            "d": "4690",
+            "delta": "1.00232362148642",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=2902545478, m=38912, norm=2, tag='backend_4_A')",
+            "red": "2.26835099844649e75",
+            "rop": "2.26835099844649e75",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^250.3, red: ≈2^250.3, δ: 1.002324, β: 843, d: 4690, tag: euclidean",
+          "rop": "2.26835099844649e75",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.241437052,
+      "documented_range_status": "WITHIN_DOCUMENTED_FIT_RANGE",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 4690,
+        "blocksize": 843,
+        "delta": "1.00232362148642",
+        "log2_rop": 250.3262510128014,
+        "raw_fields": {
+          "beta": "843",
+          "d": "4690",
+          "delta": "1.00232362148642",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=2902545478, m=38912, norm=2, tag='backend_4_A')",
+          "red": "2.26835099844649e75",
+          "rop": "2.26835099844649e75",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^250.3, red: ≈2^250.3, δ: 1.002324, β: 843, d: 4690, tag: euclidean",
+        "rop": "2.26835099844649e75",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 260160,
+      "role": {
+        "beta": 2902545478,
+        "coefficient_columns_m": 38912,
+        "coefficient_rows_n": 1536,
+        "columns": 608,
+        "matrix_id": "backend_4_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "4/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.7625067919999964
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5981,
+          "blocksize": 2652,
+          "delta": "1.00095265953367",
+          "log2_rop": 777.5172681038956,
+          "raw_fields": {
+            "beta": "2652",
+            "d": "5981",
+            "delta": "1.00095265953367",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=49152, norm=2, tag='backend_4_B')",
+            "red": "1.13767927324720e234",
+            "rop": "1.13767927324720e234",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^777.5, red: ≈2^777.5, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+          "rop": "1.13767927324720e234",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.253494976,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5981,
+        "blocksize": 2652,
+        "delta": "1.00095265953367",
+        "log2_rop": 777.5172681038956,
+        "raw_fields": {
+          "beta": "2652",
+          "d": "5981",
+          "delta": "1.00095265953367",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=49152, norm=2, tag='backend_4_B')",
+          "red": "1.13767927324720e234",
+          "rop": "1.13767927324720e234",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^777.5, red: ≈2^777.5, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+        "rop": "1.13767927324720e234",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259772,
+      "role": {
+        "beta": 88568,
+        "coefficient_columns_m": 49152,
+        "coefficient_rows_n": 1024,
+        "columns": 768,
+        "matrix_id": "backend_4_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "4/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.7426784390000023
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5981,
+          "blocksize": 2652,
+          "delta": "1.00095265953367",
+          "log2_rop": 708.2641963282927,
+          "raw_fields": {
+            "beta": "2652",
+            "d": "5981",
+            "delta": "1.00095265953367",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=49152, norm=2, tag='backend_4_B')",
+            "red": "1.61721570308087e213",
+            "rop": "1.61721570308087e213",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^708.3, red: ≈2^708.3, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+          "rop": "1.61721570308087e213",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.235756385,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5981,
+        "blocksize": 2652,
+        "delta": "1.00095265953367",
+        "log2_rop": 708.2641963282927,
+        "raw_fields": {
+          "beta": "2652",
+          "d": "5981",
+          "delta": "1.00095265953367",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=49152, norm=2, tag='backend_4_B')",
+          "red": "1.61721570308087e213",
+          "rop": "1.61721570308087e213",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^708.3, red: ≈2^708.3, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+        "rop": "1.61721570308087e213",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259580,
+      "role": {
+        "beta": 88568,
+        "coefficient_columns_m": 49152,
+        "coefficient_rows_n": 1024,
+        "columns": 768,
+        "matrix_id": "backend_4_B",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "4/B",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3307815899999866
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5981,
+          "blocksize": 2652,
+          "delta": "1.00095265953367",
+          "log2_rop": 777.5172681038956,
+          "raw_fields": {
+            "beta": "2652",
+            "d": "5981",
+            "delta": "1.00095265953367",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=15360, norm=2, tag='backend_4_D')",
+            "red": "1.13767927324720e234",
+            "rop": "1.13767927324720e234",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^777.5, red: ≈2^777.5, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+          "rop": "1.13767927324720e234",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.207795729,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5981,
+        "blocksize": 2652,
+        "delta": "1.00095265953367",
+        "log2_rop": 777.5172681038956,
+        "raw_fields": {
+          "beta": "2652",
+          "d": "5981",
+          "delta": "1.00095265953367",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=15360, norm=2, tag='backend_4_D')",
+          "red": "1.13767927324720e234",
+          "rop": "1.13767927324720e234",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^777.5, red: ≈2^777.5, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+        "rop": "1.13767927324720e234",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259988,
+      "role": {
+        "beta": 88568,
+        "coefficient_columns_m": 15360,
+        "coefficient_rows_n": 1024,
+        "columns": 240,
+        "matrix_id": "backend_4_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "4/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.5759425779999958
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5981,
+          "blocksize": 2652,
+          "delta": "1.00095265953367",
+          "log2_rop": 708.2641963282927,
+          "raw_fields": {
+            "beta": "2652",
+            "d": "5981",
+            "delta": "1.00095265953367",
+            "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=15360, norm=2, tag='backend_4_D')",
+            "red": "1.61721570308087e213",
+            "rop": "1.61721570308087e213",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^708.3, red: ≈2^708.3, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+          "rop": "1.61721570308087e213",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.156184696,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5981,
+        "blocksize": 2652,
+        "delta": "1.00095265953367",
+        "log2_rop": 708.2641963282927,
+        "raw_fields": {
+          "beta": "2652",
+          "d": "5981",
+          "delta": "1.00095265953367",
+          "problem": "SISParameters(n=1024, q=281474976710597, length_bound=88568, m=15360, norm=2, tag='backend_4_D')",
+          "red": "1.61721570308087e213",
+          "rop": "1.61721570308087e213",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^708.3, red: ≈2^708.3, δ: 1.000953, β: 2652, d: 5981, tag: euclidean",
+        "rop": "1.61721570308087e213",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259828,
+      "role": {
+        "beta": 88568,
+        "coefficient_columns_m": 15360,
+        "coefficient_rows_n": 1024,
+        "columns": 240,
+        "matrix_id": "backend_4_D",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "4/D",
+        "rows": 16
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.2848324499999961
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5374,
+          "blocksize": 1206,
+          "delta": "1.00177086889667",
+          "log2_rop": 370.2779126093075,
+          "raw_fields": {
+            "beta": "1206",
+            "d": "5374",
+            "delta": "1.00177086889667",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=181386952, m=20352, norm=2, tag='backend_5_A')",
+            "red": "2.91580467034459e111",
+            "rop": "2.91580467034459e111",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^370.3, red: ≈2^370.3, δ: 1.001771, β: 1206, d: 5374, tag: euclidean",
+          "rop": "2.91580467034459e111",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.17302108,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5374,
+        "blocksize": 1206,
+        "delta": "1.00177086889667",
+        "log2_rop": 370.2779126093075,
+        "raw_fields": {
+          "beta": "1206",
+          "d": "5374",
+          "delta": "1.00177086889667",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=181386952, m=20352, norm=2, tag='backend_5_A')",
+          "red": "2.91580467034459e111",
+          "rop": "2.91580467034459e111",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^370.3, red: ≈2^370.3, δ: 1.001771, β: 1206, d: 5374, tag: euclidean",
+        "rop": "2.91580467034459e111",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 260040,
+      "role": {
+        "beta": 181386952,
+        "coefficient_columns_m": 20352,
+        "coefficient_rows_n": 1536,
+        "columns": 318,
+        "matrix_id": "backend_5_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "5/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.2775090029999916
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 5374,
+          "blocksize": 1206,
+          "delta": "1.00177086889667",
+          "log2_rop": 341.99294196558446,
+          "raw_fields": {
+            "beta": "1206",
+            "d": "5374",
+            "delta": "1.00177086889667",
+            "problem": "SISParameters(n=1536, q=281474976710597, length_bound=181386952, m=20352, norm=2, tag='backend_5_A')",
+            "red": "8.91525638248780e102",
+            "rop": "8.91525638248780e102",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^342.0, red: ≈2^342.0, δ: 1.001771, β: 1206, d: 5374, tag: euclidean",
+          "rop": "8.91525638248780e102",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.181192757,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 5374,
+        "blocksize": 1206,
+        "delta": "1.00177086889667",
+        "log2_rop": 341.99294196558446,
+        "raw_fields": {
+          "beta": "1206",
+          "d": "5374",
+          "delta": "1.00177086889667",
+          "problem": "SISParameters(n=1536, q=281474976710597, length_bound=181386952, m=20352, norm=2, tag='backend_5_A')",
+          "red": "8.91525638248780e102",
+          "rop": "8.91525638248780e102",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^342.0, red: ≈2^342.0, δ: 1.001771, β: 1206, d: 5374, tag: euclidean",
+        "rop": "8.91525638248780e102",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259760,
+      "role": {
+        "beta": 181386952,
+        "coefficient_columns_m": 20352,
+        "coefficient_rows_n": 1536,
+        "columns": 318,
+        "matrix_id": "backend_5_A",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "5/A",
+        "rows": 24
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.5524387439999998
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 2387,
+          "blocksize": 1500,
+          "delta": "1.00149577464608",
+          "log2_rop": 450.6890988865027,
+          "raw_fields": {
+            "beta": "1500",
+            "d": "2387",
+            "delta": "1.00149577464608",
+            "problem": "SISParameters(n=256, q=281474976710597, length_bound=1255, m=24576, norm=2, tag='backend_5_pivot')",
+            "red": "4.68745901637764e135",
+            "rop": "4.68745901637764e135",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^450.7, red: ≈2^450.7, δ: 1.001496, β: 1500, d: 2387, tag: euclidean",
+          "rop": "4.68745901637764e135",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.2003059700000005,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 2387,
+        "blocksize": 1500,
+        "delta": "1.00149577464608",
+        "log2_rop": 450.6890988865027,
+        "raw_fields": {
+          "beta": "1500",
+          "d": "2387",
+          "delta": "1.00149577464608",
+          "problem": "SISParameters(n=256, q=281474976710597, length_bound=1255, m=24576, norm=2, tag='backend_5_pivot')",
+          "red": "4.68745901637764e135",
+          "rop": "4.68745901637764e135",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^450.7, red: ≈2^450.7, δ: 1.001496, β: 1500, d: 2387, tag: euclidean",
+        "rop": "4.68745901637764e135",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259580,
+      "role": {
+        "beta": 1255,
+        "coefficient_columns_m": 24576,
+        "coefficient_rows_n": 256,
+        "columns": 384,
+        "matrix_id": "backend_5_pivot",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "5/pivot",
+        "rows": 4
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.444654141000001
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 2387,
+          "blocksize": 1500,
+          "delta": "1.00149577464608",
+          "log2_rop": 414.09683941677366,
+          "raw_fields": {
+            "beta": "1500",
+            "d": "2387",
+            "delta": "1.00149577464608",
+            "problem": "SISParameters(n=256, q=281474976710597, length_bound=1255, m=24576, norm=2, tag='backend_5_pivot')",
+            "red": "4.52449147336326e124",
+            "rop": "4.52449147336326e124",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^414.1, red: ≈2^414.1, δ: 1.001496, β: 1500, d: 2387, tag: euclidean",
+          "rop": "4.52449147336326e124",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.181826802,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 2387,
+        "blocksize": 1500,
+        "delta": "1.00149577464608",
+        "log2_rop": 414.09683941677366,
+        "raw_fields": {
+          "beta": "1500",
+          "d": "2387",
+          "delta": "1.00149577464608",
+          "problem": "SISParameters(n=256, q=281474976710597, length_bound=1255, m=24576, norm=2, tag='backend_5_pivot')",
+          "red": "4.52449147336326e124",
+          "rop": "4.52449147336326e124",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^414.1, red: ≈2^414.1, δ: 1.001496, β: 1500, d: 2387, tag: euclidean",
+        "rop": "4.52449147336326e124",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 259576,
+      "role": {
+        "beta": 1255,
+        "coefficient_columns_m": 24576,
+        "coefficient_rows_n": 256,
+        "columns": 384,
+        "matrix_id": "backend_5_pivot",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "5/pivot",
+        "rows": 4
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.3449693729999979
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 14016,
+          "blocksize": 10912,
+          "delta": "1.00029610735756",
+          "log2_rop": 3124.362637468118,
+          "raw_fields": {
+            "beta": "10912",
+            "d": "14016",
+            "delta": "1.00029610735756",
+            "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+            "red": "3.36411791479741e940",
+            "rop": "3.36411791479741e940",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^3124.4, red: ≈2^3124.4, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+          "rop": "3.36411791479741e940",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.680668699,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "generated_input_sha256": "efc37fb77439fe481d785f16b61254e848b160f7976c54342bcfd1d8f212289c",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 14016,
+        "blocksize": 10912,
+        "delta": "1.00029610735756",
+        "log2_rop": 3124.362637468118,
+        "raw_fields": {
+          "beta": "10912",
+          "d": "14016",
+          "delta": "1.00029610735756",
+          "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+          "red": "3.36411791479741e940",
+          "rop": "3.36411791479741e940",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^3124.4, red: ≈2^3124.4, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+        "rop": "3.36411791479741e940",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 260864,
+      "role": {
+        "beta": 8192,
+        "coefficient_columns_m": 14016,
+        "coefficient_rows_n": 2048,
+        "columns": 219,
+        "matrix_id": "frontend_state",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "frontend_state",
+        "rows": 32
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 2.957648034
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 14016,
+          "blocksize": 10912,
+          "delta": "1.00029610735756",
+          "log2_rop": 2819.195638594054,
+          "raw_fields": {
+            "beta": "10912",
+            "d": "14016",
+            "delta": "1.00029610735756",
+            "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+            "red": "4.59674975802851e848",
+            "rop": "4.59674975802851e848",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^2819.2, red: ≈2^2819.2, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+          "rop": "4.59674975802851e848",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.241295507999999,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "generated_input_sha256": "efc37fb77439fe481d785f16b61254e848b160f7976c54342bcfd1d8f212289c",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 14016,
+        "blocksize": 10912,
+        "delta": "1.00029610735756",
+        "log2_rop": 2819.195638594054,
+        "raw_fields": {
+          "beta": "10912",
+          "d": "14016",
+          "delta": "1.00029610735756",
+          "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=14016, norm=2, tag='frontend_state')",
+          "red": "4.59674975802851e848",
+          "rop": "4.59674975802851e848",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^2819.2, red: ≈2^2819.2, δ: 1.000296, β: 10912, d: 14016, tag: euclidean",
+        "rop": "4.59674975802851e848",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 260776,
+      "role": {
+        "beta": 8192,
+        "coefficient_columns_m": 14016,
+        "coefficient_rows_n": 2048,
+        "columns": 219,
+        "matrix_id": "frontend_state",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "frontend_state",
+        "rows": 32
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.6722936710000003
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 12288,
+          "blocksize": 11555,
+          "delta": "1.00028210249416",
+          "log2_rop": 3305.5539782171386,
+          "raw_fields": {
+            "beta": "11555",
+            "d": "12288",
+            "delta": "1.00028210249416",
+            "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+            "red": "1.17733411834573e995",
+            "rop": "1.17733411834573e995",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^3305.6, red: ≈2^3305.6, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+          "rop": "1.17733411834573e995",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.258555335,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "generated_input_sha256": "e9c9bb4fd2ad31c9a0fcdeb43d578ae425bd38e862c54970e657a9b5ccf4e437",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 12288,
+        "blocksize": 11555,
+        "delta": "1.00028210249416",
+        "log2_rop": 3305.5539782171386,
+        "raw_fields": {
+          "beta": "11555",
+          "d": "12288",
+          "delta": "1.00028210249416",
+          "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+          "red": "1.17733411834573e995",
+          "rop": "1.17733411834573e995",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^3305.6, red: ≈2^3305.6, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+        "rop": "1.17733411834573e995",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 259904,
+      "role": {
+        "beta": 8192,
+        "coefficient_columns_m": 12288,
+        "coefficient_rows_n": 2048,
+        "columns": 192,
+        "matrix_id": "frontend_carrier",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "frontend_carrier",
+        "rows": 32
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.6350205790000008
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 12288,
+          "blocksize": 11555,
+          "delta": "1.00028210249416",
+          "log2_rop": 2981.964405960791,
+          "raw_fields": {
+            "beta": "11555",
+            "d": "12288",
+            "delta": "1.00028210249416",
+            "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+            "red": "4.57859465052249e897",
+            "rop": "4.57859465052249e897",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^2982.0, red: ≈2^2982.0, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+          "rop": "4.57859465052249e897",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.204584468,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "generated_input_sha256": "e9c9bb4fd2ad31c9a0fcdeb43d578ae425bd38e862c54970e657a9b5ccf4e437",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 12288,
+        "blocksize": 11555,
+        "delta": "1.00028210249416",
+        "log2_rop": 2981.964405960791,
+        "raw_fields": {
+          "beta": "11555",
+          "d": "12288",
+          "delta": "1.00028210249416",
+          "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+          "red": "4.57859465052249e897",
+          "rop": "4.57859465052249e897",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^2982.0, red: ≈2^2982.0, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+        "rop": "4.57859465052249e897",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 260392,
+      "role": {
+        "beta": 8192,
+        "coefficient_columns_m": 12288,
+        "coefficient_rows_n": 2048,
+        "columns": 192,
+        "matrix_id": "frontend_carrier",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "frontend_carrier",
+        "rows": 32
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.4835041689999997
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 15123,
+          "blocksize": 10832,
+          "delta": "1.00029795529655",
+          "log2_rop": 3102.0311691488055,
+          "raw_fields": {
+            "beta": "10832",
+            "d": "15123",
+            "delta": "1.00029795529655",
+            "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+            "red": "6.37425448783081e933",
+            "rop": "6.37425448783081e933",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^3102.0, red: ≈2^3102.0, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+          "rop": "6.37425448783081e933",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.223585428,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "generated_input_sha256": "d9e1a8b10a62f8a129996ca61eea8d65c426ffd15792265a5233aef6524789e8",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 15123,
+        "blocksize": 10832,
+        "delta": "1.00029795529655",
+        "log2_rop": 3102.0311691488055,
+        "raw_fields": {
+          "beta": "10832",
+          "d": "15123",
+          "delta": "1.00029795529655",
+          "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+          "red": "6.37425448783081e933",
+          "rop": "6.37425448783081e933",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^3102.0, red: ≈2^3102.0, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+        "rop": "6.37425448783081e933",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "classical",
+      "norm": 2,
+      "peak_rss_kib": 261016,
+      "role": {
+        "beta": 8192,
+        "coefficient_columns_m": 278400,
+        "coefficient_rows_n": 2048,
+        "columns": 4350,
+        "matrix_id": "frontend_auxiliary",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "frontend_auxiliary",
+        "rows": 32
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.725815334
+    },
+    {
+      "MATZOV_fit_extrapolation_beyond_beta_1024": true,
+      "attacks": [
+        {
+          "attack": "lattice",
+          "attack_lattice_dimension": 15123,
+          "blocksize": 10832,
+          "delta": "1.00029795529655",
+          "log2_rop": 2799.155880080865,
+          "raw_fields": {
+            "beta": "10832",
+            "d": "15123",
+            "delta": "1.00029795529655",
+            "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+            "red": "4.26464066293010e842",
+            "rop": "4.26464066293010e842",
+            "tag": "euclidean"
+          },
+          "raw_repr": "rop: ≈2^2799.2, red: ≈2^2799.2, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+          "rop": "4.26464066293010e842",
+          "status": "DONE_FINITE"
+        }
+      ],
+      "cpu_seconds": 4.211479826,
+      "documented_range_status": "EXTRAPOLATED_ABOVE_1024",
+      "estimator_api": "SIS.estimate",
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "generated_input_sha256": "d9e1a8b10a62f8a129996ca61eea8d65c426ffd15792265a5233aef6524789e8",
+      "large_norm_attack_applicable": false,
+      "lowest_reported_attack": {
+        "attack": "lattice",
+        "attack_lattice_dimension": 15123,
+        "blocksize": 10832,
+        "delta": "1.00029795529655",
+        "log2_rop": 2799.155880080865,
+        "raw_fields": {
+          "beta": "10832",
+          "d": "15123",
+          "delta": "1.00029795529655",
+          "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=278400, norm=2, tag='frontend_auxiliary')",
+          "red": "4.26464066293010e842",
+          "rop": "4.26464066293010e842",
+          "tag": "euclidean"
+        },
+        "raw_repr": "rop: ≈2^2799.2, red: ≈2^2799.2, δ: 1.000298, β: 10832, d: 15123, tag: euclidean",
+        "rop": "4.26464066293010e842",
+        "status": "DONE_FINITE"
+      },
+      "memory": null,
+      "model": "quantum",
+      "norm": 2,
+      "peak_rss_kib": 260748,
+      "role": {
+        "beta": 8192,
+        "coefficient_columns_m": 278400,
+        "coefficient_rows_n": 2048,
+        "columns": 4350,
+        "matrix_id": "frontend_auxiliary",
+        "norm": "coefficient_l2",
+        "q": 281474976710597,
+        "ring_degree": 64,
+        "role_id": "frontend_auxiliary",
+        "rows": 32
+      },
+      "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+      "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+      "status": "DONE_FINITE",
+      "stdout_stderr": "",
+      "success_probability": null,
+      "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+      "wall_seconds": 1.474657123
+    }
+  ],
+  "security_estimate_scope": "Heuristic generic lattice attack log2 work estimate, not proven security bits or end-to-end node certification.",
+  "status": "ALL_REGISTERED_MATRICES_ESTIMATED",
+  "task_counts": {
+    "DONE_FINITE": 40
+  },
+  "unresolved_frontend_matrix_ids": [],
+  "upstream_unmodified_at_execution": true,
+  "weakest_among_all_completed_outputs": {
+    "classical": {
+      "attack": "lattice",
+      "attack_lattice_dimension": 4595,
+      "blocksize": 797,
+      "delta": "1.00242302905131",
+      "log2_rop": 255.4902291848914,
+      "matrix_id": "backend_0_A",
+      "raw_fields": {
+        "beta": "797",
+        "d": "4595",
+        "delta": "1.00242302905131",
+        "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+        "red": "8.13247213166908e76",
+        "rop": "8.13247213166908e76",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^255.5, red: ≈2^255.5, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+      "role_id": "0/A",
+      "rop": "8.13247213166908e76",
+      "status": "DONE_FINITE"
+    },
+    "quantum": {
+      "attack": "lattice",
+      "attack_lattice_dimension": 4595,
+      "blocksize": 797,
+      "delta": "1.00242302905131",
+      "log2_rop": 238.7301805869087,
+      "matrix_id": "backend_0_A",
+      "raw_fields": {
+        "beta": "797",
+        "d": "4595",
+        "delta": "1.00242302905131",
+        "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+        "red": "7.32732115404418e71",
+        "rop": "7.32732115404418e71",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^238.7, red: ≈2^238.7, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+      "role_id": "0/A",
+      "rop": "7.32732115404418e71",
+      "status": "DONE_FINITE"
+    }
+  },
+  "weakest_among_completed_backend_outputs": {
+    "classical": {
+      "attack": "lattice",
+      "attack_lattice_dimension": 4595,
+      "blocksize": 797,
+      "delta": "1.00242302905131",
+      "log2_rop": 255.4902291848914,
+      "matrix_id": "backend_0_A",
+      "raw_fields": {
+        "beta": "797",
+        "d": "4595",
+        "delta": "1.00242302905131",
+        "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+        "red": "8.13247213166908e76",
+        "rop": "8.13247213166908e76",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^255.5, red: ≈2^255.5, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+      "role_id": "0/A",
+      "rop": "8.13247213166908e76",
+      "status": "DONE_FINITE"
+    },
+    "quantum": {
+      "attack": "lattice",
+      "attack_lattice_dimension": 4595,
+      "blocksize": 797,
+      "delta": "1.00242302905131",
+      "log2_rop": 238.7301805869087,
+      "matrix_id": "backend_0_A",
+      "raw_fields": {
+        "beta": "797",
+        "d": "4595",
+        "delta": "1.00242302905131",
+        "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+        "red": "7.32732115404418e71",
+        "rop": "7.32732115404418e71",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^238.7, red: ≈2^238.7, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+      "role_id": "0/A",
+      "rop": "7.32732115404418e71",
+      "status": "DONE_FINITE"
+    }
+  },
+  "weakest_full_node": {
+    "classical": {
+      "attack": "lattice",
+      "attack_lattice_dimension": 4595,
+      "blocksize": 797,
+      "delta": "1.00242302905131",
+      "log2_rop": 255.4902291848914,
+      "matrix_id": "backend_0_A",
+      "raw_fields": {
+        "beta": "797",
+        "d": "4595",
+        "delta": "1.00242302905131",
+        "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+        "red": "8.13247213166908e76",
+        "rop": "8.13247213166908e76",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^255.5, red: ≈2^255.5, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+      "role_id": "0/A",
+      "rop": "8.13247213166908e76",
+      "status": "DONE_FINITE"
+    },
+    "quantum": {
+      "attack": "lattice",
+      "attack_lattice_dimension": 4595,
+      "blocksize": 797,
+      "delta": "1.00242302905131",
+      "log2_rop": 238.7301805869087,
+      "matrix_id": "backend_0_A",
+      "raw_fields": {
+        "beta": "797",
+        "d": "4595",
+        "delta": "1.00242302905131",
+        "problem": "SISParameters(n=1536, q=281474976710597, length_bound=4567851477, m=116544, norm=2, tag='backend_0_A')",
+        "red": "7.32732115404418e71",
+        "rop": "7.32732115404418e71",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^238.7, red: ≈2^238.7, δ: 1.002423, β: 797, d: 4595, tag: euclidean",
+      "role_id": "0/A",
+      "rop": "7.32732115404418e71",
+      "status": "DONE_FINITE"
+    }
+  },
+  "weakest_full_node_status": "ALL_20_MATRICES_FINITE"
+}

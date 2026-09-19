@@ -1,0 +1,396 @@
+{
+  "accumulator": {
+    "E_arbitrary_only_if_Q_z_equals_E": true,
+    "equations": "Q(z)=E",
+    "u_and_x_public": true
+  },
+  "compiler_policy": {
+    "arithmetic": "Inline affine expressions into R1CS linear forms; introduce canonical K wires for the 36 products in Q(z_star).",
+    "canonical_range": "48 LSB-first bits per Fq coefficient; e_47..e_0 Boolean prefix helpers, e_48=constant 1.",
+    "fresh_checks": "u=1, E=0 and z higher extension components zero; input Q(z_i)=E_i is left to the specified Cauchy consistency argument.",
+    "padding": "Constrain every reserved zero coordinate in both the field R1CS and the eventual L0 system."
+  },
+  "coordinate_order": [
+    "u",
+    "x_0",
+    "x_1",
+    "x_2",
+    "x_3",
+    "a_0_0",
+    "b_0_0",
+    "a_0_1",
+    "b_0_1",
+    "a_0_2",
+    "b_0_2",
+    "a_0_3",
+    "b_0_3",
+    "a_0_4",
+    "b_0_4",
+    "a_0_5",
+    "b_0_5",
+    "a_0_6",
+    "b_0_6",
+    "a_0_7",
+    "b_0_7",
+    "a_1_0",
+    "b_1_0",
+    "a_1_1",
+    "b_1_1",
+    "a_1_2",
+    "b_1_2",
+    "a_1_3",
+    "b_1_3",
+    "a_1_4",
+    "b_1_4",
+    "a_1_5",
+    "b_1_5",
+    "a_1_6",
+    "b_1_6",
+    "a_1_7",
+    "b_1_7",
+    "a_2_0",
+    "b_2_0",
+    "a_2_1",
+    "b_2_1",
+    "a_2_2",
+    "b_2_2",
+    "a_2_3",
+    "b_2_3",
+    "a_2_4",
+    "b_2_4",
+    "a_2_5",
+    "b_2_5",
+    "a_2_6",
+    "b_2_6",
+    "a_2_7",
+    "b_2_7",
+    "a_3_0",
+    "b_3_0",
+    "a_3_1",
+    "b_3_1",
+    "a_3_2",
+    "b_3_2",
+    "a_3_3",
+    "b_3_3",
+    "a_3_4",
+    "b_3_4",
+    "a_3_5",
+    "b_3_5",
+    "a_3_6",
+    "b_3_6",
+    "a_3_7",
+    "b_3_7"
+  ],
+  "deterministic_fixture": {
+    "a": "i+j+l+1",
+    "accumulator_u": 2,
+    "accumulator_x": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "b": "2*i+j+3*l+2",
+    "fresh_x": "sum_l a_{j,l}*b_{j,l}",
+    "source_index": "i=0 accumulator, i=1..16 fresh"
+  },
+  "dot_product_length": 8,
+  "dot_products": 4,
+  "family": "Q_j(z)=sum_{l=0}^7 a_{j,l} b_{j,l}-u*x_j, j=0..3",
+  "homogeneity": "Every sparse monomial has degree two.",
+  "mixed_rank_certificate": [
+    {
+      "B_value": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "output": 0,
+      "x_unit_coordinate": 5,
+      "y_unit_coordinate": 6
+    },
+    {
+      "B_value": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "output": 1,
+      "x_unit_coordinate": 21,
+      "y_unit_coordinate": 22
+    },
+    {
+      "B_value": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "output": 2,
+      "x_unit_coordinate": 37,
+      "y_unit_coordinate": 38
+    },
+    {
+      "B_value": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "output": 3,
+      "x_unit_coordinate": 53,
+      "y_unit_coordinate": 54
+    }
+  ],
+  "n": 69,
+  "public_coordinate_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "public_input_indices_excluding_u": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "purpose": "Synthetic concrete-instantiation witness family; not a performance workload or application contribution.",
+  "r": 4,
+  "relation_id": "four_public_dot_products_length_8_v1",
+  "relation_spec_sha256": "a869ec90305004b9550885037714dea99a7b542d4ec7855e94ef32c2ee9ef25f",
+  "sparse_Q_monomials": [
+    {
+      "coefficient": 1,
+      "left": 5,
+      "output": 0,
+      "right": 6
+    },
+    {
+      "coefficient": 1,
+      "left": 7,
+      "output": 0,
+      "right": 8
+    },
+    {
+      "coefficient": 1,
+      "left": 9,
+      "output": 0,
+      "right": 10
+    },
+    {
+      "coefficient": 1,
+      "left": 11,
+      "output": 0,
+      "right": 12
+    },
+    {
+      "coefficient": 1,
+      "left": 13,
+      "output": 0,
+      "right": 14
+    },
+    {
+      "coefficient": 1,
+      "left": 15,
+      "output": 0,
+      "right": 16
+    },
+    {
+      "coefficient": 1,
+      "left": 17,
+      "output": 0,
+      "right": 18
+    },
+    {
+      "coefficient": 1,
+      "left": 19,
+      "output": 0,
+      "right": 20
+    },
+    {
+      "coefficient": -1,
+      "left": 0,
+      "output": 0,
+      "right": 1
+    },
+    {
+      "coefficient": 1,
+      "left": 21,
+      "output": 1,
+      "right": 22
+    },
+    {
+      "coefficient": 1,
+      "left": 23,
+      "output": 1,
+      "right": 24
+    },
+    {
+      "coefficient": 1,
+      "left": 25,
+      "output": 1,
+      "right": 26
+    },
+    {
+      "coefficient": 1,
+      "left": 27,
+      "output": 1,
+      "right": 28
+    },
+    {
+      "coefficient": 1,
+      "left": 29,
+      "output": 1,
+      "right": 30
+    },
+    {
+      "coefficient": 1,
+      "left": 31,
+      "output": 1,
+      "right": 32
+    },
+    {
+      "coefficient": 1,
+      "left": 33,
+      "output": 1,
+      "right": 34
+    },
+    {
+      "coefficient": 1,
+      "left": 35,
+      "output": 1,
+      "right": 36
+    },
+    {
+      "coefficient": -1,
+      "left": 0,
+      "output": 1,
+      "right": 2
+    },
+    {
+      "coefficient": 1,
+      "left": 37,
+      "output": 2,
+      "right": 38
+    },
+    {
+      "coefficient": 1,
+      "left": 39,
+      "output": 2,
+      "right": 40
+    },
+    {
+      "coefficient": 1,
+      "left": 41,
+      "output": 2,
+      "right": 42
+    },
+    {
+      "coefficient": 1,
+      "left": 43,
+      "output": 2,
+      "right": 44
+    },
+    {
+      "coefficient": 1,
+      "left": 45,
+      "output": 2,
+      "right": 46
+    },
+    {
+      "coefficient": 1,
+      "left": 47,
+      "output": 2,
+      "right": 48
+    },
+    {
+      "coefficient": 1,
+      "left": 49,
+      "output": 2,
+      "right": 50
+    },
+    {
+      "coefficient": 1,
+      "left": 51,
+      "output": 2,
+      "right": 52
+    },
+    {
+      "coefficient": -1,
+      "left": 0,
+      "output": 2,
+      "right": 3
+    },
+    {
+      "coefficient": 1,
+      "left": 53,
+      "output": 3,
+      "right": 54
+    },
+    {
+      "coefficient": 1,
+      "left": 55,
+      "output": 3,
+      "right": 56
+    },
+    {
+      "coefficient": 1,
+      "left": 57,
+      "output": 3,
+      "right": 58
+    },
+    {
+      "coefficient": 1,
+      "left": 59,
+      "output": 3,
+      "right": 60
+    },
+    {
+      "coefficient": 1,
+      "left": 61,
+      "output": 3,
+      "right": 62
+    },
+    {
+      "coefficient": 1,
+      "left": 63,
+      "output": 3,
+      "right": 64
+    },
+    {
+      "coefficient": 1,
+      "left": 65,
+      "output": 3,
+      "right": 66
+    },
+    {
+      "coefficient": 1,
+      "left": 67,
+      "output": 3,
+      "right": 68
+    },
+    {
+      "coefficient": -1,
+      "left": 0,
+      "output": 3,
+      "right": 4
+    }
+  ],
+  "strict_fresh": {
+    "E": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "equations": "Q(z)=0 with the public x_j fixed independently of the supplied witness",
+    "u": 1,
+    "z_base_field": true
+  },
+  "strictness_witness": "Changing a fresh a_{j,0} while fixing its public x_j, b_{j,0}!=0 and E=0 violates Q_j=0.",
+  "y": 4
+}

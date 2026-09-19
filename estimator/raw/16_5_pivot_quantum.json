@@ -1,0 +1,69 @@
+{
+  "attacks": [
+    {
+      "attack": "lattice",
+      "attack_lattice_dimension": 2387,
+      "blocksize": 1500,
+      "delta": "1.00149577464608",
+      "log2_rop": 414.09683941677366,
+      "raw_fields": {
+        "beta": "1500",
+        "d": "2387",
+        "delta": "1.00149577464608",
+        "problem": "SISParameters(n=256, q=281474976710597, length_bound=1255, m=24576, norm=2, tag='backend_5_pivot')",
+        "red": "4.52449147336326e124",
+        "rop": "4.52449147336326e124",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^414.1, red: ≈2^414.1, δ: 1.001496, β: 1500, d: 2387, tag: euclidean",
+      "rop": "4.52449147336326e124",
+      "status": "DONE_FINITE"
+    }
+  ],
+  "cpu_seconds": 4.181826802,
+  "estimator_api": "SIS.estimate",
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "large_norm_attack_applicable": false,
+  "lowest_reported_attack": {
+    "attack": "lattice",
+    "attack_lattice_dimension": 2387,
+    "blocksize": 1500,
+    "delta": "1.00149577464608",
+    "log2_rop": 414.09683941677366,
+    "raw_fields": {
+      "beta": "1500",
+      "d": "2387",
+      "delta": "1.00149577464608",
+      "problem": "SISParameters(n=256, q=281474976710597, length_bound=1255, m=24576, norm=2, tag='backend_5_pivot')",
+      "red": "4.52449147336326e124",
+      "rop": "4.52449147336326e124",
+      "tag": "euclidean"
+    },
+    "raw_repr": "rop: ≈2^414.1, red: ≈2^414.1, δ: 1.001496, β: 1500, d: 2387, tag: euclidean",
+    "rop": "4.52449147336326e124",
+    "status": "DONE_FINITE"
+  },
+  "memory": null,
+  "model": "quantum",
+  "norm": 2,
+  "peak_rss_kib": 259576,
+  "role": {
+    "beta": 1255,
+    "coefficient_columns_m": 24576,
+    "coefficient_rows_n": 256,
+    "columns": 384,
+    "matrix_id": "backend_5_pivot",
+    "norm": "coefficient_l2",
+    "q": 281474976710597,
+    "ring_degree": 64,
+    "role_id": "5/pivot",
+    "rows": 4
+  },
+  "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+  "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+  "status": "DONE_FINITE",
+  "stdout_stderr": "",
+  "success_probability": null,
+  "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+  "wall_seconds": 1.3449693729999979
+}

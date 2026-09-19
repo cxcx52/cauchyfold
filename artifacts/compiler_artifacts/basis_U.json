@@ -1,0 +1,32 @@
+{
+  "codomain_dimension": 4,
+  "domain_dimension": 4,
+  "field": "K",
+  "matrix": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "proof": "B(e_a[j,0],e_b[j,0])=e_j for j=0..3; hence Y_B=K^4, and U=J=I_4 with JU=I_4."
+}

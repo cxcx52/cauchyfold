@@ -1,0 +1,40 @@
+{
+  "actual_nonzero_reference_counts": {
+    "A": 1358814,
+    "B": 2384833,
+    "C": 278400
+  },
+  "arrays": [
+    "uint32 little-endian row_offsets[unpadded_rows+1]",
+    "uint32 little-endian column_index[stored_entries]",
+    "uint32 little-endian coefficient_id[stored_entries]"
+  ],
+  "binary_header": "<8sQQQQ: CFDCSR01, unpadded_rows, padded_rows, columns, stored_entries",
+  "coefficient_values": "reference_coefficients.json",
+  "implicit_zero_rows": [
+    1351938,
+    2097152
+  ],
+  "matrix_files": [
+    {
+      "format": "CFDCSR01 little-endian CSR with coefficient IDs resolved by compiler_artifacts/reference_coefficients.json; trailing zero rows implicit",
+      "matrix": "A",
+      "path": "compiler_artifacts/r1cs_A.csr",
+      "sha256": "61d250ef4a16eceadf4f4211986d053ef068317fb046580226454f00e54b2e01"
+    },
+    {
+      "format": "CFDCSR01 little-endian CSR with coefficient IDs resolved by compiler_artifacts/reference_coefficients.json; trailing zero rows implicit",
+      "matrix": "B",
+      "path": "compiler_artifacts/r1cs_B.csr",
+      "sha256": "7c887ed26f2c606729ddb165fb3f7b9338e180c9727d4f89cc21a0f9cfdfad7d"
+    },
+    {
+      "format": "CFDCSR01 little-endian CSR with coefficient IDs resolved by compiler_artifacts/reference_coefficients.json; trailing zero rows implicit",
+      "matrix": "C",
+      "path": "compiler_artifacts/r1cs_C.csr",
+      "sha256": "222601231a357243bcf77e7dcc049f4edc390ea75ea07aebcf5729d277423e3a"
+    }
+  ],
+  "template": "coefficient_template.json",
+  "zero_stored_coefficients_policy": "Public coefficients may evaluate to zero for special challenges. Slots and operation counts are retained, preserving a fixed matrix template."
+}

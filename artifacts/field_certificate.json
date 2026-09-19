@@ -1,0 +1,21 @@
+{
+  "extension_polynomial": [
+    2,
+    0,
+    -4,
+    0,
+    1
+  ],
+  "full_factorization_certificate_verified": true,
+  "gcd_x_q2_minus_x_g": [
+    1
+  ],
+  "irreducible_degree_4": true,
+  "not_a_hardness_certificate": true,
+  "prime": 281474976710597,
+  "recursive_prime_nodes": 17,
+  "x_q4_mod_g": [
+    0,
+    1
+  ]
+}

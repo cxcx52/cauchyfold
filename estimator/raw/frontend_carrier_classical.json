@@ -1,0 +1,70 @@
+{
+  "attacks": [
+    {
+      "attack": "lattice",
+      "attack_lattice_dimension": 12288,
+      "blocksize": 11555,
+      "delta": "1.00028210249416",
+      "log2_rop": 3305.5539782171386,
+      "raw_fields": {
+        "beta": "11555",
+        "d": "12288",
+        "delta": "1.00028210249416",
+        "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+        "red": "1.17733411834573e995",
+        "rop": "1.17733411834573e995",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^3305.6, red: ≈2^3305.6, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+      "rop": "1.17733411834573e995",
+      "status": "DONE_FINITE"
+    }
+  ],
+  "cpu_seconds": 4.258555335,
+  "estimator_api": "SIS.estimate",
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "generated_input_sha256": "e9c9bb4fd2ad31c9a0fcdeb43d578ae425bd38e862c54970e657a9b5ccf4e437",
+  "large_norm_attack_applicable": false,
+  "lowest_reported_attack": {
+    "attack": "lattice",
+    "attack_lattice_dimension": 12288,
+    "blocksize": 11555,
+    "delta": "1.00028210249416",
+    "log2_rop": 3305.5539782171386,
+    "raw_fields": {
+      "beta": "11555",
+      "d": "12288",
+      "delta": "1.00028210249416",
+      "problem": "SISParameters(n=2048, q=281474976710597, length_bound=8192, m=12288, norm=2, tag='frontend_carrier')",
+      "red": "1.17733411834573e995",
+      "rop": "1.17733411834573e995",
+      "tag": "euclidean"
+    },
+    "raw_repr": "rop: ≈2^3305.6, red: ≈2^3305.6, δ: 1.000282, β: 11555, d: 12288, tag: euclidean",
+    "rop": "1.17733411834573e995",
+    "status": "DONE_FINITE"
+  },
+  "memory": null,
+  "model": "classical",
+  "norm": 2,
+  "peak_rss_kib": 259904,
+  "role": {
+    "beta": 8192,
+    "coefficient_columns_m": 12288,
+    "coefficient_rows_n": 2048,
+    "columns": 192,
+    "matrix_id": "frontend_carrier",
+    "norm": "coefficient_l2",
+    "q": 281474976710597,
+    "ring_degree": 64,
+    "role_id": "frontend_carrier",
+    "rows": 32
+  },
+  "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+  "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+  "status": "DONE_FINITE",
+  "stdout_stderr": "",
+  "success_probability": null,
+  "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+  "wall_seconds": 1.6350205790000008
+}

@@ -1,0 +1,840 @@
+{
+  "$defs": {
+    "no_nulls": {
+      "else": {
+        "if": {
+          "type": "array"
+        },
+        "then": {
+          "items": {
+            "$ref": "#/$defs/no_nulls"
+          }
+        }
+      },
+      "if": {
+        "type": "object"
+      },
+      "not": {
+        "type": "null"
+      },
+      "then": {
+        "additionalProperties": {
+          "$ref": "#/$defs/no_nulls"
+        }
+      }
+    }
+  },
+  "$id": "urn:cauchyfold:cfdagger-v2:compiler-manifest:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "COMPLETE"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/no_nulls",
+        "properties": {
+          "checks": {
+            "properties": {
+              "all_committed_coordinates_covered_exactly_once": {
+                "const": true
+              },
+              "all_front_matrix_columns_match_segments": {
+                "const": true
+              },
+              "bit_and_canonical_constraints_complete": {
+                "const": true
+              },
+              "field_relations_match_v2_section_10": {
+                "const": true
+              },
+              "field_sumcheck_rounds_le_30": {
+                "const": true
+              },
+              "semantic_basis_checked": {
+                "const": true
+              },
+              "strict_fresh_constraints_complete": {
+                "const": true
+              },
+              "witness_fits_capacity": {
+                "const": true
+              }
+            }
+          },
+          "r1cs": {
+            "properties": {
+              "shape_independent_of_c": {
+                "const": true
+              }
+            }
+          },
+          "semantic": {
+            "properties": {
+              "n": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "r": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "y": {
+                "minimum": 1,
+                "type": "integer"
+              }
+            }
+          },
+          "unresolved_fields": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "arity": {
+      "const": 16
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_committed_coordinates_covered_exactly_once": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "all_front_matrix_columns_match_segments": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "bit_and_canonical_constraints_complete": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "field_relations_match_v2_section_10": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "field_sumcheck_rounds_le_30": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "semantic_basis_checked": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "strict_fresh_constraints_complete": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "witness_fits_capacity": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "all_committed_coordinates_covered_exactly_once",
+        "all_front_matrix_columns_match_segments",
+        "bit_and_canonical_constraints_complete",
+        "field_relations_match_v2_section_10",
+        "field_sumcheck_rounds_le_30",
+        "semantic_basis_checked",
+        "strict_fresh_constraints_complete",
+        "witness_fits_capacity"
+      ],
+      "type": "object"
+    },
+    "compiler": {
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "command",
+        "path",
+        "sha256",
+        "version"
+      ],
+      "type": "object"
+    },
+    "encoding": {
+      "additionalProperties": false,
+      "properties": {
+        "auxiliary_gate_K_values": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "auxiliary_scalar_bits": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "base_coefficient_bits": {
+          "const": 48
+        },
+        "extension_degree": {
+          "const": 4
+        },
+        "helper_policy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ring_degree": {
+          "const": 64
+        },
+        "segments": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "commitment_phase": {
+                "enum": [
+                  "input",
+                  "pre_cauchy",
+                  "post_cauchy_pre_field"
+                ]
+              },
+              "encoded_bits": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "honest_squared_norm_bound": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "matrix_columns": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "matrix_id": {
+                "enum": [
+                  "A_st",
+                  "A_H",
+                  "A_aux"
+                ]
+              },
+              "segment_id": {
+                "enum": [
+                  "accumulator_state",
+                  "fresh_state_01",
+                  "fresh_state_02",
+                  "fresh_state_03",
+                  "fresh_state_04",
+                  "fresh_state_05",
+                  "fresh_state_06",
+                  "fresh_state_07",
+                  "fresh_state_08",
+                  "fresh_state_09",
+                  "fresh_state_10",
+                  "fresh_state_11",
+                  "fresh_state_12",
+                  "fresh_state_13",
+                  "fresh_state_14",
+                  "fresh_state_15",
+                  "fresh_state_16",
+                  "folded_output_state",
+                  "carrier",
+                  "field_auxiliary"
+                ]
+              },
+              "source_bit_mapping_artifact": {
+                "type": "string"
+              },
+              "start_coefficient": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "zero_padding_coefficients": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "commitment_phase",
+              "encoded_bits",
+              "honest_squared_norm_bound",
+              "matrix_columns",
+              "matrix_id",
+              "segment_id",
+              "source_bit_mapping_artifact",
+              "start_coefficient",
+              "zero_padding_coefficients"
+            ],
+            "type": "object"
+          },
+          "maxItems": 20,
+          "minItems": 20,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "uncommitted_constant_coordinates": {
+          "const": 1
+        }
+      },
+      "required": [
+        "auxiliary_gate_K_values",
+        "auxiliary_scalar_bits",
+        "base_coefficient_bits",
+        "extension_degree",
+        "helper_policy",
+        "ring_degree",
+        "segments",
+        "uncommitted_constant_coordinates"
+      ],
+      "type": "object"
+    },
+    "handoff": {
+      "additionalProperties": false,
+      "properties": {
+        "capacity_coefficients": {
+          "const": 1048576
+        },
+        "extra_backend_block_padding": {
+          "const": 320
+        },
+        "fixed_one_coordinate_index": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "fixed_zero_coordinate_ranges": {
+          "description": "Disjoint half-open ranges inside [0,1048576); includes segment zero padding and capacity zero padding, excludes the constant one and backend block padding.",
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "minimum": 0,
+                "type": "integer"
+              }
+            ],
+            "type": "array"
+          },
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "fixed_zero_coordinates_count": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "linear_rows_after_backend_padding": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "linear_rows_before_backend_padding": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "unpadded_coefficients_including_segment_padding_and_constant": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "capacity_coefficients",
+        "extra_backend_block_padding",
+        "fixed_one_coordinate_index",
+        "fixed_zero_coordinate_ranges",
+        "fixed_zero_coordinates_count",
+        "linear_rows_after_backend_padding",
+        "linear_rows_before_backend_padding",
+        "unpadded_coefficients_including_segment_padding_and_constant"
+      ],
+      "type": "object"
+    },
+    "operation_counts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "derivation_artifact": {
+            "type": "string"
+          },
+          "phase": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "unit": {
+            "enum": [
+              "Fq_add",
+              "Fq_mul",
+              "Fq_inv",
+              "K_add",
+              "K_mul",
+              "K_inv",
+              "Rq_add",
+              "Rq_mul",
+              "bounded_scalar_coefficient_mul",
+              "coefficient_add",
+              "Q_evaluation",
+              "B_evaluation",
+              "U_application",
+              "J_application",
+              "bit_comparison",
+              "integer_operation"
+            ]
+          }
+        },
+        "required": [
+          "count",
+          "derivation_artifact",
+          "phase",
+          "scope",
+          "unit"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "parameter_file_sha256": {
+      "const": "1c96801cd990889a26bc14ae8727c4ddec34129812223ee8ab5227ac95ce7291"
+    },
+    "parameter_id": {
+      "const": "CFdagger-v2-I-k16-concrete-v1-compiler-conditional"
+    },
+    "profile": {
+      "const": "I"
+    },
+    "protocol": {
+      "const": "CFdagger_v2"
+    },
+    "r1cs": {
+      "additionalProperties": false,
+      "properties": {
+        "coefficient_field": {
+          "const": "K"
+        },
+        "constraint_count_padded": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "constraint_count_unpadded": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "matrix_artifacts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "format": {
+                "type": "string"
+              },
+              "matrix": {
+                "enum": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "format",
+              "matrix",
+              "path",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "maxItems": 3,
+          "minItems": 3,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "shape_independent_of_c": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "sparse_nnz": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "additionalProperties": false,
+              "properties": {
+                "A": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "B": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "C": {
+                  "minimum": 0,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "A",
+                "B",
+                "C"
+              ],
+              "type": "object"
+            }
+          ]
+        },
+        "sumcheck_rounds": {
+          "maximum": 30,
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "wire_to_bit_coordinate_map_artifact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "coefficient_field",
+        "constraint_count_padded",
+        "constraint_count_unpadded",
+        "matrix_artifacts",
+        "shape_independent_of_c",
+        "sparse_nnz",
+        "sumcheck_rounds",
+        "wire_to_bit_coordinate_map_artifact"
+      ],
+      "type": "object"
+    },
+    "resolved_dimensions": {
+      "additionalProperties": false,
+      "properties": {
+        "auxiliary_honest_opening_bound_squared": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "auxiliary_ring_columns": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "bilinear_image_dimension_r": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "carrier_honest_opening_bound_squared": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "carrier_ring_columns": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "fixed_zero_coordinates_count": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "residual_dimension_y": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "semantic_dimension_n": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "state_honest_opening_bound_squared": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "state_ring_columns": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "sumcheck_rounds": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "auxiliary_honest_opening_bound_squared",
+        "auxiliary_ring_columns",
+        "bilinear_image_dimension_r",
+        "carrier_honest_opening_bound_squared",
+        "carrier_ring_columns",
+        "fixed_zero_coordinates_count",
+        "residual_dimension_y",
+        "semantic_dimension_n",
+        "state_honest_opening_bound_squared",
+        "state_ring_columns",
+        "sumcheck_rounds"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "semantic": {
+      "additionalProperties": false,
+      "properties": {
+        "basis_U_artifact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "basis_U_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fresh_base_field_required": {
+          "const": true
+        },
+        "left_inverse_J_artifact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "left_inverse_J_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "n": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "public_input_K_coordinates": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "r": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "relation_Q_artifact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relation_Q_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "y": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "basis_U_artifact",
+        "basis_U_sha256",
+        "fresh_base_field_required",
+        "left_inverse_J_artifact",
+        "left_inverse_J_sha256",
+        "n",
+        "public_input_K_coordinates",
+        "r",
+        "relation_Q_artifact",
+        "relation_Q_sha256",
+        "y"
+      ],
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "UNRESOLVED_ACTUAL_COMPILER_ABSENT",
+        "COMPLETE"
+      ]
+    },
+    "unresolved_fields": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "arity",
+    "checks",
+    "compiler",
+    "encoding",
+    "handoff",
+    "operation_counts",
+    "parameter_file_sha256",
+    "parameter_id",
+    "profile",
+    "protocol",
+    "r1cs",
+    "resolved_dimensions",
+    "schema_version",
+    "semantic",
+    "status",
+    "unresolved_fields"
+  ],
+  "title": "CFdagger v2 k=16 Profile I compiler output contract",
+  "type": "object",
+  "x-arithmetic-invariants": [
+    "r<=y and public_input_K_coordinates+1<=n; n,y,r>=1",
+    "Exactly accumulator_state, fresh_state_01..16, folded_output_state use A_st; carrier uses A_H; field_auxiliary uses A_aux.",
+    "Each segment uses minimal ring padding: matrix_columns=ceil(encoded_bits/64), zero_padding_coefficients=64*matrix_columns-encoded_bits; all A_st uses have equal lengths and columns.",
+    "Each segment_id occurs exactly once. accumulator_state and fresh_state_01..16 use A_st/input; folded_output_state uses A_st/post_cauchy_pre_field; carrier uses A_H/pre_cauchy; field_auxiliary uses A_aux/post_cauchy_pre_field.",
+    "state encoded_bits=192*(n+y); carrier encoded_bits=3072*r; auxiliary encoded_bits=192*auxiliary_gate_K_values+auxiliary_scalar_bits.",
+    "Segments, uncommitted fixed-one coordinate, and uncommitted zero padding exactly partition 2^20 coefficients.",
+    "fixed_zero_coordinates_count equals disjoint zero ranges length including segment padding; all zero coordinates constrained once in L0.",
+    "linear_rows_before_backend_padding=40973+fixed_zero_coordinates_count; after=before+320.",
+    "constraint_count_padded=2^ceil(log2(max(1,constraint_count_unpadded))); sumcheck_rounds=log2(constraint_count_padded)<=30.",
+    "All matrix dimensions, layout, and template row counts are independent of c; only public coefficient values depend on c.",
+    "Operation counts use explicit units and scopes; no sum across different units; Q/B/U/J costs and sparse public transpose costs covered.",
+    "resolved_dimensions fields are derived aliases: semantic_dimension_n=semantic.n; residual_dimension_y=semantic.y; bilinear_image_dimension_r=semantic.r; fixed_zero_coordinates_count=handoff.fixed_zero_coordinates_count; sumcheck_rounds=r1cs.sumcheck_rounds; per-role columns and honest bounds equal the corresponding segment formulas. They must never be independent inputs.",
+    "Before accepting COMPLETE, verify compiler and Q/U/J artifact SHA256 values, verify the exact A/B/C R1CS artifact set and their SHA256 values, and require every source_bit_mapping_artifact, wire_to_bit_coordinate_map_artifact and operation derivation_artifact to exist. Counts come from the emitted compiler artifacts; a COMPLETE tag alone is not evidence of circuit correctness.",
+    "parameter_id and parameter_file_sha256 bind the exact selected parameters.json bytes, including source/carrier coordinate order, base-coefficient and bit order, and sumcheck point/table convention. The compiler must implement those conventions; hashes are not substitutes for checking them."
+  ]
+}

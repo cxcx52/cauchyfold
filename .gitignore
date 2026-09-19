@@ -1,0 +1,11 @@
+build/
+build-*/
+.reproduction-tmp/
+vendor/
+__pycache__/
+*.py[cod]
+.venv/
+*.tex
+*.cls
+*.bst
+*.pdf

@@ -1,0 +1,20 @@
+{
+  "commands": [
+    "sage -python estimator/run_official_estimator.py --include-ready-frontends --resume"
+  ],
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "executable": "sage -python",
+  "models": [
+    "MATZOV(nn=classical)",
+    "MATZOV(nn=quantum)"
+  ],
+  "numpy": "2.5.3",
+  "path_policy": "Host-specific paths replaced by repository-relative paths; version and model metadata unchanged.",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "sage": "10.9",
+  "scipy": "1.18.0",
+  "upstream_clean": true,
+  "upstream_path": "vendor/lattice-estimator",
+  "wall_timeout_seconds_per_task": 3600
+}

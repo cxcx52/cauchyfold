@@ -1,0 +1,31 @@
+{
+  "base_statistical_term": {
+    "denominator": "365375409332725729550921208179070754913983135744",
+    "numerator": "3"
+  },
+  "classification": "COMPUTED_EXACT_RATIONAL_UPPER_BOUND",
+  "computational_assumption_required_for_this_bound": false,
+  "conditions": [
+    "Legal honest input",
+    "compiler/encoding correctness",
+    "exact independent randomness",
+    "payload-free retries before child submission"
+  ],
+  "layers": 6,
+  "negative_log2_upper_bound_display": 156.41503749927884,
+  "per_layer_projection_exhaustion_bound": {
+    "denominator": "1461501637330902918203684832716283019655932542976",
+    "numerator": "1"
+  },
+  "per_layer_response_exhaustion_bound": {
+    "denominator": "1461501637330902918203684832716283019655932542976",
+    "numerator": "1"
+  },
+  "profile": "I",
+  "scope": "Protocol retry failure; excludes Setup sampling abort, transport faults and implementation errors.",
+  "total_completeness_error_lt_2_minus_156": true,
+  "total_statistical_term": {
+    "denominator": "365375409332725729550921208179070754913983135744",
+    "numerator": "3"
+  }
+}

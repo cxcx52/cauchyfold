@@ -1,0 +1,69 @@
+{
+  "attacks": [
+    {
+      "attack": "lattice",
+      "attack_lattice_dimension": 5906,
+      "blocksize": 2570,
+      "delta": "1.00097698231862",
+      "log2_rop": 687.4260140010149,
+      "raw_fields": {
+        "beta": "2570",
+        "d": "5906",
+        "delta": "1.00097698231862",
+        "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=23040, norm=2, tag='backend_2_D')",
+        "red": "8.62680564879484e206",
+        "rop": "8.62680564879484e206",
+        "tag": "euclidean"
+      },
+      "raw_repr": "rop: ≈2^687.4, red: ≈2^687.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+      "rop": "8.62680564879484e206",
+      "status": "DONE_FINITE"
+    }
+  ],
+  "cpu_seconds": 4.237818337999999,
+  "estimator_api": "SIS.estimate",
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "large_norm_attack_applicable": false,
+  "lowest_reported_attack": {
+    "attack": "lattice",
+    "attack_lattice_dimension": 5906,
+    "blocksize": 2570,
+    "delta": "1.00097698231862",
+    "log2_rop": 687.4260140010149,
+    "raw_fields": {
+      "beta": "2570",
+      "d": "5906",
+      "delta": "1.00097698231862",
+      "problem": "SISParameters(n=1024, q=281474976710597, length_bound=102322, m=23040, norm=2, tag='backend_2_D')",
+      "red": "8.62680564879484e206",
+      "rop": "8.62680564879484e206",
+      "tag": "euclidean"
+    },
+    "raw_repr": "rop: ≈2^687.4, red: ≈2^687.4, δ: 1.000977, β: 2570, d: 5906, tag: euclidean",
+    "rop": "8.62680564879484e206",
+    "status": "DONE_FINITE"
+  },
+  "memory": null,
+  "model": "quantum",
+  "norm": 2,
+  "peak_rss_kib": 259772,
+  "role": {
+    "beta": 102322,
+    "coefficient_columns_m": 23040,
+    "coefficient_rows_n": 1024,
+    "columns": 360,
+    "matrix_id": "backend_2_D",
+    "norm": "coefficient_l2",
+    "q": 281474976710597,
+    "ring_degree": 64,
+    "role_id": "2/D",
+    "rows": 16
+  },
+  "scope": "Generic coefficient-expanded q-ary SIS lattice attack heuristic; module-specific attacks and complete computational reduction not certified.",
+  "screening_vs_128": "NO_BELOW_TARGET_COST_IN_THIS_MODEL",
+  "status": "DONE_FINITE",
+  "stdout_stderr": "",
+  "success_probability": null,
+  "unreported_metrics_reason": "Official Euclidean SIS branch does not report memory or success probability; neither is inferred from infinity-norm mode.",
+  "wall_seconds": 1.5953213989999995
+}

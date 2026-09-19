@@ -1,0 +1,8 @@
+{
+  "field_boundary_roundtrips": 6,
+  "full_node_proof_generated": false,
+  "malformed_inputs_rejected": 8,
+  "packed_symbol_roundtrips": 36,
+  "scope": "Ledger representation checks only; no protocol smoke or benchmark.",
+  "status": "COMPONENT_CODEC_LENGTH_AND_CANONICALITY_CHECKS_PASS"
+}

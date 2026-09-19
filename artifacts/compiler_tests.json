@@ -1,0 +1,213 @@
+{
+  "constraints_by_category": {
+    "Q_linear_output": 4,
+    "Q_product_gates": 36,
+    "canonical_exclude_q": 5656,
+    "canonical_first_difference": 22624,
+    "canonical_prefix_recurrence": 271488,
+    "fixed_zero_handoff_coordinates": 505599,
+    "folded_E": 4,
+    "folded_z": 69,
+    "private_bit_boolean": 542976,
+    "public_coordinates": 90,
+    "strict_fresh_base_field": 3312,
+    "strict_fresh_u_and_E": 80
+  },
+  "evidence_type": "TESTED",
+  "matrix_summary": {
+    "A": {
+      "actual_nonzero_entries": 1358814,
+      "base_field_entries": 1353630,
+      "coefficient_dictionary_entries_used": 192,
+      "columns": 1048576,
+      "extension_entries": 5184,
+      "nonempty_columns": 542977,
+      "nonempty_rows": 1351938,
+      "rows": 2097152,
+      "stored_entries": 1358814,
+      "stored_rows": 1351938
+    },
+    "B": {
+      "actual_nonzero_entries": 2384833,
+      "base_field_entries": 1992001,
+      "coefficient_dictionary_entries_used": 9690,
+      "columns": 1048576,
+      "extension_entries": 392832,
+      "nonempty_columns": 1048576,
+      "nonempty_rows": 1351938,
+      "rows": 2097152,
+      "stored_entries": 2384833,
+      "stored_rows": 1351938
+    },
+    "C": {
+      "actual_nonzero_entries": 278400,
+      "base_field_entries": 273216,
+      "coefficient_dictionary_entries_used": 192,
+      "columns": 1048576,
+      "extension_entries": 5184,
+      "nonempty_columns": 278400,
+      "nonempty_rows": 271524,
+      "rows": 2097152,
+      "stored_entries": 278400,
+      "stored_rows": 1351938
+    }
+  },
+  "randomness_policy": "random.Random is used only for deterministic finite algebra regression, never protocol coins.",
+  "scope": "Finite deterministic compiler regression; not a cryptographic proof or protocol performance benchmark.",
+  "status": "PASS",
+  "test_count": 13,
+  "test_results": [
+    {
+      "details": "17 valid Q(z)=E records; 16 altered fresh witnesses reject with public x and E=0 fixed.",
+      "number_of_cases": 33,
+      "status": "PASS",
+      "test_name": "strict_semantic_relation_and_invalid_witness"
+    },
+    {
+      "details": "Four explicit image basis witnesses and 24 K-valued polarization tests; J=U=identity.",
+      "deterministic_seed": 2026091901,
+      "number_of_cases": 28,
+      "status": "PASS",
+      "test_name": "mixed_basis_reconstruction_and_polarization"
+    },
+    {
+      "details": "All canonical values decode exactly; segment minimal ring packing, helper ranges and capacity match manifest.",
+      "number_of_cases": 5656,
+      "status": "PASS",
+      "test_name": "canonical_encoding_roundtrip_and_packing"
+    },
+    {
+      "details": "Every reserved zero coordinate checked in every case.",
+      "number_of_cases": 2022396,
+      "status": "PASS",
+      "test_name": "fixed_zero_coordinates"
+    },
+    {
+      "details": "All emitted A*b times B*b equals C*b; includes genuine extension-field challenge theta.",
+      "number_of_cases": 5407752,
+      "status": "PASS",
+      "test_name": "actual_sparse_R1CS_evaluation"
+    },
+    {
+      "details": [
+        {
+          "challenge": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "columns": 1048576,
+          "constraints_evaluated": 1351938,
+          "implicit_zero_rows": 745214,
+          "materialized_coefficient_sha256": "0f31083a528c2e3829188d0b845d287074e800178df1e477ac307644a18c63d6",
+          "matrix_layout_sha256": [
+            "61d250ef4a16eceadf4f4211986d053ef068317fb046580226454f00e54b2e01",
+            "7c887ed26f2c606729ddb165fb3f7b9338e180c9727d4f89cc21a0f9cfdfad7d",
+            "222601231a357243bcf77e7dcc049f4edc390ea75ea07aebcf5729d277423e3a"
+          ],
+          "rows": 2097152
+        },
+        {
+          "challenge": [
+            17,
+            0,
+            0,
+            0
+          ],
+          "columns": 1048576,
+          "constraints_evaluated": 1351938,
+          "implicit_zero_rows": 745214,
+          "materialized_coefficient_sha256": "abbbe2021e4174cfc872ed34a495a66d6300ed45fdffab9f9cf1cfe61bdd4ef7",
+          "matrix_layout_sha256": [
+            "61d250ef4a16eceadf4f4211986d053ef068317fb046580226454f00e54b2e01",
+            "7c887ed26f2c606729ddb165fb3f7b9338e180c9727d4f89cc21a0f9cfdfad7d",
+            "222601231a357243bcf77e7dcc049f4edc390ea75ea07aebcf5729d277423e3a"
+          ],
+          "rows": 2097152
+        },
+        {
+          "challenge": [
+            31,
+            0,
+            0,
+            0
+          ],
+          "columns": 1048576,
+          "constraints_evaluated": 1351938,
+          "implicit_zero_rows": 745214,
+          "materialized_coefficient_sha256": "b4bdfcf464f94008bb29ae68a9f5203715b45a85aa088e0272244b488b96e523",
+          "matrix_layout_sha256": [
+            "61d250ef4a16eceadf4f4211986d053ef068317fb046580226454f00e54b2e01",
+            "7c887ed26f2c606729ddb165fb3f7b9338e180c9727d4f89cc21a0f9cfdfad7d",
+            "222601231a357243bcf77e7dcc049f4edc390ea75ea07aebcf5729d277423e3a"
+          ],
+          "rows": 2097152
+        },
+        {
+          "challenge": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "columns": 1048576,
+          "constraints_evaluated": 1351938,
+          "implicit_zero_rows": 745214,
+          "materialized_coefficient_sha256": "890771ccccd69c78fbfd108ece5bd75a52754f4143d9fe9bdacbd4a974cb3f15",
+          "matrix_layout_sha256": [
+            "61d250ef4a16eceadf4f4211986d053ef068317fb046580226454f00e54b2e01",
+            "7c887ed26f2c606729ddb165fb3f7b9338e180c9727d4f89cc21a0f9cfdfad7d",
+            "222601231a357243bcf77e7dcc049f4edc390ea75ea07aebcf5729d277423e3a"
+          ],
+          "rows": 2097152
+        }
+      ],
+      "number_of_cases": 4,
+      "status": "PASS",
+      "test_name": "challenge_independent_compilation_shape"
+    },
+    {
+      "details": "CSR format specifies all trailing rows as empty A/B/C rows; their equation is 0=0.",
+      "number_of_cases": 745214,
+      "status": "PASS",
+      "test_name": "padded_constraints_are_zero_rows"
+    },
+    {
+      "details": "Fresh and output x_0 bit changes reject against public source/folded values.",
+      "number_of_cases": 2,
+      "status": "PASS",
+      "test_name": "public_coordinate_binding_tamper_rejected"
+    },
+    {
+      "details": "q has valid binary bits but fails e_0=0; Boolean checks alone would not suffice.",
+      "number_of_cases": 1,
+      "status": "PASS",
+      "test_name": "noncanonical_q_encoding_rejected"
+    },
+    {
+      "details": "Emitted first comparator accepts 0,1,q-1 and rejects q,q+1,2^48-1; generated helpers are Boolean.",
+      "number_of_cases": 6,
+      "status": "PASS",
+      "test_name": "canonical_comparator_endpoint_cases"
+    },
+    {
+      "details": "64 K coefficients, exactly k*r and 12,288 coefficient bits.",
+      "number_of_cases": 1,
+      "status": "PASS",
+      "test_name": "carrier_layout_dimensions"
+    },
+    {
+      "details": "20 logical commitment uses with exactly three matrix IDs; output aliases A_st.",
+      "number_of_cases": 20,
+      "status": "PASS",
+      "test_name": "no_hidden_commitment_matrix"
+    },
+    {
+      "details": "Each binary matrix reloaded; all offsets, indices, coefficient IDs and dimensions compare exactly.",
+      "number_of_cases": 3,
+      "status": "PASS",
+      "test_name": "CSR_serialize_parse_roundtrip"
+    }
+  ]
+}
