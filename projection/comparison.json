@@ -1,0 +1,81 @@
+{
+  "communication": [
+    {
+      "I": 342690,
+      "N": 342690,
+      "N_minus_I": 0,
+      "metric": "fold_P_to_V.no_retry_bytes",
+      "unit": "bytes"
+    },
+    {
+      "I": 344598,
+      "N": 344598,
+      "N_minus_I": 0,
+      "metric": "fold_P_to_V.maximum_attempts_bytes",
+      "unit": "bytes"
+    },
+    {
+      "I": 482391990,
+      "N": 10341123,
+      "N_minus_I": -472050867,
+      "metric": "fold_V_to_P.no_retry_bytes",
+      "unit": "bytes"
+    },
+    {
+      "I": 75546969966,
+      "N": 18831246,
+      "N_minus_I": -75528138720,
+      "metric": "fold_V_to_P.maximum_attempts_bytes",
+      "unit": "bytes"
+    },
+    {
+      "I": 482734680,
+      "N": 10683813,
+      "N_minus_I": -472050867,
+      "metric": "interactive_total.no_retry_bytes",
+      "unit": "bytes"
+    },
+    {
+      "I": 75547314564,
+      "N": 19175844,
+      "N_minus_I": -75528138720,
+      "metric": "interactive_total.maximum_attempts_bytes",
+      "unit": "bytes"
+    }
+  ],
+  "computational_security_claim": "The saved attack estimates are unchanged because the commitment matrices and kernel radii are unchanged.",
+  "estimator_results_reused": 40,
+  "new_cost_counts": {
+    "all_projection_retries_expansion_hashes_both_parties_upper_bound": 509165190,
+    "copy_restore": "Full checkpoint sizes are explicit cost parameters in runtime_bounds.json.",
+    "no_retry_PCLMUL64_products_both_parties": 6969158280,
+    "no_retry_expansion_hashes_both_parties": 9428985,
+    "no_retry_literal_binary_ANDs_both_parties": 13617948582648,
+    "no_retry_literal_binary_XORs_both_parties": 13617948582648,
+    "explicit_projection_comparator": "../artifacts/operation_counts.json",
+    "unit_prices": "Not assigned; never add field/ring/bit/copy counts into seconds."
+  },
+  "runtime_bound": "runtime_bounds.json",
+  "projection_descriptors_I": 472103424,
+  "projection_descriptors_N": 52557,
+  "same_CRS_setup_joint_distribution": true,
+  "same_adversarial_acceptance_probability_claimed": false,
+  "same_aggregation_randomness": true,
+  "same_challenge_sets": true,
+  "same_compiler_constraints_and_layout": true,
+  "same_concrete_time_bounded_security_claimed": false,
+  "same_extract_or_short_kernel_output": true,
+  "same_folding_relation": true,
+  "same_kernel_radii": true,
+  "same_registered_completeness_bound": true,
+  "same_registered_statistical_bound": true,
+  "same_twenty_MSIS_instances": true,
+  "scope": "Only the projection description and its expansion cost change.",
+  "unchanged_common_operations": [
+    "carrier",
+    "field_front_end",
+    "front_commitments",
+    "initial_relation_operator"
+  ],
+  "whole_protocol_benchmark_run": false
+}

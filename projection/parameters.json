@@ -1,0 +1,176 @@
+[
+  {
+    "FSM_bits": 111,
+    "FSM_state_bound": 1848798616664171300869984700431912,
+    "N": 1048896,
+    "R_bits": 1812492288,
+    "S": 1048576,
+    "T": 905969664,
+    "block_bits": 1186,
+    "depth": 21,
+    "eta": {
+      "denominator": "1427247692705959881058285969449495136382746624",
+      "numerator": "1"
+    },
+    "honest_margin_above_half": {
+      "denominator": "1811939330",
+      "numerator": "1"
+    },
+    "layer": 0,
+    "m": 864,
+    "nisan_error_upper": {
+      "denominator": "421249166674228746791672110734681729275580381602196445017243910144",
+      "numerator": "147574044948565065749"
+    },
+    "norm_slack": 4,
+    "output_blocks_consumed": 1528240,
+    "prefix_hashes_per_scan": 1528239,
+    "seed_bits": 75883,
+    "seed_bytes": 9486
+  },
+  {
+    "FSM_bits": 118,
+    "FSM_state_bound": 210637184921308682045142564215434792,
+    "N": 412800,
+    "R_bits": 713318400,
+    "S": 303555488,
+    "T": 262271941632,
+    "block_bits": 1226,
+    "depth": 20,
+    "eta": {
+      "denominator": "1427247692705959881058285969449495136382746624",
+      "numerator": "1"
+    },
+    "honest_margin_above_half": {
+      "denominator": "524543883266",
+      "numerator": "1"
+    },
+    "layer": 1,
+    "m": 864,
+    "nisan_error_upper": {
+      "denominator": "26328072917139296674479506920917608079723773850137277813577744384",
+      "numerator": "9223377534402428933"
+    },
+    "norm_slack": 4,
+    "output_blocks_consumed": 581826,
+    "prefix_hashes_per_scan": 581825,
+    "seed_bits": 74766,
+    "seed_bytes": 9346
+  },
+  {
+    "FSM_bits": 117,
+    "FSM_state_bound": 88927725928972782633556417278796840,
+    "N": 243840,
+    "R_bits": 421355520,
+    "S": 216957652,
+    "T": 187451411328,
+    "block_bits": 1218,
+    "depth": 19,
+    "eta": {
+      "denominator": "1427247692705959881058285969449495136382746624",
+      "numerator": "1"
+    },
+    "honest_margin_above_half": {
+      "denominator": "374902822658",
+      "numerator": "1"
+    },
+    "layer": 2,
+    "m": 864,
+    "nisan_error_upper": {
+      "denominator": "26328072917139296674479506920917608079723773850137277813577744384",
+      "numerator": "9223377259515084819"
+    },
+    "norm_slack": 4,
+    "output_blocks_consumed": 345941,
+    "prefix_hashes_per_scan": 345940,
+    "seed_bits": 70625,
+    "seed_bytes": 8829
+  },
+  {
+    "FSM_bits": 116,
+    "FSM_state_bound": 50052260684394906489093607051771048,
+    "N": 182016,
+    "R_bits": 314523648,
+    "S": 163590043,
+    "T": 141341797152,
+    "block_bits": 1212,
+    "depth": 18,
+    "eta": {
+      "denominator": "1427247692705959881058285969449495136382746624",
+      "numerator": "1"
+    },
+    "honest_margin_above_half": {
+      "denominator": "282683594306",
+      "numerator": "1"
+    },
+    "layer": 3,
+    "m": 864,
+    "nisan_error_upper": {
+      "denominator": "13164036458569648337239753460458804039861886925068638906788872192",
+      "numerator": "4611686636897959945"
+    },
+    "norm_slack": 4,
+    "output_blocks_consumed": 259508,
+    "prefix_hashes_per_scan": 259507,
+    "seed_bits": 66642,
+    "seed_bytes": 8331
+  },
+  {
+    "FSM_bits": 115,
+    "FSM_state_bound": 34831314554302931411677813360911400,
+    "N": 155648,
+    "R_bits": 268959744,
+    "S": 133127892,
+    "T": 115022498688,
+    "block_bits": 1206,
+    "depth": 18,
+    "eta": {
+      "denominator": "1427247692705959881058285969449495136382746624",
+      "numerator": "1"
+    },
+    "honest_margin_above_half": {
+      "denominator": "230044997378",
+      "numerator": "1"
+    },
+    "layer": 4,
+    "m": 864,
+    "nisan_error_upper": {
+      "denominator": "13164036458569648337239753460458804039861886925068638906788872192",
+      "numerator": "4611686636897959945"
+    },
+    "norm_slack": 4,
+    "output_blocks_consumed": 223019,
+    "prefix_hashes_per_scan": 223018,
+    "seed_bits": 66312,
+    "seed_bytes": 8289
+  },
+  {
+    "FSM_bits": 115,
+    "FSM_state_bound": 29351790964139081100885364923833512,
+    "N": 142464,
+    "R_bits": 246177792,
+    "S": 122566619,
+    "T": 105897558816,
+    "block_bits": 1204,
+    "depth": 18,
+    "eta": {
+      "denominator": "1427247692705959881058285969449495136382746624",
+      "numerator": "1"
+    },
+    "honest_margin_above_half": {
+      "denominator": "211795117634",
+      "numerator": "1"
+    },
+    "layer": 5,
+    "m": 864,
+    "nisan_error_upper": {
+      "denominator": "3291009114642412084309938365114701009965471731267159726697218048",
+      "numerator": "1152922123077419017"
+    },
+    "norm_slack": 4,
+    "output_blocks_consumed": 204467,
+    "prefix_hashes_per_scan": 204466,
+    "seed_bits": 66202,
+    "seed_bytes": 8276
+  }
+]

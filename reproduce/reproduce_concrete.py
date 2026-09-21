@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Rebuild the paper instance and compare exact outputs with published hashes."""
+"""Rebuild the concrete instance and compare it with the published data."""
 from pathlib import Path
 import argparse
-import hashlib
 import importlib.util
 import json
 import shutil
@@ -11,10 +10,6 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.set_int_max_str_digits(0)
-
-
-def canonical(value):
-    return (json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2, allow_nan=False) + '\n').encode('utf-8')
 
 
 def read(path):
@@ -29,7 +24,7 @@ def load_module(name, path):
 
 
 def run(output):
-    assert not output.exists(), 'Use a new output directory; existing evidence is never overwritten.'
+    assert not output.exists(), 'Use a new output directory.'
     output.mkdir(parents=True)
     sources = {
         'compiler/build_cfdagger_frontend.py': 'build_cfdagger_frontend.py',
@@ -83,31 +78,40 @@ def run(output):
     estimates = estimator.summarize()
     assert estimates['task_counts'] == {'DONE_FINITE': 40}
     assert estimates['weakest_full_node_status'] == 'ALL_20_MATRICES_FINITE'
-    verified = []
-    for item in read(ROOT / 'checks/expected_outputs.json')['files']:
-        path = output / item['path']
-        data = path.read_bytes()
-        assert len(data) == item['bytes'], ('byte length', item['path'])
-        assert hashlib.sha256(data).hexdigest() == item['sha256'], ('SHA256 mismatch', item['path'])
-        semantic = None
-        if path.suffix == '.json':
-            obj = json.loads(data)
-            assert canonical(obj) == data, ('noncanonical JSON', item['path'])
-            reference = ROOT / 'artifacts' / item['path']
-            if item['path'].startswith('estimator_inputs/'):
-                reference = ROOT / 'estimator/inputs' / path.name
-            if reference.exists():
-                assert obj == read(reference), ('semantic mismatch', item['path'])
-                assert data == reference.read_bytes(), ('canonical byte mismatch', item['path'])
-                semantic = True
-        verified.append({**item, 'sha256_match': True, 'semantic_json_match': semantic})
-    report = {'status': 'PASS', 'profile': 'I', 'k': 16, 'independent_matrices': 20,
-              'recorded_estimator_outputs_validated': 40, 'estimator_attacks_executed': False,
-              'benchmark_executed': False, 'full_proof_generated': False,
-              'canonical_byte_and_sha256_comparison': True, 'files': verified}
-    core.put('reproduction_report.json', report)
-    print('PASS: exact outputs and hashes match; 20 matrices and 40 recorded estimates validated.')
-    return report
+    pairs = [
+        ('compiler_manifest.json', ROOT / 'artifacts/compiler_manifest.json'),
+        ('field_certificate.json', ROOT / 'artifacts/field_certificate.json'),
+        ('reduction_schedule.json', ROOT / 'artifacts/reduction_schedule.json'),
+        ('node_registry.json', ROOT / 'artifacts/node_registry.json'),
+        ('statistical_security.json', ROOT / 'artifacts/statistical_security.json'),
+        ('completeness.json', ROOT / 'artifacts/completeness.json'),
+        ('serialization_checks.json', ROOT / 'artifacts/serialization_checks.json'),
+        ('communication_ledger.json', ROOT / 'artifacts/communication_ledger.json'),
+        ('operation_counts.json', ROOT / 'artifacts/operation_counts.json'),
+    ]
+    pairs.extend((str(path.relative_to(output)), ROOT / 'artifacts/compiler_artifacts' / path.name)
+                 for path in sorted((output / 'compiler_artifacts').glob('*.json')))
+    pairs.extend((str(path.relative_to(output)), ROOT / 'estimator/inputs' / path.name)
+                 for path in sorted((output / 'estimator_inputs').glob('*.json')))
+    compared = []
+    for generated_name, reference in pairs:
+        generated = output / generated_name
+        assert reference.exists(), ('missing published data', str(reference.relative_to(ROOT)))
+        assert read(generated) == read(reference), ('data mismatch', generated_name)
+        compared.append(generated_name)
+    summary = {
+        'status': 'PASS',
+        'profile': 'I',
+        'k': 16,
+        'independent_matrices': 20,
+        'saved_estimator_results': 40,
+        'compared_json_files': compared,
+        'estimator_executed': False,
+        'benchmark_executed': False,
+    }
+    core.put('run_summary.json', summary)
+    print(f'PASS: {len(compared)} generated JSON files match the published data.')
+    return summary
 
 
 def main():

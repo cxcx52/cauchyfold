@@ -1,0 +1,315 @@
+{
+  "attempts": {
+    "C_i": "short-challenge attempts in1..160",
+    "P_i": "projection attempts in1..160",
+    "statistics": "The worst-case and no-retry ledgers are exact lengths at those attempt counts, not expected communication."
+  },
+  "backend_P_to_V": {
+    "actual_bytes_formula": "303726+sum_i(P_i+C_i)",
+    "fixed_payload_bytes": 303726,
+    "maximum_attempts_bytes": 305646,
+    "no_retry_bytes": 303738,
+    "reference_difference_explanation": "v2 used2+RP+RC bytes per layer as an upper allowance. The selected exact one-tag-per-attempt grammar needs at mostRP+RC,12 fewer bytes across six layers; no protocol object is erased.",
+    "reference_v2_conservative_upper_bytes": 305658
+  },
+  "compiler_variables": {
+    "P0_total_fixed_zero_coordinates_within_handoff_capacity": 505599,
+    "ell_sumcheck_rounds": 21,
+    "missing_definitions": []
+  },
+  "field_messages": {
+    "Cauchy_challenge_V_to_P_bytes": 24,
+    "P_to_V_bytes": 2088,
+    "P_to_V_bytes_formula": "96*ell+72",
+    "V_to_P_bytes": 1008,
+    "V_to_P_bytes_formula": "48*ell"
+  },
+  "fold_P_to_V": {
+    "accumulator_commitment_included": false,
+    "actual_formula": "340662+96*ell+sum_i(P_i+C_i)",
+    "fresh_input_commitments_included": false,
+    "maximum_attempts_bytes": 344598,
+    "maximum_attempts_formula": "342582+96*ell",
+    "no_retry_bytes": 342690,
+    "no_retry_formula": "340674+96*ell"
+  },
+  "fold_V_to_P": {
+    "actual_formula": "Cauchy24+field1008+sum_i(seed_bytes_i*P_i+aggregation_bytes_i+short_bytes_i*C_i)",
+    "aggregation_known_constant_bytes": 1185912,
+    "maximum_attempts_bytes": 18831246,
+    "no_retry_bytes": 10341123,
+    "projection_descriptor_bytes_per_one_attempt_each_layer": 52557,
+    "short_challenge_bytes_per_one_attempt_each_layer": 840
+  },
+  "front_end_commitments": {
+    "carrier_bytes": 12288,
+    "field_auxiliary_bytes": 12288,
+    "folded_output_bytes": 12288,
+    "total_bytes": 36864
+  },
+  "incoming_commitments": {
+    "accumulator_bytes": 12288,
+    "accumulator_count": 1,
+    "fresh_bytes": 196608,
+    "fresh_count": 16,
+    "scope": "Listed independently from fold messages; whether already held or transported is explicit below.",
+    "total_input_commitment_bytes": 208896
+  },
+  "interactive_total": {
+    "application_public_inputs": "The public instance, parameter identifier and CRS are prior public inputs; their application envelope is outside this fold syntax. Source public coordinates are bound by the compiled constraints.",
+    "maximum_attempts_bytes": 19175844,
+    "no_retry_bytes": 10683813,
+    "transport_accumulator_also_add_bytes": 12288,
+    "transport_fresh_commitments_add_bytes": 196608
+  },
+  "layers": [
+    {
+      "accepted_attempt_tag_bytes_formula": "P_0+C_0",
+      "accepted_prover_bytes_max_attempts": 17792,
+      "accepted_prover_bytes_no_retry": 17474,
+      "aggregation_bytes_once": 9859608,
+      "aggregation_bytes_once_formula": "758826+18*P0",
+      "fixed_prover_payload_bytes": 17472,
+      "level": 0,
+      "projection_descriptor_bytes_per_attempt": 9486,
+      "projection_expanded_coefficients": 906246144,
+      "prover_messages": [
+        {
+          "bytes": 6144,
+          "fixed_before": "projection",
+          "name": "u1"
+        },
+        {
+          "bytes": 5184,
+          "fixed_before": "aggregation",
+          "name": "selected_p"
+        },
+        {
+          "bytes": 6144,
+          "fixed_before": "short_challenge",
+          "name": "u2"
+        }
+      ],
+      "short_challenge_bytes_per_attempt": 216,
+      "source_relation_rows": 546892,
+      "source_relation_rows_formula": "41293+P0",
+      "terminal": false,
+      "verifier_bytes_formula": "9486*P_0+9859608+216*C_0",
+      "verifier_bytes_max_attempts": 11411928,
+      "verifier_bytes_no_retry": 9869310
+    },
+    {
+      "accepted_attempt_tag_bytes_formula": "P_1+C_1",
+      "accepted_prover_bytes_max_attempts": 17792,
+      "accepted_prover_bytes_no_retry": 17474,
+      "aggregation_bytes_once": 83574,
+      "aggregation_bytes_once_formula": "83574",
+      "fixed_prover_payload_bytes": 17472,
+      "level": 1,
+      "projection_descriptor_bytes_per_attempt": 9346,
+      "projection_expanded_coefficients": 356659200,
+      "prover_messages": [
+        {
+          "bytes": 6144,
+          "fixed_before": "projection",
+          "name": "u1"
+        },
+        {
+          "bytes": 5184,
+          "fixed_before": "aggregation",
+          "name": "selected_p"
+        },
+        {
+          "bytes": 6144,
+          "fixed_before": "short_challenge",
+          "name": "u2"
+        }
+      ],
+      "short_challenge_bytes_per_attempt": 144,
+      "source_relation_rows": 3779,
+      "source_relation_rows_formula": "3779",
+      "terminal": false,
+      "verifier_bytes_formula": "9346*P_1+83574+144*C_1",
+      "verifier_bytes_max_attempts": 1601974,
+      "verifier_bytes_no_retry": 93064
+    },
+    {
+      "accepted_attempt_tag_bytes_formula": "P_2+C_2",
+      "accepted_prover_bytes_max_attempts": 17792,
+      "accepted_prover_bytes_no_retry": 17474,
+      "aggregation_bytes_once": 88182,
+      "aggregation_bytes_once_formula": "88182",
+      "fixed_prover_payload_bytes": 17472,
+      "level": 2,
+      "projection_descriptor_bytes_per_attempt": 8829,
+      "projection_expanded_coefficients": 210677760,
+      "prover_messages": [
+        {
+          "bytes": 6144,
+          "fixed_before": "projection",
+          "name": "u1"
+        },
+        {
+          "bytes": 5184,
+          "fixed_before": "aggregation",
+          "name": "selected_p"
+        },
+        {
+          "bytes": 6144,
+          "fixed_before": "short_challenge",
+          "name": "u2"
+        }
+      ],
+      "short_challenge_bytes_per_attempt": 120,
+      "source_relation_rows": 4035,
+      "source_relation_rows_formula": "4035",
+      "terminal": false,
+      "verifier_bytes_formula": "8829*P_2+88182+120*C_2",
+      "verifier_bytes_max_attempts": 1520022,
+      "verifier_bytes_no_retry": 97131
+    },
+    {
+      "accepted_attempt_tag_bytes_formula": "P_3+C_3",
+      "accepted_prover_bytes_max_attempts": 17792,
+      "accepted_prover_bytes_no_retry": 17474,
+      "aggregation_bytes_once": 83574,
+      "aggregation_bytes_once_formula": "83574",
+      "fixed_prover_payload_bytes": 17472,
+      "level": 3,
+      "projection_descriptor_bytes_per_attempt": 8331,
+      "projection_expanded_coefficients": 157261824,
+      "prover_messages": [
+        {
+          "bytes": 6144,
+          "fixed_before": "projection",
+          "name": "u1"
+        },
+        {
+          "bytes": 5184,
+          "fixed_before": "aggregation",
+          "name": "selected_p"
+        },
+        {
+          "bytes": 6144,
+          "fixed_before": "short_challenge",
+          "name": "u2"
+        }
+      ],
+      "short_challenge_bytes_per_attempt": 96,
+      "source_relation_rows": 3779,
+      "source_relation_rows_formula": "3779",
+      "terminal": false,
+      "verifier_bytes_formula": "8331*P_3+83574+96*C_3",
+      "verifier_bytes_max_attempts": 1431894,
+      "verifier_bytes_no_retry": 92001
+    },
+    {
+      "accepted_attempt_tag_bytes_formula": "P_4+C_4",
+      "accepted_prover_bytes_max_attempts": 17792,
+      "accepted_prover_bytes_no_retry": 17474,
+      "aggregation_bytes_once": 85878,
+      "aggregation_bytes_once_formula": "85878",
+      "fixed_prover_payload_bytes": 17472,
+      "level": 4,
+      "projection_descriptor_bytes_per_attempt": 8289,
+      "projection_expanded_coefficients": 134479872,
+      "prover_messages": [
+        {
+          "bytes": 6144,
+          "fixed_before": "projection",
+          "name": "u1"
+        },
+        {
+          "bytes": 5184,
+          "fixed_before": "aggregation",
+          "name": "selected_p"
+        },
+        {
+          "bytes": 6144,
+          "fixed_before": "short_challenge",
+          "name": "u2"
+        }
+      ],
+      "short_challenge_bytes_per_attempt": 96,
+      "source_relation_rows": 3907,
+      "source_relation_rows_formula": "3907",
+      "terminal": false,
+      "verifier_bytes_formula": "8289*P_4+85878+96*C_4",
+      "verifier_bytes_max_attempts": 1427478,
+      "verifier_bytes_no_retry": 94263
+    },
+    {
+      "accepted_attempt_tag_bytes_formula": "P_5+C_5",
+      "accepted_prover_bytes_max_attempts": 216686,
+      "accepted_prover_bytes_no_retry": 216368,
+      "aggregation_bytes_once": 85878,
+      "aggregation_bytes_once_formula": "85878",
+      "fixed_prover_payload_bytes": 216366,
+      "level": 5,
+      "projection_descriptor_bytes_per_attempt": 8276,
+      "projection_expanded_coefficients": 123088896,
+      "prover_messages": [
+        {
+          "bytes": 55296,
+          "fixed_before": "projection",
+          "name": "t_1,...,t_(s-1)"
+        },
+        {
+          "bytes": 1536,
+          "fixed_before": "projection",
+          "name": "pivot_digest"
+        },
+        {
+          "bytes": 5184,
+          "fixed_before": "aggregation",
+          "name": "selected_p"
+        },
+        {
+          "bytes": 32238,
+          "fixed_before": "short_challenge",
+          "name": "symmetric_h_except_ct_h00"
+        },
+        {
+          "bytes": 122112,
+          "fixed_before": "terminal_verification",
+          "name": "raw_canonical_z"
+        }
+      ],
+      "short_challenge_bytes_per_attempt": 168,
+      "source_relation_rows": 3907,
+      "source_relation_rows_formula": "3907",
+      "terminal": true,
+      "verifier_bytes_formula": "8276*P_5+85878+168*C_5",
+      "verifier_bytes_max_attempts": 1436918,
+      "verifier_bytes_no_retry": 94322
+    }
+  ],
+  "measurement_status": "syntax-level exact communication, not measured serialized proof files",
+  "profile": "N",
+  "projection_encoding": "full independent Nisan seed, LSB-first, byte padding checked, no cryptographic seed expansion assumption",
+  "protocol": "CFdagger v2 Profile N, k=16; section-19 terminal; raw terminal coefficients",
+  "sampling_coins_vs_wire": "Wire lengths are for sampled values. Uniform Fq/K/five-symbol sampling can use exact rejection sampling, whose consumed random-bit count is variable. Each projection attempt sends one complete independent Nisan seed; the expanded lazy-ternary matrix is reconstructed locally and is not serialized.",
+  "scope": "Syntax-level exact interactive communication; no measured proof file.",
+  "serialization": {
+    "Fq": "six-byte little-endian integer in [0,q); reject other values",
+    "K": "four canonical Fq coefficients in basis [1,u,u^2,u^3]",
+    "Rq": "64 canonical Fq coefficients, increasing powers of X",
+    "bit_padding": "Each message separately byte-aligned; all unused high bits zero",
+    "parameter_id": "Already public; not resent inside a fold. If transported, its actual bytes are a separate application envelope.",
+    "projection_seed": "Complete Nisan seed, LSB-first; each layer is byte-aligned separately and unused high bits must be zero. Expanded trits are internal values, not wire fields.",
+    "raw_terminal": "Exactly d*n_T canonical Fq coefficients; no Rice/arithmetic codec.",
+    "retry_framing": "One byte after each projection or short-challenge attempt:00=payload-free RETRY;01=ACCEPT. ACCEPT projection is followed by p; ACCEPT nonterminal response enters child, ACCEPT terminal response is followed by z.",
+    "short_challenge": "3-bit LSB-first code maps0..4 to -2..2;5..7 invalid; terminal first ring element must be nonzero",
+    "sumcheck": "Four K coefficients per degree-at-most-three round; no erasure"
+  },
+  "status": "EXACT_ACCEPTED_TRANSCRIPT_LEDGER",
+  "unchanged": [
+    "incoming commitments",
+    "P->V payloads and retry tags",
+    "field messages",
+    "aggregation randomness",
+    "short challenges",
+    "CRS"
+  ],
+  "unresolved": []
+}

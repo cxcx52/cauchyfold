@@ -1,0 +1,1944 @@
+{
+  "carrier": {
+    "algorithm_model": {
+      "basis_map": "U and J are identity maps on K^4; each application copies 4 K coordinates, with no field multiplication or addition.",
+      "polynomial_constants": "in Fq because poles and interpolation nodes are in Fq",
+      "polynomial_multiply": "dense schoolbook; zero-initialized accumulators; no sparsity shortcuts",
+      "polynomial_remainder": "monic schoolbook division; fixed padded degrees; leading cancellation free",
+      "scalar_multiply_unit": "K_by_Fq multiplication = extension_degree base-field multiplications",
+      "semantic_B": {
+        "K_additions_or_subtractions": 68,
+        "K_multiplications": 72
+      },
+      "semantic_Q": {
+        "K_additions_or_subtractions": 32,
+        "K_multiplications": 36
+      },
+      "source_scales": "all lambda_i=1",
+      "unresolved_evaluation_costs": []
+    },
+    "asymptotic_fast_carrier": "Multipoint ambient-Y construction: O((n+y)*M(k)*log(k+1)+k*C_Q), followed by k image-basis conversions of cost C_J each. Pole-residue: O((n+r)*M(k)*log(k+1)+k*(C_B+C_J)). Here J=I_4 contributes only coordinate copies.",
+    "contribution_scope": "Only construction algorithms and their costs. Carrier representation and minimum width belong to the Resource companion paper.",
+    "dimensions": {
+      "n": 69,
+      "r": 4,
+      "y": 4
+    },
+    "multipoint": {
+      "K_additions": 48112,
+      "K_additions_formula": "624*n+1264*y",
+      "K_by_Fq_multiplications": 43372,
+      "K_by_Fq_multiplications_formula": "560*n+1183*y",
+      "basis_map_evaluations": 16,
+      "basis_maps_applied_after": "interpolating the ambient-Y carrier coefficients",
+      "map_arithmetic": {
+        "B_evaluations": 0,
+        "J_K_coordinate_copies": 64,
+        "J_applications": 16,
+        "J_field_additions": 0,
+        "J_field_multiplications": 0,
+        "K_additions_or_subtractions": 512,
+        "K_multiplications": 576,
+        "Q_evaluations": 16
+      },
+      "online_inversions": 0,
+      "online_typed_totals": {
+        "J_K_coordinate_copies": 64,
+        "J_applications": 16,
+        "K_additions_or_subtractions": 48624,
+        "K_by_Fq_multiplications": 43372,
+        "K_multiplications": 576
+      },
+      "quadratic_map_evaluations_if_source_values_cached": 16,
+      "quadratic_map_evaluations_if_source_values_uncached": 33,
+      "uncached_source_values_additional_arithmetic": {
+        "K_additions_or_subtractions": 544,
+        "K_multiplications": 612,
+        "Q_evaluations": 17,
+        "scope": "Added only if the 17 honest source Q-values are not already available."
+      }
+    },
+    "pole_residue": {
+      "K_additions": 45632,
+      "K_additions_formula": "640*n+368*r",
+      "K_by_Fq_multiplications": 41995,
+      "K_by_Fq_multiplications_formula": "591*n+304*r",
+      "basis_map_evaluations": 16,
+      "basis_maps_applied_after": "computing the k bilinear residues, before reconstructing coefficients",
+      "bilinear_map_evaluations": 16,
+      "map_arithmetic": {
+        "B_evaluations": 16,
+        "J_K_coordinate_copies": 64,
+        "J_applications": 16,
+        "J_field_additions": 0,
+        "J_field_multiplications": 0,
+        "K_additions_or_subtractions": 1088,
+        "K_multiplications": 1152,
+        "Q_evaluations": 0
+      },
+      "online_inversions": 0,
+      "online_typed_totals": {
+        "J_K_coordinate_copies": 64,
+        "J_applications": 16,
+        "K_additions_or_subtractions": 46720,
+        "K_by_Fq_multiplications": 41995,
+        "K_multiplications": 1152
+      }
+    },
+    "precomputation": {
+      "basis_dependent_setup": "The compiler exports U=J=I_4 explicitly; generating the two 4-by-4 identity artifacts needs 32 integer entries. Q/B sparse monomials are given in relation_spec.json and the relation artifact.",
+      "constant_set": [
+        "pole product tree",
+        "interpolation-node product tree",
+        "D',D''",
+        "D'(xi_i)^-1",
+        "D''(xi_i)/(2D'(xi_i))",
+        "D(tau_i),D'(tau_i),D(tau_i)^-1,D(tau_i)^-2",
+        "interpolation derivative reciprocals",
+        "P_i and P_ij for the streaming reference"
+      ],
+      "joint_fast_algorithm_constant_builder": {
+        "Fq_additions_or_subtractions": 1630,
+        "Fq_inversions": 48,
+        "Fq_multiplications": 1693,
+        "model": "Build both scalar product trees schoolbook; formal derivatives including multiply-by-one; Horner evaluations; individual inverses; inverse-two is the public integer(q+1)/2. This prepares constants shared by both fast algorithms once, not once per witness."
+      },
+      "scope": "One-time public constants; excluded from the online counts and must not be described as free end-to-end work.",
+      "streaming_reference_extra_constants": {
+        "Fq_additions": 29040,
+        "Fq_multiplications": 29040,
+        "model": "Independently multiply the k-1 or k-2 selected linear factors for every P_i/P_ij, starting with polynomial1; no shared-factor optimization."
+      }
+    },
+    "scope": "Exact online loop counts for specified reference polynomial algorithms; public scalar polynomial constants are precomputed separately.",
+    "streaming_pair_reference": {
+      "K_additions": 8224,
+      "K_additions_formula": "2056*r",
+      "K_by_Fq_multiplications": 8224,
+      "K_by_Fq_multiplications_formula": "2056*r",
+      "basis_map_evaluations": 136,
+      "bilinear_map_evaluations": 136,
+      "map_arithmetic": {
+        "B_evaluations": 136,
+        "J_K_coordinate_copies": 544,
+        "J_applications": 136,
+        "J_field_additions": 0,
+        "J_field_multiplications": 0,
+        "K_additions_or_subtractions": 9248,
+        "K_multiplications": 9792,
+        "Q_evaluations": 0
+      },
+      "online_typed_totals": {
+        "J_K_coordinate_copies": 544,
+        "J_applications": 136,
+        "K_additions_or_subtractions": 17472,
+        "K_by_Fq_multiplications": 8224,
+        "K_multiplications": 9792
+      },
+      "scope": "Stream each mixed B term through J and accumulate its public P_i or P_ij coefficients; no pair table is stored."
+    },
+    "structural_tree_counts_per_coordinate": {
+      "numerator_tree_additions": 368,
+      "numerator_tree_multiplications": 304,
+      "remainder_tree_additions": 240,
+      "remainder_tree_multiplications": 240
+    }
+  },
+  "compiler_operation_manifest": {
+    "compiler_counts": [
+      {
+        "count": 36,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "semantic_Q_single_evaluation",
+        "scope": "one sparse Q evaluation",
+        "unit": "K_mul"
+      },
+      {
+        "count": 32,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "semantic_Q_single_evaluation",
+        "scope": "one sparse Q evaluation",
+        "unit": "K_add"
+      },
+      {
+        "count": 72,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "semantic_B_single_evaluation",
+        "scope": "one polarized B evaluation",
+        "unit": "K_mul"
+      },
+      {
+        "count": 68,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "semantic_B_single_evaluation",
+        "scope": "one polarized B evaluation",
+        "unit": "K_add"
+      },
+      {
+        "count": 271488,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "canonical_encoding",
+        "scope": "one bit extraction per canonical value bit; not a field operation",
+        "unit": "integer_operation"
+      },
+      {
+        "count": 271488,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "canonical_comparator_helpers",
+        "scope": "one bit comparison per e_j prefix update",
+        "unit": "bit_comparison"
+      },
+      {
+        "count": 271488,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "canonical_comparator_helpers",
+        "scope": "prefix update of Boolean integers, not a general field multiplication",
+        "unit": "integer_operation"
+      },
+      {
+        "count": 1232,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "folded_output_construction",
+        "scope": "fold z, source residuals, and preweighted carrier contribution",
+        "unit": "K_mul"
+      },
+      {
+        "count": 1232,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "folded_output_construction",
+        "scope": "fold z, source residuals, and preweighted carrier contribution",
+        "unit": "K_add"
+      },
+      {
+        "count": 36,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "output_product_gate_values",
+        "scope": "36 product gate values; affine constraints use existing output coordinates",
+        "unit": "K_mul"
+      },
+      {
+        "count": 96,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "public_challenge_coefficients",
+        "scope": "weights, squares, D inverse, carrier powers and folded public coordinates",
+        "unit": "K_add"
+      },
+      {
+        "count": 175,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "public_challenge_coefficients",
+        "scope": "weights, squares, D inverse, carrier powers and folded public coordinates",
+        "unit": "K_mul"
+      },
+      {
+        "count": 1,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "public_challenge_coefficients",
+        "scope": "weights, squares, D inverse, carrier powers and folded public coordinates",
+        "unit": "K_inv"
+      },
+      {
+        "count": 6876,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_A_application",
+        "scope": "row accumulation initialized with first term; scalar products reported separately in derivation",
+        "unit": "K_add"
+      },
+      {
+        "count": 1358814,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_A_transpose",
+        "scope": "K coefficient times K equality weight",
+        "unit": "K_mul"
+      },
+      {
+        "count": 815837,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_A_transpose",
+        "scope": "column accumulation initialized with first term",
+        "unit": "K_add"
+      },
+      {
+        "count": 1032895,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_B_application",
+        "scope": "row accumulation initialized with first term; scalar products reported separately in derivation",
+        "unit": "K_add"
+      },
+      {
+        "count": 2384833,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_B_transpose",
+        "scope": "K coefficient times K equality weight",
+        "unit": "K_mul"
+      },
+      {
+        "count": 1336257,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_B_transpose",
+        "scope": "column accumulation initialized with first term",
+        "unit": "K_add"
+      },
+      {
+        "count": 6876,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_C_application",
+        "scope": "row accumulation initialized with first term; scalar products reported separately in derivation",
+        "unit": "K_add"
+      },
+      {
+        "count": 278400,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_C_transpose",
+        "scope": "K coefficient times K equality weight",
+        "unit": "K_mul"
+      },
+      {
+        "count": 0,
+        "derivation_artifact": "compiler_artifacts/operation_derivation.json",
+        "phase": "sparse_C_transpose",
+        "scope": "column accumulation initialized with first term",
+        "unit": "K_add"
+      }
+    ],
+    "derivation": {
+      "affine_inlining_justification": "Equation (10.1) permits arbitrary K-linear forms in each factor. Eliminating addition gates by substitution in those forms preserves equations and introduces no new commitment. Quadratic products still have canonical gate wires.",
+      "basis_maps": {
+        "J": {
+          "K_add": 0,
+          "K_mul": 0,
+          "coordinate_copies": 4
+        },
+        "U": {
+          "K_add": 0,
+          "K_mul": 0,
+          "coordinate_copies": 4
+        },
+        "reason": "Identity maps, implemented as views/copies, not arithmetic matrices."
+      },
+      "compiler_generation": {
+        "canonical_bit_extractions": 271488,
+        "coefficient_id_writes": 4022047,
+        "index_writes": 4022047,
+        "matrix_generation_not_protocol_online_arithmetic": true,
+        "prefix_steps": 271488,
+        "row_pointer_writes": 4055817
+      },
+      "constraint_sources": {
+        "R1CS": "v2 §10.2 (10.1)",
+        "canonical": "v2 §1.2",
+        "handoff": "v2 (10.4)",
+        "post_c_relation": "v2 §10.1",
+        "zero_row_padding": "v2 §10.3"
+      },
+      "constraints_by_category": {
+        "Q_linear_output": 4,
+        "Q_product_gates": 36,
+        "canonical_exclude_q": 5656,
+        "canonical_first_difference": 22624,
+        "canonical_prefix_recurrence": 271488,
+        "fixed_zero_handoff_coordinates": 505599,
+        "folded_E": 4,
+        "folded_z": 69,
+        "private_bit_boolean": 542976,
+        "public_coordinates": 90,
+        "strict_fresh_base_field": 3312,
+        "strict_fresh_u_and_E": 80
+      },
+      "encoding": {
+        "K_values": 1414,
+        "base_coefficients": 5656,
+        "canonical_value_bits": 271488,
+        "fixed_zeros": 505599,
+        "prefix_helper_bits": 271488,
+        "total_private_bits": 542976,
+        "uncommitted_one": 1
+      },
+      "matrix_application_model": "Each stored coefficient times an Fq witness coordinate is one K-by-Fq scalar product; row additions are stored_entries minus nonempty_rows. A transpose with K-valued equality weights uses one K multiplication per slot and stored_entries minus nonempty_columns additions. Explicit public zero slots are processed.",
+      "matrix_summary": {
+        "A": {
+          "actual_nonzero_entries": 1358814,
+          "base_field_entries": 1353630,
+          "coefficient_dictionary_entries_used": 192,
+          "columns": 1048576,
+          "extension_entries": 5184,
+          "nonempty_columns": 542977,
+          "nonempty_rows": 1351938,
+          "rows": 2097152,
+          "stored_entries": 1358814,
+          "stored_rows": 1351938
+        },
+        "B": {
+          "actual_nonzero_entries": 2384833,
+          "base_field_entries": 1992001,
+          "coefficient_dictionary_entries_used": 9690,
+          "columns": 1048576,
+          "extension_entries": 392832,
+          "nonempty_columns": 1048576,
+          "nonempty_rows": 1351938,
+          "rows": 2097152,
+          "stored_entries": 2384833,
+          "stored_rows": 1351938
+        },
+        "C": {
+          "actual_nonzero_entries": 278400,
+          "base_field_entries": 273216,
+          "coefficient_dictionary_entries_used": 192,
+          "columns": 1048576,
+          "extension_entries": 5184,
+          "nonempty_columns": 278400,
+          "nonempty_rows": 271524,
+          "rows": 2097152,
+          "stored_entries": 278400,
+          "stored_rows": 1351938
+        }
+      },
+      "public_coefficients": {
+        "challenge_data": {
+          "K_add": 96,
+          "K_inv": 1,
+          "K_mul": 175
+        },
+        "description": "16 c-pole subtractions; prefix 16 multiplies; backward batch inverse 32; 16 squares; 16 carrier Dinv*c^t multiplies and 15 powers; 5 public coordinates each 16 multiply/add. Inversion is a primitive K_inv.",
+        "dictionary_materialization": {
+          "literal_recipe_count": 384,
+          "public_recipe_count": 90,
+          "weighted_recipe_count": 9216
+        },
+        "dictionary_policy": "One K multiplication per weighted recipe in the literal implementation; signs/powers-of-two are public constants. Copy literal recipes; negate each public recipe with four Fq negations."
+      },
+      "semantic_B": {
+        "K_add": 68,
+        "K_mul": 72
+      },
+      "semantic_Q": {
+        "K_add": 32,
+        "K_mul": 36
+      },
+      "witness_construction": {
+        "carrier_contribution_using_public_Dinv_times_c_powers": {
+          "K_add": 64,
+          "K_mul": 64
+        },
+        "folded_E_from_sources": {
+          "K_add": 64,
+          "K_mul": 64
+        },
+        "folded_z": {
+          "K_add": 1104,
+          "K_mul": 1104
+        },
+        "output_Q_product_gate_values": {
+          "K_mul": 36
+        },
+        "scope": "Construct output and auxiliary witness from supplied source records and supplied honest carrier. Excludes synthetic fixture generation and literal pair carrier used only by regression.",
+        "total_fold_excluding_gate_values": {
+          "K_add": 1232,
+          "K_mul": 1232
+        }
+      }
+    },
+    "interpretation": "Compilation, witness construction and online arithmetic are separated. Integer/bit work is not added to field or ring arithmetic.",
+    "source": "compiler_artifacts/operation_derivation.json"
+  },
+  "cost_conventions": {
+    "all_projection_retries_expansion_hashes_both_parties_upper_bound": 509165190,
+    "copy_restore": "Full checkpoint sizes are explicit cost parameters in runtime_certificate.json.",
+    "no_retry_PCLMUL64_products_both_parties": 6969158280,
+    "no_retry_expansion_hashes_both_parties": 9428985,
+    "no_retry_literal_binary_ANDs_both_parties": 13617948582648,
+    "no_retry_literal_binary_XORs_both_parties": 13617948582648,
+    "profile_I_comparator": "baseline_rebuilt/operation_counts.json",
+    "unit_prices": "Not assigned; never add field/ring/bit/copy counts into seconds."
+  },
+  "field_front_end": {
+    "R1CS_apply_A_B_C": {
+      "A": {
+        "K_additions": 6876,
+        "K_by_Fq_multiplications": 1358814,
+        "algorithm": "One K-by-Fq product for every stored CSR entry; initialize each nonempty dot product with its first product, then add remaining products. Empty and padded rows are written as zero. Boolean input coefficients are not skipped.",
+        "output_K_coordinate_writes": 2097152,
+        "reference_actual_nonzero_entries": 1358814,
+        "stored_entries_read": 1358814
+      },
+      "B": {
+        "K_additions": 1032895,
+        "K_by_Fq_multiplications": 2384833,
+        "algorithm": "One K-by-Fq product for every stored CSR entry; initialize each nonempty dot product with its first product, then add remaining products. Empty and padded rows are written as zero. Boolean input coefficients are not skipped.",
+        "output_K_coordinate_writes": 2097152,
+        "reference_actual_nonzero_entries": 2384833,
+        "stored_entries_read": 2384833
+      },
+      "C": {
+        "K_additions": 6876,
+        "K_by_Fq_multiplications": 278400,
+        "algorithm": "One K-by-Fq product for every stored CSR entry; initialize each nonempty dot product with its first product, then add remaining products. Empty and padded rows are written as zero. Boolean input coefficients are not skipped.",
+        "output_K_coordinate_writes": 2097152,
+        "reference_actual_nonzero_entries": 278400,
+        "stored_entries_read": 278400
+      }
+    },
+    "canonical_encoding_and_helpers": {
+      "K_values": 1414,
+      "base_coefficients": 5656,
+      "canonical_value_bits": 271488,
+      "fixed_zeros": 505599,
+      "prefix_helper_bits": 271488,
+      "total_private_bits": 542976,
+      "uncommitted_one": 1
+    },
+    "compiler_constraint_count_padded": 2097152,
+    "compiler_constraint_count_unpadded": 1351938,
+    "compiler_constraint_padding_zero_rows": 745214,
+    "compiler_generation": {
+      "canonical_bit_extractions": 271488,
+      "coefficient_id_writes": 4022047,
+      "index_writes": 4022047,
+      "matrix_generation_not_protocol_online_arithmetic": true,
+      "prefix_steps": 271488,
+      "row_pointer_writes": 4055817
+    },
+    "constraint_and_encoding_construction": {
+      "affine_inlining_justification": "Equation (10.1) permits arbitrary K-linear forms in each factor. Eliminating addition gates by substitution in those forms preserves equations and introduces no new commitment. Quadratic products still have canonical gate wires.",
+      "basis_maps": {
+        "J": {
+          "K_add": 0,
+          "K_mul": 0,
+          "coordinate_copies": 4
+        },
+        "U": {
+          "K_add": 0,
+          "K_mul": 0,
+          "coordinate_copies": 4
+        },
+        "reason": "Identity maps, implemented as views/copies, not arithmetic matrices."
+      },
+      "compiler_generation": {
+        "canonical_bit_extractions": 271488,
+        "coefficient_id_writes": 4022047,
+        "index_writes": 4022047,
+        "matrix_generation_not_protocol_online_arithmetic": true,
+        "prefix_steps": 271488,
+        "row_pointer_writes": 4055817
+      },
+      "constraint_sources": {
+        "R1CS": "v2 §10.2 (10.1)",
+        "canonical": "v2 §1.2",
+        "handoff": "v2 (10.4)",
+        "post_c_relation": "v2 §10.1",
+        "zero_row_padding": "v2 §10.3"
+      },
+      "constraints_by_category": {
+        "Q_linear_output": 4,
+        "Q_product_gates": 36,
+        "canonical_exclude_q": 5656,
+        "canonical_first_difference": 22624,
+        "canonical_prefix_recurrence": 271488,
+        "fixed_zero_handoff_coordinates": 505599,
+        "folded_E": 4,
+        "folded_z": 69,
+        "private_bit_boolean": 542976,
+        "public_coordinates": 90,
+        "strict_fresh_base_field": 3312,
+        "strict_fresh_u_and_E": 80
+      },
+      "encoding": {
+        "K_values": 1414,
+        "base_coefficients": 5656,
+        "canonical_value_bits": 271488,
+        "fixed_zeros": 505599,
+        "prefix_helper_bits": 271488,
+        "total_private_bits": 542976,
+        "uncommitted_one": 1
+      },
+      "matrix_application_model": "Each stored coefficient times an Fq witness coordinate is one K-by-Fq scalar product; row additions are stored_entries minus nonempty_rows. A transpose with K-valued equality weights uses one K multiplication per slot and stored_entries minus nonempty_columns additions. Explicit public zero slots are processed.",
+      "matrix_summary": {
+        "A": {
+          "actual_nonzero_entries": 1358814,
+          "base_field_entries": 1353630,
+          "coefficient_dictionary_entries_used": 192,
+          "columns": 1048576,
+          "extension_entries": 5184,
+          "nonempty_columns": 542977,
+          "nonempty_rows": 1351938,
+          "rows": 2097152,
+          "stored_entries": 1358814,
+          "stored_rows": 1351938
+        },
+        "B": {
+          "actual_nonzero_entries": 2384833,
+          "base_field_entries": 1992001,
+          "coefficient_dictionary_entries_used": 9690,
+          "columns": 1048576,
+          "extension_entries": 392832,
+          "nonempty_columns": 1048576,
+          "nonempty_rows": 1351938,
+          "rows": 2097152,
+          "stored_entries": 2384833,
+          "stored_rows": 1351938
+        },
+        "C": {
+          "actual_nonzero_entries": 278400,
+          "base_field_entries": 273216,
+          "coefficient_dictionary_entries_used": 192,
+          "columns": 1048576,
+          "extension_entries": 5184,
+          "nonempty_columns": 278400,
+          "nonempty_rows": 271524,
+          "rows": 2097152,
+          "stored_entries": 278400,
+          "stored_rows": 1351938
+        }
+      },
+      "public_coefficients": {
+        "challenge_data": {
+          "K_add": 96,
+          "K_inv": 1,
+          "K_mul": 175
+        },
+        "description": "16 c-pole subtractions; prefix 16 multiplies; backward batch inverse 32; 16 squares; 16 carrier Dinv*c^t multiplies and 15 powers; 5 public coordinates each 16 multiply/add. Inversion is a primitive K_inv.",
+        "dictionary_materialization": {
+          "literal_recipe_count": 384,
+          "public_recipe_count": 90,
+          "weighted_recipe_count": 9216
+        },
+        "dictionary_policy": "One K multiplication per weighted recipe in the literal implementation; signs/powers-of-two are public constants. Copy literal recipes; negate each public recipe with four Fq negations."
+      },
+      "semantic_B": {
+        "K_add": 68,
+        "K_mul": 72
+      },
+      "semantic_Q": {
+        "K_add": 32,
+        "K_mul": 36
+      },
+      "witness_construction": {
+        "carrier_contribution_using_public_Dinv_times_c_powers": {
+          "K_add": 64,
+          "K_mul": 64
+        },
+        "folded_E_from_sources": {
+          "K_add": 64,
+          "K_mul": 64
+        },
+        "folded_z": {
+          "K_add": 1104,
+          "K_mul": 1104
+        },
+        "output_Q_product_gate_values": {
+          "K_mul": 36
+        },
+        "scope": "Construct output and auxiliary witness from supplied source records and supplied honest carrier. Excludes synthetic fixture generation and literal pair carrier used only by regression.",
+        "total_fold_excluding_gate_values": {
+          "K_add": 1232,
+          "K_mul": 1232
+        }
+      }
+    },
+    "constraint_categories": {
+      "Q_linear_output": 4,
+      "Q_product_gates": 36,
+      "canonical_exclude_q": 5656,
+      "canonical_first_difference": 22624,
+      "canonical_prefix_recurrence": 271488,
+      "fixed_zero_handoff_coordinates": 505599,
+      "folded_E": 4,
+      "folded_z": 69,
+      "private_bit_boolean": 542976,
+      "public_coordinates": 90,
+      "strict_fresh_base_field": 3312,
+      "strict_fresh_u_and_E": 80
+    },
+    "final_prover_evaluations": {
+      "K_coordinate_reads": 3,
+      "additional_K_additions": 0,
+      "additional_K_multiplications": 0,
+      "reason": "t_A,t_B,t_C are the three final values already produced by the counted table-folding loops."
+    },
+    "honest_prover_asymptotic": "O(W_F+M_c)",
+    "prover_eq_table_construction": {
+      "K_multiplications": 2097151,
+      "K_multiplications_formula": "2^ell-1",
+      "K_subtractions": 2097151,
+      "K_subtractions_formula": "2^ell-1",
+      "algorithm": "At each branching entryx compute xr and x-xr; no repeated full product for each Boolean point."
+    },
+    "prover_sumcheck_table_rounds": {
+      "K_additions_or_subtractions": 35651567,
+      "K_additions_or_subtractions_formula": "17*(2^ell-1)",
+      "K_multiplications": 29360114,
+      "K_multiplications_formula": "14*(2^ell-1)",
+      "algorithm": "For each pair in the four tables, form four linear differences. Expanding E*(A*B-C) then uses 10 products and 5 further additions/subtractions. Add four polynomial coefficients to zero-initialized accumulators, then fold four tables using 4 products and 4 additions. Thus each pair costs 14 K products and 17 K additions/subtractions. Across all rounds there are M_c-1 pairs."
+    },
+    "public_Cauchy_weights": {
+      "batch_weight_subroutine_K_multiplications": 48,
+      "scope": "The actual literal compiler uses 16 prefix products and 32 backward products. Its complete challenge-data recipe also prepares squares, carrier powers and folded public coordinates; count that recipe once.",
+      "source": "compiler_artifacts/operation_derivation.json#/public_coefficients",
+      "status": "INCLUDED_IN_PUBLIC_COEFFICIENT_PREPARATION_NOT_AN_ADDITIONAL_COST"
+    },
+    "public_coefficients": {
+      "challenge_data": {
+        "K_add": 96,
+        "K_inv": 1,
+        "K_mul": 175
+      },
+      "description": "16 c-pole subtractions; prefix 16 multiplies; backward batch inverse 32; 16 squares; 16 carrier Dinv*c^t multiplies and 15 powers; 5 public coordinates each 16 multiply/add. Inversion is a primitive K_inv.",
+      "dictionary_materialization": {
+        "literal_recipe_count": 384,
+        "public_recipe_count": 90,
+        "weighted_recipe_count": 9216
+      },
+      "dictionary_policy": "One K multiplication per weighted recipe in the literal implementation; signs/powers-of-two are public constants. Copy literal recipes; negate each public recipe with four Fq negations."
+    },
+    "semantic_witness_construction": {
+      "carrier_contribution_using_public_Dinv_times_c_powers": {
+        "K_add": 64,
+        "K_mul": 64
+      },
+      "folded_E_from_sources": {
+        "K_add": 64,
+        "K_mul": 64
+      },
+      "folded_z": {
+        "K_add": 1104,
+        "K_mul": 1104
+      },
+      "output_Q_product_gate_values": {
+        "K_mul": 36
+      },
+      "scope": "Construct output and auxiliary witness from supplied source records and supplied honest carrier. Excludes synthetic fixture generation and literal pair carrier used only by regression.",
+      "total_fold_excluding_gate_values": {
+        "K_add": 1232,
+        "K_mul": 1232
+      }
+    },
+    "sumcheck_polynomial_coefficients_transmitted": 84,
+    "sumcheck_rounds": 21,
+    "sumcheck_verifier_all_rounds": {
+      "K_additions_or_subtractions": 147,
+      "K_equalities": 21,
+      "K_multiplications": 63
+    },
+    "sumcheck_verifier_final": {
+      "K_additions_or_subtractions": 64,
+      "K_equality": 1,
+      "K_multiplications": 64,
+      "algorithm": "For ell>=1 each eq factor is(1-r)*(1-t)+r*t:2 multiplications,3 adds/subtracts. Multiply ell factors with ell-1 multiplications. Then tA*tB-tC and final multiplication add2 multiplications and1 subtraction.",
+      "formula": "eq(r,tau)*(tA*tB-tC)"
+    },
+    "sumcheck_verifier_per_round": {
+      "K_additions_for_Horner_evaluation": 3,
+      "K_additions_for_g0_plus_g1": 4,
+      "K_equalities": 1,
+      "K_multiplications_for_Horner_evaluation": 3
+    },
+    "terminal_transposes": {
+      "per_party_once": {
+        "A": {
+          "K_additions": 815837,
+          "K_multiplications": 1358814,
+          "algorithm": "Multiply each stored coefficient by the corresponding K equality-table entry and accumulate into its column. Initialize each reached column from its first product. Unreached columns are zero.",
+          "output_K_coordinate_writes": 1048576,
+          "stored_entries_read": 1358814
+        },
+        "B": {
+          "K_additions": 1336257,
+          "K_multiplications": 2384833,
+          "algorithm": "Multiply each stored coefficient by the corresponding K equality-table entry and accumulate into its column. Initialize each reached column from its first product. Unreached columns are zero.",
+          "output_K_coordinate_writes": 1048576,
+          "stored_entries_read": 2384833
+        },
+        "C": {
+          "K_additions": 0,
+          "K_multiplications": 278400,
+          "algorithm": "Multiply each stored coefficient by the corresponding K equality-table entry and accumulate into its column. Initialize each reached column from its first product. Unreached columns are zero.",
+          "output_K_coordinate_writes": 1048576,
+          "stored_entries_read": 278400
+        }
+      },
+      "scope": "The three public transpose vectors are computed once by each party and used by the initial lattice relation. They are not recomputed for each projection retry."
+    },
+    "unresolved": [],
+    "verifier_eq_tau_table_for_transposes": {
+      "K_multiplications": 2097151,
+      "K_multiplications_formula": "2^ell-1",
+      "K_subtractions": 2097151,
+      "K_subtractions_formula": "2^ell-1"
+    }
+  },
+  "front_commitments": {
+    "accumulator_commitment": {
+      "count": 1,
+      "included_in_fold_prover_work": false,
+      "one_dense_matvec": {
+        "Rq_additions": 6976,
+        "Rq_multiplications": 7008
+      }
+    },
+    "bit_optimized_alternative": "Actual openings are bit vectors. A coefficient-streamed implementation can replace coefficient products by selected additions; the count then depends on actual bits. Dense ring counts here are a deterministic reference, not an assertion this is the implementation.",
+    "formulas": {
+      "auxiliary_Rq_mult": "32*b_aux",
+      "carrier_Rq_mult": "32*3*16*r",
+      "state_Rq_mult": "32*3*(n+y)"
+    },
+    "incoming_fresh_commitments": {
+      "columns_formula": "3*(n+y)",
+      "count": 16,
+      "included_in_fold_prover_work": false,
+      "one_dense_matvec": {
+        "Rq_additions": 6976,
+        "Rq_multiplications": 7008
+      }
+    },
+    "new_auxiliary": {
+      "Rq_additions": 139168,
+      "Rq_multiplications": 139200
+    },
+    "new_carrier": {
+      "Rq_additions": 6112,
+      "Rq_multiplications": 6144
+    },
+    "new_folded_output": {
+      "Rq_additions": 6976,
+      "Rq_multiplications": 7008
+    }
+  },
+  "initial_relation_operator": {
+    "Apply_reference": {
+      "commitment_Rq_additions": 270848,
+      "commitment_Rq_multiplications": 271488,
+      "constant_and_zero_coordinate_copies": 505920,
+      "field_output_base_coefficient_copies": 12,
+      "field_rows_K_additions": 3145725,
+      "field_rows_K_by_Fq_multiplications": 3145728
+    },
+    "TransposeApply_reference_per_call": {
+      "Fq_accumulations_zero_initialized": 13631808,
+      "commitment_Rq_additions": 263004,
+      "commitment_Rq_multiplications": 271488,
+      "field_rows_Fq_multiplications": 12582912,
+      "model": "Compute the 20 transposed ring maps into local buffers and add them to a zero-initialized coefficient output. Add all twelve scalar field rows with a full fixed-length loop, then add constant/padding row contributions. Stored zeros are not skipped.",
+      "output_Fq_zero_initializations": 1048896
+    },
+    "field_row_materialization_K_to_Fq_coordinate_copies_once_each_party": 12582912,
+    "input_coefficients_after_backend_padding": 1048896,
+    "public_transpose_calls_each_party": 3,
+    "rows_after_backend_padding": 546892,
+    "scope": "Field transpose-vector construction is counted separately in field_front_end. The source-row operator uses those vectors; it introduces no extra commitment key. Apply is a reference operator cost, not an extra mandatory prover call."
+  },
+  "lattice_layers": [
+    {
+      "accepted_response_split_integer_steps": 116544,
+      "child_relation_exact_linear_circuit_counts": {
+        "Fq_additions_or_subtractions": 275544,
+        "Fq_multiplications_by_radix_powers": 273792,
+        "Rq_additions": 94360,
+        "constant_term_coordinate_copies": 27,
+        "fixed_bounded_Rq_multiplications": 216,
+        "fixed_general_Rq_multiplications": 94230,
+        "next_block_padding_coordinate_copies": 0,
+        "transpose_Fq_accumulations_zero_initialized": 18947531,
+        "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+        "transpose_same_typed_multiplication_counts": true
+      },
+      "child_relation_operator_decomposition": {
+        "A_z": {
+          "Rq_additions": 43680,
+          "Rq_multiplications": 43704
+        },
+        "B_t": {
+          "Rq_additions": 27632,
+          "Rq_multiplications": 27648
+        },
+        "D_h": {
+          "Rq_additions": 17264,
+          "Rq_multiplications": 17280
+        },
+        "constant_diagonal_sums_Fq_additions": 24,
+        "principal_lhs": {
+          "Rq_additions": 5460,
+          "Rq_multiplications": 5463
+        },
+        "principal_rhs": {
+          "Rq_additions": 132,
+          "Rq_multiplications": 135
+        },
+        "public_preprocessing_per_selected_challenge": {
+          "challenge_products_bounded_by_bounded_ring_multiplications": 45,
+          "offdiagonal_weight_multiplications_by_two": 2304,
+          "phi_combination_Rq_additions": 43704,
+          "phi_combination_bounded_ring_multiplications": 49167
+        },
+        "recompose_t_h": {
+          "Fq_additions": 157248,
+          "Fq_multiplications_by_radix_powers": 157248
+        },
+        "recompose_z": {
+          "Fq_additions": 116544,
+          "Fq_multiplications_by_radix": 116544
+        },
+        "rowblock_subtractions_Fq": 1728,
+        "status": "Exact primitive decomposition; no dense Fq matrix is instantiated and no wall-time inference is made.",
+        "t_challenge_rhs": {
+          "Rq_additions": 192,
+          "bounded_ring_multiplications": 216
+        },
+        "transpose_implementation": "Reverse the declared linear circuit. Every forward constant multiplication gives one transpose multiplication in the same coefficient algebra; each forward addition gives two accumulations if the transpose accumulators start at zero. Coordinate copies, ct selection, and padding are counted as copies/zero checks, not multiplications."
+      },
+      "digit_decomposition_integer_steps": 179712,
+      "level": 0,
+      "projection_family_costs": {
+        "DFS_nodes_bound": 22,
+        "DFS_value_bits_bound": 26092,
+        "aggregate_both_parties_field_addition_upper_bound_all_projection_retries": 150436859904,
+        "aggregate_both_parties_field_additions_actual": "sum_attempts z_a + 6*z_selected",
+        "aggregation_bytes_unchanged": 9859608,
+        "all_projection_retries_both_parties_hash_upper_bound": 247574718,
+        "full_seed_generations_per_raw_trial_upper_bound": 160,
+        "hash_description_bits": 74697,
+        "native_hash_core_counts_one_scan": {
+          "hash_a_words_u": 38,
+          "input_words_v": 19,
+          "pclmul64_products": 1103388558,
+          "pclmul_fixed_scratch_zero_word_stores": 250631196,
+          "pclmul_output_offset_word_xors": 29036541,
+          "pclmul_product_word_xors": 2206777116,
+          "pclmul_reverse64_calls": 29036541,
+          "pclmul_word_ands_from_reverse_and_final_mask": 291893649,
+          "pclmul_word_ors_from_reverse_align_extract": 232292328,
+          "pclmul_word_shifts_from_reverse_align_extract": 464584656,
+          "scalar_accumulator_word_xors": 34437337626,
+          "scalar_core_AND_words": 34437337626,
+          "scalar_output_offset_bit_xors": 1812491454,
+          "scalar_output_zero_word_stores": 29036541,
+          "scalar_parity_calls": 1812491454,
+          "scalar_window_right_shifts": 34437337626,
+          "scalar_window_second_word_shifts_and_ors_each": 33885643347,
+          "scope": "exact source-level hash kernel counters; counter instrumentation, loads/stores, SIMD moves, indexing, allocation and control are additional, not CPU instruction totals"
+        },
+        "no_matrix_materialization_required": true,
+        "no_retry_both_parties_hashes": 4584717,
+        "one_selected_seed_parse_per_party_fields": 43,
+        "selected_phi_canonical_bytes_per_party": 18880128,
+        "selected_phi_coefficients_per_party": 3146688,
+        "source_vector_coefficients": 1048896,
+        "wire_bytes_per_actual_projection_attempt": 9486
+      },
+      "projection_per_attempt": {
+        "binary_count_scope": "Exact for literal b-by-b convolution algorithm; not executed CPython or native instruction counts.",
+        "centered_mod_q_reductions": 864,
+        "descriptor_bytes_generated_and_sent_by_verifier": 9486,
+        "descriptor_bytes_read": 9486,
+        "expanded_blocks": 1528240,
+        "generator_output_bits_inspected": 1812492288,
+        "independent_seed_bits_sampled": 75883,
+        "integer_additions_for_norm": 863,
+        "integer_squares_for_norm": 864,
+        "literal_binary_convolution_ANDs": 2149614864444,
+        "literal_binary_convolution_XORs": 2149614864444,
+        "prefix_hashes": 1528239,
+        "prover_integer_additions_or_subtractions_exact": "number of nonzero trits, with zero-initialized accumulators",
+        "prover_integer_additions_or_subtractions_expectation": 453123072,
+        "prover_trits_inspected": 906246144,
+        "uniform_raw_trit_marginals": "exact; even b prevents a trit straddling PRG blocks",
+        "uniform_worst_case_field_additions_or_subtractions": 906246144
+      },
+      "public_aggregation_once_each_party": {
+        "batched_projection_rows": 3,
+        "combine_source_and_projection_Fq_additions": 3146688,
+        "constant_term_adjoint_packing_Fq_negations": 3097521,
+        "generator_expansions": 1,
+        "literal_binary_convolution_ANDs": 2149614864444,
+        "literal_binary_convolution_XORs": 2149614864444,
+        "prefix_hashes": 1528239,
+        "projection_part_Fq_additions_or_subtractions_exact": "tau times number of nonzero selected projection trits",
+        "projection_part_trits_inspected": 906246144,
+        "raw_unconditioned_projection_part_expectation_only": 1359369216,
+        "rhs_Fq_additions": 1643265,
+        "rhs_Fq_multiplications": 1643268,
+        "rhs_Fq_multiplications_formula": "3*((41293+P0)+864)",
+        "selected_expectation_warning": "Selection by retries does not preserve the raw expectation; use actual nonzero count or the uniform bound.",
+        "selected_projection_part_uniform_Fq_addition_upper_bound": 2718738432,
+        "source_relation_transpose_calls": 3,
+        "source_relation_transpose_cost": {
+          "Fq_accumulations_zero_initialized": 13631808,
+          "commitment_Rq_additions": 263004,
+          "commitment_Rq_multiplications": 271488,
+          "field_rows_Fq_multiplications": 12582912,
+          "model": "Compute the 20 transposed ring maps into local buffers and add them to a zero-initialized coefficient output. Add all twelve scalar field rows with a full fixed-length loop, then add constant/padding row contributions. Stored zeros are not skipped.",
+          "output_Fq_zero_initializations": 1048896
+        }
+      },
+      "response_per_attempt": {
+        "Fq_additions_or_subtractions": 67012800,
+        "bounded_coefficient_times_Fq_coefficient_multiplications": 67129344,
+        "centered_mod_q_reductions": 116544,
+        "integer_additions_for_norm": 116543,
+        "integer_squares_for_norm": 116544,
+        "short_coefficients_sampled": 576,
+        "terminal_c0_sampling": "independent uniform five-symbol coefficients"
+      },
+      "symmetric_h_once": {
+        "Fq_multiplications_by_inverse_two": 6912,
+        "Rq_additions": 442368,
+        "Rq_multiplications": 442503,
+        "algorithm": "Diagonal uses one dot product; each off-diagonal uses two dots, one ring addition, and coefficientwise division by 2."
+      },
+      "t_Aw_all_source_blocks_once": {
+        "Rq_additions": 393120,
+        "Rq_multiplications": 393336
+      },
+      "terminal": false,
+      "u1_commitment_once": {
+        "Rq_additions": 27632,
+        "Rq_multiplications": 27648
+      },
+      "u2_commitment_once": {
+        "Rq_additions": 17264,
+        "Rq_multiplications": 17280
+      },
+      "verifier_selected_projection_norm_once": {
+        "integer_additions": 863,
+        "integer_bound_comparisons": 1,
+        "integer_squares": 864
+      }
+    },
+    {
+      "accepted_response_split_integer_steps": 68800,
+      "child_relation_exact_linear_circuit_counts": {
+        "Fq_additions_or_subtractions": 163279,
+        "Fq_multiplications_by_radix_powers": 161536,
+        "Rq_additions": 55642,
+        "constant_term_coordinate_copies": 18,
+        "fixed_bounded_Rq_multiplications": 144,
+        "fixed_general_Rq_multiplications": 55584,
+        "next_block_padding_coordinate_copies": 256,
+        "transpose_Fq_accumulations_zero_initialized": 11177136,
+        "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+        "transpose_same_typed_multiplication_counts": true
+      },
+      "child_relation_operator_decomposition": {
+        "A_z": {
+          "Rq_additions": 25776,
+          "Rq_multiplications": 25800
+        },
+        "B_t": {
+          "Rq_additions": 18416,
+          "Rq_multiplications": 18432
+        },
+        "D_h": {
+          "Rq_additions": 8048,
+          "Rq_multiplications": 8064
+        },
+        "constant_diagonal_sums_Fq_additions": 15,
+        "principal_lhs": {
+          "Rq_additions": 3222,
+          "Rq_multiplications": 3225
+        },
+        "principal_rhs": {
+          "Rq_additions": 60,
+          "Rq_multiplications": 63
+        },
+        "public_preprocessing_per_selected_challenge": {
+          "challenge_products_bounded_by_bounded_ring_multiplications": 21,
+          "offdiagonal_weight_multiplications_by_two": 960,
+          "phi_combination_Rq_additions": 16125,
+          "phi_combination_bounded_ring_multiplications": 19350
+        },
+        "recompose_t_h": {
+          "Fq_additions": 92736,
+          "Fq_multiplications_by_radix_powers": 92736
+        },
+        "recompose_z": {
+          "Fq_additions": 68800,
+          "Fq_multiplications_by_radix": 68800
+        },
+        "rowblock_subtractions_Fq": 1728,
+        "status": "Exact primitive decomposition; no dense Fq matrix is instantiated and no wall-time inference is made.",
+        "t_challenge_rhs": {
+          "Rq_additions": 120,
+          "bounded_ring_multiplications": 144
+        },
+        "transpose_implementation": "Reverse the declared linear circuit. Every forward constant multiplication gives one transpose multiplication in the same coefficient algebra; each forward addition gives two accumulations if the transpose accumulators start at zero. Coordinate copies, ct selection, and padding are counted as copies/zero checks, not multiplications."
+      },
+      "digit_decomposition_integer_steps": 105984,
+      "level": 1,
+      "projection_family_costs": {
+        "DFS_nodes_bound": 21,
+        "DFS_value_bits_bound": 25746,
+        "aggregate_both_parties_field_addition_upper_bound_all_projection_retries": 59205427200,
+        "aggregate_both_parties_field_additions_actual": "sum_attempts z_a + 6*z_selected",
+        "aggregation_bytes_unchanged": 83574,
+        "all_projection_retries_both_parties_hash_upper_bound": 94255650,
+        "full_seed_generations_per_raw_trial_upper_bound": 160,
+        "hash_description_bits": 73540,
+        "native_hash_core_counts_one_scan": {
+          "hash_a_words_u": 39,
+          "input_words_v": 20,
+          "pclmul64_products": 453823500,
+          "pclmul_fixed_scratch_zero_word_stores": 95419300,
+          "pclmul_output_offset_word_xors": 11636500,
+          "pclmul_product_word_xors": 907647000,
+          "pclmul_reverse64_calls": 11636500,
+          "pclmul_word_ands_from_reverse_and_final_mask": 116946825,
+          "pclmul_word_ors_from_reverse_align_extract": 93092000,
+          "pclmul_word_shifts_from_reverse_align_extract": 186184000,
+          "scalar_accumulator_word_xors": 14266349000,
+          "scalar_core_AND_words": 14266349000,
+          "scalar_output_offset_bit_xors": 713317450,
+          "scalar_output_zero_word_stores": 11636500,
+          "scalar_parity_calls": 713317450,
+          "scalar_window_right_shifts": 14266349000,
+          "scalar_window_second_word_shifts_and_ors_each": 14028382575,
+          "scope": "exact source-level hash kernel counters; counter instrumentation, loads/stores, SIMD moves, indexing, allocation and control are additional, not CPU instruction totals"
+        },
+        "no_matrix_materialization_required": true,
+        "no_retry_both_parties_hashes": 1745475,
+        "one_selected_seed_parse_per_party_fields": 41,
+        "selected_phi_canonical_bytes_per_party": 7430400,
+        "selected_phi_coefficients_per_party": 1238400,
+        "source_vector_coefficients": 412800,
+        "wire_bytes_per_actual_projection_attempt": 9346
+      },
+      "projection_per_attempt": {
+        "binary_count_scope": "Exact for literal b-by-b convolution algorithm; not executed CPython or native instruction counts.",
+        "centered_mod_q_reductions": 864,
+        "descriptor_bytes_generated_and_sent_by_verifier": 9346,
+        "descriptor_bytes_read": 9346,
+        "expanded_blocks": 581826,
+        "generator_output_bits_inspected": 713318400,
+        "independent_seed_bits_sampled": 74766,
+        "integer_additions_for_norm": 863,
+        "integer_squares_for_norm": 864,
+        "literal_binary_convolution_ANDs": 874527193700,
+        "literal_binary_convolution_XORs": 874527193700,
+        "prefix_hashes": 581825,
+        "prover_integer_additions_or_subtractions_exact": "number of nonzero trits, with zero-initialized accumulators",
+        "prover_integer_additions_or_subtractions_expectation": 178329600,
+        "prover_trits_inspected": 356659200,
+        "uniform_raw_trit_marginals": "exact; even b prevents a trit straddling PRG blocks",
+        "uniform_worst_case_field_additions_or_subtractions": 356659200
+      },
+      "public_aggregation_once_each_party": {
+        "batched_projection_rows": 3,
+        "combine_source_and_projection_Fq_additions": 1238400,
+        "constant_term_adjoint_packing_Fq_negations": 1219050,
+        "generator_expansions": 1,
+        "literal_binary_convolution_ANDs": 874527193700,
+        "literal_binary_convolution_XORs": 874527193700,
+        "prefix_hashes": 581825,
+        "projection_part_Fq_additions_or_subtractions_exact": "tau times number of nonzero selected projection trits",
+        "projection_part_trits_inspected": 356659200,
+        "raw_unconditioned_projection_part_expectation_only": 534988800,
+        "rhs_Fq_additions": 13926,
+        "rhs_Fq_multiplications": 13929,
+        "rhs_Fq_multiplications_formula": "3*((3779)+864)",
+        "selected_expectation_warning": "Selection by retries does not preserve the raw expectation; use actual nonzero count or the uniform bound.",
+        "selected_projection_part_uniform_Fq_addition_upper_bound": 1069977600,
+        "source_relation_transpose_calls": 3,
+        "source_relation_transpose_cost": {
+          "applications": 3,
+          "counts": {
+            "Fq_additions_or_subtractions": 275544,
+            "Fq_multiplications_by_radix_powers": 273792,
+            "Rq_additions": 94360,
+            "constant_term_coordinate_copies": 27,
+            "fixed_bounded_Rq_multiplications": 216,
+            "fixed_general_Rq_multiplications": 94230,
+            "next_block_padding_coordinate_copies": 0,
+            "transpose_Fq_accumulations_zero_initialized": 18947531,
+            "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+            "transpose_same_typed_multiplication_counts": true
+          },
+          "scope": "Use the previous child relation's fixed linear circuit and its explicitly counted reverse circuit.",
+          "source_level": 0
+        }
+      },
+      "response_per_attempt": {
+        "Fq_additions_or_subtractions": 26350400,
+        "bounded_coefficient_times_Fq_coefficient_multiplications": 26419200,
+        "centered_mod_q_reductions": 68800,
+        "integer_additions_for_norm": 68799,
+        "integer_squares_for_norm": 68800,
+        "short_coefficients_sampled": 384,
+        "terminal_c0_sampling": "independent uniform five-symbol coefficients"
+      },
+      "symmetric_h_once": {
+        "Fq_multiplications_by_inverse_two": 2880,
+        "Rq_additions": 116037,
+        "Rq_multiplications": 116100,
+        "algorithm": "Diagonal uses one dot product; each off-diagonal uses two dots, one ring addition, and coefficientwise division by 2."
+      },
+      "t_Aw_all_source_blocks_once": {
+        "Rq_additions": 154656,
+        "Rq_multiplications": 154800
+      },
+      "terminal": false,
+      "u1_commitment_once": {
+        "Rq_additions": 18416,
+        "Rq_multiplications": 18432
+      },
+      "u2_commitment_once": {
+        "Rq_additions": 8048,
+        "Rq_multiplications": 8064
+      },
+      "verifier_selected_projection_norm_once": {
+        "integer_additions": 863,
+        "integer_bound_comparisons": 1,
+        "integer_squares": 864
+      }
+    },
+    {
+      "accepted_response_split_integer_steps": 48768,
+      "child_relation_exact_linear_circuit_counts": {
+        "Fq_additions_or_subtractions": 124428,
+        "Fq_multiplications_by_radix_powers": 122688,
+        "Rq_additions": 41773,
+        "constant_term_coordinate_copies": 15,
+        "fixed_bounded_Rq_multiplications": 120,
+        "fixed_general_Rq_multiplications": 41739,
+        "next_block_padding_coordinate_copies": 0,
+        "transpose_Fq_accumulations_zero_initialized": 8397479,
+        "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+        "transpose_same_typed_multiplication_counts": true
+      },
+      "child_relation_operator_decomposition": {
+        "A_z": {
+          "Rq_additions": 18264,
+          "Rq_multiplications": 18288
+        },
+        "B_t": {
+          "Rq_additions": 15344,
+          "Rq_multiplications": 15360
+        },
+        "D_h": {
+          "Rq_additions": 5744,
+          "Rq_multiplications": 5760
+        },
+        "constant_diagonal_sums_Fq_additions": 12,
+        "principal_lhs": {
+          "Rq_additions": 2283,
+          "Rq_multiplications": 2286
+        },
+        "principal_rhs": {
+          "Rq_additions": 42,
+          "Rq_multiplications": 45
+        },
+        "public_preprocessing_per_selected_challenge": {
+          "challenge_products_bounded_by_bounded_ring_multiplications": 15,
+          "offdiagonal_weight_multiplications_by_two": 640,
+          "phi_combination_Rq_additions": 9144,
+          "phi_combination_bounded_ring_multiplications": 11430
+        },
+        "recompose_t_h": {
+          "Fq_additions": 73920,
+          "Fq_multiplications_by_radix_powers": 73920
+        },
+        "recompose_z": {
+          "Fq_additions": 48768,
+          "Fq_multiplications_by_radix": 48768
+        },
+        "rowblock_subtractions_Fq": 1728,
+        "status": "Exact primitive decomposition; no dense Fq matrix is instantiated and no wall-time inference is made.",
+        "t_challenge_rhs": {
+          "Rq_additions": 96,
+          "bounded_ring_multiplications": 120
+        },
+        "transpose_implementation": "Reverse the declared linear circuit. Every forward constant multiplication gives one transpose multiplication in the same coefficient algebra; each forward addition gives two accumulations if the transpose accumulators start at zero. Coordinate copies, ct selection, and padding are counted as copies/zero checks, not multiplications."
+      },
+      "digit_decomposition_integer_steps": 84480,
+      "level": 2,
+      "projection_family_costs": {
+        "DFS_nodes_bound": 20,
+        "DFS_value_bits_bound": 24360,
+        "aggregate_both_parties_field_addition_upper_bound_all_projection_retries": 34972508160,
+        "aggregate_both_parties_field_additions_actual": "sum_attempts z_a + 6*z_selected",
+        "aggregation_bytes_unchanged": 88182,
+        "all_projection_retries_both_parties_hash_upper_bound": 56042280,
+        "full_seed_generations_per_raw_trial_upper_bound": 160,
+        "hash_description_bits": 69407,
+        "native_hash_core_counts_one_scan": {
+          "hash_a_words_u": 39,
+          "input_words_v": 20,
+          "pclmul64_products": 269833200,
+          "pclmul_fixed_scratch_zero_word_stores": 56734160,
+          "pclmul_output_offset_word_xors": 6918800,
+          "pclmul_product_word_xors": 539666400,
+          "pclmul_reverse64_calls": 6918800,
+          "pclmul_word_ands_from_reverse_and_final_mask": 69533940,
+          "pclmul_word_ors_from_reverse_align_extract": 55350400,
+          "pclmul_word_shifts_from_reverse_align_extract": 110700800,
+          "scalar_accumulator_word_xors": 8427098400,
+          "scalar_core_AND_words": 8427098400,
+          "scalar_output_offset_bit_xors": 421354920,
+          "scalar_output_zero_word_stores": 6918800,
+          "scalar_parity_calls": 421354920,
+          "scalar_window_right_shifts": 8427098400,
+          "scalar_window_second_word_shifts_and_ors_each": 8288376460,
+          "scope": "exact source-level hash kernel counters; counter instrumentation, loads/stores, SIMD moves, indexing, allocation and control are additional, not CPU instruction totals"
+        },
+        "no_matrix_materialization_required": true,
+        "no_retry_both_parties_hashes": 1037820,
+        "one_selected_seed_parse_per_party_fields": 39,
+        "selected_phi_canonical_bytes_per_party": 4389120,
+        "selected_phi_coefficients_per_party": 731520,
+        "source_vector_coefficients": 243840,
+        "wire_bytes_per_actual_projection_attempt": 8829
+      },
+      "projection_per_attempt": {
+        "binary_count_scope": "Exact for literal b-by-b convolution algorithm; not executed CPython or native instruction counts.",
+        "centered_mod_q_reductions": 864,
+        "descriptor_bytes_generated_and_sent_by_verifier": 8829,
+        "descriptor_bytes_read": 8829,
+        "expanded_blocks": 345941,
+        "generator_output_bits_inspected": 421355520,
+        "independent_seed_bits_sampled": 70625,
+        "integer_additions_for_norm": 863,
+        "integer_squares_for_norm": 864,
+        "literal_binary_convolution_ANDs": 513210292560,
+        "literal_binary_convolution_XORs": 513210292560,
+        "prefix_hashes": 345940,
+        "prover_integer_additions_or_subtractions_exact": "number of nonzero trits, with zero-initialized accumulators",
+        "prover_integer_additions_or_subtractions_expectation": 105338880,
+        "prover_trits_inspected": 210677760,
+        "uniform_raw_trit_marginals": "exact; even b prevents a trit straddling PRG blocks",
+        "uniform_worst_case_field_additions_or_subtractions": 210677760
+      },
+      "public_aggregation_once_each_party": {
+        "batched_projection_rows": 3,
+        "combine_source_and_projection_Fq_additions": 731520,
+        "constant_term_adjoint_packing_Fq_negations": 720090,
+        "generator_expansions": 1,
+        "literal_binary_convolution_ANDs": 513210292560,
+        "literal_binary_convolution_XORs": 513210292560,
+        "prefix_hashes": 345940,
+        "projection_part_Fq_additions_or_subtractions_exact": "tau times number of nonzero selected projection trits",
+        "projection_part_trits_inspected": 210677760,
+        "raw_unconditioned_projection_part_expectation_only": 316016640,
+        "rhs_Fq_additions": 14694,
+        "rhs_Fq_multiplications": 14697,
+        "rhs_Fq_multiplications_formula": "3*((4035)+864)",
+        "selected_expectation_warning": "Selection by retries does not preserve the raw expectation; use actual nonzero count or the uniform bound.",
+        "selected_projection_part_uniform_Fq_addition_upper_bound": 632033280,
+        "source_relation_transpose_calls": 3,
+        "source_relation_transpose_cost": {
+          "applications": 3,
+          "counts": {
+            "Fq_additions_or_subtractions": 163279,
+            "Fq_multiplications_by_radix_powers": 161536,
+            "Rq_additions": 55642,
+            "constant_term_coordinate_copies": 18,
+            "fixed_bounded_Rq_multiplications": 144,
+            "fixed_general_Rq_multiplications": 55584,
+            "next_block_padding_coordinate_copies": 256,
+            "transpose_Fq_accumulations_zero_initialized": 11177136,
+            "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+            "transpose_same_typed_multiplication_counts": true
+          },
+          "scope": "Use the previous child relation's fixed linear circuit and its explicitly counted reverse circuit.",
+          "source_level": 1
+        }
+      },
+      "response_per_attempt": {
+        "Fq_additions_or_subtractions": 15556992,
+        "bounded_coefficient_times_Fq_coefficient_multiplications": 15605760,
+        "centered_mod_q_reductions": 48768,
+        "integer_additions_for_norm": 48767,
+        "integer_squares_for_norm": 48768,
+        "short_coefficients_sampled": 320,
+        "terminal_c0_sampling": "independent uniform five-symbol coefficients"
+      },
+      "symmetric_h_once": {
+        "Fq_multiplications_by_inverse_two": 1920,
+        "Rq_additions": 57105,
+        "Rq_multiplications": 57150,
+        "algorithm": "Diagonal uses one dot product; each off-diagonal uses two dots, one ring addition, and coefficientwise division by 2."
+      },
+      "t_Aw_all_source_blocks_once": {
+        "Rq_additions": 91320,
+        "Rq_multiplications": 91440
+      },
+      "terminal": false,
+      "u1_commitment_once": {
+        "Rq_additions": 15344,
+        "Rq_multiplications": 15360
+      },
+      "u2_commitment_once": {
+        "Rq_additions": 5744,
+        "Rq_multiplications": 5760
+      },
+      "verifier_selected_projection_norm_once": {
+        "integer_additions": 863,
+        "integer_bound_comparisons": 1,
+        "integer_squares": 864
+      }
+    },
+    {
+      "accepted_response_split_integer_steps": 45504,
+      "child_relation_exact_linear_circuit_counts": {
+        "Fq_additions_or_subtractions": 103689,
+        "Fq_multiplications_by_radix_powers": 101952,
+        "Rq_additions": 35365,
+        "constant_term_coordinate_copies": 12,
+        "fixed_bounded_Rq_multiplications": 96,
+        "fixed_general_Rq_multiplications": 35355,
+        "next_block_padding_coordinate_copies": 128,
+        "transpose_Fq_accumulations_zero_initialized": 7105054,
+        "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+        "transpose_same_typed_multiplication_counts": true
+      },
+      "child_relation_operator_decomposition": {
+        "A_z": {
+          "Rq_additions": 17040,
+          "Rq_multiplications": 17064
+        },
+        "B_t": {
+          "Rq_additions": 12272,
+          "Rq_multiplications": 12288
+        },
+        "D_h": {
+          "Rq_additions": 3824,
+          "Rq_multiplications": 3840
+        },
+        "constant_diagonal_sums_Fq_additions": 9,
+        "principal_lhs": {
+          "Rq_additions": 2130,
+          "Rq_multiplications": 2133
+        },
+        "principal_rhs": {
+          "Rq_additions": 27,
+          "Rq_multiplications": 30
+        },
+        "public_preprocessing_per_selected_challenge": {
+          "challenge_products_bounded_by_bounded_ring_multiplications": 10,
+          "offdiagonal_weight_multiplications_by_two": 384,
+          "phi_combination_Rq_additions": 6399,
+          "phi_combination_bounded_ring_multiplications": 8532
+        },
+        "recompose_t_h": {
+          "Fq_additions": 56448,
+          "Fq_multiplications_by_radix_powers": 56448
+        },
+        "recompose_z": {
+          "Fq_additions": 45504,
+          "Fq_multiplications_by_radix": 45504
+        },
+        "rowblock_subtractions_Fq": 1728,
+        "status": "Exact primitive decomposition; no dense Fq matrix is instantiated and no wall-time inference is made.",
+        "t_challenge_rhs": {
+          "Rq_additions": 72,
+          "bounded_ring_multiplications": 96
+        },
+        "transpose_implementation": "Reverse the declared linear circuit. Every forward constant multiplication gives one transpose multiplication in the same coefficient algebra; each forward addition gives two accumulations if the transpose accumulators start at zero. Coordinate copies, ct selection, and padding are counted as copies/zero checks, not multiplications."
+      },
+      "digit_decomposition_integer_steps": 64512,
+      "level": 3,
+      "projection_family_costs": {
+        "DFS_nodes_bound": 19,
+        "DFS_value_bits_bound": 23028,
+        "aggregate_both_parties_field_addition_upper_bound_all_projection_retries": 26105462784,
+        "aggregate_both_parties_field_additions_actual": "sum_attempts z_a + 6*z_selected",
+        "aggregation_bytes_unchanged": 83574,
+        "all_projection_retries_both_parties_hash_upper_bound": 42040134,
+        "full_seed_generations_per_raw_trial_upper_bound": 160,
+        "hash_description_bits": 65430,
+        "native_hash_core_counts_one_scan": {
+          "hash_a_words_u": 38,
+          "input_words_v": 19,
+          "pclmul64_products": 187364054,
+          "pclmul_fixed_scratch_zero_word_stores": 42559148,
+          "pclmul_output_offset_word_xors": 4930633,
+          "pclmul_product_word_xors": 374728108,
+          "pclmul_reverse64_calls": 4930633,
+          "pclmul_word_ands_from_reverse_and_final_mask": 49565837,
+          "pclmul_word_ors_from_reverse_align_extract": 39445064,
+          "pclmul_word_shifts_from_reverse_align_extract": 78890128,
+          "scalar_accumulator_word_xors": 5975927196,
+          "scalar_core_AND_words": 5975927196,
+          "scalar_output_offset_bit_xors": 314522484,
+          "scalar_output_zero_word_stores": 4930633,
+          "scalar_parity_calls": 314522484,
+          "scalar_window_right_shifts": 5975927196,
+          "scalar_window_second_word_shifts_and_ors_each": 5882245169,
+          "scope": "exact source-level hash kernel counters; counter instrumentation, loads/stores, SIMD moves, indexing, allocation and control are additional, not CPU instruction totals"
+        },
+        "no_matrix_materialization_required": true,
+        "no_retry_both_parties_hashes": 778521,
+        "one_selected_seed_parse_per_party_fields": 37,
+        "selected_phi_canonical_bytes_per_party": 3276288,
+        "selected_phi_coefficients_per_party": 546048,
+        "source_vector_coefficients": 182016,
+        "wire_bytes_per_actual_projection_attempt": 8331
+      },
+      "projection_per_attempt": {
+        "binary_count_scope": "Exact for literal b-by-b convolution algorithm; not executed CPython or native instruction counts.",
+        "centered_mod_q_reductions": 864,
+        "descriptor_bytes_generated_and_sent_by_verifier": 8331,
+        "descriptor_bytes_read": 8331,
+        "expanded_blocks": 259508,
+        "generator_output_bits_inspected": 314523648,
+        "independent_seed_bits_sampled": 66642,
+        "integer_additions_for_norm": 863,
+        "integer_squares_for_norm": 864,
+        "literal_binary_convolution_ANDs": 381201250608,
+        "literal_binary_convolution_XORs": 381201250608,
+        "prefix_hashes": 259507,
+        "prover_integer_additions_or_subtractions_exact": "number of nonzero trits, with zero-initialized accumulators",
+        "prover_integer_additions_or_subtractions_expectation": 78630912,
+        "prover_trits_inspected": 157261824,
+        "uniform_raw_trit_marginals": "exact; even b prevents a trit straddling PRG blocks",
+        "uniform_worst_case_field_additions_or_subtractions": 157261824
+      },
+      "public_aggregation_once_each_party": {
+        "batched_projection_rows": 3,
+        "combine_source_and_projection_Fq_additions": 546048,
+        "constant_term_adjoint_packing_Fq_negations": 537516,
+        "generator_expansions": 1,
+        "literal_binary_convolution_ANDs": 381201250608,
+        "literal_binary_convolution_XORs": 381201250608,
+        "prefix_hashes": 259507,
+        "projection_part_Fq_additions_or_subtractions_exact": "tau times number of nonzero selected projection trits",
+        "projection_part_trits_inspected": 157261824,
+        "raw_unconditioned_projection_part_expectation_only": 235892736,
+        "rhs_Fq_additions": 13926,
+        "rhs_Fq_multiplications": 13929,
+        "rhs_Fq_multiplications_formula": "3*((3779)+864)",
+        "selected_expectation_warning": "Selection by retries does not preserve the raw expectation; use actual nonzero count or the uniform bound.",
+        "selected_projection_part_uniform_Fq_addition_upper_bound": 471785472,
+        "source_relation_transpose_calls": 3,
+        "source_relation_transpose_cost": {
+          "applications": 3,
+          "counts": {
+            "Fq_additions_or_subtractions": 124428,
+            "Fq_multiplications_by_radix_powers": 122688,
+            "Rq_additions": 41773,
+            "constant_term_coordinate_copies": 15,
+            "fixed_bounded_Rq_multiplications": 120,
+            "fixed_general_Rq_multiplications": 41739,
+            "next_block_padding_coordinate_copies": 0,
+            "transpose_Fq_accumulations_zero_initialized": 8397479,
+            "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+            "transpose_same_typed_multiplication_counts": true
+          },
+          "scope": "Use the previous child relation's fixed linear circuit and its explicitly counted reverse circuit.",
+          "source_level": 2
+        }
+      },
+      "response_per_attempt": {
+        "Fq_additions_or_subtractions": 11603520,
+        "bounded_coefficient_times_Fq_coefficient_multiplications": 11649024,
+        "centered_mod_q_reductions": 45504,
+        "integer_additions_for_norm": 45503,
+        "integer_squares_for_norm": 45504,
+        "short_coefficients_sampled": 256,
+        "terminal_c0_sampling": "independent uniform five-symbol coefficients"
+      },
+      "symmetric_h_once": {
+        "Fq_multiplications_by_inverse_two": 1152,
+        "Rq_additions": 34098,
+        "Rq_multiplications": 34128,
+        "algorithm": "Diagonal uses one dot product; each off-diagonal uses two dots, one ring addition, and coefficientwise division by 2."
+      },
+      "t_Aw_all_source_blocks_once": {
+        "Rq_additions": 68160,
+        "Rq_multiplications": 68256
+      },
+      "terminal": false,
+      "u1_commitment_once": {
+        "Rq_additions": 12272,
+        "Rq_multiplications": 12288
+      },
+      "u2_commitment_once": {
+        "Rq_additions": 3824,
+        "Rq_multiplications": 3840
+      },
+      "verifier_selected_projection_norm_once": {
+        "integer_additions": 863,
+        "integer_bound_comparisons": 1,
+        "integer_squares": 864
+      }
+    },
+    {
+      "accepted_response_split_integer_steps": 38912,
+      "child_relation_exact_linear_circuit_counts": {
+        "Fq_additions_or_subtractions": 97097,
+        "Fq_multiplications_by_radix_powers": 95360,
+        "Rq_additions": 32584,
+        "constant_term_coordinate_copies": 12,
+        "fixed_bounded_Rq_multiplications": 96,
+        "fixed_general_Rq_multiplications": 32574,
+        "next_block_padding_coordinate_copies": 128,
+        "transpose_Fq_accumulations_zero_initialized": 6551326,
+        "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+        "transpose_same_typed_multiplication_counts": true
+      },
+      "child_relation_operator_decomposition": {
+        "A_z": {
+          "Rq_additions": 14568,
+          "Rq_multiplications": 14592
+        },
+        "B_t": {
+          "Rq_additions": 12272,
+          "Rq_multiplications": 12288
+        },
+        "D_h": {
+          "Rq_additions": 3824,
+          "Rq_multiplications": 3840
+        },
+        "constant_diagonal_sums_Fq_additions": 9,
+        "principal_lhs": {
+          "Rq_additions": 1821,
+          "Rq_multiplications": 1824
+        },
+        "principal_rhs": {
+          "Rq_additions": 27,
+          "Rq_multiplications": 30
+        },
+        "public_preprocessing_per_selected_challenge": {
+          "challenge_products_bounded_by_bounded_ring_multiplications": 10,
+          "offdiagonal_weight_multiplications_by_two": 384,
+          "phi_combination_Rq_additions": 5472,
+          "phi_combination_bounded_ring_multiplications": 7296
+        },
+        "recompose_t_h": {
+          "Fq_additions": 56448,
+          "Fq_multiplications_by_radix_powers": 56448
+        },
+        "recompose_z": {
+          "Fq_additions": 38912,
+          "Fq_multiplications_by_radix": 38912
+        },
+        "rowblock_subtractions_Fq": 1728,
+        "status": "Exact primitive decomposition; no dense Fq matrix is instantiated and no wall-time inference is made.",
+        "t_challenge_rhs": {
+          "Rq_additions": 72,
+          "bounded_ring_multiplications": 96
+        },
+        "transpose_implementation": "Reverse the declared linear circuit. Every forward constant multiplication gives one transpose multiplication in the same coefficient algebra; each forward addition gives two accumulations if the transpose accumulators start at zero. Coordinate copies, ct selection, and padding are counted as copies/zero checks, not multiplications."
+      },
+      "digit_decomposition_integer_steps": 64512,
+      "level": 4,
+      "projection_family_costs": {
+        "DFS_nodes_bound": 19,
+        "DFS_value_bits_bound": 22914,
+        "aggregate_both_parties_field_addition_upper_bound_all_projection_retries": 22323658752,
+        "aggregate_both_parties_field_additions_actual": "sum_attempts z_a + 6*z_selected",
+        "aggregation_bytes_unchanged": 85878,
+        "all_projection_retries_both_parties_hash_upper_bound": 36128916,
+        "full_seed_generations_per_raw_trial_upper_bound": 160,
+        "hash_description_bits": 65106,
+        "native_hash_core_counts_one_scan": {
+          "hash_a_words_u": 38,
+          "input_words_v": 19,
+          "pclmul64_products": 161018996,
+          "pclmul_fixed_scratch_zero_word_stores": 36574952,
+          "pclmul_output_offset_word_xors": 4237342,
+          "pclmul_product_word_xors": 322037992,
+          "pclmul_reverse64_calls": 4237342,
+          "pclmul_word_ands_from_reverse_and_final_mask": 42596438,
+          "pclmul_word_ors_from_reverse_align_extract": 33898736,
+          "pclmul_word_shifts_from_reverse_align_extract": 67797472,
+          "scalar_accumulator_word_xors": 5110234452,
+          "scalar_core_AND_words": 5110234452,
+          "scalar_output_offset_bit_xors": 268959708,
+          "scalar_output_zero_word_stores": 4237342,
+          "scalar_parity_calls": 268959708,
+          "scalar_window_right_shifts": 5110234452,
+          "scalar_window_second_word_shifts_and_ors_each": 5029724954,
+          "scope": "exact source-level hash kernel counters; counter instrumentation, loads/stores, SIMD moves, indexing, allocation and control are additional, not CPU instruction totals"
+        },
+        "no_matrix_materialization_required": true,
+        "no_retry_both_parties_hashes": 669054,
+        "one_selected_seed_parse_per_party_fields": 37,
+        "selected_phi_canonical_bytes_per_party": 2801664,
+        "selected_phi_coefficients_per_party": 466944,
+        "source_vector_coefficients": 155648,
+        "wire_bytes_per_actual_projection_attempt": 8289
+      },
+      "projection_per_attempt": {
+        "binary_count_scope": "Exact for literal b-by-b convolution algorithm; not executed CPython or native instruction counts.",
+        "centered_mod_q_reductions": 864,
+        "descriptor_bytes_generated_and_sent_by_verifier": 8289,
+        "descriptor_bytes_read": 8289,
+        "expanded_blocks": 223019,
+        "generator_output_bits_inspected": 268959744,
+        "independent_seed_bits_sampled": 66312,
+        "integer_additions_for_norm": 863,
+        "integer_squares_for_norm": 864,
+        "literal_binary_convolution_ANDs": 324365407848,
+        "literal_binary_convolution_XORs": 324365407848,
+        "prefix_hashes": 223018,
+        "prover_integer_additions_or_subtractions_exact": "number of nonzero trits, with zero-initialized accumulators",
+        "prover_integer_additions_or_subtractions_expectation": 67239936,
+        "prover_trits_inspected": 134479872,
+        "uniform_raw_trit_marginals": "exact; even b prevents a trit straddling PRG blocks",
+        "uniform_worst_case_field_additions_or_subtractions": 134479872
+      },
+      "public_aggregation_once_each_party": {
+        "batched_projection_rows": 3,
+        "combine_source_and_projection_Fq_additions": 466944,
+        "constant_term_adjoint_packing_Fq_negations": 459648,
+        "generator_expansions": 1,
+        "literal_binary_convolution_ANDs": 324365407848,
+        "literal_binary_convolution_XORs": 324365407848,
+        "prefix_hashes": 223018,
+        "projection_part_Fq_additions_or_subtractions_exact": "tau times number of nonzero selected projection trits",
+        "projection_part_trits_inspected": 134479872,
+        "raw_unconditioned_projection_part_expectation_only": 201719808,
+        "rhs_Fq_additions": 14310,
+        "rhs_Fq_multiplications": 14313,
+        "rhs_Fq_multiplications_formula": "3*((3907)+864)",
+        "selected_expectation_warning": "Selection by retries does not preserve the raw expectation; use actual nonzero count or the uniform bound.",
+        "selected_projection_part_uniform_Fq_addition_upper_bound": 403439616,
+        "source_relation_transpose_calls": 3,
+        "source_relation_transpose_cost": {
+          "applications": 3,
+          "counts": {
+            "Fq_additions_or_subtractions": 103689,
+            "Fq_multiplications_by_radix_powers": 101952,
+            "Rq_additions": 35365,
+            "constant_term_coordinate_copies": 12,
+            "fixed_bounded_Rq_multiplications": 96,
+            "fixed_general_Rq_multiplications": 35355,
+            "next_block_padding_coordinate_copies": 128,
+            "transpose_Fq_accumulations_zero_initialized": 7105054,
+            "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+            "transpose_same_typed_multiplication_counts": true
+          },
+          "scope": "Use the previous child relation's fixed linear circuit and its explicitly counted reverse circuit.",
+          "source_level": 3
+        }
+      },
+      "response_per_attempt": {
+        "Fq_additions_or_subtractions": 9922560,
+        "bounded_coefficient_times_Fq_coefficient_multiplications": 9961472,
+        "centered_mod_q_reductions": 38912,
+        "integer_additions_for_norm": 38911,
+        "integer_squares_for_norm": 38912,
+        "short_coefficients_sampled": 256,
+        "terminal_c0_sampling": "independent uniform five-symbol coefficients"
+      },
+      "symmetric_h_once": {
+        "Fq_multiplications_by_inverse_two": 1152,
+        "Rq_additions": 29154,
+        "Rq_multiplications": 29184,
+        "algorithm": "Diagonal uses one dot product; each off-diagonal uses two dots, one ring addition, and coefficientwise division by 2."
+      },
+      "t_Aw_all_source_blocks_once": {
+        "Rq_additions": 58272,
+        "Rq_multiplications": 58368
+      },
+      "terminal": false,
+      "u1_commitment_once": {
+        "Rq_additions": 12272,
+        "Rq_multiplications": 12288
+      },
+      "u2_commitment_once": {
+        "Rq_additions": 3824,
+        "Rq_multiplications": 3840
+      },
+      "verifier_selected_projection_norm_once": {
+        "integer_additions": 863,
+        "integer_bound_comparisons": 1,
+        "integer_squares": 864
+      }
+    },
+    {
+      "level": 5,
+      "pivot_commitment_once": {
+        "Rq_additions": 1532,
+        "Rq_multiplications": 1536
+      },
+      "projection_family_costs": {
+        "DFS_nodes_bound": 19,
+        "DFS_value_bits_bound": 22876,
+        "aggregate_both_parties_field_addition_upper_bound_all_projection_retries": 20432756736,
+        "aggregate_both_parties_field_additions_actual": "sum_attempts z_a + 6*z_selected",
+        "aggregation_bytes_unchanged": 85878,
+        "all_projection_retries_both_parties_hash_upper_bound": 33123492,
+        "full_seed_generations_per_raw_trial_upper_bound": 160,
+        "hash_description_bits": 64998,
+        "native_hash_core_counts_one_scan": {
+          "hash_a_words_u": 38,
+          "input_words_v": 19,
+          "pclmul64_products": 147624452,
+          "pclmul_fixed_scratch_zero_word_stores": 33532424,
+          "pclmul_output_offset_word_xors": 3884854,
+          "pclmul_product_word_xors": 295248904,
+          "pclmul_reverse64_calls": 3884854,
+          "pclmul_word_ands_from_reverse_and_final_mask": 39053006,
+          "pclmul_word_ors_from_reverse_align_extract": 31078832,
+          "pclmul_word_shifts_from_reverse_align_extract": 62157664,
+          "scalar_accumulator_word_xors": 4677364216,
+          "scalar_core_AND_words": 4677364216,
+          "scalar_output_offset_bit_xors": 246177064,
+          "scalar_output_zero_word_stores": 3884854,
+          "scalar_parity_calls": 246177064,
+          "scalar_window_right_shifts": 4677364216,
+          "scalar_window_second_word_shifts_and_ors_each": 4603551990,
+          "scope": "exact source-level hash kernel counters; counter instrumentation, loads/stores, SIMD moves, indexing, allocation and control are additional, not CPU instruction totals"
+        },
+        "no_matrix_materialization_required": true,
+        "no_retry_both_parties_hashes": 613398,
+        "one_selected_seed_parse_per_party_fields": 37,
+        "selected_phi_canonical_bytes_per_party": 2564352,
+        "selected_phi_coefficients_per_party": 427392,
+        "source_vector_coefficients": 142464,
+        "wire_bytes_per_actual_projection_attempt": 8276
+      },
+      "projection_per_attempt": {
+        "binary_count_scope": "Exact for literal b-by-b convolution algorithm; not executed CPython or native instruction counts.",
+        "centered_mod_q_reductions": 864,
+        "descriptor_bytes_generated_and_sent_by_verifier": 8276,
+        "descriptor_bytes_read": 8276,
+        "expanded_blocks": 204467,
+        "generator_output_bits_inspected": 246177792,
+        "independent_seed_bits_sampled": 66202,
+        "integer_additions_for_norm": 863,
+        "integer_squares_for_norm": 864,
+        "literal_binary_convolution_ANDs": 296397185056,
+        "literal_binary_convolution_XORs": 296397185056,
+        "prefix_hashes": 204466,
+        "prover_integer_additions_or_subtractions_exact": "number of nonzero trits, with zero-initialized accumulators",
+        "prover_integer_additions_or_subtractions_expectation": 61544448,
+        "prover_trits_inspected": 123088896,
+        "uniform_raw_trit_marginals": "exact; even b prevents a trit straddling PRG blocks",
+        "uniform_worst_case_field_additions_or_subtractions": 123088896
+      },
+      "public_aggregation_once_each_party": {
+        "batched_projection_rows": 3,
+        "combine_source_and_projection_Fq_additions": 427392,
+        "constant_term_adjoint_packing_Fq_negations": 420714,
+        "generator_expansions": 1,
+        "literal_binary_convolution_ANDs": 296397185056,
+        "literal_binary_convolution_XORs": 296397185056,
+        "prefix_hashes": 204466,
+        "projection_part_Fq_additions_or_subtractions_exact": "tau times number of nonzero selected projection trits",
+        "projection_part_trits_inspected": 123088896,
+        "raw_unconditioned_projection_part_expectation_only": 184633344,
+        "rhs_Fq_additions": 14310,
+        "rhs_Fq_multiplications": 14313,
+        "rhs_Fq_multiplications_formula": "3*((3907)+864)",
+        "selected_expectation_warning": "Selection by retries does not preserve the raw expectation; use actual nonzero count or the uniform bound.",
+        "selected_projection_part_uniform_Fq_addition_upper_bound": 369266688,
+        "source_relation_transpose_calls": 3,
+        "source_relation_transpose_cost": {
+          "applications": 3,
+          "counts": {
+            "Fq_additions_or_subtractions": 97097,
+            "Fq_multiplications_by_radix_powers": 95360,
+            "Rq_additions": 32584,
+            "constant_term_coordinate_copies": 12,
+            "fixed_bounded_Rq_multiplications": 96,
+            "fixed_general_Rq_multiplications": 32574,
+            "next_block_padding_coordinate_copies": 128,
+            "transpose_Fq_accumulations_zero_initialized": 6551326,
+            "transpose_model": "Reverse the declared linear circuit with zero-initialized adjoints: one accumulation after each fixed multiplication, two after each addition/subtraction, one for each coordinate copy. Ring adjoint constants are coefficient-involuted public constants; sign/permutation preprocessing is separate. This is an exact reference implementation count, not a claim of minimal arithmetic.",
+            "transpose_same_typed_multiplication_counts": true
+          },
+          "scope": "Use the previous child relation's fixed linear circuit and its explicitly counted reverse circuit.",
+          "source_level": 4
+        }
+      },
+      "response_per_attempt": {
+        "Fq_additions_or_subtractions": 9097344,
+        "bounded_coefficient_times_Fq_coefficient_multiplications": 9117696,
+        "centered_mod_q_reductions": 20352,
+        "integer_additions_for_norm": 20351,
+        "integer_squares_for_norm": 20352,
+        "short_coefficients_sampled": 448,
+        "terminal_c0_sampling": "Exact uniform box conditioned on the nonzero ring element; sampling trial count is variable."
+      },
+      "symmetric_h_once": {
+        "Fq_multiplications_by_inverse_two": 4032,
+        "Rq_additions": 46662,
+        "Rq_multiplications": 46746,
+        "algorithm": "Diagonal uses one dot product; each off-diagonal uses two dots, one ring addition, and coefficientwise division by 2."
+      },
+      "t_Aw_all_source_blocks_once": {
+        "Rq_additions": 53256,
+        "Rq_multiplications": 53424
+      },
+      "terminal": true,
+      "terminal_verifier": {
+        "A_z": {
+          "Rq_additions": 7608,
+          "Rq_multiplications": 7632
+        },
+        "cached_challenge_products": {
+          "bounded_by_bounded_ring_multiplications": 28,
+          "coefficient_multiplications_by_two": 1344
+        },
+        "invert_c0": {
+          "Rq_multiplications": 24,
+          "Rq_unit_inversions": 1
+        },
+        "phi_challenge_combination": {
+          "Rq_additions": 5724,
+          "bounded_ring_multiplications": 6678
+        },
+        "pivot_digest_check": {
+          "Rq_additions": 1532,
+          "Rq_multiplications": 1536
+        },
+        "pivot_digest_coefficients_compared": 256,
+        "pivot_digit_extraction_integer_steps": 24576,
+        "principal_lhs": {
+          "Rq_additions": 951,
+          "Rq_multiplications": 954
+        },
+        "principal_rhs": {
+          "Rq_additions": 81,
+          "Rq_multiplications": 84
+        },
+        "principal_ring_equality_coefficients_compared": 192,
+        "reconstruct_omitted_constants_Fq_additions_or_subtractions": 18,
+        "response_norm_integer_additions": 20351,
+        "response_norm_integer_squares": 20352,
+        "scope": "Excludes public aggregation, counted above; checks occur only after the accepted terminal response.",
+        "subtract_nonpivot_t": {
+          "Rq_additions_or_subtractions": 144,
+          "bounded_ring_multiplications": 144
+        }
+      },
+      "verifier_selected_projection_norm_once": {
+        "integer_additions": 863,
+        "integer_bound_comparisons": 1,
+        "integer_squares": 864
+      }
+    }
+  ],
+  "not_wall_clock": true,
+  "profile": "N",
+  "status": "COMPLETE_CONCRETE_TYPED_REFERENCE_OPERATION_COUNTS",
+  "units": {
+    "K_addition": {
+      "Fq_additions": 4
+    },
+    "K_by_Fq_multiplication": {
+      "Fq_multiplications": 4
+    },
+    "Rq_addition": {
+      "Fq_additions": 64
+    },
+    "Rq_multiplication_schoolbook": {
+      "Fq_additions_or_subtractions": 4032,
+      "Fq_multiplications": 4096
+    },
+    "bounded_ring_multiplication_schoolbook": {
+      "Fq_additions_or_subtractions": 4032,
+      "bounded_scalar_times_Fq_multiplications": 4096
+    },
+    "note": "Units are retained separately. Ring inversions, integer division/squares, general K multiplication, and Q/B/J calls are not assigned fictitious equivalent costs."
+  },
+  "unresolved": [],
+  "verifier_scope": "Same algebraic verification plus Gen/Parse/streaming batched projection Adjoint; no iid matrix generation or seed-security assumption.",
+  "whole_protocol_asymptotic": {
+    "b_i": "O(log(m_i*N_i)+log(q)+log(T_i)+log(1/eta))",
+    "common_arithmetic": "Same field/ring/carrier/child/terminal reference circuits as Profile I.",
+    "ell_i": "ceil(log2(2*m_i*N_i/b_i)); minimum nonnegative covering depth",
+    "extra_projection_construction_bit_work": "O(sum_i (P_i+2)*m_i*N_i*b_i), literal binary convolution; includes the consumed prefix only.",
+    "general_note": "Other V->P aggregation randomness is uncompressed and remains linear in its original dimensions.",
+    "projection_communication_bits": "sum_i P_i*(b_i+ell_i*(3*b_i-1)), plus per-layer byte alignment"
+  }
+}
