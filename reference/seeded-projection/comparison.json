@@ -48,16 +48,16 @@
   "new_cost_counts": {
     "all_projection_retries_expansion_hashes_both_parties_upper_bound": 509165190,
     "copy_restore": "Full checkpoint sizes are explicit cost parameters in runtime_bounds.json.",
+    "explicit_projection_comparator": "../explicit-projection/artifacts/operation_counts.json",
     "no_retry_PCLMUL64_products_both_parties": 6969158280,
     "no_retry_expansion_hashes_both_parties": 9428985,
     "no_retry_literal_binary_ANDs_both_parties": 13617948582648,
     "no_retry_literal_binary_XORs_both_parties": 13617948582648,
-    "explicit_projection_comparator": "../artifacts/operation_counts.json",
     "unit_prices": "Not assigned; never add field/ring/bit/copy counts into seconds."
   },
-  "runtime_bound": "runtime_bounds.json",
   "projection_descriptors_I": 472103424,
   "projection_descriptors_N": 52557,
+  "runtime_bound": "runtime_bounds.json",
   "same_CRS_setup_joint_distribution": true,
   "same_adversarial_acceptance_probability_claimed": false,
   "same_aggregation_randomness": true,

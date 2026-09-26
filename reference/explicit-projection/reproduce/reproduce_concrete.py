@@ -116,7 +116,7 @@ def run(output):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--output', type=Path, default=Path('build'), help='New output path relative to the repository root, or an explicit absolute path.')
+    ap.add_argument('--output', type=Path, default=Path('build'), help='New output path relative to this reference configuration, or an explicit absolute path.')
     args = ap.parse_args()
     output = args.output if args.output.is_absolute() else ROOT / args.output
     run(output.resolve())

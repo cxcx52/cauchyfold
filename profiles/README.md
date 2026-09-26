@@ -1,14 +1,10 @@
 # Parameter profiles
 
-This directory contains the parameter studies that accompany the concrete
-instance in the repository root:
+This directory contains the compact communication profiles.
 
-- [`finite-arities/`](finite-arities/README.md) derives and searches compact profiles for arities 2, 4, 8, 16, and
-  32 within a fixed finite parameter grid.
-- [`arity-1024/`](arity-1024/README.md) records an arity-1024 front end, field transcript, and
-  role-specific lattice-estimator results.
+- [`finite-arities/`](finite-arities/) covers arities 2, 4, 8, 16, and 32 within a fixed finite parameter grid.
+- [`arity-1024/`](arity-1024/) contains the large-arity front end, field transcript, and role-specific lattice-estimator results.
 
-Each subdirectory states its parameter model, reproduced components, and run
-commands. The finite-grid results are exact within the stated search space.
-The arity-1024 material covers the front end and field protocol rather than a
-complete recursive lattice node.
+The finite-grid communication values range from 114.50 KiB to 238.79 KiB. The arity-1024 syntax totals 274.25 KiB. These profiles use structured aggregation; they are separate from the earlier explicit- and seeded-projection configurations under [`../reference/`](../reference/).
+
+Each subdirectory states its parameter model, reproduced components, and commands. The arity-1024 material covers the front end and field protocol rather than a complete recursive lattice-node implementation.

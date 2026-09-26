@@ -5,6 +5,8 @@ of fresh records folded with one accumulator. It contains exact finite-grid
 search results for `k = 2, 4, 8, 16, 32` and exploratory profiles for `k = 6`
 and `k = 10`.
 
+These are the compact-profile results. The earlier 460.37 MiB explicit-projection and 10.19 MiB seeded-projection configurations are kept separately under [`../../reference/`](../../reference/).
+
 The selected no-retry interaction lengths exclude incoming commitments and
 the CRS:
 

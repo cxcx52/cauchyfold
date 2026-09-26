@@ -2,7 +2,7 @@
 
 `raw/` holds the original per-task JSON outputs without alteration. There are 40 finite records: classical and quantum cost models for each of 20 matrices. `inputs/` holds the exact inputs. The ordinary reproduction command regenerates inputs and validates these records without executing attacks.
 
-To rerun attacks separately, first complete ordinary reproduction, then install SageMath and the dependencies reported in `environment.json`. Obtain the unmodified upstream source:
+To rerun attacks separately, enter `reference/explicit-projection`, complete the data reproduction, then install SageMath and the dependencies reported in `environment.json`. Obtain the unmodified upstream source:
 
 ```sh
 git clone https://github.com/malb/lattice-estimator vendor/lattice-estimator

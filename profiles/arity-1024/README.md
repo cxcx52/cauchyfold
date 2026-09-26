@@ -3,6 +3,7 @@
 This directory records an experimental `k=1024` CauchyFold profile. It is
 included to make the front-end scaling calculation and its concrete evidence
 reproducible. It is not the repository's main concrete profile.
+It uses the compact message grammar and is separate from the earlier projection configurations under [`../../reference/`](../../reference/).
 
 The parameter derivation and projection argument are collected in
 [METHOD.md](METHOD.md).

@@ -1,37 +1,28 @@
 # CauchyFold
 
-This repository accompanies **CauchyFold: Residue-Optimal High-Arity Lattice Folding via Scaled Cauchy Challenges**. It contains the reference compiler, parameter files, and scripts used to reproduce the paper's concrete communication, operation-count, statistical, and lattice-estimator data.
+This repository accompanies **CauchyFold: Residue-Optimal High-Arity Lattice Folding via Scaled Cauchy Challenges**. It contains parameter profiles, exact communication and operation counts, compiler artifacts, and saved lattice-estimator results.
 
-## Reproduction
+## Results
 
-### Requirements
+The repository separates the compact profiles from two earlier projection configurations.
 
-- Python 3
-- the packages listed in [`requirements.txt`](requirements.txt)
+| Configuration | Arity | No-retry interaction | Location |
+|---|---:|---:|---|
+| Compact finite profiles | 2, 4, 8, 16, 32 | 114.50–238.79 KiB | [`profiles/finite-arities/`](profiles/finite-arities/) |
+| Large-arity profile | 1024 | 274.25 KiB | [`profiles/arity-1024/`](profiles/arity-1024/) |
+| Seeded-projection reference | 16 | 10.19 MiB | [`reference/seeded-projection/`](reference/seeded-projection/) |
+| Explicit-projection reference | 16 | 460.37 MiB | [`reference/explicit-projection/`](reference/explicit-projection/) |
 
-From the repository root, run:
-
-```sh
-python -m pip install -r requirements.txt
-python reproduce/reproduce_concrete.py
-```
-
-The script regenerates the concrete instance and compares the generated JSON files with the data in [`artifacts/`](artifacts/). Saved lattice-estimator outputs are checked as part of the reproduction but are not recomputed. The projection and additional parameter studies provide their own commands in [`projection/`](projection/) and [`profiles/`](profiles/README.md).
+The compact profiles use structured aggregation. The two reference configurations retain the earlier explicit aggregation and are kept for comparison. Communication totals are exact for their stated message syntax; incoming commitments and the CRS are reported separately.
 
 ## Repository structure
 
 | Path | Contents |
 |---|---|
-| [`relation/`](relation/) | Sparse quadratic relation used by the compiler |
-| [`compiler/`](compiler/) | Deterministic front-end compiler |
-| [`parameters/`](parameters/) | Concrete parameters and reduction schedule |
-| [`artifacts/`](artifacts/) | Generated compiler, security, communication, and operation data |
-| [`projection/`](projection/) | Seeded projection construction and checks |
-| [`estimator/`](estimator/) | Lattice-estimator inputs and saved outputs |
-| [`profiles/`](profiles/README.md) | Additional parameter profiles and reproduction scripts |
-| [`checks/`](checks/) | Field-arithmetic and serialization checks |
-| [`reproduce/`](reproduce/) | Main reproduction entry point |
+| [`profiles/`](profiles/) | Compact finite-arity and large-arity profiles |
+| [`reference/`](reference/) | Earlier explicit- and seeded-projection configurations |
+| [`requirements.txt`](requirements.txt) | Python dependencies |
 
-Communication values are exact for the specified message syntax. Lattice-estimator values are heuristic attack-cost estimates produced with the pinned estimator revision recorded in the artifacts.
+Each profile directory contains its own reproduction commands and scope. Saved lattice-estimator values are heuristic attack-cost estimates produced with the pinned estimator revision recorded alongside the results.
 
 Released under the [MIT License](LICENSE).
