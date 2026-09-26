@@ -1,0 +1,564 @@
+{
+  "P_bytes": 230502,
+  "V_bytes": 50330,
+  "all_input_commitment_bytes": 12595200,
+  "aux_rank": 16,
+  "crs_bytes": 3474533376,
+  "d": 64,
+  "exact_less_than_2_to_minus_130": true,
+  "field_padded_rows": 67108864,
+  "field_rounds": 26,
+  "field_rows": 47324211,
+  "fresh_commitment_bytes": 12582912,
+  "front_rank": 32,
+  "honest_exhaustion_bound": {
+    "denominator": "730750818665451459101842416358141509827966271488",
+    "numerator": "5"
+  },
+  "k": 1024,
+  "layers": [
+    {
+      "G": 7768965376,
+      "N": 30349440,
+      "S": 30347521,
+      "aggregation_degree": 526914,
+      "augmented_rows": 2107660,
+      "beta_A": 12330665646,
+      "beta_aux": 376257,
+      "bh_columns": 11160,
+      "bt_columns": 6720,
+      "digits": 8,
+      "i": 0,
+      "linear_rows": 2107276,
+      "n": 15807,
+      "next_S": 2212010497,
+      "next_raw": 3167616,
+      "p_bytes": 13027,
+      "padding": 1919,
+      "projection_codec": {
+        "T": 11653448064,
+        "bits": 5892,
+        "bytes": 737,
+        "k": 13,
+        "n": 384
+      },
+      "raw": 30347521,
+      "rho": 64,
+      "s": 30,
+      "seed": {
+        "N": 30349440,
+        "R": 23308369920,
+        "S": 30347521,
+        "T": 11653448064,
+        "b": 1237,
+        "bits": 93987,
+        "bytes": 11749,
+        "error": {
+          "denominator": "215679573337205118357336120696157045389097155380324579848828881993728",
+          "numerator": "75557891873410316763161"
+        },
+        "h": 25,
+        "prefix_hashes": 18842659,
+        "w": 118
+      },
+      "v_bytes": 12511
+    },
+    {
+      "G": 566274687232,
+      "N": 3168256,
+      "S": 2212010497,
+      "aggregation_degree": 1264,
+      "augmented_rows": 5059,
+      "beta_A": 25109346730,
+      "beta_aux": 383127,
+      "bh_columns": 2205,
+      "bt_columns": 2744,
+      "digits": 7,
+      "i": 1,
+      "linear_rows": 4675,
+      "n": 3536,
+      "next_S": 2293530321,
+      "next_raw": 769344,
+      "p_bytes": 13175,
+      "padding": 640,
+      "projection_codec": {
+        "T": 849412030848,
+        "bits": 7079,
+        "bytes": 885,
+        "k": 16,
+        "n": 384
+      },
+      "raw": 3167616,
+      "rho": 128,
+      "s": 14,
+      "seed": {
+        "N": 3168256,
+        "R": 2433220608,
+        "S": 2212010497,
+        "T": 849412030848,
+        "b": 1248,
+        "bits": 79851,
+        "bytes": 9982,
+        "error": {
+          "denominator": "1684996666696914987166688442938726917102321526408785780068975640576",
+          "numerator": "590295902717594304533"
+        },
+        "h": 21,
+        "prefix_hashes": 1949695,
+        "w": 121
+      },
+      "v_bytes": 10360
+    },
+    {
+      "G": 587143762176,
+      "N": 769536,
+      "S": 2293530321,
+      "aggregation_degree": 1152,
+      "augmented_rows": 4611,
+      "beta_A": 17190024523,
+      "beta_aux": 262291,
+      "bh_columns": 756,
+      "bt_columns": 1568,
+      "digits": 7,
+      "i": 2,
+      "linear_rows": 4227,
+      "n": 1503,
+      "next_S": 1074946007,
+      "next_raw": 341120,
+      "p_bytes": 13177,
+      "padding": 192,
+      "projection_codec": {
+        "T": 880715643264,
+        "bits": 7089,
+        "bytes": 887,
+        "k": 16,
+        "n": 384
+      },
+      "raw": 769344,
+      "rho": 128,
+      "s": 8,
+      "seed": {
+        "N": 769536,
+        "R": 591003648,
+        "S": 2293530321,
+        "T": 880715643264,
+        "b": 1232,
+        "bits": 71437,
+        "bytes": 8930,
+        "error": {
+          "denominator": "105312291668557186697918027683670432318895095400549111254310977536",
+          "numerator": "36893493370079412243"
+        },
+        "h": 19,
+        "prefix_hashes": 479710,
+        "w": 119
+      },
+      "v_bytes": 9164
+    },
+    {
+      "G": 275186177792,
+      "N": 341376,
+      "S": 1074946007,
+      "aggregation_degree": 1168,
+      "augmented_rows": 4675,
+      "beta_A": 13777860934,
+      "beta_aux": 210228,
+      "bh_columns": 441,
+      "bt_columns": 1176,
+      "digits": 7,
+      "i": 3,
+      "linear_rows": 4291,
+      "n": 889,
+      "next_S": 690553375,
+      "next_raw": 217280,
+      "p_bytes": 13154,
+      "padding": 256,
+      "projection_codec": {
+        "T": 412779266688,
+        "bits": 6912,
+        "bytes": 864,
+        "k": 15,
+        "n": 384
+      },
+      "raw": 341120,
+      "rho": 128,
+      "s": 6,
+      "seed": {
+        "N": 341376,
+        "R": 262176768,
+        "S": 1074946007,
+        "T": 412779266688,
+        "b": 1216,
+        "bits": 66862,
+        "bytes": 8358,
+        "error": {
+          "denominator": "3291009114642412084309938365114701009965471731267159726697218048",
+          "numerator": "1152922123077419017"
+        },
+        "h": 18,
+        "prefix_hashes": 215605,
+        "w": 117
+      },
+      "v_bytes": 8544
+    },
+    {
+      "G": 176781664001,
+      "N": 217280,
+      "S": 690553375,
+      "aggregation_degree": 1104,
+      "augmented_rows": 4419,
+      "beta_A": 430545016,
+      "i": 4,
+      "linear_rows": 4035,
+      "n": 679,
+      "p_bytes": 138537,
+      "padding": 0,
+      "projection_codec": {
+        "T": 265172496000,
+        "bits": 6759,
+        "bytes": 845,
+        "k": 15,
+        "n": 384
+      },
+      "raw": 217280,
+      "rho": null,
+      "s": 5,
+      "seed": {
+        "N": 217280,
+        "R": 166871040,
+        "S": 690553375,
+        "T": 265172496000,
+        "b": 1210,
+        "bits": 66532,
+        "bytes": 8317,
+        "error": {
+          "denominator": "3291009114642412084309938365114701009965471731267159726697218048",
+          "numerator": "1152922123077419017"
+        },
+        "h": 18,
+        "prefix_hashes": 137909,
+        "w": 116
+      },
+      "terminal_codec": {
+        "T": 176781664001,
+        "bits": 607066,
+        "bytes": 75884,
+        "k": 11,
+        "n": 43456
+      },
+      "v_bytes": 8479
+    }
+  ],
+  "main_rank": 28,
+  "max_accepted_bytes": 8049254,
+  "pivot_rank": 4,
+  "projection_rows": 384,
+  "projection_trits": 13380820992,
+  "q": 281474976710597,
+  "roles": [
+    {
+      "beta": 44071,
+      "columns": 219,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 44071,
+        "m": 14016,
+        "n": 2048,
+        "norm": 2
+      },
+      "matrix_id": "A_st",
+      "q": 281474976710597,
+      "rows": 32,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 44071,
+      "columns": 12288,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 44071,
+        "m": 786432,
+        "n": 2048,
+        "norm": 2
+      },
+      "matrix_id": "A_H",
+      "q": 281474976710597,
+      "rows": 32,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 44071,
+      "columns": 237198,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 44071,
+        "m": 15180672,
+        "n": 2048,
+        "norm": 2
+      },
+      "matrix_id": "A_aux",
+      "q": 281474976710597,
+      "rows": 32,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 12330665646,
+      "columns": 15807,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 12330665646,
+        "m": 1011648,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_0",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 376257,
+      "columns": 6720,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 376257,
+        "m": 430080,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_0",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 376257,
+      "columns": 11160,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 376257,
+        "m": 714240,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_0",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 25109346730,
+      "columns": 3536,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 25109346730,
+        "m": 226304,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_1",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 383127,
+      "columns": 2744,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 383127,
+        "m": 175616,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_1",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 383127,
+      "columns": 2205,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 383127,
+        "m": 141120,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_1",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 17190024523,
+      "columns": 1503,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 17190024523,
+        "m": 96192,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_2",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 262291,
+      "columns": 1568,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 262291,
+        "m": 100352,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_2",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 262291,
+      "columns": 756,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 262291,
+        "m": 48384,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_2",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 13777860934,
+      "columns": 889,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 13777860934,
+        "m": 56896,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_3",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 210228,
+      "columns": 1176,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 210228,
+        "m": 75264,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_3",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 210228,
+      "columns": 441,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 210228,
+        "m": 28224,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_3",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 430545016,
+      "columns": 679,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 430545016,
+        "m": 43456,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_4",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 1355,
+      "columns": 448,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 1355,
+        "m": 28672,
+        "n": 256,
+        "norm": 2
+      },
+      "matrix_id": "B_pivot",
+      "q": 281474976710597,
+      "rows": 4,
+      "status": "READY_NOT_ESTIMATED"
+    }
+  ],
+  "statistical_error": {
+    "denominator": "45643442024919817594330934013153017567595285462448780337526725273890248193770106962372600109569304415779241547925531949289751892435555945521967283275581761554395840541844240511023145355067780589502039698815676865039449816402274782543872000000000000000000000000000000000000000000000000000000000000000",
+    "numerator": "2581943678203794927017698452024048702634718022270692628627786644842666787807211076486984925326176535404895419702721759137957849946171900009736715147444578971481891999616722789812336818170002727185780663573734782370674047823981777494969688068123576473499477477"
+  },
+  "statistical_neglog2": 133.69907385608758,
+  "statistical_terms": {
+    "aggregation": {
+      "denominator": "139984046385907368663203029810604876833669612732924828464507254088191293106269702187389085199021109613",
+      "numerator": "31385508688762209688866510718427147056989302305749770403949"
+    },
+    "cauchy": {
+      "denominator": "6277101735381417787968937850905666259283729212940150694257",
+      "numerator": "2048"
+    },
+    "coordinate": {
+      "denominator": "612236641053274743733716946469919623863888309689418321113407728262245655059814453125000",
+      "numerator": "34152368433293389671234763227403163909912109313"
+    },
+    "field": {
+      "denominator": "6277101735381417787968937850905666259283729212940150695281",
+      "numerator": "104"
+    },
+    "projection": {
+      "denominator": "196159429230833773869868419475239575503198607639501078528",
+      "numerator": "109951162777625"
+    }
+  },
+  "status": "CANDIDATE_WITH_EXACT_ARITHMETIC_NOT_FULL_SECURITY_CERTIFICATE",
+  "total_bytes": 280832,
+  "unconditional_honest_expected_bytes_strict_upper": 329690,
+  "used": 30347521,
+  "values": 79030
+}

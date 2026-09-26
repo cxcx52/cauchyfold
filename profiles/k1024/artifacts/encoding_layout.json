@@ -1,0 +1,8239 @@
+{
+  "backend_padding_has_explicit_zero_equations": true,
+  "backend_partition_padding": 1919,
+  "bit_order": "48 LSB-first bits per Fq coefficient; basis order 1,theta,theta^2,theta^3",
+  "constant_coordinate": 30347520,
+  "helper_bits": 15173760,
+  "helper_start": 15173760,
+  "k": 1024,
+  "prefix_helpers": "helper[B+192*v+48*t+j]=product_{h=j}^{47} [bit_h == bit_h(q)]; helper e_48 is fixed one",
+  "reserved_zero_coordinates": 0,
+  "segments": [
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "accumulator",
+      "ring_columns": 219,
+      "start": 0
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1",
+      "ring_columns": 219,
+      "start": 14016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_2",
+      "ring_columns": 219,
+      "start": 28032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_3",
+      "ring_columns": 219,
+      "start": 42048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_4",
+      "ring_columns": 219,
+      "start": 56064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_5",
+      "ring_columns": 219,
+      "start": 70080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_6",
+      "ring_columns": 219,
+      "start": 84096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_7",
+      "ring_columns": 219,
+      "start": 98112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_8",
+      "ring_columns": 219,
+      "start": 112128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_9",
+      "ring_columns": 219,
+      "start": 126144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_10",
+      "ring_columns": 219,
+      "start": 140160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_11",
+      "ring_columns": 219,
+      "start": 154176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_12",
+      "ring_columns": 219,
+      "start": 168192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_13",
+      "ring_columns": 219,
+      "start": 182208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_14",
+      "ring_columns": 219,
+      "start": 196224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_15",
+      "ring_columns": 219,
+      "start": 210240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_16",
+      "ring_columns": 219,
+      "start": 224256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_17",
+      "ring_columns": 219,
+      "start": 238272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_18",
+      "ring_columns": 219,
+      "start": 252288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_19",
+      "ring_columns": 219,
+      "start": 266304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_20",
+      "ring_columns": 219,
+      "start": 280320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_21",
+      "ring_columns": 219,
+      "start": 294336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_22",
+      "ring_columns": 219,
+      "start": 308352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_23",
+      "ring_columns": 219,
+      "start": 322368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_24",
+      "ring_columns": 219,
+      "start": 336384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_25",
+      "ring_columns": 219,
+      "start": 350400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_26",
+      "ring_columns": 219,
+      "start": 364416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_27",
+      "ring_columns": 219,
+      "start": 378432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_28",
+      "ring_columns": 219,
+      "start": 392448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_29",
+      "ring_columns": 219,
+      "start": 406464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_30",
+      "ring_columns": 219,
+      "start": 420480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_31",
+      "ring_columns": 219,
+      "start": 434496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_32",
+      "ring_columns": 219,
+      "start": 448512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_33",
+      "ring_columns": 219,
+      "start": 462528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_34",
+      "ring_columns": 219,
+      "start": 476544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_35",
+      "ring_columns": 219,
+      "start": 490560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_36",
+      "ring_columns": 219,
+      "start": 504576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_37",
+      "ring_columns": 219,
+      "start": 518592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_38",
+      "ring_columns": 219,
+      "start": 532608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_39",
+      "ring_columns": 219,
+      "start": 546624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_40",
+      "ring_columns": 219,
+      "start": 560640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_41",
+      "ring_columns": 219,
+      "start": 574656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_42",
+      "ring_columns": 219,
+      "start": 588672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_43",
+      "ring_columns": 219,
+      "start": 602688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_44",
+      "ring_columns": 219,
+      "start": 616704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_45",
+      "ring_columns": 219,
+      "start": 630720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_46",
+      "ring_columns": 219,
+      "start": 644736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_47",
+      "ring_columns": 219,
+      "start": 658752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_48",
+      "ring_columns": 219,
+      "start": 672768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_49",
+      "ring_columns": 219,
+      "start": 686784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_50",
+      "ring_columns": 219,
+      "start": 700800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_51",
+      "ring_columns": 219,
+      "start": 714816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_52",
+      "ring_columns": 219,
+      "start": 728832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_53",
+      "ring_columns": 219,
+      "start": 742848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_54",
+      "ring_columns": 219,
+      "start": 756864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_55",
+      "ring_columns": 219,
+      "start": 770880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_56",
+      "ring_columns": 219,
+      "start": 784896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_57",
+      "ring_columns": 219,
+      "start": 798912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_58",
+      "ring_columns": 219,
+      "start": 812928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_59",
+      "ring_columns": 219,
+      "start": 826944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_60",
+      "ring_columns": 219,
+      "start": 840960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_61",
+      "ring_columns": 219,
+      "start": 854976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_62",
+      "ring_columns": 219,
+      "start": 868992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_63",
+      "ring_columns": 219,
+      "start": 883008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_64",
+      "ring_columns": 219,
+      "start": 897024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_65",
+      "ring_columns": 219,
+      "start": 911040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_66",
+      "ring_columns": 219,
+      "start": 925056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_67",
+      "ring_columns": 219,
+      "start": 939072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_68",
+      "ring_columns": 219,
+      "start": 953088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_69",
+      "ring_columns": 219,
+      "start": 967104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_70",
+      "ring_columns": 219,
+      "start": 981120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_71",
+      "ring_columns": 219,
+      "start": 995136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_72",
+      "ring_columns": 219,
+      "start": 1009152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_73",
+      "ring_columns": 219,
+      "start": 1023168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_74",
+      "ring_columns": 219,
+      "start": 1037184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_75",
+      "ring_columns": 219,
+      "start": 1051200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_76",
+      "ring_columns": 219,
+      "start": 1065216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_77",
+      "ring_columns": 219,
+      "start": 1079232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_78",
+      "ring_columns": 219,
+      "start": 1093248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_79",
+      "ring_columns": 219,
+      "start": 1107264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_80",
+      "ring_columns": 219,
+      "start": 1121280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_81",
+      "ring_columns": 219,
+      "start": 1135296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_82",
+      "ring_columns": 219,
+      "start": 1149312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_83",
+      "ring_columns": 219,
+      "start": 1163328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_84",
+      "ring_columns": 219,
+      "start": 1177344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_85",
+      "ring_columns": 219,
+      "start": 1191360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_86",
+      "ring_columns": 219,
+      "start": 1205376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_87",
+      "ring_columns": 219,
+      "start": 1219392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_88",
+      "ring_columns": 219,
+      "start": 1233408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_89",
+      "ring_columns": 219,
+      "start": 1247424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_90",
+      "ring_columns": 219,
+      "start": 1261440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_91",
+      "ring_columns": 219,
+      "start": 1275456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_92",
+      "ring_columns": 219,
+      "start": 1289472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_93",
+      "ring_columns": 219,
+      "start": 1303488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_94",
+      "ring_columns": 219,
+      "start": 1317504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_95",
+      "ring_columns": 219,
+      "start": 1331520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_96",
+      "ring_columns": 219,
+      "start": 1345536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_97",
+      "ring_columns": 219,
+      "start": 1359552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_98",
+      "ring_columns": 219,
+      "start": 1373568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_99",
+      "ring_columns": 219,
+      "start": 1387584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_100",
+      "ring_columns": 219,
+      "start": 1401600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_101",
+      "ring_columns": 219,
+      "start": 1415616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_102",
+      "ring_columns": 219,
+      "start": 1429632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_103",
+      "ring_columns": 219,
+      "start": 1443648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_104",
+      "ring_columns": 219,
+      "start": 1457664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_105",
+      "ring_columns": 219,
+      "start": 1471680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_106",
+      "ring_columns": 219,
+      "start": 1485696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_107",
+      "ring_columns": 219,
+      "start": 1499712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_108",
+      "ring_columns": 219,
+      "start": 1513728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_109",
+      "ring_columns": 219,
+      "start": 1527744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_110",
+      "ring_columns": 219,
+      "start": 1541760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_111",
+      "ring_columns": 219,
+      "start": 1555776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_112",
+      "ring_columns": 219,
+      "start": 1569792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_113",
+      "ring_columns": 219,
+      "start": 1583808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_114",
+      "ring_columns": 219,
+      "start": 1597824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_115",
+      "ring_columns": 219,
+      "start": 1611840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_116",
+      "ring_columns": 219,
+      "start": 1625856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_117",
+      "ring_columns": 219,
+      "start": 1639872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_118",
+      "ring_columns": 219,
+      "start": 1653888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_119",
+      "ring_columns": 219,
+      "start": 1667904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_120",
+      "ring_columns": 219,
+      "start": 1681920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_121",
+      "ring_columns": 219,
+      "start": 1695936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_122",
+      "ring_columns": 219,
+      "start": 1709952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_123",
+      "ring_columns": 219,
+      "start": 1723968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_124",
+      "ring_columns": 219,
+      "start": 1737984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_125",
+      "ring_columns": 219,
+      "start": 1752000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_126",
+      "ring_columns": 219,
+      "start": 1766016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_127",
+      "ring_columns": 219,
+      "start": 1780032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_128",
+      "ring_columns": 219,
+      "start": 1794048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_129",
+      "ring_columns": 219,
+      "start": 1808064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_130",
+      "ring_columns": 219,
+      "start": 1822080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_131",
+      "ring_columns": 219,
+      "start": 1836096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_132",
+      "ring_columns": 219,
+      "start": 1850112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_133",
+      "ring_columns": 219,
+      "start": 1864128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_134",
+      "ring_columns": 219,
+      "start": 1878144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_135",
+      "ring_columns": 219,
+      "start": 1892160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_136",
+      "ring_columns": 219,
+      "start": 1906176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_137",
+      "ring_columns": 219,
+      "start": 1920192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_138",
+      "ring_columns": 219,
+      "start": 1934208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_139",
+      "ring_columns": 219,
+      "start": 1948224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_140",
+      "ring_columns": 219,
+      "start": 1962240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_141",
+      "ring_columns": 219,
+      "start": 1976256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_142",
+      "ring_columns": 219,
+      "start": 1990272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_143",
+      "ring_columns": 219,
+      "start": 2004288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_144",
+      "ring_columns": 219,
+      "start": 2018304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_145",
+      "ring_columns": 219,
+      "start": 2032320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_146",
+      "ring_columns": 219,
+      "start": 2046336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_147",
+      "ring_columns": 219,
+      "start": 2060352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_148",
+      "ring_columns": 219,
+      "start": 2074368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_149",
+      "ring_columns": 219,
+      "start": 2088384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_150",
+      "ring_columns": 219,
+      "start": 2102400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_151",
+      "ring_columns": 219,
+      "start": 2116416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_152",
+      "ring_columns": 219,
+      "start": 2130432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_153",
+      "ring_columns": 219,
+      "start": 2144448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_154",
+      "ring_columns": 219,
+      "start": 2158464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_155",
+      "ring_columns": 219,
+      "start": 2172480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_156",
+      "ring_columns": 219,
+      "start": 2186496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_157",
+      "ring_columns": 219,
+      "start": 2200512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_158",
+      "ring_columns": 219,
+      "start": 2214528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_159",
+      "ring_columns": 219,
+      "start": 2228544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_160",
+      "ring_columns": 219,
+      "start": 2242560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_161",
+      "ring_columns": 219,
+      "start": 2256576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_162",
+      "ring_columns": 219,
+      "start": 2270592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_163",
+      "ring_columns": 219,
+      "start": 2284608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_164",
+      "ring_columns": 219,
+      "start": 2298624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_165",
+      "ring_columns": 219,
+      "start": 2312640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_166",
+      "ring_columns": 219,
+      "start": 2326656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_167",
+      "ring_columns": 219,
+      "start": 2340672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_168",
+      "ring_columns": 219,
+      "start": 2354688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_169",
+      "ring_columns": 219,
+      "start": 2368704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_170",
+      "ring_columns": 219,
+      "start": 2382720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_171",
+      "ring_columns": 219,
+      "start": 2396736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_172",
+      "ring_columns": 219,
+      "start": 2410752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_173",
+      "ring_columns": 219,
+      "start": 2424768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_174",
+      "ring_columns": 219,
+      "start": 2438784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_175",
+      "ring_columns": 219,
+      "start": 2452800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_176",
+      "ring_columns": 219,
+      "start": 2466816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_177",
+      "ring_columns": 219,
+      "start": 2480832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_178",
+      "ring_columns": 219,
+      "start": 2494848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_179",
+      "ring_columns": 219,
+      "start": 2508864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_180",
+      "ring_columns": 219,
+      "start": 2522880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_181",
+      "ring_columns": 219,
+      "start": 2536896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_182",
+      "ring_columns": 219,
+      "start": 2550912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_183",
+      "ring_columns": 219,
+      "start": 2564928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_184",
+      "ring_columns": 219,
+      "start": 2578944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_185",
+      "ring_columns": 219,
+      "start": 2592960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_186",
+      "ring_columns": 219,
+      "start": 2606976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_187",
+      "ring_columns": 219,
+      "start": 2620992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_188",
+      "ring_columns": 219,
+      "start": 2635008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_189",
+      "ring_columns": 219,
+      "start": 2649024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_190",
+      "ring_columns": 219,
+      "start": 2663040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_191",
+      "ring_columns": 219,
+      "start": 2677056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_192",
+      "ring_columns": 219,
+      "start": 2691072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_193",
+      "ring_columns": 219,
+      "start": 2705088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_194",
+      "ring_columns": 219,
+      "start": 2719104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_195",
+      "ring_columns": 219,
+      "start": 2733120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_196",
+      "ring_columns": 219,
+      "start": 2747136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_197",
+      "ring_columns": 219,
+      "start": 2761152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_198",
+      "ring_columns": 219,
+      "start": 2775168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_199",
+      "ring_columns": 219,
+      "start": 2789184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_200",
+      "ring_columns": 219,
+      "start": 2803200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_201",
+      "ring_columns": 219,
+      "start": 2817216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_202",
+      "ring_columns": 219,
+      "start": 2831232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_203",
+      "ring_columns": 219,
+      "start": 2845248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_204",
+      "ring_columns": 219,
+      "start": 2859264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_205",
+      "ring_columns": 219,
+      "start": 2873280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_206",
+      "ring_columns": 219,
+      "start": 2887296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_207",
+      "ring_columns": 219,
+      "start": 2901312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_208",
+      "ring_columns": 219,
+      "start": 2915328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_209",
+      "ring_columns": 219,
+      "start": 2929344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_210",
+      "ring_columns": 219,
+      "start": 2943360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_211",
+      "ring_columns": 219,
+      "start": 2957376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_212",
+      "ring_columns": 219,
+      "start": 2971392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_213",
+      "ring_columns": 219,
+      "start": 2985408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_214",
+      "ring_columns": 219,
+      "start": 2999424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_215",
+      "ring_columns": 219,
+      "start": 3013440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_216",
+      "ring_columns": 219,
+      "start": 3027456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_217",
+      "ring_columns": 219,
+      "start": 3041472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_218",
+      "ring_columns": 219,
+      "start": 3055488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_219",
+      "ring_columns": 219,
+      "start": 3069504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_220",
+      "ring_columns": 219,
+      "start": 3083520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_221",
+      "ring_columns": 219,
+      "start": 3097536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_222",
+      "ring_columns": 219,
+      "start": 3111552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_223",
+      "ring_columns": 219,
+      "start": 3125568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_224",
+      "ring_columns": 219,
+      "start": 3139584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_225",
+      "ring_columns": 219,
+      "start": 3153600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_226",
+      "ring_columns": 219,
+      "start": 3167616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_227",
+      "ring_columns": 219,
+      "start": 3181632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_228",
+      "ring_columns": 219,
+      "start": 3195648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_229",
+      "ring_columns": 219,
+      "start": 3209664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_230",
+      "ring_columns": 219,
+      "start": 3223680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_231",
+      "ring_columns": 219,
+      "start": 3237696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_232",
+      "ring_columns": 219,
+      "start": 3251712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_233",
+      "ring_columns": 219,
+      "start": 3265728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_234",
+      "ring_columns": 219,
+      "start": 3279744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_235",
+      "ring_columns": 219,
+      "start": 3293760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_236",
+      "ring_columns": 219,
+      "start": 3307776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_237",
+      "ring_columns": 219,
+      "start": 3321792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_238",
+      "ring_columns": 219,
+      "start": 3335808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_239",
+      "ring_columns": 219,
+      "start": 3349824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_240",
+      "ring_columns": 219,
+      "start": 3363840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_241",
+      "ring_columns": 219,
+      "start": 3377856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_242",
+      "ring_columns": 219,
+      "start": 3391872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_243",
+      "ring_columns": 219,
+      "start": 3405888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_244",
+      "ring_columns": 219,
+      "start": 3419904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_245",
+      "ring_columns": 219,
+      "start": 3433920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_246",
+      "ring_columns": 219,
+      "start": 3447936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_247",
+      "ring_columns": 219,
+      "start": 3461952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_248",
+      "ring_columns": 219,
+      "start": 3475968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_249",
+      "ring_columns": 219,
+      "start": 3489984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_250",
+      "ring_columns": 219,
+      "start": 3504000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_251",
+      "ring_columns": 219,
+      "start": 3518016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_252",
+      "ring_columns": 219,
+      "start": 3532032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_253",
+      "ring_columns": 219,
+      "start": 3546048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_254",
+      "ring_columns": 219,
+      "start": 3560064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_255",
+      "ring_columns": 219,
+      "start": 3574080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_256",
+      "ring_columns": 219,
+      "start": 3588096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_257",
+      "ring_columns": 219,
+      "start": 3602112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_258",
+      "ring_columns": 219,
+      "start": 3616128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_259",
+      "ring_columns": 219,
+      "start": 3630144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_260",
+      "ring_columns": 219,
+      "start": 3644160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_261",
+      "ring_columns": 219,
+      "start": 3658176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_262",
+      "ring_columns": 219,
+      "start": 3672192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_263",
+      "ring_columns": 219,
+      "start": 3686208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_264",
+      "ring_columns": 219,
+      "start": 3700224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_265",
+      "ring_columns": 219,
+      "start": 3714240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_266",
+      "ring_columns": 219,
+      "start": 3728256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_267",
+      "ring_columns": 219,
+      "start": 3742272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_268",
+      "ring_columns": 219,
+      "start": 3756288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_269",
+      "ring_columns": 219,
+      "start": 3770304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_270",
+      "ring_columns": 219,
+      "start": 3784320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_271",
+      "ring_columns": 219,
+      "start": 3798336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_272",
+      "ring_columns": 219,
+      "start": 3812352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_273",
+      "ring_columns": 219,
+      "start": 3826368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_274",
+      "ring_columns": 219,
+      "start": 3840384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_275",
+      "ring_columns": 219,
+      "start": 3854400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_276",
+      "ring_columns": 219,
+      "start": 3868416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_277",
+      "ring_columns": 219,
+      "start": 3882432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_278",
+      "ring_columns": 219,
+      "start": 3896448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_279",
+      "ring_columns": 219,
+      "start": 3910464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_280",
+      "ring_columns": 219,
+      "start": 3924480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_281",
+      "ring_columns": 219,
+      "start": 3938496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_282",
+      "ring_columns": 219,
+      "start": 3952512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_283",
+      "ring_columns": 219,
+      "start": 3966528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_284",
+      "ring_columns": 219,
+      "start": 3980544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_285",
+      "ring_columns": 219,
+      "start": 3994560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_286",
+      "ring_columns": 219,
+      "start": 4008576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_287",
+      "ring_columns": 219,
+      "start": 4022592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_288",
+      "ring_columns": 219,
+      "start": 4036608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_289",
+      "ring_columns": 219,
+      "start": 4050624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_290",
+      "ring_columns": 219,
+      "start": 4064640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_291",
+      "ring_columns": 219,
+      "start": 4078656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_292",
+      "ring_columns": 219,
+      "start": 4092672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_293",
+      "ring_columns": 219,
+      "start": 4106688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_294",
+      "ring_columns": 219,
+      "start": 4120704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_295",
+      "ring_columns": 219,
+      "start": 4134720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_296",
+      "ring_columns": 219,
+      "start": 4148736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_297",
+      "ring_columns": 219,
+      "start": 4162752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_298",
+      "ring_columns": 219,
+      "start": 4176768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_299",
+      "ring_columns": 219,
+      "start": 4190784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_300",
+      "ring_columns": 219,
+      "start": 4204800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_301",
+      "ring_columns": 219,
+      "start": 4218816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_302",
+      "ring_columns": 219,
+      "start": 4232832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_303",
+      "ring_columns": 219,
+      "start": 4246848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_304",
+      "ring_columns": 219,
+      "start": 4260864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_305",
+      "ring_columns": 219,
+      "start": 4274880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_306",
+      "ring_columns": 219,
+      "start": 4288896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_307",
+      "ring_columns": 219,
+      "start": 4302912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_308",
+      "ring_columns": 219,
+      "start": 4316928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_309",
+      "ring_columns": 219,
+      "start": 4330944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_310",
+      "ring_columns": 219,
+      "start": 4344960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_311",
+      "ring_columns": 219,
+      "start": 4358976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_312",
+      "ring_columns": 219,
+      "start": 4372992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_313",
+      "ring_columns": 219,
+      "start": 4387008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_314",
+      "ring_columns": 219,
+      "start": 4401024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_315",
+      "ring_columns": 219,
+      "start": 4415040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_316",
+      "ring_columns": 219,
+      "start": 4429056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_317",
+      "ring_columns": 219,
+      "start": 4443072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_318",
+      "ring_columns": 219,
+      "start": 4457088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_319",
+      "ring_columns": 219,
+      "start": 4471104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_320",
+      "ring_columns": 219,
+      "start": 4485120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_321",
+      "ring_columns": 219,
+      "start": 4499136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_322",
+      "ring_columns": 219,
+      "start": 4513152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_323",
+      "ring_columns": 219,
+      "start": 4527168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_324",
+      "ring_columns": 219,
+      "start": 4541184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_325",
+      "ring_columns": 219,
+      "start": 4555200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_326",
+      "ring_columns": 219,
+      "start": 4569216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_327",
+      "ring_columns": 219,
+      "start": 4583232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_328",
+      "ring_columns": 219,
+      "start": 4597248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_329",
+      "ring_columns": 219,
+      "start": 4611264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_330",
+      "ring_columns": 219,
+      "start": 4625280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_331",
+      "ring_columns": 219,
+      "start": 4639296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_332",
+      "ring_columns": 219,
+      "start": 4653312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_333",
+      "ring_columns": 219,
+      "start": 4667328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_334",
+      "ring_columns": 219,
+      "start": 4681344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_335",
+      "ring_columns": 219,
+      "start": 4695360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_336",
+      "ring_columns": 219,
+      "start": 4709376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_337",
+      "ring_columns": 219,
+      "start": 4723392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_338",
+      "ring_columns": 219,
+      "start": 4737408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_339",
+      "ring_columns": 219,
+      "start": 4751424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_340",
+      "ring_columns": 219,
+      "start": 4765440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_341",
+      "ring_columns": 219,
+      "start": 4779456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_342",
+      "ring_columns": 219,
+      "start": 4793472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_343",
+      "ring_columns": 219,
+      "start": 4807488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_344",
+      "ring_columns": 219,
+      "start": 4821504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_345",
+      "ring_columns": 219,
+      "start": 4835520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_346",
+      "ring_columns": 219,
+      "start": 4849536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_347",
+      "ring_columns": 219,
+      "start": 4863552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_348",
+      "ring_columns": 219,
+      "start": 4877568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_349",
+      "ring_columns": 219,
+      "start": 4891584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_350",
+      "ring_columns": 219,
+      "start": 4905600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_351",
+      "ring_columns": 219,
+      "start": 4919616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_352",
+      "ring_columns": 219,
+      "start": 4933632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_353",
+      "ring_columns": 219,
+      "start": 4947648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_354",
+      "ring_columns": 219,
+      "start": 4961664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_355",
+      "ring_columns": 219,
+      "start": 4975680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_356",
+      "ring_columns": 219,
+      "start": 4989696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_357",
+      "ring_columns": 219,
+      "start": 5003712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_358",
+      "ring_columns": 219,
+      "start": 5017728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_359",
+      "ring_columns": 219,
+      "start": 5031744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_360",
+      "ring_columns": 219,
+      "start": 5045760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_361",
+      "ring_columns": 219,
+      "start": 5059776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_362",
+      "ring_columns": 219,
+      "start": 5073792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_363",
+      "ring_columns": 219,
+      "start": 5087808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_364",
+      "ring_columns": 219,
+      "start": 5101824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_365",
+      "ring_columns": 219,
+      "start": 5115840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_366",
+      "ring_columns": 219,
+      "start": 5129856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_367",
+      "ring_columns": 219,
+      "start": 5143872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_368",
+      "ring_columns": 219,
+      "start": 5157888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_369",
+      "ring_columns": 219,
+      "start": 5171904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_370",
+      "ring_columns": 219,
+      "start": 5185920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_371",
+      "ring_columns": 219,
+      "start": 5199936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_372",
+      "ring_columns": 219,
+      "start": 5213952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_373",
+      "ring_columns": 219,
+      "start": 5227968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_374",
+      "ring_columns": 219,
+      "start": 5241984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_375",
+      "ring_columns": 219,
+      "start": 5256000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_376",
+      "ring_columns": 219,
+      "start": 5270016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_377",
+      "ring_columns": 219,
+      "start": 5284032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_378",
+      "ring_columns": 219,
+      "start": 5298048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_379",
+      "ring_columns": 219,
+      "start": 5312064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_380",
+      "ring_columns": 219,
+      "start": 5326080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_381",
+      "ring_columns": 219,
+      "start": 5340096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_382",
+      "ring_columns": 219,
+      "start": 5354112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_383",
+      "ring_columns": 219,
+      "start": 5368128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_384",
+      "ring_columns": 219,
+      "start": 5382144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_385",
+      "ring_columns": 219,
+      "start": 5396160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_386",
+      "ring_columns": 219,
+      "start": 5410176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_387",
+      "ring_columns": 219,
+      "start": 5424192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_388",
+      "ring_columns": 219,
+      "start": 5438208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_389",
+      "ring_columns": 219,
+      "start": 5452224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_390",
+      "ring_columns": 219,
+      "start": 5466240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_391",
+      "ring_columns": 219,
+      "start": 5480256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_392",
+      "ring_columns": 219,
+      "start": 5494272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_393",
+      "ring_columns": 219,
+      "start": 5508288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_394",
+      "ring_columns": 219,
+      "start": 5522304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_395",
+      "ring_columns": 219,
+      "start": 5536320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_396",
+      "ring_columns": 219,
+      "start": 5550336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_397",
+      "ring_columns": 219,
+      "start": 5564352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_398",
+      "ring_columns": 219,
+      "start": 5578368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_399",
+      "ring_columns": 219,
+      "start": 5592384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_400",
+      "ring_columns": 219,
+      "start": 5606400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_401",
+      "ring_columns": 219,
+      "start": 5620416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_402",
+      "ring_columns": 219,
+      "start": 5634432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_403",
+      "ring_columns": 219,
+      "start": 5648448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_404",
+      "ring_columns": 219,
+      "start": 5662464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_405",
+      "ring_columns": 219,
+      "start": 5676480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_406",
+      "ring_columns": 219,
+      "start": 5690496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_407",
+      "ring_columns": 219,
+      "start": 5704512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_408",
+      "ring_columns": 219,
+      "start": 5718528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_409",
+      "ring_columns": 219,
+      "start": 5732544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_410",
+      "ring_columns": 219,
+      "start": 5746560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_411",
+      "ring_columns": 219,
+      "start": 5760576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_412",
+      "ring_columns": 219,
+      "start": 5774592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_413",
+      "ring_columns": 219,
+      "start": 5788608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_414",
+      "ring_columns": 219,
+      "start": 5802624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_415",
+      "ring_columns": 219,
+      "start": 5816640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_416",
+      "ring_columns": 219,
+      "start": 5830656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_417",
+      "ring_columns": 219,
+      "start": 5844672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_418",
+      "ring_columns": 219,
+      "start": 5858688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_419",
+      "ring_columns": 219,
+      "start": 5872704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_420",
+      "ring_columns": 219,
+      "start": 5886720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_421",
+      "ring_columns": 219,
+      "start": 5900736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_422",
+      "ring_columns": 219,
+      "start": 5914752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_423",
+      "ring_columns": 219,
+      "start": 5928768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_424",
+      "ring_columns": 219,
+      "start": 5942784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_425",
+      "ring_columns": 219,
+      "start": 5956800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_426",
+      "ring_columns": 219,
+      "start": 5970816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_427",
+      "ring_columns": 219,
+      "start": 5984832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_428",
+      "ring_columns": 219,
+      "start": 5998848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_429",
+      "ring_columns": 219,
+      "start": 6012864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_430",
+      "ring_columns": 219,
+      "start": 6026880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_431",
+      "ring_columns": 219,
+      "start": 6040896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_432",
+      "ring_columns": 219,
+      "start": 6054912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_433",
+      "ring_columns": 219,
+      "start": 6068928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_434",
+      "ring_columns": 219,
+      "start": 6082944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_435",
+      "ring_columns": 219,
+      "start": 6096960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_436",
+      "ring_columns": 219,
+      "start": 6110976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_437",
+      "ring_columns": 219,
+      "start": 6124992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_438",
+      "ring_columns": 219,
+      "start": 6139008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_439",
+      "ring_columns": 219,
+      "start": 6153024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_440",
+      "ring_columns": 219,
+      "start": 6167040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_441",
+      "ring_columns": 219,
+      "start": 6181056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_442",
+      "ring_columns": 219,
+      "start": 6195072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_443",
+      "ring_columns": 219,
+      "start": 6209088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_444",
+      "ring_columns": 219,
+      "start": 6223104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_445",
+      "ring_columns": 219,
+      "start": 6237120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_446",
+      "ring_columns": 219,
+      "start": 6251136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_447",
+      "ring_columns": 219,
+      "start": 6265152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_448",
+      "ring_columns": 219,
+      "start": 6279168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_449",
+      "ring_columns": 219,
+      "start": 6293184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_450",
+      "ring_columns": 219,
+      "start": 6307200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_451",
+      "ring_columns": 219,
+      "start": 6321216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_452",
+      "ring_columns": 219,
+      "start": 6335232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_453",
+      "ring_columns": 219,
+      "start": 6349248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_454",
+      "ring_columns": 219,
+      "start": 6363264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_455",
+      "ring_columns": 219,
+      "start": 6377280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_456",
+      "ring_columns": 219,
+      "start": 6391296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_457",
+      "ring_columns": 219,
+      "start": 6405312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_458",
+      "ring_columns": 219,
+      "start": 6419328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_459",
+      "ring_columns": 219,
+      "start": 6433344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_460",
+      "ring_columns": 219,
+      "start": 6447360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_461",
+      "ring_columns": 219,
+      "start": 6461376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_462",
+      "ring_columns": 219,
+      "start": 6475392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_463",
+      "ring_columns": 219,
+      "start": 6489408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_464",
+      "ring_columns": 219,
+      "start": 6503424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_465",
+      "ring_columns": 219,
+      "start": 6517440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_466",
+      "ring_columns": 219,
+      "start": 6531456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_467",
+      "ring_columns": 219,
+      "start": 6545472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_468",
+      "ring_columns": 219,
+      "start": 6559488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_469",
+      "ring_columns": 219,
+      "start": 6573504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_470",
+      "ring_columns": 219,
+      "start": 6587520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_471",
+      "ring_columns": 219,
+      "start": 6601536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_472",
+      "ring_columns": 219,
+      "start": 6615552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_473",
+      "ring_columns": 219,
+      "start": 6629568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_474",
+      "ring_columns": 219,
+      "start": 6643584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_475",
+      "ring_columns": 219,
+      "start": 6657600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_476",
+      "ring_columns": 219,
+      "start": 6671616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_477",
+      "ring_columns": 219,
+      "start": 6685632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_478",
+      "ring_columns": 219,
+      "start": 6699648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_479",
+      "ring_columns": 219,
+      "start": 6713664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_480",
+      "ring_columns": 219,
+      "start": 6727680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_481",
+      "ring_columns": 219,
+      "start": 6741696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_482",
+      "ring_columns": 219,
+      "start": 6755712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_483",
+      "ring_columns": 219,
+      "start": 6769728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_484",
+      "ring_columns": 219,
+      "start": 6783744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_485",
+      "ring_columns": 219,
+      "start": 6797760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_486",
+      "ring_columns": 219,
+      "start": 6811776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_487",
+      "ring_columns": 219,
+      "start": 6825792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_488",
+      "ring_columns": 219,
+      "start": 6839808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_489",
+      "ring_columns": 219,
+      "start": 6853824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_490",
+      "ring_columns": 219,
+      "start": 6867840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_491",
+      "ring_columns": 219,
+      "start": 6881856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_492",
+      "ring_columns": 219,
+      "start": 6895872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_493",
+      "ring_columns": 219,
+      "start": 6909888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_494",
+      "ring_columns": 219,
+      "start": 6923904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_495",
+      "ring_columns": 219,
+      "start": 6937920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_496",
+      "ring_columns": 219,
+      "start": 6951936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_497",
+      "ring_columns": 219,
+      "start": 6965952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_498",
+      "ring_columns": 219,
+      "start": 6979968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_499",
+      "ring_columns": 219,
+      "start": 6993984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_500",
+      "ring_columns": 219,
+      "start": 7008000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_501",
+      "ring_columns": 219,
+      "start": 7022016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_502",
+      "ring_columns": 219,
+      "start": 7036032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_503",
+      "ring_columns": 219,
+      "start": 7050048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_504",
+      "ring_columns": 219,
+      "start": 7064064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_505",
+      "ring_columns": 219,
+      "start": 7078080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_506",
+      "ring_columns": 219,
+      "start": 7092096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_507",
+      "ring_columns": 219,
+      "start": 7106112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_508",
+      "ring_columns": 219,
+      "start": 7120128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_509",
+      "ring_columns": 219,
+      "start": 7134144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_510",
+      "ring_columns": 219,
+      "start": 7148160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_511",
+      "ring_columns": 219,
+      "start": 7162176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_512",
+      "ring_columns": 219,
+      "start": 7176192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_513",
+      "ring_columns": 219,
+      "start": 7190208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_514",
+      "ring_columns": 219,
+      "start": 7204224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_515",
+      "ring_columns": 219,
+      "start": 7218240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_516",
+      "ring_columns": 219,
+      "start": 7232256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_517",
+      "ring_columns": 219,
+      "start": 7246272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_518",
+      "ring_columns": 219,
+      "start": 7260288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_519",
+      "ring_columns": 219,
+      "start": 7274304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_520",
+      "ring_columns": 219,
+      "start": 7288320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_521",
+      "ring_columns": 219,
+      "start": 7302336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_522",
+      "ring_columns": 219,
+      "start": 7316352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_523",
+      "ring_columns": 219,
+      "start": 7330368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_524",
+      "ring_columns": 219,
+      "start": 7344384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_525",
+      "ring_columns": 219,
+      "start": 7358400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_526",
+      "ring_columns": 219,
+      "start": 7372416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_527",
+      "ring_columns": 219,
+      "start": 7386432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_528",
+      "ring_columns": 219,
+      "start": 7400448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_529",
+      "ring_columns": 219,
+      "start": 7414464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_530",
+      "ring_columns": 219,
+      "start": 7428480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_531",
+      "ring_columns": 219,
+      "start": 7442496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_532",
+      "ring_columns": 219,
+      "start": 7456512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_533",
+      "ring_columns": 219,
+      "start": 7470528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_534",
+      "ring_columns": 219,
+      "start": 7484544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_535",
+      "ring_columns": 219,
+      "start": 7498560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_536",
+      "ring_columns": 219,
+      "start": 7512576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_537",
+      "ring_columns": 219,
+      "start": 7526592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_538",
+      "ring_columns": 219,
+      "start": 7540608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_539",
+      "ring_columns": 219,
+      "start": 7554624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_540",
+      "ring_columns": 219,
+      "start": 7568640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_541",
+      "ring_columns": 219,
+      "start": 7582656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_542",
+      "ring_columns": 219,
+      "start": 7596672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_543",
+      "ring_columns": 219,
+      "start": 7610688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_544",
+      "ring_columns": 219,
+      "start": 7624704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_545",
+      "ring_columns": 219,
+      "start": 7638720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_546",
+      "ring_columns": 219,
+      "start": 7652736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_547",
+      "ring_columns": 219,
+      "start": 7666752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_548",
+      "ring_columns": 219,
+      "start": 7680768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_549",
+      "ring_columns": 219,
+      "start": 7694784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_550",
+      "ring_columns": 219,
+      "start": 7708800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_551",
+      "ring_columns": 219,
+      "start": 7722816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_552",
+      "ring_columns": 219,
+      "start": 7736832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_553",
+      "ring_columns": 219,
+      "start": 7750848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_554",
+      "ring_columns": 219,
+      "start": 7764864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_555",
+      "ring_columns": 219,
+      "start": 7778880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_556",
+      "ring_columns": 219,
+      "start": 7792896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_557",
+      "ring_columns": 219,
+      "start": 7806912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_558",
+      "ring_columns": 219,
+      "start": 7820928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_559",
+      "ring_columns": 219,
+      "start": 7834944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_560",
+      "ring_columns": 219,
+      "start": 7848960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_561",
+      "ring_columns": 219,
+      "start": 7862976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_562",
+      "ring_columns": 219,
+      "start": 7876992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_563",
+      "ring_columns": 219,
+      "start": 7891008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_564",
+      "ring_columns": 219,
+      "start": 7905024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_565",
+      "ring_columns": 219,
+      "start": 7919040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_566",
+      "ring_columns": 219,
+      "start": 7933056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_567",
+      "ring_columns": 219,
+      "start": 7947072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_568",
+      "ring_columns": 219,
+      "start": 7961088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_569",
+      "ring_columns": 219,
+      "start": 7975104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_570",
+      "ring_columns": 219,
+      "start": 7989120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_571",
+      "ring_columns": 219,
+      "start": 8003136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_572",
+      "ring_columns": 219,
+      "start": 8017152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_573",
+      "ring_columns": 219,
+      "start": 8031168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_574",
+      "ring_columns": 219,
+      "start": 8045184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_575",
+      "ring_columns": 219,
+      "start": 8059200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_576",
+      "ring_columns": 219,
+      "start": 8073216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_577",
+      "ring_columns": 219,
+      "start": 8087232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_578",
+      "ring_columns": 219,
+      "start": 8101248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_579",
+      "ring_columns": 219,
+      "start": 8115264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_580",
+      "ring_columns": 219,
+      "start": 8129280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_581",
+      "ring_columns": 219,
+      "start": 8143296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_582",
+      "ring_columns": 219,
+      "start": 8157312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_583",
+      "ring_columns": 219,
+      "start": 8171328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_584",
+      "ring_columns": 219,
+      "start": 8185344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_585",
+      "ring_columns": 219,
+      "start": 8199360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_586",
+      "ring_columns": 219,
+      "start": 8213376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_587",
+      "ring_columns": 219,
+      "start": 8227392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_588",
+      "ring_columns": 219,
+      "start": 8241408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_589",
+      "ring_columns": 219,
+      "start": 8255424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_590",
+      "ring_columns": 219,
+      "start": 8269440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_591",
+      "ring_columns": 219,
+      "start": 8283456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_592",
+      "ring_columns": 219,
+      "start": 8297472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_593",
+      "ring_columns": 219,
+      "start": 8311488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_594",
+      "ring_columns": 219,
+      "start": 8325504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_595",
+      "ring_columns": 219,
+      "start": 8339520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_596",
+      "ring_columns": 219,
+      "start": 8353536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_597",
+      "ring_columns": 219,
+      "start": 8367552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_598",
+      "ring_columns": 219,
+      "start": 8381568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_599",
+      "ring_columns": 219,
+      "start": 8395584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_600",
+      "ring_columns": 219,
+      "start": 8409600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_601",
+      "ring_columns": 219,
+      "start": 8423616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_602",
+      "ring_columns": 219,
+      "start": 8437632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_603",
+      "ring_columns": 219,
+      "start": 8451648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_604",
+      "ring_columns": 219,
+      "start": 8465664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_605",
+      "ring_columns": 219,
+      "start": 8479680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_606",
+      "ring_columns": 219,
+      "start": 8493696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_607",
+      "ring_columns": 219,
+      "start": 8507712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_608",
+      "ring_columns": 219,
+      "start": 8521728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_609",
+      "ring_columns": 219,
+      "start": 8535744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_610",
+      "ring_columns": 219,
+      "start": 8549760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_611",
+      "ring_columns": 219,
+      "start": 8563776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_612",
+      "ring_columns": 219,
+      "start": 8577792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_613",
+      "ring_columns": 219,
+      "start": 8591808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_614",
+      "ring_columns": 219,
+      "start": 8605824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_615",
+      "ring_columns": 219,
+      "start": 8619840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_616",
+      "ring_columns": 219,
+      "start": 8633856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_617",
+      "ring_columns": 219,
+      "start": 8647872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_618",
+      "ring_columns": 219,
+      "start": 8661888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_619",
+      "ring_columns": 219,
+      "start": 8675904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_620",
+      "ring_columns": 219,
+      "start": 8689920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_621",
+      "ring_columns": 219,
+      "start": 8703936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_622",
+      "ring_columns": 219,
+      "start": 8717952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_623",
+      "ring_columns": 219,
+      "start": 8731968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_624",
+      "ring_columns": 219,
+      "start": 8745984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_625",
+      "ring_columns": 219,
+      "start": 8760000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_626",
+      "ring_columns": 219,
+      "start": 8774016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_627",
+      "ring_columns": 219,
+      "start": 8788032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_628",
+      "ring_columns": 219,
+      "start": 8802048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_629",
+      "ring_columns": 219,
+      "start": 8816064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_630",
+      "ring_columns": 219,
+      "start": 8830080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_631",
+      "ring_columns": 219,
+      "start": 8844096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_632",
+      "ring_columns": 219,
+      "start": 8858112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_633",
+      "ring_columns": 219,
+      "start": 8872128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_634",
+      "ring_columns": 219,
+      "start": 8886144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_635",
+      "ring_columns": 219,
+      "start": 8900160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_636",
+      "ring_columns": 219,
+      "start": 8914176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_637",
+      "ring_columns": 219,
+      "start": 8928192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_638",
+      "ring_columns": 219,
+      "start": 8942208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_639",
+      "ring_columns": 219,
+      "start": 8956224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_640",
+      "ring_columns": 219,
+      "start": 8970240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_641",
+      "ring_columns": 219,
+      "start": 8984256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_642",
+      "ring_columns": 219,
+      "start": 8998272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_643",
+      "ring_columns": 219,
+      "start": 9012288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_644",
+      "ring_columns": 219,
+      "start": 9026304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_645",
+      "ring_columns": 219,
+      "start": 9040320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_646",
+      "ring_columns": 219,
+      "start": 9054336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_647",
+      "ring_columns": 219,
+      "start": 9068352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_648",
+      "ring_columns": 219,
+      "start": 9082368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_649",
+      "ring_columns": 219,
+      "start": 9096384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_650",
+      "ring_columns": 219,
+      "start": 9110400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_651",
+      "ring_columns": 219,
+      "start": 9124416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_652",
+      "ring_columns": 219,
+      "start": 9138432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_653",
+      "ring_columns": 219,
+      "start": 9152448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_654",
+      "ring_columns": 219,
+      "start": 9166464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_655",
+      "ring_columns": 219,
+      "start": 9180480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_656",
+      "ring_columns": 219,
+      "start": 9194496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_657",
+      "ring_columns": 219,
+      "start": 9208512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_658",
+      "ring_columns": 219,
+      "start": 9222528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_659",
+      "ring_columns": 219,
+      "start": 9236544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_660",
+      "ring_columns": 219,
+      "start": 9250560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_661",
+      "ring_columns": 219,
+      "start": 9264576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_662",
+      "ring_columns": 219,
+      "start": 9278592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_663",
+      "ring_columns": 219,
+      "start": 9292608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_664",
+      "ring_columns": 219,
+      "start": 9306624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_665",
+      "ring_columns": 219,
+      "start": 9320640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_666",
+      "ring_columns": 219,
+      "start": 9334656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_667",
+      "ring_columns": 219,
+      "start": 9348672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_668",
+      "ring_columns": 219,
+      "start": 9362688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_669",
+      "ring_columns": 219,
+      "start": 9376704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_670",
+      "ring_columns": 219,
+      "start": 9390720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_671",
+      "ring_columns": 219,
+      "start": 9404736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_672",
+      "ring_columns": 219,
+      "start": 9418752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_673",
+      "ring_columns": 219,
+      "start": 9432768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_674",
+      "ring_columns": 219,
+      "start": 9446784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_675",
+      "ring_columns": 219,
+      "start": 9460800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_676",
+      "ring_columns": 219,
+      "start": 9474816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_677",
+      "ring_columns": 219,
+      "start": 9488832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_678",
+      "ring_columns": 219,
+      "start": 9502848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_679",
+      "ring_columns": 219,
+      "start": 9516864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_680",
+      "ring_columns": 219,
+      "start": 9530880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_681",
+      "ring_columns": 219,
+      "start": 9544896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_682",
+      "ring_columns": 219,
+      "start": 9558912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_683",
+      "ring_columns": 219,
+      "start": 9572928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_684",
+      "ring_columns": 219,
+      "start": 9586944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_685",
+      "ring_columns": 219,
+      "start": 9600960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_686",
+      "ring_columns": 219,
+      "start": 9614976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_687",
+      "ring_columns": 219,
+      "start": 9628992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_688",
+      "ring_columns": 219,
+      "start": 9643008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_689",
+      "ring_columns": 219,
+      "start": 9657024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_690",
+      "ring_columns": 219,
+      "start": 9671040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_691",
+      "ring_columns": 219,
+      "start": 9685056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_692",
+      "ring_columns": 219,
+      "start": 9699072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_693",
+      "ring_columns": 219,
+      "start": 9713088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_694",
+      "ring_columns": 219,
+      "start": 9727104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_695",
+      "ring_columns": 219,
+      "start": 9741120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_696",
+      "ring_columns": 219,
+      "start": 9755136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_697",
+      "ring_columns": 219,
+      "start": 9769152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_698",
+      "ring_columns": 219,
+      "start": 9783168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_699",
+      "ring_columns": 219,
+      "start": 9797184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_700",
+      "ring_columns": 219,
+      "start": 9811200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_701",
+      "ring_columns": 219,
+      "start": 9825216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_702",
+      "ring_columns": 219,
+      "start": 9839232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_703",
+      "ring_columns": 219,
+      "start": 9853248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_704",
+      "ring_columns": 219,
+      "start": 9867264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_705",
+      "ring_columns": 219,
+      "start": 9881280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_706",
+      "ring_columns": 219,
+      "start": 9895296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_707",
+      "ring_columns": 219,
+      "start": 9909312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_708",
+      "ring_columns": 219,
+      "start": 9923328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_709",
+      "ring_columns": 219,
+      "start": 9937344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_710",
+      "ring_columns": 219,
+      "start": 9951360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_711",
+      "ring_columns": 219,
+      "start": 9965376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_712",
+      "ring_columns": 219,
+      "start": 9979392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_713",
+      "ring_columns": 219,
+      "start": 9993408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_714",
+      "ring_columns": 219,
+      "start": 10007424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_715",
+      "ring_columns": 219,
+      "start": 10021440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_716",
+      "ring_columns": 219,
+      "start": 10035456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_717",
+      "ring_columns": 219,
+      "start": 10049472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_718",
+      "ring_columns": 219,
+      "start": 10063488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_719",
+      "ring_columns": 219,
+      "start": 10077504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_720",
+      "ring_columns": 219,
+      "start": 10091520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_721",
+      "ring_columns": 219,
+      "start": 10105536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_722",
+      "ring_columns": 219,
+      "start": 10119552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_723",
+      "ring_columns": 219,
+      "start": 10133568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_724",
+      "ring_columns": 219,
+      "start": 10147584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_725",
+      "ring_columns": 219,
+      "start": 10161600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_726",
+      "ring_columns": 219,
+      "start": 10175616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_727",
+      "ring_columns": 219,
+      "start": 10189632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_728",
+      "ring_columns": 219,
+      "start": 10203648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_729",
+      "ring_columns": 219,
+      "start": 10217664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_730",
+      "ring_columns": 219,
+      "start": 10231680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_731",
+      "ring_columns": 219,
+      "start": 10245696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_732",
+      "ring_columns": 219,
+      "start": 10259712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_733",
+      "ring_columns": 219,
+      "start": 10273728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_734",
+      "ring_columns": 219,
+      "start": 10287744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_735",
+      "ring_columns": 219,
+      "start": 10301760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_736",
+      "ring_columns": 219,
+      "start": 10315776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_737",
+      "ring_columns": 219,
+      "start": 10329792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_738",
+      "ring_columns": 219,
+      "start": 10343808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_739",
+      "ring_columns": 219,
+      "start": 10357824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_740",
+      "ring_columns": 219,
+      "start": 10371840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_741",
+      "ring_columns": 219,
+      "start": 10385856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_742",
+      "ring_columns": 219,
+      "start": 10399872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_743",
+      "ring_columns": 219,
+      "start": 10413888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_744",
+      "ring_columns": 219,
+      "start": 10427904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_745",
+      "ring_columns": 219,
+      "start": 10441920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_746",
+      "ring_columns": 219,
+      "start": 10455936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_747",
+      "ring_columns": 219,
+      "start": 10469952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_748",
+      "ring_columns": 219,
+      "start": 10483968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_749",
+      "ring_columns": 219,
+      "start": 10497984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_750",
+      "ring_columns": 219,
+      "start": 10512000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_751",
+      "ring_columns": 219,
+      "start": 10526016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_752",
+      "ring_columns": 219,
+      "start": 10540032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_753",
+      "ring_columns": 219,
+      "start": 10554048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_754",
+      "ring_columns": 219,
+      "start": 10568064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_755",
+      "ring_columns": 219,
+      "start": 10582080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_756",
+      "ring_columns": 219,
+      "start": 10596096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_757",
+      "ring_columns": 219,
+      "start": 10610112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_758",
+      "ring_columns": 219,
+      "start": 10624128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_759",
+      "ring_columns": 219,
+      "start": 10638144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_760",
+      "ring_columns": 219,
+      "start": 10652160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_761",
+      "ring_columns": 219,
+      "start": 10666176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_762",
+      "ring_columns": 219,
+      "start": 10680192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_763",
+      "ring_columns": 219,
+      "start": 10694208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_764",
+      "ring_columns": 219,
+      "start": 10708224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_765",
+      "ring_columns": 219,
+      "start": 10722240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_766",
+      "ring_columns": 219,
+      "start": 10736256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_767",
+      "ring_columns": 219,
+      "start": 10750272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_768",
+      "ring_columns": 219,
+      "start": 10764288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_769",
+      "ring_columns": 219,
+      "start": 10778304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_770",
+      "ring_columns": 219,
+      "start": 10792320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_771",
+      "ring_columns": 219,
+      "start": 10806336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_772",
+      "ring_columns": 219,
+      "start": 10820352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_773",
+      "ring_columns": 219,
+      "start": 10834368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_774",
+      "ring_columns": 219,
+      "start": 10848384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_775",
+      "ring_columns": 219,
+      "start": 10862400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_776",
+      "ring_columns": 219,
+      "start": 10876416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_777",
+      "ring_columns": 219,
+      "start": 10890432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_778",
+      "ring_columns": 219,
+      "start": 10904448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_779",
+      "ring_columns": 219,
+      "start": 10918464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_780",
+      "ring_columns": 219,
+      "start": 10932480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_781",
+      "ring_columns": 219,
+      "start": 10946496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_782",
+      "ring_columns": 219,
+      "start": 10960512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_783",
+      "ring_columns": 219,
+      "start": 10974528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_784",
+      "ring_columns": 219,
+      "start": 10988544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_785",
+      "ring_columns": 219,
+      "start": 11002560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_786",
+      "ring_columns": 219,
+      "start": 11016576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_787",
+      "ring_columns": 219,
+      "start": 11030592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_788",
+      "ring_columns": 219,
+      "start": 11044608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_789",
+      "ring_columns": 219,
+      "start": 11058624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_790",
+      "ring_columns": 219,
+      "start": 11072640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_791",
+      "ring_columns": 219,
+      "start": 11086656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_792",
+      "ring_columns": 219,
+      "start": 11100672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_793",
+      "ring_columns": 219,
+      "start": 11114688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_794",
+      "ring_columns": 219,
+      "start": 11128704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_795",
+      "ring_columns": 219,
+      "start": 11142720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_796",
+      "ring_columns": 219,
+      "start": 11156736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_797",
+      "ring_columns": 219,
+      "start": 11170752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_798",
+      "ring_columns": 219,
+      "start": 11184768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_799",
+      "ring_columns": 219,
+      "start": 11198784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_800",
+      "ring_columns": 219,
+      "start": 11212800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_801",
+      "ring_columns": 219,
+      "start": 11226816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_802",
+      "ring_columns": 219,
+      "start": 11240832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_803",
+      "ring_columns": 219,
+      "start": 11254848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_804",
+      "ring_columns": 219,
+      "start": 11268864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_805",
+      "ring_columns": 219,
+      "start": 11282880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_806",
+      "ring_columns": 219,
+      "start": 11296896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_807",
+      "ring_columns": 219,
+      "start": 11310912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_808",
+      "ring_columns": 219,
+      "start": 11324928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_809",
+      "ring_columns": 219,
+      "start": 11338944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_810",
+      "ring_columns": 219,
+      "start": 11352960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_811",
+      "ring_columns": 219,
+      "start": 11366976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_812",
+      "ring_columns": 219,
+      "start": 11380992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_813",
+      "ring_columns": 219,
+      "start": 11395008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_814",
+      "ring_columns": 219,
+      "start": 11409024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_815",
+      "ring_columns": 219,
+      "start": 11423040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_816",
+      "ring_columns": 219,
+      "start": 11437056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_817",
+      "ring_columns": 219,
+      "start": 11451072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_818",
+      "ring_columns": 219,
+      "start": 11465088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_819",
+      "ring_columns": 219,
+      "start": 11479104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_820",
+      "ring_columns": 219,
+      "start": 11493120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_821",
+      "ring_columns": 219,
+      "start": 11507136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_822",
+      "ring_columns": 219,
+      "start": 11521152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_823",
+      "ring_columns": 219,
+      "start": 11535168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_824",
+      "ring_columns": 219,
+      "start": 11549184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_825",
+      "ring_columns": 219,
+      "start": 11563200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_826",
+      "ring_columns": 219,
+      "start": 11577216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_827",
+      "ring_columns": 219,
+      "start": 11591232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_828",
+      "ring_columns": 219,
+      "start": 11605248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_829",
+      "ring_columns": 219,
+      "start": 11619264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_830",
+      "ring_columns": 219,
+      "start": 11633280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_831",
+      "ring_columns": 219,
+      "start": 11647296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_832",
+      "ring_columns": 219,
+      "start": 11661312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_833",
+      "ring_columns": 219,
+      "start": 11675328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_834",
+      "ring_columns": 219,
+      "start": 11689344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_835",
+      "ring_columns": 219,
+      "start": 11703360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_836",
+      "ring_columns": 219,
+      "start": 11717376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_837",
+      "ring_columns": 219,
+      "start": 11731392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_838",
+      "ring_columns": 219,
+      "start": 11745408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_839",
+      "ring_columns": 219,
+      "start": 11759424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_840",
+      "ring_columns": 219,
+      "start": 11773440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_841",
+      "ring_columns": 219,
+      "start": 11787456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_842",
+      "ring_columns": 219,
+      "start": 11801472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_843",
+      "ring_columns": 219,
+      "start": 11815488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_844",
+      "ring_columns": 219,
+      "start": 11829504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_845",
+      "ring_columns": 219,
+      "start": 11843520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_846",
+      "ring_columns": 219,
+      "start": 11857536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_847",
+      "ring_columns": 219,
+      "start": 11871552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_848",
+      "ring_columns": 219,
+      "start": 11885568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_849",
+      "ring_columns": 219,
+      "start": 11899584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_850",
+      "ring_columns": 219,
+      "start": 11913600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_851",
+      "ring_columns": 219,
+      "start": 11927616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_852",
+      "ring_columns": 219,
+      "start": 11941632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_853",
+      "ring_columns": 219,
+      "start": 11955648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_854",
+      "ring_columns": 219,
+      "start": 11969664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_855",
+      "ring_columns": 219,
+      "start": 11983680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_856",
+      "ring_columns": 219,
+      "start": 11997696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_857",
+      "ring_columns": 219,
+      "start": 12011712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_858",
+      "ring_columns": 219,
+      "start": 12025728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_859",
+      "ring_columns": 219,
+      "start": 12039744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_860",
+      "ring_columns": 219,
+      "start": 12053760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_861",
+      "ring_columns": 219,
+      "start": 12067776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_862",
+      "ring_columns": 219,
+      "start": 12081792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_863",
+      "ring_columns": 219,
+      "start": 12095808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_864",
+      "ring_columns": 219,
+      "start": 12109824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_865",
+      "ring_columns": 219,
+      "start": 12123840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_866",
+      "ring_columns": 219,
+      "start": 12137856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_867",
+      "ring_columns": 219,
+      "start": 12151872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_868",
+      "ring_columns": 219,
+      "start": 12165888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_869",
+      "ring_columns": 219,
+      "start": 12179904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_870",
+      "ring_columns": 219,
+      "start": 12193920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_871",
+      "ring_columns": 219,
+      "start": 12207936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_872",
+      "ring_columns": 219,
+      "start": 12221952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_873",
+      "ring_columns": 219,
+      "start": 12235968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_874",
+      "ring_columns": 219,
+      "start": 12249984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_875",
+      "ring_columns": 219,
+      "start": 12264000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_876",
+      "ring_columns": 219,
+      "start": 12278016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_877",
+      "ring_columns": 219,
+      "start": 12292032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_878",
+      "ring_columns": 219,
+      "start": 12306048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_879",
+      "ring_columns": 219,
+      "start": 12320064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_880",
+      "ring_columns": 219,
+      "start": 12334080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_881",
+      "ring_columns": 219,
+      "start": 12348096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_882",
+      "ring_columns": 219,
+      "start": 12362112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_883",
+      "ring_columns": 219,
+      "start": 12376128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_884",
+      "ring_columns": 219,
+      "start": 12390144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_885",
+      "ring_columns": 219,
+      "start": 12404160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_886",
+      "ring_columns": 219,
+      "start": 12418176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_887",
+      "ring_columns": 219,
+      "start": 12432192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_888",
+      "ring_columns": 219,
+      "start": 12446208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_889",
+      "ring_columns": 219,
+      "start": 12460224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_890",
+      "ring_columns": 219,
+      "start": 12474240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_891",
+      "ring_columns": 219,
+      "start": 12488256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_892",
+      "ring_columns": 219,
+      "start": 12502272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_893",
+      "ring_columns": 219,
+      "start": 12516288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_894",
+      "ring_columns": 219,
+      "start": 12530304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_895",
+      "ring_columns": 219,
+      "start": 12544320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_896",
+      "ring_columns": 219,
+      "start": 12558336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_897",
+      "ring_columns": 219,
+      "start": 12572352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_898",
+      "ring_columns": 219,
+      "start": 12586368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_899",
+      "ring_columns": 219,
+      "start": 12600384
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_900",
+      "ring_columns": 219,
+      "start": 12614400
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_901",
+      "ring_columns": 219,
+      "start": 12628416
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_902",
+      "ring_columns": 219,
+      "start": 12642432
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_903",
+      "ring_columns": 219,
+      "start": 12656448
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_904",
+      "ring_columns": 219,
+      "start": 12670464
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_905",
+      "ring_columns": 219,
+      "start": 12684480
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_906",
+      "ring_columns": 219,
+      "start": 12698496
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_907",
+      "ring_columns": 219,
+      "start": 12712512
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_908",
+      "ring_columns": 219,
+      "start": 12726528
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_909",
+      "ring_columns": 219,
+      "start": 12740544
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_910",
+      "ring_columns": 219,
+      "start": 12754560
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_911",
+      "ring_columns": 219,
+      "start": 12768576
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_912",
+      "ring_columns": 219,
+      "start": 12782592
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_913",
+      "ring_columns": 219,
+      "start": 12796608
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_914",
+      "ring_columns": 219,
+      "start": 12810624
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_915",
+      "ring_columns": 219,
+      "start": 12824640
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_916",
+      "ring_columns": 219,
+      "start": 12838656
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_917",
+      "ring_columns": 219,
+      "start": 12852672
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_918",
+      "ring_columns": 219,
+      "start": 12866688
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_919",
+      "ring_columns": 219,
+      "start": 12880704
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_920",
+      "ring_columns": 219,
+      "start": 12894720
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_921",
+      "ring_columns": 219,
+      "start": 12908736
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_922",
+      "ring_columns": 219,
+      "start": 12922752
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_923",
+      "ring_columns": 219,
+      "start": 12936768
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_924",
+      "ring_columns": 219,
+      "start": 12950784
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_925",
+      "ring_columns": 219,
+      "start": 12964800
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_926",
+      "ring_columns": 219,
+      "start": 12978816
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_927",
+      "ring_columns": 219,
+      "start": 12992832
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_928",
+      "ring_columns": 219,
+      "start": 13006848
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_929",
+      "ring_columns": 219,
+      "start": 13020864
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_930",
+      "ring_columns": 219,
+      "start": 13034880
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_931",
+      "ring_columns": 219,
+      "start": 13048896
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_932",
+      "ring_columns": 219,
+      "start": 13062912
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_933",
+      "ring_columns": 219,
+      "start": 13076928
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_934",
+      "ring_columns": 219,
+      "start": 13090944
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_935",
+      "ring_columns": 219,
+      "start": 13104960
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_936",
+      "ring_columns": 219,
+      "start": 13118976
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_937",
+      "ring_columns": 219,
+      "start": 13132992
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_938",
+      "ring_columns": 219,
+      "start": 13147008
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_939",
+      "ring_columns": 219,
+      "start": 13161024
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_940",
+      "ring_columns": 219,
+      "start": 13175040
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_941",
+      "ring_columns": 219,
+      "start": 13189056
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_942",
+      "ring_columns": 219,
+      "start": 13203072
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_943",
+      "ring_columns": 219,
+      "start": 13217088
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_944",
+      "ring_columns": 219,
+      "start": 13231104
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_945",
+      "ring_columns": 219,
+      "start": 13245120
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_946",
+      "ring_columns": 219,
+      "start": 13259136
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_947",
+      "ring_columns": 219,
+      "start": 13273152
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_948",
+      "ring_columns": 219,
+      "start": 13287168
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_949",
+      "ring_columns": 219,
+      "start": 13301184
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_950",
+      "ring_columns": 219,
+      "start": 13315200
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_951",
+      "ring_columns": 219,
+      "start": 13329216
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_952",
+      "ring_columns": 219,
+      "start": 13343232
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_953",
+      "ring_columns": 219,
+      "start": 13357248
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_954",
+      "ring_columns": 219,
+      "start": 13371264
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_955",
+      "ring_columns": 219,
+      "start": 13385280
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_956",
+      "ring_columns": 219,
+      "start": 13399296
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_957",
+      "ring_columns": 219,
+      "start": 13413312
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_958",
+      "ring_columns": 219,
+      "start": 13427328
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_959",
+      "ring_columns": 219,
+      "start": 13441344
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_960",
+      "ring_columns": 219,
+      "start": 13455360
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_961",
+      "ring_columns": 219,
+      "start": 13469376
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_962",
+      "ring_columns": 219,
+      "start": 13483392
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_963",
+      "ring_columns": 219,
+      "start": 13497408
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_964",
+      "ring_columns": 219,
+      "start": 13511424
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_965",
+      "ring_columns": 219,
+      "start": 13525440
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_966",
+      "ring_columns": 219,
+      "start": 13539456
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_967",
+      "ring_columns": 219,
+      "start": 13553472
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_968",
+      "ring_columns": 219,
+      "start": 13567488
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_969",
+      "ring_columns": 219,
+      "start": 13581504
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_970",
+      "ring_columns": 219,
+      "start": 13595520
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_971",
+      "ring_columns": 219,
+      "start": 13609536
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_972",
+      "ring_columns": 219,
+      "start": 13623552
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_973",
+      "ring_columns": 219,
+      "start": 13637568
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_974",
+      "ring_columns": 219,
+      "start": 13651584
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_975",
+      "ring_columns": 219,
+      "start": 13665600
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_976",
+      "ring_columns": 219,
+      "start": 13679616
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_977",
+      "ring_columns": 219,
+      "start": 13693632
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_978",
+      "ring_columns": 219,
+      "start": 13707648
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_979",
+      "ring_columns": 219,
+      "start": 13721664
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_980",
+      "ring_columns": 219,
+      "start": 13735680
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_981",
+      "ring_columns": 219,
+      "start": 13749696
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_982",
+      "ring_columns": 219,
+      "start": 13763712
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_983",
+      "ring_columns": 219,
+      "start": 13777728
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_984",
+      "ring_columns": 219,
+      "start": 13791744
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_985",
+      "ring_columns": 219,
+      "start": 13805760
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_986",
+      "ring_columns": 219,
+      "start": 13819776
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_987",
+      "ring_columns": 219,
+      "start": 13833792
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_988",
+      "ring_columns": 219,
+      "start": 13847808
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_989",
+      "ring_columns": 219,
+      "start": 13861824
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_990",
+      "ring_columns": 219,
+      "start": 13875840
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_991",
+      "ring_columns": 219,
+      "start": 13889856
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_992",
+      "ring_columns": 219,
+      "start": 13903872
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_993",
+      "ring_columns": 219,
+      "start": 13917888
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_994",
+      "ring_columns": 219,
+      "start": 13931904
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_995",
+      "ring_columns": 219,
+      "start": 13945920
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_996",
+      "ring_columns": 219,
+      "start": 13959936
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_997",
+      "ring_columns": 219,
+      "start": 13973952
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_998",
+      "ring_columns": 219,
+      "start": 13987968
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_999",
+      "ring_columns": 219,
+      "start": 14001984
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1000",
+      "ring_columns": 219,
+      "start": 14016000
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1001",
+      "ring_columns": 219,
+      "start": 14030016
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1002",
+      "ring_columns": 219,
+      "start": 14044032
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1003",
+      "ring_columns": 219,
+      "start": 14058048
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1004",
+      "ring_columns": 219,
+      "start": 14072064
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1005",
+      "ring_columns": 219,
+      "start": 14086080
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1006",
+      "ring_columns": 219,
+      "start": 14100096
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1007",
+      "ring_columns": 219,
+      "start": 14114112
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1008",
+      "ring_columns": 219,
+      "start": 14128128
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1009",
+      "ring_columns": 219,
+      "start": 14142144
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1010",
+      "ring_columns": 219,
+      "start": 14156160
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1011",
+      "ring_columns": 219,
+      "start": 14170176
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1012",
+      "ring_columns": 219,
+      "start": 14184192
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1013",
+      "ring_columns": 219,
+      "start": 14198208
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1014",
+      "ring_columns": 219,
+      "start": 14212224
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1015",
+      "ring_columns": 219,
+      "start": 14226240
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1016",
+      "ring_columns": 219,
+      "start": 14240256
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1017",
+      "ring_columns": 219,
+      "start": 14254272
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1018",
+      "ring_columns": 219,
+      "start": 14268288
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1019",
+      "ring_columns": 219,
+      "start": 14282304
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1020",
+      "ring_columns": 219,
+      "start": 14296320
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1021",
+      "ring_columns": 219,
+      "start": 14310336
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1022",
+      "ring_columns": 219,
+      "start": 14324352
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1023",
+      "ring_columns": 219,
+      "start": 14338368
+    },
+    {
+      "commitment_phase": "public_input",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "fresh_1024",
+      "ring_columns": 219,
+      "start": 14352384
+    },
+    {
+      "commitment_phase": "post_cauchy_pre_field",
+      "length": 14016,
+      "matrix": "A_st",
+      "name": "output",
+      "ring_columns": 219,
+      "start": 14366400
+    },
+    {
+      "commitment_phase": "pre_cauchy",
+      "length": 786432,
+      "matrix": "A_H",
+      "name": "carrier",
+      "ring_columns": 12288,
+      "start": 14380416
+    },
+    {
+      "commitment_phase": "post_cauchy_pre_field",
+      "length": 15180672,
+      "matrix": "A_aux",
+      "name": "auxiliary",
+      "ring_columns": 237198,
+      "start": 15166848
+    }
+  ],
+  "value_bits": 15173760,
+  "value_order": "(k+2) states of 73 K, 4k carrier K, 36 product-gate K"
+}

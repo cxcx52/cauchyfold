@@ -1,0 +1,117 @@
+[
+  {
+    "h": 1,
+    "linear": {
+      "k": 2,
+      "carrier_K": 8,
+      "used": 129025,
+      "field_rows": 200813,
+      "field_rounds": 18,
+      "total_bytes": 117248,
+      "KiB": 114.5,
+      "status": "main restricted-grid optimum"
+    },
+    "exponential": {
+      "k": 2,
+      "carrier_K": 8,
+      "used": 129025,
+      "field_rows": 200813,
+      "field_rounds": 18,
+      "total_bytes": 117248,
+      "KiB": 114.5,
+      "status": "main restricted-grid optimum"
+    }
+  },
+  {
+    "h": 2,
+    "linear": {
+      "k": 4,
+      "carrier_K": 16,
+      "used": 188161,
+      "field_rows": 293031,
+      "field_rounds": 19,
+      "total_bytes": 136962,
+      "KiB": 133.751953125,
+      "status": "main restricted-grid optimum"
+    },
+    "exponential": {
+      "k": 4,
+      "carrier_K": 16,
+      "used": 188161,
+      "field_rows": 293031,
+      "field_rounds": 19,
+      "total_bytes": 136962,
+      "KiB": 133.751953125,
+      "status": "main restricted-grid optimum"
+    }
+  },
+  {
+    "h": 3,
+    "linear": {
+      "k": 6,
+      "carrier_K": 24,
+      "used": 247297,
+      "field_rows": 385249,
+      "field_rounds": 19,
+      "total_bytes": 152086,
+      "KiB": 148.521484375,
+      "status": "feasible preliminary candidate"
+    },
+    "exponential": {
+      "k": 8,
+      "carrier_K": 32,
+      "used": 306433,
+      "field_rows": 477467,
+      "field_rounds": 19,
+      "total_bytes": 166885,
+      "KiB": 162.9736328125,
+      "status": "main restricted-grid optimum"
+    }
+  },
+  {
+    "h": 4,
+    "linear": {
+      "k": 8,
+      "carrier_K": 32,
+      "used": 306433,
+      "field_rows": 477467,
+      "field_rounds": 19,
+      "total_bytes": 166885,
+      "KiB": 162.9736328125,
+      "status": "main restricted-grid optimum"
+    },
+    "exponential": {
+      "k": 16,
+      "carrier_K": 64,
+      "used": 542977,
+      "field_rows": 846339,
+      "field_rounds": 20,
+      "total_bytes": 215196,
+      "KiB": 210.15234375,
+      "status": "main restricted-grid optimum"
+    }
+  },
+  {
+    "h": 5,
+    "linear": {
+      "k": 10,
+      "carrier_K": 40,
+      "used": 365569,
+      "field_rows": 569685,
+      "field_rounds": 20,
+      "total_bytes": 180100,
+      "KiB": 175.87890625,
+      "status": "feasible preliminary candidate"
+    },
+    "exponential": {
+      "k": 32,
+      "carrier_K": 128,
+      "used": 1016065,
+      "field_rows": 1584083,
+      "field_rounds": 21,
+      "total_bytes": 244521,
+      "KiB": 238.7900390625,
+      "status": "main restricted-grid optimum"
+    }
+  }
+]

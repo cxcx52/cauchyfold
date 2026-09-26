@@ -9,3 +9,9 @@ __pycache__/
 *.cls
 *.bst
 *.pdf
+profiles/k1024/artifacts/compiler/
+profiles/k1024/artifacts/wire/
+profiles/k1024/evidence/
+profiles/k1024/src/compiler
+profiles/k1024/src/field_prover
+profiles/k1024/logs/

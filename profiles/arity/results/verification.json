@@ -1,0 +1,46 @@
+{
+  "baseline_original_bytes_restored": 10683813,
+  "closed_form_rice_optimum_test_cases": 49000,
+  "codec_roundtrip_cases": 36,
+  "full_interactive_proof_files_generated": false,
+  "full_security_formalization": false,
+  "lattice_estimator_rerun": false,
+  "profile_ledger_checks": [
+    {
+      "P": 108383,
+      "V": 8865,
+      "all_roles_reference_dominated": true,
+      "bytes": 117248,
+      "k": 2
+    },
+    {
+      "P": 127562,
+      "V": 9400,
+      "all_roles_reference_dominated": true,
+      "bytes": 136962,
+      "k": 4
+    },
+    {
+      "P": 157417,
+      "V": 9468,
+      "all_roles_reference_dominated": true,
+      "bytes": 166885,
+      "k": 8
+    },
+    {
+      "P": 205092,
+      "V": 10104,
+      "all_roles_reference_dominated": true,
+      "bytes": 215196,
+      "k": 16
+    },
+    {
+      "P": 215222,
+      "V": 29299,
+      "all_roles_reference_dominated": true,
+      "bytes": 244521,
+      "k": 32
+    }
+  ],
+  "whole_restricted_grid_statistical_bound_lt_2neg130": true
+}

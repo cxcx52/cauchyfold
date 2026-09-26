@@ -1,0 +1,193 @@
+{
+  "KiB": 114.5,
+  "MiB": 0.11181640625,
+  "all_roles_reference_dominated": true,
+  "completeness_error": "2 * 2^-160",
+  "crs_bytes": 23491584,
+  "exact_error_expression": {
+    "field_rounds": 18,
+    "k": 2,
+    "layers": 1,
+    "projection_theta": "7/8 + 2^-1000",
+    "sum_aggregation_degrees": 3338,
+    "sum_blocks": 3
+  },
+  "front": {
+    "auxiliary_chunks": [
+      1116
+    ],
+    "auxiliary_columns": 1116,
+    "auxiliary_private_bits": 71424,
+    "canonical_K_values": 336,
+    "capacity": 129025,
+    "carrier_K_values": 8,
+    "carrier_columns": 24,
+    "carrier_private_bits": 1536,
+    "categories": {
+      "Boolean value bits and helpers": 129024,
+      "Canonical prefix recurrences": 64512,
+      "Exclusion of equality to q": 1344,
+      "First-difference restrictions": 5376,
+      "Folded residual equations": 4,
+      "Folded source equations": 69,
+      "Fresh base-field restrictions": 414,
+      "Fresh u=1 and E=0": 10,
+      "Output residual equations": 4,
+      "Public coordinates": 20,
+      "Quadratic product gates": 36,
+      "Reserved zero constraints": 0
+    },
+    "field_padded_rows": 262144,
+    "field_rounds": 18,
+    "field_rows": 200813,
+    "initial_linear_rows": 12301,
+    "k": 2,
+    "reserved_zeros": 0,
+    "used": 129025,
+    "wrapper_p_bytes": 38664,
+    "wrapper_v_bytes": 888
+  },
+  "honest_unconditional_expectation_upper_bytes": 125185,
+  "input_commitments_bytes": 36864,
+  "layers": [
+    {
+      "G": 33030401,
+      "N": 129216,
+      "N_raw": 129025,
+      "S": 129025,
+      "aggregation_degree": 3338,
+      "augmented_rows": 13356,
+      "i": 0,
+      "linear_rows": 12492,
+      "n": 673,
+      "p_bytes": 69719,
+      "padding": 191,
+      "projection_codec_bytes": 1232,
+      "projection_codec_k": 9,
+      "rho": null,
+      "s": 3,
+      "seed": {
+        "block_bits": 1144,
+        "bytes": 7863,
+        "depth": 18,
+        "error_lt_2_to_minus_150": true,
+        "honest_integrality_slack_ok": true,
+        "seed_bits": 62902,
+        "state_bits": 105
+      },
+      "terminal": true,
+      "terminal_codec_bytes": 41623,
+      "terminal_codec_k": 5,
+      "v_bytes": 7977
+    }
+  ],
+  "max_accepted_bytes": 1379231,
+  "non_dominated_roles": [],
+  "p_bytes": 108383,
+  "path": [
+    [
+      3,
+      null
+    ]
+  ],
+  "plus_all_input_commitments": 154112,
+  "plus_fresh_commitments": 141824,
+  "projection_trits_per_one_scan": 111642624,
+  "role_count": 5,
+  "roles": [
+    {
+      "a": 32,
+      "b": 219,
+      "beta": 2874,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Ast",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 24,
+      "beta": 2874,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "AH",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 1116,
+      "beta": 2874,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Aaux0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 24,
+      "b": 673,
+      "beta": 5885142,
+      "reference": "A0(original)",
+      "reference_b": 1821,
+      "reference_beta": 4567851477,
+      "role": "A0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 4,
+      "b": 384,
+      "beta": 1255,
+      "reference": "Bp(original)",
+      "reference_b": 384,
+      "reference_beta": 1255,
+      "role": "Bp",
+      "zero_extension_dominance": true
+    }
+  ],
+  "search": {
+    "algorithm": "exhaustive restricted-grid search; exact (raw,S,depth) merging only",
+    "block_count_range": [
+      2,
+      32
+    ],
+    "counts": {
+      "generated_transitions": 523,
+      "identical_state_merges": 0,
+      "terminal_candidates_costed": 1058
+    },
+    "levels": [
+      {
+        "best_backend_bytes": 77696,
+        "depth": 0,
+        "states": 1
+      },
+      {
+        "best_backend_bytes": 77696,
+        "depth": 1,
+        "states": 24
+      },
+      {
+        "best_backend_bytes": 77696,
+        "depth": 2,
+        "states": 499
+      }
+    ],
+    "max_nonterminal": 5,
+    "radices": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "result_is_global_protocol_optimum": false
+  },
+  "statistical_error_lt_2neg128": true,
+  "statistical_error_lt_2neg130": true,
+  "statistical_exponent_display": "132.842042639137106100101601116399966222641421",
+  "total_bytes": 117248,
+  "v_bytes": 8865
+}

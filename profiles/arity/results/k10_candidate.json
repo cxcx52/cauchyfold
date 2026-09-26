@@ -1,0 +1,205 @@
+{
+  "KiB": 175.87890625,
+  "MiB": 0.17175674438476562,
+  "all_roles_reference_dominated": true,
+  "completeness_error": "2 * 2^-160",
+  "crs_bytes": 51710976,
+  "exact_error_expression": {
+    "field_rounds": 20,
+    "k": 10,
+    "layers": 1,
+    "projection_theta": "7/8 + 2^-1000",
+    "sum_aggregation_degrees": 7434,
+    "sum_blocks": 5
+  },
+  "front": {
+    "auxiliary_chunks": [
+      2964
+    ],
+    "auxiliary_columns": 2964,
+    "auxiliary_private_bits": 189696,
+    "canonical_K_values": 952,
+    "capacity": 365569,
+    "carrier_K_values": 40,
+    "carrier_columns": 120,
+    "carrier_private_bits": 7680,
+    "categories": {
+      "Boolean value bits and helpers": 365568,
+      "Canonical prefix recurrences": 182784,
+      "Exclusion of equality to q": 3808,
+      "First-difference restrictions": 15232,
+      "Folded residual equations": 4,
+      "Folded source equations": 69,
+      "Fresh base-field restrictions": 2070,
+      "Fresh u=1 and E=0": 50,
+      "Output residual equations": 4,
+      "Public coordinates": 60,
+      "Quadratic product gates": 36,
+      "Reserved zero constraints": 0
+    },
+    "field_padded_rows": 1048576,
+    "field_rounds": 20,
+    "field_rows": 569685,
+    "initial_linear_rows": 28685,
+    "k": 10,
+    "reserved_zeros": 0,
+    "used": 365569,
+    "wrapper_p_bytes": 38856,
+    "wrapper_v_bytes": 984
+  },
+  "honest_unconditional_expectation_upper_bytes": 189111,
+  "input_commitments_bytes": 135168,
+  "layers": [
+    {
+      "G": 93585665,
+      "N": 365760,
+      "N_raw": 365569,
+      "S": 365569,
+      "aggregation_degree": 7434,
+      "augmented_rows": 29740,
+      "i": 0,
+      "linear_rows": 28876,
+      "n": 1143,
+      "p_bytes": 131209,
+      "padding": 191,
+      "projection_codec_bytes": 1316,
+      "projection_codec_k": 10,
+      "rho": null,
+      "s": 5,
+      "seed": {
+        "block_bits": 1166,
+        "bytes": 8889,
+        "depth": 20,
+        "error_lt_2_to_minus_150": true,
+        "honest_integrality_slack_ok": true,
+        "seed_bits": 71106,
+        "state_bits": 108
+      },
+      "terminal": true,
+      "terminal_codec_bytes": 74229,
+      "terminal_codec_k": 6,
+      "v_bytes": 9051
+    }
+  ],
+  "max_accepted_bytes": 1612849,
+  "non_dominated_roles": [],
+  "p_bytes": 170065,
+  "path": [
+    [
+      5,
+      null
+    ]
+  ],
+  "plus_all_input_commitments": 315268,
+  "plus_fresh_commitments": 302980,
+  "projection_trits_per_one_scan": 316016640,
+  "result_status": "feasible preliminary candidate; full-depth exhaustive search not completed for this auxiliary point",
+  "role_count": 5,
+  "roles": [
+    {
+      "a": 32,
+      "b": 219,
+      "beta": 4837,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Ast",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 120,
+      "beta": 4837,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "AH",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 2964,
+      "beta": 4837,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Aaux0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 24,
+      "b": 1143,
+      "beta": 9906144,
+      "reference": "A0(original)",
+      "reference_b": 1821,
+      "reference_beta": 4567851477,
+      "role": "A0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 4,
+      "b": 384,
+      "beta": 1255,
+      "reference": "Bp(original)",
+      "reference_b": 384,
+      "reference_beta": 1255,
+      "role": "Bp",
+      "zero_extension_dominance": true
+    }
+  ],
+  "search": {
+    "algorithm": "Pareto-pruned finite candidate search; no certified optimality (seed lengths have discontinuities)",
+    "block_count_range": [
+      2,
+      32
+    ],
+    "levels": [
+      {
+        "best_backend_bytes": 140260,
+        "frontier_size": 1,
+        "nonterminal_depth": 0
+      },
+      {
+        "best_backend_bytes": 140260,
+        "frontier_size": 8,
+        "nonterminal_depth": 1
+      },
+      {
+        "best_backend_bytes": 140260,
+        "frontier_size": 35,
+        "nonterminal_depth": 2
+      },
+      {
+        "best_backend_bytes": 140260,
+        "frontier_size": 49,
+        "nonterminal_depth": 3
+      },
+      {
+        "best_backend_bytes": 140260,
+        "frontier_size": 80,
+        "nonterminal_depth": 4
+      },
+      {
+        "best_backend_bytes": 140260,
+        "frontier_size": 126,
+        "nonterminal_depth": 5
+      }
+    ],
+    "max_nonterminal": 5,
+    "radices": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "terminal_checks": 9252,
+    "transitions": 3210
+  },
+  "statistical_error_lt_2neg128": true,
+  "statistical_error_lt_2neg130": true,
+  "statistical_exponent_display": "132.817320917570960142866587913539385170833178",
+  "total_bytes": 180100,
+  "v_bytes": 10035
+}

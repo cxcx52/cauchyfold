@@ -1,0 +1,345 @@
+{
+  "cases": [
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 1047,
+      "k": 1,
+      "negative_checks": 4,
+      "rounds": 18,
+      "rows": 154704,
+      "used": 99457,
+      "witness_sha256": "1e76df68016e4ccafa7505fa00bcca85d192c56c5ffaa4948460d39592598561"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        18,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 11428,
+      "k": 1,
+      "negative_checks": 4,
+      "rounds": 18,
+      "rows": 154704,
+      "used": 99457,
+      "witness_sha256": "121ce0e198a7d8a80f497ac94c4966728238145f6dc9dce8345fee48a7f8bf84"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 2296,
+      "k": 2,
+      "negative_checks": 4,
+      "rounds": 18,
+      "rows": 200813,
+      "used": 129025,
+      "witness_sha256": "4656608b39567fceeb299deb4c69ad91a498e9d0591a1d340223b9efbf17a314"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        19,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 11678,
+      "k": 2,
+      "negative_checks": 4,
+      "rounds": 18,
+      "rows": 200813,
+      "used": 129025,
+      "witness_sha256": "a01d0f701bc2317885afd4c6290183ff6e5ae1dd2c84cf0fd3a66ffac00e2d83"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 3767,
+      "k": 3,
+      "negative_checks": 4,
+      "rounds": 18,
+      "rows": 246922,
+      "used": 158593,
+      "witness_sha256": "c75214680573aaf258299d064ef76eb7b678d00ea3d979789857b07a31e2ac40"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        20,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 12119,
+      "k": 3,
+      "negative_checks": 4,
+      "rounds": 18,
+      "rows": 246922,
+      "used": 158593,
+      "witness_sha256": "7d93ebfd67fbf9361ffdba415b8879bc52aaddb9a8a408099334a648b6df756f"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 3589,
+      "k": 4,
+      "negative_checks": 4,
+      "rounds": 19,
+      "rows": 293031,
+      "used": 188161,
+      "witness_sha256": "70bec342c2a9df0ebb6ebeabd751cb1228c2245b0986eda4ce5a60f31c36453c"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        21,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 12455,
+      "k": 4,
+      "negative_checks": 4,
+      "rounds": 19,
+      "rows": 293031,
+      "used": 188161,
+      "witness_sha256": "a0a103343fa72159d3a34e230598417dfbd3fc539642d59f4904f55ad5b63fbf"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        6,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 4802,
+      "k": 6,
+      "negative_checks": 4,
+      "rounds": 19,
+      "rows": 385249,
+      "used": 247297,
+      "witness_sha256": "8245b21376a4a597c7147000483e84bcb0c716b864f9c8791e75946586d1fdf4"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        23,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 13233,
+      "k": 6,
+      "negative_checks": 4,
+      "rounds": 19,
+      "rows": 385249,
+      "used": 247297,
+      "witness_sha256": "751f51b5266a6272144c4343522612b2ffaf2e7f7d603ad4e221426105d7938e"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 5710,
+      "k": 8,
+      "negative_checks": 4,
+      "rounds": 19,
+      "rows": 477467,
+      "used": 306433,
+      "witness_sha256": "c6348643e8af8ae53679ce8bd4337bc6b9e77480d0def243397291a6256ce437"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        25,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 14165,
+      "k": 8,
+      "negative_checks": 4,
+      "rounds": 19,
+      "rows": 477467,
+      "used": 306433,
+      "witness_sha256": "bb9bee0ad2cab013fd2498f63e60837ce296d6d352d95b59283d1de2244a6e00"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        10,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 6657,
+      "k": 10,
+      "negative_checks": 4,
+      "rounds": 20,
+      "rows": 569685,
+      "used": 365569,
+      "witness_sha256": "390741163cf41373979525e170325b3ed9d23c319e41693d83d996b993b3ccb7"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        27,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 14427,
+      "k": 10,
+      "negative_checks": 4,
+      "rounds": 20,
+      "rows": 569685,
+      "used": 365569,
+      "witness_sha256": "dc59be033a1cc234ee717d5fe2d33845fffed6f0deaace6b2362a9fc41518073"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 7810,
+      "k": 16,
+      "negative_checks": 4,
+      "rounds": 20,
+      "rows": 846339,
+      "used": 542977,
+      "witness_sha256": "4194e8dd18dabebe236930f6168f80e7e03986d8f4d0dfc52066a57bca17a4b5"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        33,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 16105,
+      "k": 16,
+      "negative_checks": 4,
+      "rounds": 20,
+      "rows": 846339,
+      "used": 542977,
+      "witness_sha256": "b24ae7d559835397f588581aa9a176e0c04f2b44cee9138e3bb939c506eb7422"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        32,
+        0,
+        0,
+        0
+      ],
+      "honest_witness_energy": 13271,
+      "k": 32,
+      "negative_checks": 4,
+      "rounds": 21,
+      "rows": 1584083,
+      "used": 1016065,
+      "witness_sha256": "c76a0c97922360443241f139e732c7ae01ae39471c438c1268d21cf841f7bdda"
+    },
+    {
+      "all_canonical_constraints_checked": true,
+      "carrier_pair_residue_agreement": true,
+      "challenge": [
+        49,
+        3,
+        4,
+        5
+      ],
+      "honest_witness_energy": 21308,
+      "k": 32,
+      "negative_checks": 4,
+      "rounds": 21,
+      "rows": 1584083,
+      "used": 1016065,
+      "witness_sha256": "9feb6bb8e03b1977af84b9b1b0d2f9a20d47de528fbf216173c80138ef025dd4"
+    }
+  ],
+  "field_certificate": {
+    "all_prime_factors_checked_by_trial_division": true,
+    "gcd_x_to_q_squared_minus_x_with_modulus": [
+      1
+    ],
+    "lucas_residues": {
+      "2": 281474976710596,
+      "2459": 174909324762349,
+      "35905663": 155741998183453,
+      "797": 103621701429874
+    },
+    "lucas_witness": 2,
+    "primality_and_irreducibility_certificates_verified": true,
+    "q": 281474976710597,
+    "q_minus_one_prime_factors": {
+      "2": 2,
+      "797": 1,
+      "2459": 1,
+      "35905663": 1
+    },
+    "theta_to_q_fourth": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "theta_to_q_squared": [
+      0,
+      281474976710596,
+      0,
+      0
+    ]
+  },
+  "original_front_manifest_reproduced": true,
+  "scope": "Front-end and counting regression, not full lattice-protocol integration"
+}

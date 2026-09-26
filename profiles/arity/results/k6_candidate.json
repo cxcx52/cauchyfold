@@ -1,0 +1,205 @@
+{
+  "KiB": 148.521484375,
+  "MiB": 0.14504051208496094,
+  "all_roles_reference_dominated": true,
+  "completeness_error": "2 * 2^-160",
+  "crs_bytes": 38145024,
+  "exact_error_expression": {
+    "field_rounds": 19,
+    "k": 6,
+    "layers": 1,
+    "projection_theta": "7/8 + 2^-1000",
+    "sum_aggregation_degrees": 5402,
+    "sum_blocks": 4
+  },
+  "front": {
+    "auxiliary_chunks": [
+      2040
+    ],
+    "auxiliary_columns": 2040,
+    "auxiliary_private_bits": 130560,
+    "canonical_K_values": 644,
+    "capacity": 247297,
+    "carrier_K_values": 24,
+    "carrier_columns": 72,
+    "carrier_private_bits": 4608,
+    "categories": {
+      "Boolean value bits and helpers": 247296,
+      "Canonical prefix recurrences": 123648,
+      "Exclusion of equality to q": 2576,
+      "First-difference restrictions": 10304,
+      "Folded residual equations": 4,
+      "Folded source equations": 69,
+      "Fresh base-field restrictions": 1242,
+      "Fresh u=1 and E=0": 30,
+      "Output residual equations": 4,
+      "Public coordinates": 40,
+      "Quadratic product gates": 36,
+      "Reserved zero constraints": 0
+    },
+    "field_padded_rows": 524288,
+    "field_rounds": 19,
+    "field_rows": 385249,
+    "initial_linear_rows": 20493,
+    "k": 6,
+    "reserved_zeros": 0,
+    "used": 247297,
+    "wrapper_p_bytes": 38760,
+    "wrapper_v_bytes": 936
+  },
+  "honest_unconditional_expectation_upper_bytes": 160578,
+  "input_commitments_bytes": 86016,
+  "layers": [
+    {
+      "G": 63308033,
+      "N": 247552,
+      "N_raw": 247297,
+      "S": 247297,
+      "aggregation_degree": 5402,
+      "augmented_rows": 21612,
+      "i": 0,
+      "linear_rows": 20748,
+      "n": 967,
+      "p_bytes": 103858,
+      "padding": 255,
+      "projection_codec_bytes": 1290,
+      "projection_codec_k": 9,
+      "rho": null,
+      "s": 4,
+      "seed": {
+        "block_bits": 1158,
+        "bytes": 8394,
+        "depth": 19,
+        "error_lt_2_to_minus_150": true,
+        "honest_integrality_slack_ok": true,
+        "seed_bits": 67145,
+        "state_bits": 107
+      },
+      "terminal": true,
+      "terminal_codec_bytes": 61880,
+      "terminal_codec_k": 5,
+      "v_bytes": 8532
+    }
+  ],
+  "max_accepted_bytes": 1502314,
+  "non_dominated_roles": [],
+  "p_bytes": 142618,
+  "path": [
+    [
+      4,
+      null
+    ]
+  ],
+  "plus_all_input_commitments": 238102,
+  "plus_fresh_commitments": 225814,
+  "projection_trits_per_one_scan": 213884928,
+  "result_status": "feasible preliminary candidate; full-depth exhaustive search not completed for this auxiliary point",
+  "role_count": 5,
+  "roles": [
+    {
+      "a": 32,
+      "b": 219,
+      "beta": 3979,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Ast",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 72,
+      "beta": 3979,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "AH",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 2040,
+      "beta": 3979,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Aaux0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 24,
+      "b": 967,
+      "beta": 8147594,
+      "reference": "A0(original)",
+      "reference_b": 1821,
+      "reference_beta": 4567851477,
+      "role": "A0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 4,
+      "b": 384,
+      "beta": 1255,
+      "reference": "Bp(original)",
+      "reference_b": 384,
+      "reference_beta": 1255,
+      "role": "Bp",
+      "zero_extension_dominance": true
+    }
+  ],
+  "search": {
+    "algorithm": "Pareto-pruned finite candidate search; no certified optimality (seed lengths have discontinuities)",
+    "block_count_range": [
+      2,
+      32
+    ],
+    "levels": [
+      {
+        "best_backend_bytes": 112390,
+        "frontier_size": 1,
+        "nonterminal_depth": 0
+      },
+      {
+        "best_backend_bytes": 112390,
+        "frontier_size": 9,
+        "nonterminal_depth": 1
+      },
+      {
+        "best_backend_bytes": 112390,
+        "frontier_size": 24,
+        "nonterminal_depth": 2
+      },
+      {
+        "best_backend_bytes": 112390,
+        "frontier_size": 39,
+        "nonterminal_depth": 3
+      },
+      {
+        "best_backend_bytes": 112390,
+        "frontier_size": 64,
+        "nonterminal_depth": 4
+      },
+      {
+        "best_backend_bytes": 112390,
+        "frontier_size": 86,
+        "nonterminal_depth": 5
+      }
+    ],
+    "max_nonterminal": 5,
+    "radices": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "terminal_checks": 6908,
+    "transitions": 2301
+  },
+  "statistical_error_lt_2neg128": true,
+  "statistical_error_lt_2neg130": true,
+  "statistical_exponent_display": "132.829628825718293058138903934996129275048443",
+  "total_bytes": 152086,
+  "v_bytes": 9468
+}

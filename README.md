@@ -13,6 +13,7 @@ parameters/     Field, commitment, and reduction parameters
 artifacts/      Generated relation, security, and cost data
 projection/     Seeded projection parameters, operators, and comparison data
 estimator/      Pinned lattice-estimator inputs and saved results
+profiles/       Additional finite-grid and scalability profiles
 reproduce/      Reproduction entry point
 checks/         Field and serialization checks
 ```
@@ -66,3 +67,13 @@ The saved results use official [lattice-estimator](https://github.com/malb/latti
 The weakest saved full-node estimates both occur at `backend_0_A`: classical `log2(rop) = 255.490229` and quantum `log2(rop) = 238.730181`. These are attack-model estimates, not a complete security certification. Entries outside the documented fit range are marked in the result files.
 
 The compiler layouts, rational probability bounds, message lengths, and typed operation counts are finite calculations. The estimator values are heuristic attack estimates. Code is available under the [MIT License](LICENSE).
+
+## Additional arities
+
+The [profile directory](profiles/README.md) contains exact restricted-grid
+results for arities 2, 4, 8, 16, and 32, together with an experimental
+arity-1024 front-end profile. The arity-1024 material includes a materialized
+field compiler, a complete field transcript, and official estimator output for
+its seventeen matrix roles. Its recursive lattice backend is not implemented,
+so it is presented as component-level scalability evidence rather than a
+complete proof benchmark.

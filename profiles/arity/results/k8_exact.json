@@ -1,0 +1,208 @@
+{
+  "KiB": 162.9736328125,
+  "MiB": 0.15915393829345703,
+  "all_roles_reference_dominated": true,
+  "completeness_error": "2 * 2^-160",
+  "crs_bytes": 46245888,
+  "exact_error_expression": {
+    "field_rounds": 19,
+    "k": 8,
+    "layers": 1,
+    "projection_theta": "7/8 + 2^-1000",
+    "sum_aggregation_degrees": 6426,
+    "sum_blocks": 4
+  },
+  "front": {
+    "auxiliary_chunks": [
+      2502
+    ],
+    "auxiliary_columns": 2502,
+    "auxiliary_private_bits": 160128,
+    "canonical_K_values": 798,
+    "capacity": 306433,
+    "carrier_K_values": 32,
+    "carrier_columns": 96,
+    "carrier_private_bits": 6144,
+    "categories": {
+      "Boolean value bits and helpers": 306432,
+      "Canonical prefix recurrences": 153216,
+      "Exclusion of equality to q": 3192,
+      "First-difference restrictions": 12768,
+      "Folded residual equations": 4,
+      "Folded source equations": 69,
+      "Fresh base-field restrictions": 1656,
+      "Fresh u=1 and E=0": 40,
+      "Output residual equations": 4,
+      "Public coordinates": 50,
+      "Quadratic product gates": 36,
+      "Reserved zero constraints": 0
+    },
+    "field_padded_rows": 524288,
+    "field_rounds": 19,
+    "field_rows": 477467,
+    "initial_linear_rows": 24589,
+    "k": 8,
+    "reserved_zeros": 0,
+    "used": 306433,
+    "wrapper_p_bytes": 38760,
+    "wrapper_v_bytes": 936
+  },
+  "honest_unconditional_expectation_upper_bytes": 175377,
+  "input_commitments_bytes": 110592,
+  "layers": [
+    {
+      "G": 78446849,
+      "N": 306688,
+      "N_raw": 306433,
+      "S": 306433,
+      "aggregation_degree": 6426,
+      "augmented_rows": 25708,
+      "i": 0,
+      "linear_rows": 24844,
+      "n": 1198,
+      "p_bytes": 118657,
+      "padding": 255,
+      "projection_codec_bytes": 1305,
+      "projection_codec_k": 10,
+      "rho": null,
+      "s": 4,
+      "seed": {
+        "block_bits": 1158,
+        "bytes": 8394,
+        "depth": 19,
+        "error_lt_2_to_minus_150": true,
+        "honest_integrality_slack_ok": true,
+        "seed_bits": 67145,
+        "state_bits": 107
+      },
+      "terminal": true,
+      "terminal_codec_bytes": 76664,
+      "terminal_codec_k": 5,
+      "v_bytes": 8532
+    }
+  ],
+  "max_accepted_bytes": 1517113,
+  "non_dominated_roles": [],
+  "p_bytes": 157417,
+  "path": [
+    [
+      4,
+      null
+    ]
+  ],
+  "plus_all_input_commitments": 277477,
+  "plus_fresh_commitments": 265189,
+  "projection_trits_per_one_scan": 264978432,
+  "role_count": 5,
+  "roles": [
+    {
+      "a": 32,
+      "b": 219,
+      "beta": 4429,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Ast",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 96,
+      "beta": 4429,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "AH",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 32,
+      "b": 2502,
+      "beta": 4429,
+      "reference": "Aaux(original)",
+      "reference_b": 4350,
+      "reference_beta": 8192,
+      "role": "Aaux0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 24,
+      "b": 1198,
+      "beta": 9069592,
+      "reference": "A0(original)",
+      "reference_b": 1821,
+      "reference_beta": 4567851477,
+      "role": "A0",
+      "zero_extension_dominance": true
+    },
+    {
+      "a": 4,
+      "b": 384,
+      "beta": 1255,
+      "reference": "Bp(original)",
+      "reference_b": 384,
+      "reference_beta": 1255,
+      "role": "Bp",
+      "zero_extension_dominance": true
+    }
+  ],
+  "search": {
+    "algorithm": "exhaustive restricted-grid search; exact (raw,S,depth) merging only",
+    "block_count_range": [
+      2,
+      32
+    ],
+    "counts": {
+      "generated_transitions": 201563,
+      "identical_state_merges": 2,
+      "terminal_candidates_costed": 293361
+    },
+    "levels": [
+      {
+        "best_backend_bytes": 127189,
+        "depth": 0,
+        "states": 1
+      },
+      {
+        "best_backend_bytes": 127189,
+        "depth": 1,
+        "states": 19
+      },
+      {
+        "best_backend_bytes": 127189,
+        "depth": 2,
+        "states": 310
+      },
+      {
+        "best_backend_bytes": 127189,
+        "depth": 3,
+        "states": 5146
+      },
+      {
+        "best_backend_bytes": 127189,
+        "depth": 4,
+        "states": 84287
+      },
+      {
+        "best_backend_bytes": 127189,
+        "depth": 5,
+        "states": 111799
+      }
+    ],
+    "max_nonterminal": 5,
+    "radices": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "result_is_global_protocol_optimum": false
+  },
+  "statistical_error_lt_2neg128": true,
+  "statistical_error_lt_2neg130": true,
+  "statistical_exponent_display": "132.829628825718290771955458798102537619424306",
+  "total_bytes": 166885,
+  "v_bytes": 9468
+}

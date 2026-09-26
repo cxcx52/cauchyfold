@@ -1,0 +1,277 @@
+{
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "roles": [
+    {
+      "beta": 44071,
+      "columns": 219,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 44071,
+        "m": 14016,
+        "n": 2048,
+        "norm": 2
+      },
+      "matrix_id": "A_st",
+      "q": 281474976710597,
+      "rows": 32,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 44071,
+      "columns": 12288,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 44071,
+        "m": 786432,
+        "n": 2048,
+        "norm": 2
+      },
+      "matrix_id": "A_H",
+      "q": 281474976710597,
+      "rows": 32,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 44071,
+      "columns": 237198,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 44071,
+        "m": 15180672,
+        "n": 2048,
+        "norm": 2
+      },
+      "matrix_id": "A_aux",
+      "q": 281474976710597,
+      "rows": 32,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 12330665646,
+      "columns": 15807,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 12330665646,
+        "m": 1011648,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_0",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 376257,
+      "columns": 6720,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 376257,
+        "m": 430080,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_0",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 376257,
+      "columns": 11160,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 376257,
+        "m": 714240,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_0",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 25109346730,
+      "columns": 3536,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 25109346730,
+        "m": 226304,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_1",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 383127,
+      "columns": 2744,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 383127,
+        "m": 175616,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_1",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 383127,
+      "columns": 2205,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 383127,
+        "m": 141120,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_1",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 17190024523,
+      "columns": 1503,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 17190024523,
+        "m": 96192,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_2",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 262291,
+      "columns": 1568,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 262291,
+        "m": 100352,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_2",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 262291,
+      "columns": 756,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 262291,
+        "m": 48384,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_2",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 13777860934,
+      "columns": 889,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 13777860934,
+        "m": 56896,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_3",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 210228,
+      "columns": 1176,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 210228,
+        "m": 75264,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "B_3",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 210228,
+      "columns": 441,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 210228,
+        "m": 28224,
+        "n": 1024,
+        "norm": 2
+      },
+      "matrix_id": "D_3",
+      "q": 281474976710597,
+      "rows": 16,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 430545016,
+      "columns": 679,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 430545016,
+        "m": 43456,
+        "n": 1792,
+        "norm": 2
+      },
+      "matrix_id": "A_4",
+      "q": 281474976710597,
+      "rows": 28,
+      "status": "READY_NOT_ESTIMATED"
+    },
+    {
+      "beta": 1355,
+      "columns": 448,
+      "d": 64,
+      "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+      "expanded_sis": {
+        "length_bound": 1355,
+        "m": 28672,
+        "n": 256,
+        "norm": 2
+      },
+      "matrix_id": "B_pivot",
+      "q": 281474976710597,
+      "rows": 4,
+      "status": "READY_NOT_ESTIMATED"
+    }
+  ]
+}

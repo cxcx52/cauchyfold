@@ -1,0 +1,22 @@
+{
+  "commitment_scalar_rows": 2105344,
+  "field_terminal_scalar_rows": 12,
+  "fixed_constant_rows": 1,
+  "padding_zero_rows": 1919,
+  "row_order": [
+    "all segment commitment equations, each 64*rank scalar rows",
+    "A^T eq_tau, four basis equations",
+    "B^T eq_tau, four basis equations",
+    "C^T eq_tau, four basis equations",
+    "fixed-one equation",
+    "backend alignment zero equations"
+  ],
+  "semantic_segments": 1028,
+  "status": "MATHEMATICAL_OPERATOR_SPEC_NOT_FULL_IMPLEMENTED_LATTICE_OPERATOR",
+  "total_rows": 2107276,
+  "unimplemented": [
+    "full product-setup matrix generation",
+    "commitment matrix forward/adjoint routines",
+    "full lattice backend replay"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "attacks": [
+    {
+      "attack": "lattice",
+      "block_size": 861,
+      "fields": {
+        "beta": "861",
+        "d": "5107",
+        "delta": "1.00228714414683",
+        "problem": "SISParameters(n=1792, q=281474976710597, length_bound=13777860934, m=56896, norm=2, tag='A_3')",
+        "red": "5.79232986993602e76",
+        "rop": "5.79232986993602e76",
+        "tag": "euclidean"
+      },
+      "finite": true,
+      "fit_status": "WITHIN_FIT_OR_UNKNOWN",
+      "log2_rop": 255.00067897687333
+    }
+  ],
+  "captured_output": "",
+  "elapsed_seconds": 0.0016205140000238316,
+  "model": "quantum",
+  "pin": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "role": {
+    "beta": 13777860934,
+    "columns": 889,
+    "d": 64,
+    "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+    "expanded_sis": {
+      "length_bound": 13777860934,
+      "m": 56896,
+      "n": 1792,
+      "norm": 2
+    },
+    "matrix_id": "A_3",
+    "q": 281474976710597,
+    "rows": 28,
+    "status": "READY_NOT_ESTIMATED"
+  },
+  "scope": "heuristic coefficient-expanded SIS attacks; not a full-node security certificate"
+}

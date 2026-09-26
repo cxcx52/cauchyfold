@@ -1,0 +1,120 @@
+[
+  {
+    "path": [
+      [
+        3,
+        null
+      ]
+    ],
+    "p_bytes": 108383,
+    "v_bytes": 8865,
+    "total_bytes": 117248,
+    "KiB": 114.5,
+    "MiB": 0.11181640625,
+    "plus_all_input_commitments": 154112,
+    "role_count": 5,
+    "max_accepted_bytes": 1379231,
+    "statistical_exponent_display": "132.842042639137106100101601116399966222641421",
+    "all_roles_reference_dominated": true,
+    "k": 2,
+    "used": 129025,
+    "field_rows": 200813,
+    "field_rounds": 18
+  },
+  {
+    "path": [
+      [
+        3,
+        null
+      ]
+    ],
+    "p_bytes": 127562,
+    "v_bytes": 9400,
+    "total_bytes": 136962,
+    "KiB": 133.751953125,
+    "MiB": 0.1306171417236328,
+    "plus_all_input_commitments": 198402,
+    "role_count": 5,
+    "max_accepted_bytes": 1476378,
+    "statistical_exponent_display": "132.842042639137103785189056393481134519339932",
+    "all_roles_reference_dominated": true,
+    "k": 4,
+    "used": 188161,
+    "field_rows": 293031,
+    "field_rounds": 19
+  },
+  {
+    "path": [
+      [
+        4,
+        null
+      ]
+    ],
+    "p_bytes": 157417,
+    "v_bytes": 9468,
+    "total_bytes": 166885,
+    "KiB": 162.9736328125,
+    "MiB": 0.15915393829345703,
+    "plus_all_input_commitments": 277477,
+    "role_count": 5,
+    "max_accepted_bytes": 1517113,
+    "statistical_exponent_display": "132.829628825718290771955458798102537619424306",
+    "all_roles_reference_dominated": true,
+    "k": 8,
+    "used": 306433,
+    "field_rows": 477467,
+    "field_rounds": 19
+  },
+  {
+    "path": [
+      [
+        6,
+        null
+      ]
+    ],
+    "p_bytes": 205092,
+    "v_bytes": 10104,
+    "total_bytes": 215196,
+    "KiB": 210.15234375,
+    "MiB": 0.20522689819335938,
+    "plus_all_input_commitments": 424092,
+    "role_count": 5,
+    "max_accepted_bytes": 1658916,
+    "statistical_exponent_display": "132.805117122962609249790998783535213166181225",
+    "all_roles_reference_dominated": true,
+    "k": 16,
+    "used": 542977,
+    "field_rows": 846339,
+    "field_rounds": 20
+  },
+  {
+    "path": [
+      [
+        9,
+        64
+      ],
+      [
+        6,
+        64
+      ],
+      [
+        5,
+        null
+      ]
+    ],
+    "p_bytes": 215222,
+    "v_bytes": 29299,
+    "total_bytes": 244521,
+    "KiB": 238.7900390625,
+    "MiB": 0.23319339752197266,
+    "plus_all_input_commitments": 650025,
+    "role_count": 12,
+    "max_accepted_bytes": 4719894,
+    "statistical_exponent_display": "131.212075735674109898686475089995357372093652",
+    "all_roles_reference_dominated": true,
+    "k": 32,
+    "used": 1016065,
+    "field_rows": 1584083,
+    "field_rounds": 21
+  }
+]
