@@ -4,8 +4,8 @@ Every stored pointer and sparse entry is checked. No sampling is used.
 from pathlib import Path
 import struct,json,time
 import numpy as np
-from cf_profile import Q,ROOT,dump
-from template_check import row_templates,PACK
+from profile import Q,ROOT,dump
+from check_templates import row_templates,PACK
 
 def run(root,k):
     start=time.perf_counter();root=Path(root)
@@ -121,5 +121,5 @@ def run(root,k):
     result=dict(status='PASS',k=k,rows=nr,entries=sum(len(x) for x in e),
        every_sparse_entry_compared=True,every_row_pointer_compared=True,
        numeric_witness_used=False,method='independent Python/Numpy row templates, complete vectorized comparison',seconds=time.perf_counter()-start)
-    dump(ROOT/'evidence/template_check_k1024.json',result);return result
+    dump(ROOT/'evidence/compiler-checks.json',result);return result
 if __name__=='__main__': print(json.dumps(run(ROOT/'artifacts/compiler',1024),indent=2))

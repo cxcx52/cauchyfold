@@ -3,8 +3,8 @@ from pathlib import Path
 from fractions import Fraction
 from math import isqrt
 import json
-from model import *
-from compression_reference import NormCodec
+from parameters import *
+from codec import NormCodec
 
 ROOT=Path(__file__).parent
 
@@ -22,7 +22,7 @@ def verify():
     assert worst<Fraction(1,2**130)
     codec_cases=0;reports=[]
     for k in (2,4,8,16,32):
-        r=json.loads((ROOT/'results'/f'k{k}_exact.json').read_text())
+        r=json.loads((ROOT/'results'/f'arity-{k}.json').read_text())
         f=r['front'];p=f['wrapper_p_bytes'];v=f['wrapper_v_bytes']
         for layer in r['layers']:
             s,n,S,G=layer['s'],layer['n'],layer['S'],layer['G']

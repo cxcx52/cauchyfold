@@ -4,7 +4,7 @@ Compares EVERY row of the k=2 CSR fixture, not just a satisfying assignment.
 from __future__ import annotations
 import mmap,struct,time,json,sys
 from pathlib import Path
-from cf_profile import Q,ROOT,dump
+from profile import Q,ROOT,dump
 PACK=struct.Struct('<II')
 
 def key(kind=0,index=0,basis=0,bit=0,negative=False):
@@ -77,4 +77,4 @@ def check(directory,k,cap=None):
         for f in files:f.close()
 if __name__=='__main__':
     directory=sys.argv[1];k=int(sys.argv[2]);cap=int(sys.argv[3]) if len(sys.argv)>3 else None
-    result=check(directory,k,cap);dump(ROOT/'evidence'/f'template_check_k{k}.json',result);print(json.dumps(result,indent=2))
+    result=check(directory,k,cap);dump(ROOT/'evidence'/f'template-checks-{k}.json',result);print(json.dumps(result,indent=2))

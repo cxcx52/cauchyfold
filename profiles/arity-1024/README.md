@@ -5,7 +5,7 @@ included to make the front-end scaling calculation and its concrete evidence
 reproducible. It is not the repository's main concrete profile.
 
 The parameter derivation and projection argument are collected in
-[derivation.md](derivation.md).
+[METHOD.md](METHOD.md).
 
 Implemented components:
 
@@ -33,7 +33,7 @@ saved estimates both occur at `A_1`:
 
 These values are heuristic estimates for coefficient-expanded Euclidean SIS.
 Results with block size above 1024 are marked as extrapolated in
-`estimator/estimator_results.json`.
+[`estimator/results.json`](estimator/results.json).
 
 The complete recursive lattice prover and verifier are not implemented here.
 The parser creates a synthetic grammar fixture with placeholder lattice
@@ -44,16 +44,16 @@ proof size.
 Regenerate and check the parameter ledger:
 
 ```sh
-python profiles/k1024/src/cf_profile.py
-python profiles/k1024/src/wire.py
+python profiles/arity-1024/src/profile.py
+python profiles/arity-1024/src/check_transcript.py
 ```
 
 To inspect the full sparse compiler artifacts, first unpack the compressed
 files and then run the complete template check:
 
 ```sh
-python profiles/k1024/src/unpack_artifacts.py
-python profiles/k1024/src/template_check_large.py
+python profiles/arity-1024/src/unpack_compiler_data.py
+python profiles/arity-1024/src/check_compiler.py
 ```
 
 The unpacked compiler directory is about 2 GiB and is ignored by Git.

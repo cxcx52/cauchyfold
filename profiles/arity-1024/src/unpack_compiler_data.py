@@ -1,15 +1,15 @@
 """Restore full compressed compiler artifacts and check both hash layers."""
 from pathlib import Path
 import lzma,hashlib,json
-from cf_profile import ROOT
+from profile import ROOT
 
 def unpack():
-    folder=ROOT/'compiler_compressed';m=json.loads((folder/'MANIFEST.json').read_text())
+    folder=ROOT/'compiler-data';m=json.loads((folder/'manifest.json').read_text())
     out=ROOT/'artifacts/compiler';out.mkdir(parents=True,exist_ok=True)
     for r in m['files']:
         name=r['file']
         if name in ('.','..') or Path(name).name!=name:raise ValueError('unsafe artifact name')
-        compressed=folder/(name+'.xz');h=hashlib.sha256()
+        compressed=folder/r.get('archive',name+'.xz');h=hashlib.sha256()
         with compressed.open('rb') as f:
             for b in iter(lambda:f.read(1<<20),b''):h.update(b)
         if h.hexdigest()!=r['compressed_sha256']:raise ValueError('compressed artifact hash mismatch')

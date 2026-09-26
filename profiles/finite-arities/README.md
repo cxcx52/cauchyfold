@@ -23,15 +23,15 @@ communication optima and are not measured serialized proof sizes.
 Run the finite checks with Python 3.10 or later:
 
 ```sh
-python profiles/arity/run_study.py
+python profiles/finite-arities/reproduce.py
 ```
 
 Repeat the five exhaustive searches with:
 
 ```sh
-python profiles/arity/run_study.py --search
+python profiles/finite-arities/reproduce.py --search
 ```
 
 The exhaustive search may use several hundred MiB of memory. It is a parameter
 search, not a prover benchmark. The mathematical derivation and the precise
-scope of the search certificate are given in [derivation.md](derivation.md).
+scope of the search certificate are given in [METHOD.md](METHOD.md).

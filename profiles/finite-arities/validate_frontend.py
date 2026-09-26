@@ -9,8 +9,8 @@ from math import prod
 from random import Random
 from pathlib import Path
 import json, hashlib
-from model import Q, front
-from compression_reference import Quartic, ZERO, ONE, concrete_field_certificate
+from parameters import Q, front
+from codec import Quartic, ZERO, ONE, concrete_field_certificate
 F=Quartic(Q)
 
 
@@ -194,5 +194,5 @@ def run():
     return out
 
 if __name__=='__main__':
-    result=run();p=Path(__file__).parent/'results'/'front_validation.json'
+    result=run();p=Path(__file__).parent/'results'/'frontend-validation.json'
     p.write_bytes((json.dumps(result,indent=2,sort_keys=True)+'\n').encode('utf-8'));print('front checks passed:',len(result['cases']),'assignments, 9 arities')

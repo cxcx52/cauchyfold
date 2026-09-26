@@ -85,6 +85,6 @@ def build():
  assert len(roles)==17
  return out
 if __name__=='__main__':
- x=build();dump(ROOT/'artifacts/profile.json',x)
- dump(ROOT/'artifacts/estimator_inputs.json',dict(estimator_commit=PIN,roles=x['roles']))
+ x=build();dump(ROOT/'artifacts/parameters.json',x)
+ dump(ROOT/'artifacts/estimator-inputs.json',dict(estimator_commit=PIN,roles=x['roles']))
  print(json.dumps({k:x[k] for k in ['total_bytes','P_bytes','V_bytes','crs_bytes','statistical_neglog2']}))

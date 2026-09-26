@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Run the unmodified pinned upstream under Sage. Never substitutes a proxy.
-Usage: sage -python run_official_estimator.py --upstream /path/lattice-estimator
+Usage: sage -python run_estimator.py --upstream /path/lattice-estimator
 """
 import argparse, contextlib, hashlib, io, json, math, platform, subprocess, sys, time, traceback
 from pathlib import Path
-from cf_profile import ROOT, PIN, build, dump
+from profile import ROOT, PIN, build, dump
 
 def run(upstream):
  out=ROOT/'evidence'/'official_estimator';out.mkdir(parents=True,exist_ok=True)

@@ -54,12 +54,12 @@ std::array<E,3> independent_mle(RawTables&t,const std::vector<E>&tau,unsigned el
  return total;
 }
 int main(int argc,char**argv){try{
- ensure(argc>=3,"usage: field_prover artifact_directory output_directory [streamed_rounds]");fs::path input=argv[1],output=argv[2];fs::create_directories(output);
+ ensure(argc>=3,"usage: field-transcript artifact_directory output_directory [streamed_rounds]");fs::path input=argv[1],output=argv[2];fs::create_directories(output);
  RawTables raw(input);unsigned ell=0;while((size_t(1)<<ell)<raw.rows)ell++;unsigned high=argc>3?std::stoul(argv[3]):6;
  ensure(high>0&&high<=ell,"stream split");Tables tab(raw,ell,high);
  std::mt19937_64 rng(0xF1E1DC0123);auto coin=[&](){E x;for(U&v:x){do{v=rng()&mask;}while(v>=q);}return x;};
  std::vector<E>r;for(unsigned j=0;j<ell;j++)r.push_back(coin());
- ByteOut wire(output/"field_transcript.bin");for(auto&x:r)putE(wire,x);
+ ByteOut wire(output/"transcript.bin");for(auto&x:r)putE(wire,x);
  E claim=zero,eprefix=one;auto start=std::chrono::steady_clock::now();
  for(unsigned j=0;j<ell;j++){
   auto rs=std::chrono::steady_clock::now();size_t tail=size_t(1)<<(ell-j-1);unsigned f=ell-j-1,lo=std::min(16u,f),hi=f-lo;size_t block=size_t(1)<<lo;
@@ -87,7 +87,7 @@ int main(int argc,char**argv){try{
  ensure(claim==em(eprefix,es(em(ends[0],ends[1]),ends[2])),"final sumcheck equation");
  for(auto&x:ends)putE(wire,x);
  auto independent=independent_mle(raw,tab.tau,ell);ensure(independent==ends,"independent MLE mismatch");
- std::ofstream js(output/"field_verification.json");
+ std::ofstream js(output/"verification.json");
  js<<"{\"field_sumcheck_verified\":true,\"independent_raw_MLE_verified\":true,\"rows\":"<<raw.rows<<",\"rounds\":"<<ell<<",\"streamed_rounds\":"<<high<<",\"dense_table_allocated_bytes\":"<<(3*(size_t(1)<<(ell-high))*sizeof(E))<<",\"wire_bytes\":"<<(144*ell+72)<<",\"fixture_coins_not_production\":true,\"lattice_backend_verified\":false}\n";
  std::cout<<"field proof and independent terminal MLE verified; seconds="<<std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count()<<std::endl;
  return 0;

@@ -356,5 +356,5 @@ if __name__=='__main__':
     (a.output/'baseline.json').write_bytes((json.dumps(b,indent=2,sort_keys=True)+'\n').encode('utf-8'))
     for k in a.k:
         r=optimize(k,tuple(a.radices))
-        (a.output/f'k{k}_optimized.json').write_bytes((json.dumps(r,indent=2,sort_keys=True)+'\n').encode('utf-8'))
+        (a.output/f'arity-{k}-candidate.json').write_bytes((json.dumps(r,indent=2,sort_keys=True)+'\n').encode('utf-8'))
         print(k,r['total_bytes'],r['KiB'],r['path'],r['non_dominated_roles'],flush=True)

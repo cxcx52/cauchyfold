@@ -2,7 +2,7 @@
 This certifies an optimum of this restricted cost grid, NOT an architectural optimum.
 The feasibility envelope deliberately retains the original MSIS reference problems.
 """
-from model import *
+from parameters import *
 from pathlib import Path
 
 def exact_search(k,radices=(4,8,16,32,64,128),max_depth=5):
@@ -57,5 +57,5 @@ if __name__=='__main__':
     out=Path(__file__).parent/'results'
     for k in a.k:
         r=exact_search(k)
-        (out/f'k{k}_exact.json').write_bytes((json.dumps(r,indent=2,sort_keys=True)+'\n').encode('utf-8'))
+        (out/f'arity-{k}.json').write_bytes((json.dumps(r,indent=2,sort_keys=True)+'\n').encode('utf-8'))
         print('FINAL',k,r['total_bytes'],r['KiB'],r['path'],flush=True)

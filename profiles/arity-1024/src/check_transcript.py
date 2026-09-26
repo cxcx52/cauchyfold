@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 import json, hashlib
 from compression import Quartic, NormCodec, decode_challenge
-from cf_profile import Q, build, ROOT, dump
+from profile import Q, build, ROOT, dump
 F=Quartic(); Z=(0,0,0,0); O=(1,0,0,0)
 RETRY=0; ACCEPT=1
 
@@ -154,7 +154,7 @@ def synthetic_fixture(field_bytes:bytes,retries:int=0):
     return bytes(out)
 
 def tests():
-    p=build();field=(ROOT/'artifacts/field/field_transcript.bin').read_bytes()
+    p=build();field=(ROOT/'artifacts/field/transcript.bin').read_bytes()
     independent=verify_field_bytes(field,p['field_rounds'])
     data=synthetic_fixture(field);result=parse(data,p)
     assert len(data)==p['total_bytes'] and result['P_bytes']==p['P_bytes'] and result['V_bytes']==p['V_bytes']
@@ -192,12 +192,12 @@ def tests():
     output=dict(status='PASS',fixture_is_not_a_full_proof=True,full_lattice_protocol_verified=False,
        independently_verified_actual_field_transcript=True,field_wire_bytes=len(field),
        no_retry_bytes=len(data),max_retry_bytes=len(maxdata),negative_cases=negative,
-       profile_sha256=hashlib.sha256((ROOT/'artifacts/profile.json').read_bytes()).hexdigest())
+       profile_sha256=hashlib.sha256((ROOT/'artifacts/parameters.json').read_bytes()).hexdigest())
     (ROOT/'artifacts/wire').mkdir(exist_ok=True)
     (ROOT/'artifacts/wire/SYNTHETIC_SYNTAX_NOT_A_PROOF.bin').write_bytes(data)
     dump(ROOT/'artifacts/wire/message_offsets.json',result['messages'])
-    dump(ROOT/'evidence/parser_tests.json',output)
-    dump(ROOT/'evidence/independent_field_verification.json',dict(status='PASS',**independent,
+    dump(ROOT/'evidence/parser-checks.json',output)
+    dump(ROOT/'evidence/field-checks.json',dict(status='PASS',**independent,
         full_lattice_protocol_verified=False,implementation='Python Quartic arithmetic independent of C++'))
     return output
 

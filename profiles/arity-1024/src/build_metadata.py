@@ -2,7 +2,7 @@
 from pathlib import Path
 import hashlib,json,math,struct,time
 from compression import NormCodec,BitWriter,concrete_field_certificate
-from cf_profile import ROOT,Q,build,dump
+from profile import ROOT,Q,build,dump
 
 def sha(p):
     h=hashlib.sha256()
@@ -20,7 +20,7 @@ def run():
     segments.extend([dict(name='carrier',start=hstart,length=192*4*k,matrix='A_H',ring_columns=12*k,commitment_phase='pre_cauchy'),
       dict(name='auxiliary',start=astart,length=192*36+B,matrix='A_aux',ring_columns=231*k+654,commitment_phase='post_cauchy_pre_field')])
     assert segments[-1]['start']+segments[-1]['length']==p['used']-1
-    dump(ROOT/'artifacts/encoding_layout.json',dict(k=k,value_order='(k+2) states of 73 K, 4k carrier K, 36 product-gate K',
+    dump(ROOT/'artifacts/encoding-layout.json',dict(k=k,value_order='(k+2) states of 73 K, 4k carrier K, 36 product-gate K',
         segments=segments,constant_coordinate=p['used']-1,reserved_zero_coordinates=0,
         value_bits=192*V,helper_start=B,helper_bits=192*V,bit_order='48 LSB-first bits per Fq coefficient; basis order 1,theta,theta^2,theta^3',
         prefix_helpers='helper[B+192*v+48*t+j]=product_{h=j}^{47} [bit_h == bit_h(q)]; helper e_48 is fixed one',
@@ -31,7 +31,7 @@ def run():
     dump(ROOT/'artifacts/public_statement_fixture.json',dict(status='SYNTHETIC_TEST_INSTANCE_NOT_PRODUCTION',k=k,
         public_coordinates=publics,cauchy_challenge=[k+17,3,4,5],poles=list(range(k)),scales=[1]*k,
         actual_lattice_commitments_included=False))
-    dump(ROOT/'artifacts/csr_format.json',dict(format='CF1024_RECIPE_CSR_V1',endianness='little',
+    dump(ROOT/'artifacts/sparse-matrix-format.json',dict(format='CF1024_RECIPE_CSR_V1',endianness='little',
         matrix_files={n:[n+'.ptr',n+'.ent'] for n in 'ABC'},pointer_type='uint32',entry_type=['uint32 column','uint32 coefficient_recipe'],
         explicit_rows=p['field_rows'],zero_padded_rows=p['field_padded_rows']-p['field_rows'],columns=p['used'],
         key_bits=dict(sign='31',kind='28..30',index='8..27',basis='6..7',bit='0..5'),
@@ -40,7 +40,7 @@ def run():
           '4':'D(c)^(-1) c^index * 2^bit theta^basis'},
         sign_rule='multiply by (-1)^sign',coefficient_public_dependence_only=True,
         note='All CSR row pointers and entries are materialized; recipes specify public challenge-dependent numeric coefficients.'))
-    dump(ROOT/'artifacts/L0_operator_contract.json',dict(status='MATHEMATICAL_OPERATOR_SPEC_NOT_FULL_IMPLEMENTED_LATTICE_OPERATOR',
+    dump(ROOT/'artifacts/initial-operator.json',dict(status='MATHEMATICAL_OPERATOR_SPEC_NOT_FULL_IMPLEMENTED_LATTICE_OPERATOR',
         row_order=['all segment commitment equations, each 64*rank scalar rows','A^T eq_tau, four basis equations',
                    'B^T eq_tau, four basis equations','C^T eq_tau, four basis equations','fixed-one equation','backend alignment zero equations'],
         semantic_segments=len(segments),commitment_scalar_rows=64*32*(k+4),field_terminal_scalar_rows=12,
@@ -71,7 +71,7 @@ def run():
     source_digest='ee6feffa7b469336f23fba33b85dd4b9ef112a5202e8b1416c9b875f9085ef3c'
     dump(ROOT/'evidence/reused_component.json',dict(component='compression.py',sha256=sha(ROOT/'src/compression.py'),
          matches_reference_source=source_digest==sha(ROOT/'src/compression.py')))
-    dump(ROOT/'artifacts/node_registry.json',dict(registry_version='cf1024-integration-v1',independent_matrix_count=17,
+    dump(ROOT/'artifacts/matrix-registry.json',dict(registry_version='cf1024-integration-v1',independent_matrix_count=17,
         matrix_distribution='independent uniform Rq matrices; A_st reused across all states counts once',
         source_commitments=k+1,logical_state_uses=k+2,roles=p['roles'],
         actual_keys_generated=False,official_estimator_completed=False,complete_node_certified=False))
