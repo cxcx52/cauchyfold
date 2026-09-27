@@ -1,0 +1,67 @@
+{
+  "attacks": [
+    {
+      "attack": "lattice",
+      "block_size": 658,
+      "documented_range_flag": "WITHIN_DOCUMENTED_UPPER_RANGE",
+      "documented_range_source": "estimator/reduction.py:MATZOV",
+      "fields": {
+        "beta": "658",
+        "d": "1748",
+        "delta": "1.00279150666700",
+        "problem": "SISParameters(n=256, q=281474976710597, length_bound=17060, m=14016, norm=2, tag='72394eaa088a580279000efb')",
+        "red": "4.72048657720966e64",
+        "rop": "4.72048657720966e64",
+        "tag": "euclidean"
+      },
+      "finite": true,
+      "log2_rop": 214.84233364982464
+    }
+  ],
+  "best": {
+    "attack": "lattice",
+    "block_size": 658,
+    "documented_range_flag": "WITHIN_DOCUMENTED_UPPER_RANGE",
+    "documented_range_source": "estimator/reduction.py:MATZOV",
+    "fields": {
+      "beta": "658",
+      "d": "1748",
+      "delta": "1.00279150666700",
+      "problem": "SISParameters(n=256, q=281474976710597, length_bound=17060, m=14016, norm=2, tag='72394eaa088a580279000efb')",
+      "red": "4.72048657720966e64",
+      "rop": "4.72048657720966e64",
+      "tag": "euclidean"
+    },
+    "finite": true,
+    "log2_rop": 214.84233364982464
+  },
+  "cpu_seconds": 2.857619,
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "input_sha256": "b9a90a93c5890301d80b2fb09c24de24b0f8d35e71443fc00aa04003854c3a70",
+  "job": {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 17060,
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 17060,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "72394eaa088a580279000efb",
+    "model": "classical"
+  },
+  "peak_rss_kib": 260024,
+  "sage_version": "10.9",
+  "status": "DONE",
+  "wall_seconds": 1.0715779639999994
+}

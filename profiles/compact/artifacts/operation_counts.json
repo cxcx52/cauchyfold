@@ -1,0 +1,392 @@
+[
+  {
+    "arity": 2,
+    "carrier": {
+      "multipoint_Q_evaluations_with_cached_sources": 2,
+      "pole_residue_B_evaluations": 2,
+      "pole_residue_J_conversions": 2,
+      "streaming_B_evaluations": 3,
+      "streaming_J_conversions": 3
+    },
+    "cost_model": "Selected algebraic subroutines, one attempt; no total across unlike units.",
+    "excluded_work": "Sparse field applications and sumcheck are unchanged by these parameters. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.",
+    "field_equality_table": {
+      "K_multiplications": 262143,
+      "K_subtractions": 262143
+    },
+    "layers": [
+      {
+        "aggregation_power_K_multiplications": 530,
+        "block_commitments_Rq_additions": 32256,
+        "block_commitments_Rq_products": 32304,
+        "layer": 0,
+        "one_forward_projection_ternary_entries": 49618944,
+        "one_projection_seed_expansion_prefix_hashes": 89970,
+        "pivot_commitment_Rq_additions": 510,
+        "pivot_commitment_Rq_products": 512,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 1346,
+        "selected_response_integer_squares": 43072,
+        "selected_response_short_challenge_Rq_products": 2019,
+        "symmetric_data_Rq_products": 18171,
+        "symmetric_data_inner_product_Rq_additions": 18144,
+        "symmetric_offdiagonal_Rq_additions": 9,
+        "symmetric_offdiagonal_half_scalar_products": 9,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 148856832
+      }
+    ],
+    "literal_CRS_bytes": 6418944,
+    "new_frontend_commitments": {
+      "Rq_additions": 5424,
+      "Rq_products": 5436,
+      "separate_incoming_fresh_commitment_Rq_products": 1752
+    },
+    "one_projection_scan_total_ternary_entries": 49618944
+  },
+  {
+    "arity": 4,
+    "carrier": {
+      "multipoint_Q_evaluations_with_cached_sources": 4,
+      "pole_residue_B_evaluations": 4,
+      "pole_residue_J_conversions": 4,
+      "streaming_B_evaluations": 10,
+      "streaming_J_conversions": 10
+    },
+    "cost_model": "Selected algebraic subroutines, one attempt; no total across unlike units.",
+    "excluded_work": "Sparse field applications and sumcheck are unchanged by these parameters. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.",
+    "field_equality_table": {
+      "K_multiplications": 524287,
+      "K_subtractions": 524287
+    },
+    "layers": [
+      {
+        "aggregation_power_K_multiplications": 658,
+        "block_commitments_Rq_additions": 47040,
+        "block_commitments_Rq_products": 47088,
+        "layer": 0,
+        "one_forward_projection_ternary_entries": 72327168,
+        "one_projection_seed_expansion_prefix_hashes": 130436,
+        "pivot_commitment_Rq_additions": 510,
+        "pivot_commitment_Rq_products": 512,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 1962,
+        "selected_response_integer_squares": 62784,
+        "selected_response_short_challenge_Rq_products": 2943,
+        "symmetric_data_Rq_products": 26487,
+        "symmetric_data_inner_product_Rq_additions": 26460,
+        "symmetric_offdiagonal_Rq_additions": 9,
+        "symmetric_offdiagonal_half_scalar_products": 9,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 216981504
+      }
+    ],
+    "literal_CRS_bytes": 9057792,
+    "new_frontend_commitments": {
+      "Rq_additions": 7368,
+      "Rq_products": 7380,
+      "separate_incoming_fresh_commitment_Rq_products": 3504
+    },
+    "one_projection_scan_total_ternary_entries": 72327168
+  },
+  {
+    "arity": 8,
+    "carrier": {
+      "multipoint_Q_evaluations_with_cached_sources": 8,
+      "pole_residue_B_evaluations": 8,
+      "pole_residue_J_conversions": 8,
+      "streaming_B_evaluations": 36,
+      "streaming_J_conversions": 36
+    },
+    "cost_model": "Selected algebraic subroutines, one attempt; no total across unlike units.",
+    "excluded_work": "Sparse field applications and sumcheck are unchanged by these parameters. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.",
+    "field_equality_table": {
+      "K_multiplications": 524287,
+      "K_subtractions": 524287
+    },
+    "layers": [
+      {
+        "aggregation_power_K_multiplications": 930,
+        "block_commitments_Rq_additions": 76608,
+        "block_commitments_Rq_products": 76672,
+        "layer": 0,
+        "one_forward_projection_ternary_entries": 117768192,
+        "one_projection_seed_expansion_prefix_hashes": 210865,
+        "pivot_commitment_Rq_additions": 510,
+        "pivot_commitment_Rq_products": 512,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 3594,
+        "selected_response_integer_squares": 76672,
+        "selected_response_short_challenge_Rq_products": 4792,
+        "symmetric_data_Rq_products": 57504,
+        "symmetric_data_inner_product_Rq_additions": 57456,
+        "symmetric_offdiagonal_Rq_additions": 18,
+        "symmetric_offdiagonal_half_scalar_products": 18,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 353304576
+      }
+    ],
+    "literal_CRS_bytes": 11884032,
+    "new_frontend_commitments": {
+      "Rq_additions": 11256,
+      "Rq_products": 11268,
+      "separate_incoming_fresh_commitment_Rq_products": 7008
+    },
+    "one_projection_scan_total_ternary_entries": 117768192
+  },
+  {
+    "arity": 16,
+    "carrier": {
+      "multipoint_Q_evaluations_with_cached_sources": 16,
+      "pole_residue_B_evaluations": 16,
+      "pole_residue_J_conversions": 16,
+      "streaming_B_evaluations": 136,
+      "streaming_J_conversions": 136
+    },
+    "cost_model": "Selected algebraic subroutines, one attempt; no total across unlike units.",
+    "excluded_work": "Sparse field applications and sumcheck are unchanged by these parameters. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.",
+    "field_equality_table": {
+      "K_multiplications": 1048575,
+      "K_subtractions": 1048575
+    },
+    "layers": [
+      {
+        "aggregation_power_K_multiplications": 1474,
+        "block_commitments_Rq_additions": 135744,
+        "block_commitments_Rq_products": 135840,
+        "layer": 0,
+        "one_forward_projection_ternary_entries": 208650240,
+        "one_projection_seed_expansion_prefix_hashes": 370604,
+        "pivot_commitment_Rq_additions": 510,
+        "pivot_commitment_Rq_products": 512,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 7075,
+        "selected_response_integer_squares": 90560,
+        "selected_response_short_challenge_Rq_products": 8490,
+        "symmetric_data_Rq_products": 152820,
+        "symmetric_data_inner_product_Rq_additions": 152712,
+        "symmetric_offdiagonal_Rq_additions": 45,
+        "symmetric_offdiagonal_half_scalar_products": 45,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 625950720
+      }
+    ],
+    "literal_CRS_bytes": 16203264,
+    "new_frontend_commitments": {
+      "Rq_additions": 19032,
+      "Rq_products": 19044,
+      "separate_incoming_fresh_commitment_Rq_products": 14016
+    },
+    "one_projection_scan_total_ternary_entries": 208650240
+  },
+  {
+    "arity": 32,
+    "carrier": {
+      "multipoint_Q_evaluations_with_cached_sources": 32,
+      "pole_residue_B_evaluations": 32,
+      "pole_residue_J_conversions": 32,
+      "streaming_B_evaluations": 528,
+      "streaming_J_conversions": 528
+    },
+    "cost_model": "Selected algebraic subroutines, one attempt; no total across unlike units.",
+    "excluded_work": "Sparse field applications and sumcheck are unchanged by these parameters. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.",
+    "field_equality_table": {
+      "K_multiplications": 2097151,
+      "K_subtractions": 2097151
+    },
+    "layers": [
+      {
+        "aggregation_power_K_multiplications": 2610,
+        "block_commitments_Rq_additions": 254016,
+        "block_commitments_Rq_products": 254160,
+        "decomposed_field_coefficients": 17856,
+        "digit_commitments_Rq_additions": 13380,
+        "digit_commitments_Rq_products": 13392,
+        "layer": 0,
+        "one_forward_projection_ternary_entries": 390389760,
+        "one_projection_seed_expansion_prefix_hashes": 684894,
+        "output_digit_coefficients": 142848,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 14120,
+        "selected_response_integer_squares": 112960,
+        "selected_response_short_challenge_Rq_products": 15885,
+        "symmetric_data_Rq_products": 428895,
+        "symmetric_data_inner_product_Rq_additions": 428652,
+        "symmetric_offdiagonal_Rq_additions": 108,
+        "symmetric_offdiagonal_half_scalar_products": 108,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 1171169280
+      },
+      {
+        "aggregation_power_K_multiplications": 656,
+        "block_commitments_Rq_additions": 92160,
+        "block_commitments_Rq_products": 92256,
+        "decomposed_field_coefficients": 10176,
+        "digit_commitments_Rq_additions": 7620,
+        "digit_commitments_Rq_products": 7632,
+        "layer": 1,
+        "one_forward_projection_ternary_entries": 141705216,
+        "one_projection_seed_expansion_prefix_hashes": 239569,
+        "output_digit_coefficients": 81408,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 4805,
+        "selected_response_integer_squares": 61504,
+        "selected_response_short_challenge_Rq_products": 5766,
+        "symmetric_data_Rq_products": 103788,
+        "symmetric_data_inner_product_Rq_additions": 103680,
+        "symmetric_offdiagonal_Rq_additions": 45,
+        "symmetric_offdiagonal_half_scalar_products": 45,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 425115648
+      },
+      {
+        "aggregation_power_K_multiplications": 608,
+        "block_commitments_Rq_additions": 51040,
+        "block_commitments_Rq_products": 51120,
+        "layer": 2,
+        "one_forward_projection_ternary_entries": 78520320,
+        "one_projection_seed_expansion_prefix_hashes": 130976,
+        "pivot_commitment_Rq_additions": 510,
+        "pivot_commitment_Rq_products": 512,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 2556,
+        "selected_response_integer_squares": 40896,
+        "selected_response_short_challenge_Rq_products": 3195,
+        "symmetric_data_Rq_products": 47925,
+        "symmetric_data_inner_product_Rq_additions": 47850,
+        "symmetric_offdiagonal_Rq_additions": 30,
+        "symmetric_offdiagonal_half_scalar_products": 30,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 235560960
+      }
+    ],
+    "literal_CRS_bytes": 42229248,
+    "new_frontend_commitments": {
+      "Rq_additions": 34580,
+      "Rq_products": 34596,
+      "separate_incoming_fresh_commitment_Rq_products": 28032
+    },
+    "one_projection_scan_total_ternary_entries": 610615296
+  },
+  {
+    "arity": 1024,
+    "carrier": {
+      "multipoint_Q_evaluations_with_cached_sources": 1024,
+      "pole_residue_B_evaluations": 1024,
+      "pole_residue_J_conversions": 1024,
+      "streaming_B_evaluations": 524800,
+      "streaming_J_conversions": 524800
+    },
+    "cost_model": "Selected algebraic subroutines, one attempt; no total across unlike units.",
+    "excluded_work": "Sparse field applications and sumcheck are unchanged by these parameters. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.",
+    "field_equality_table": {
+      "K_multiplications": 67108863,
+      "K_subtractions": 67108863
+    },
+    "layers": [
+      {
+        "aggregation_power_K_multiplications": 66370,
+        "block_commitments_Rq_additions": 7586880,
+        "block_commitments_Rq_products": 7587360,
+        "decomposed_field_coefficients": 120000,
+        "digit_commitments_Rq_additions": 89988,
+        "digit_commitments_Rq_products": 90000,
+        "layer": 0,
+        "one_forward_projection_ternary_entries": 11654184960,
+        "one_projection_seed_expansion_prefix_hashes": 19359111,
+        "output_digit_coefficients": 960000,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 458403,
+        "selected_response_integer_squares": 1011648,
+        "selected_response_short_challenge_Rq_products": 474210,
+        "symmetric_data_Rq_products": 42678900,
+        "symmetric_data_inner_product_Rq_additions": 42676200,
+        "symmetric_offdiagonal_Rq_additions": 1305,
+        "symmetric_offdiagonal_half_scalar_products": 1305,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 34962554880
+      },
+      {
+        "aggregation_power_K_multiplications": 688,
+        "block_commitments_Rq_additions": 745696,
+        "block_commitments_Rq_products": 745920,
+        "decomposed_field_coefficients": 34496,
+        "digit_commitments_Rq_additions": 22626,
+        "digit_commitments_Rq_products": 22638,
+        "layer": 1,
+        "one_forward_projection_ternary_entries": 1145733120,
+        "one_projection_seed_expansion_prefix_hashes": 1869058,
+        "output_digit_coefficients": 241472,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 43290,
+        "selected_response_integer_squares": 213120,
+        "selected_response_short_challenge_Rq_products": 46620,
+        "symmetric_data_Rq_products": 1958040,
+        "symmetric_data_inner_product_Rq_additions": 1957452,
+        "symmetric_offdiagonal_Rq_additions": 273,
+        "symmetric_offdiagonal_half_scalar_products": 273,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 3437199360
+      },
+      {
+        "aggregation_power_K_multiplications": 704,
+        "block_commitments_Rq_additions": 166912,
+        "block_commitments_Rq_products": 167040,
+        "decomposed_field_coefficients": 15104,
+        "digit_commitments_Rq_additions": 9900,
+        "digit_commitments_Rq_products": 9912,
+        "layer": 2,
+        "one_forward_projection_ternary_entries": 256573440,
+        "one_projection_seed_expansion_prefix_hashes": 424088,
+        "output_digit_coefficients": 105728,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 9135,
+        "selected_response_integer_squares": 83520,
+        "selected_response_short_challenge_Rq_products": 10440,
+        "symmetric_data_Rq_products": 250560,
+        "symmetric_data_inner_product_Rq_additions": 250368,
+        "symmetric_offdiagonal_Rq_additions": 84,
+        "symmetric_offdiagonal_half_scalar_products": 84,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 769720320
+      },
+      {
+        "aggregation_power_K_multiplications": 656,
+        "block_commitments_Rq_additions": 68160,
+        "block_commitments_Rq_products": 68256,
+        "decomposed_field_coefficients": 10176,
+        "digit_commitments_Rq_additions": 6666,
+        "digit_commitments_Rq_products": 6678,
+        "layer": 3,
+        "one_forward_projection_ternary_entries": 104841216,
+        "one_projection_seed_expansion_prefix_hashes": 176351,
+        "output_digit_coefficients": 71232,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 3555,
+        "selected_response_integer_squares": 45504,
+        "selected_response_short_challenge_Rq_products": 4266,
+        "symmetric_data_Rq_products": 76788,
+        "symmetric_data_inner_product_Rq_additions": 76680,
+        "symmetric_offdiagonal_Rq_additions": 45,
+        "symmetric_offdiagonal_half_scalar_products": 45,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 314523648
+      },
+      {
+        "aggregation_power_K_multiplications": 592,
+        "block_commitments_Rq_additions": 40480,
+        "block_commitments_Rq_products": 40560,
+        "layer": 4,
+        "one_forward_projection_ternary_entries": 62300160,
+        "one_projection_seed_expansion_prefix_hashes": 105504,
+        "pivot_commitment_Rq_additions": 510,
+        "pivot_commitment_Rq_products": 512,
+        "projection_integer_squares": 384,
+        "selected_response_Rq_additions": 2028,
+        "selected_response_integer_squares": 32448,
+        "selected_response_short_challenge_Rq_products": 2535,
+        "symmetric_data_Rq_products": 38025,
+        "symmetric_data_inner_product_Rq_additions": 37950,
+        "symmetric_offdiagonal_Rq_additions": 30,
+        "symmetric_offdiagonal_half_scalar_products": 30,
+        "three_aggregation_projection_adjoints_ternary_entry_contributions": 186900480
+      }
+    ],
+    "literal_CRS_bytes": 566446080,
+    "new_frontend_commitments": {
+      "Rq_additions": 998808,
+      "Rq_products": 998820,
+      "separate_incoming_fresh_commitment_Rq_products": 897024
+    },
+    "one_projection_scan_total_ternary_entries": 13223632896
+  }
+]

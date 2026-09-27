@@ -1,11 +1,13 @@
-# Compact arity profiles
+# Earlier finite-arity profiles
+
+This directory preserves the parameters before the CBC and norm-bound updates. Current parameters and estimates are in [`../../../profiles/compact/`](../../../profiles/compact/).
 
 This directory parameterizes the compact CauchyFold handoff by the number `k`
 of fresh records folded with one accumulator. It contains exact finite-grid
 search results for `k = 2, 4, 8, 16, 32` and exploratory profiles for `k = 6`
 and `k = 10`.
 
-These are the compact-profile results. The earlier 460.37 MiB explicit-projection and 10.19 MiB seeded-projection configurations are kept separately under [`../../reference/`](../../reference/).
+These are the earlier compact-profile results. The earlier 460.37 MiB explicit-projection and 10.19 MiB seeded-projection configurations are kept separately under [`../../`](../../).
 
 The selected no-retry interaction lengths exclude incoming commitments and
 the CRS:
@@ -25,13 +27,13 @@ communication optima and are not measured serialized proof sizes.
 Run the finite checks with Python 3.10 or later:
 
 ```sh
-python profiles/finite-arities/reproduce.py
+python reference/compact/finite-arities/reproduce.py
 ```
 
 Repeat the five exhaustive searches with:
 
 ```sh
-python profiles/finite-arities/reproduce.py --search
+python reference/compact/finite-arities/reproduce.py --search
 ```
 
 The exhaustive search may use several hundred MiB of memory. It is a parameter

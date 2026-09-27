@@ -1,10 +1,11 @@
 # Reference configurations
 
-This directory keeps two earlier arity-16 configurations so their calculations remain reproducible without being confused with the compact profiles.
+These configurations preserve earlier parameter choices. The [current profiles](../profiles/compact/) incorporate the updated CBC and norm bounds.
 
-| Configuration | Projection description | Aggregation description | No-retry interaction |
-|---|---|---|---:|
-| [`explicit-projection/`](explicit-projection/) | Explicit matrices | Explicit field elements | 482,734,680 B (460.37 MiB) |
-| [`seeded-projection/`](seeded-projection/) | Nisan-generator seeds | Explicit field elements | 10,683,813 B (10.19 MiB) |
+| Configuration | Arity | No-retry interaction |
+|---|---:|---:|
+| [Earlier compact profiles](compact/) | 2, 4, 8, 16, 32, 1024 | 114.50–274.25 KiB |
+| [Seeded projection](seeded-projection/) | 16 | 10.19 MiB |
+| [Explicit projection](explicit-projection/) | 16 | 460.37 MiB |
 
-The compact profiles under [`../profiles/`](../profiles/) additionally use structured aggregation and therefore have substantially smaller communication totals.
+The compact configurations use structured aggregation. The two projection references retain explicit aggregation. Counts exclude incoming commitments and the CRS; each directory records its own parameters, code, and saved results.

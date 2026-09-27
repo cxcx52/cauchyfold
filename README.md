@@ -1,28 +1,29 @@
 # CauchyFold
 
-This repository accompanies **CauchyFold: Residue-Optimal High-Arity Lattice Folding via Scaled Cauchy Challenges**. It contains parameter profiles, exact communication and operation counts, compiler artifacts, and saved lattice-estimator results.
+Code and concrete data for **CauchyFold: Residue-Optimal High-Arity Lattice Folding via Scaled Cauchy Challenges**.
 
-## Results
+The [current profiles](profiles/compact/) include the updated compare-before-clearing bound, concrete parameters, communication and operation counts, and saved lattice-estimator results.
 
-The repository separates the compact profiles from two earlier projection configurations.
+| Folding arity | No-retry interaction |
+|---:|---:|
+| 2 | 72.98 KiB |
+| 4 | 89.88 KiB |
+| 8 | 113.57 KiB |
+| 16 | 152.66 KiB |
+| 32 | 151.19 KiB |
+| 1024 | 173.26 KiB |
 
-| Configuration | Arity | No-retry interaction | Location |
-|---|---:|---:|---|
-| Compact finite profiles | 2, 4, 8, 16, 32 | 114.50–238.79 KiB | [`profiles/finite-arities/`](profiles/finite-arities/) |
-| Large-arity profile | 1024 | 274.25 KiB | [`profiles/arity-1024/`](profiles/arity-1024/) |
-| Seeded-projection reference | 16 | 10.19 MiB | [`reference/seeded-projection/`](reference/seeded-projection/) |
-| Explicit-projection reference | 16 | 460.37 MiB | [`reference/explicit-projection/`](reference/explicit-projection/) |
+Communication counts follow the stated message syntax and exclude incoming commitments and the CRS. Estimator outputs are heuristic attack-cost estimates; their range flags and non-finite results are retained.
 
-The compact profiles use structured aggregation. The two reference configurations retain the earlier explicit aggregation and are kept for comparison. Communication totals are exact for their stated message syntax; incoming commitments and the CRS are reported separately.
+## Use
 
-## Repository structure
+```sh
+python profiles/compact/build_profiles.py
+python profiles/compact/count_operations.py
+```
 
-| Path | Contents |
-|---|---|
-| [`profiles/`](profiles/) | Compact finite-arity and large-arity profiles |
-| [`reference/`](reference/) | Earlier explicit- and seeded-projection configurations |
-| [`requirements.txt`](requirements.txt) | Python dependencies |
+These commands require Python 3.11 or later. Parameters, formulas, and optional estimator commands are documented in [`profiles/compact/`](profiles/compact/).
 
-Each profile directory contains its own reproduction commands and scope. Saved lattice-estimator values are heuristic attack-cost estimates produced with the pinned estimator revision recorded alongside the results.
+Earlier compact, seeded-projection, and explicit-projection configurations are kept separately under [`reference/`](reference/), together with their compiler and transcript artifacts.
 
 Released under the [MIT License](LICENSE).

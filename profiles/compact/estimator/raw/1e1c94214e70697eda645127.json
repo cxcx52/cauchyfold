@@ -1,0 +1,112 @@
+{
+  "attacks": [
+    {
+      "attack": "lattice",
+      "block_size": 647,
+      "documented_range_flag": "WITHIN_DOCUMENTED_UPPER_RANGE",
+      "documented_range_source": "estimator/reduction.py:MATZOV",
+      "fields": {
+        "beta": "647",
+        "d": "1228",
+        "delta": "1.00282615490900",
+        "problem": "SISParameters(n=128, q=281474976710597, length_bound=1024, m=16384, norm=2, tag='1e1c94214e70697eda645127')",
+        "red": "2.99444772336768e63",
+        "rop": "2.99444772336768e63",
+        "tag": "euclidean"
+      },
+      "finite": true,
+      "log2_rop": 210.86375992408003
+    }
+  ],
+  "best": {
+    "attack": "lattice",
+    "block_size": 647,
+    "documented_range_flag": "WITHIN_DOCUMENTED_UPPER_RANGE",
+    "documented_range_source": "estimator/reduction.py:MATZOV",
+    "fields": {
+      "beta": "647",
+      "d": "1228",
+      "delta": "1.00282615490900",
+      "problem": "SISParameters(n=128, q=281474976710597, length_bound=1024, m=16384, norm=2, tag='1e1c94214e70697eda645127')",
+      "red": "2.99444772336768e63",
+      "rop": "2.99444772336768e63",
+      "tag": "euclidean"
+    },
+    "finite": true,
+    "log2_rop": 210.86375992408003
+  },
+  "cpu_seconds": 2.968039,
+  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "input_sha256": "c57d0289a785c0decddf12c703972e5e7198e38c0c62a3a4326b4c5f6074dc3f",
+  "job": {
+    "aliases": [
+      {
+        "arity": 2,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 4,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 8,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 16,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 32,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 1024,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      }
+    ],
+    "instance": {
+      "beta": 1024,
+      "m": 16384,
+      "n": 128,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "1e1c94214e70697eda645127",
+    "model": "classical"
+  },
+  "peak_rss_kib": 260352,
+  "sage_version": "10.9",
+  "status": "DONE",
+  "wall_seconds": 0.9916729699999998
+}

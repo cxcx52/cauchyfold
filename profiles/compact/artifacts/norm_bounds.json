@@ -1,0 +1,131 @@
+{
+  "arity_formula_values": {
+    "1024": {
+      "old_bound": 30347521,
+      "refined_bound": 7807985
+    },
+    "16": {
+      "old_bound": 542977,
+      "refined_bound": 186497
+    },
+    "2": {
+      "old_bound": 129025,
+      "refined_bound": 80643
+    },
+    "32": {
+      "old_bound": 1016065,
+      "refined_bound": 307473
+    },
+    "4": {
+      "old_bound": 188161,
+      "refined_bound": 95765
+    },
+    "8": {
+      "old_bound": 306433,
+      "refined_bound": 126009
+    }
+  },
+  "canonical_encoding_bound": {
+    "arity": 16,
+    "canonical_K_values": 1414,
+    "fixed_one_base_field_coefficients": 16,
+    "fixed_zero_base_field_coefficients": 3568,
+    "generic_base_field_coefficients": 2072,
+    "joint_value_helper_weight": {
+      "attaining_first_difference_bit": 0,
+      "attaining_value": 281474976710596,
+      "helper_weight": 47,
+      "maximum": 90,
+      "modulus_popcount": 44,
+      "value_weight": 43
+    },
+    "old_formula": "29568*k + 69889",
+    "old_length_bound": 542977,
+    "refined_formula": "7561*k + 65521",
+    "refined_honest_energy_bound": 186497,
+    "semantic_dimensions": {
+      "n": 69,
+      "r": 4,
+      "y": 4
+    },
+    "total_base_field_coefficients": 5656,
+    "uncommitted_global_fixed_one": 1
+  },
+  "compiler_fixture": {
+    "compiler_value_count": 1414,
+    "fixture_hamming_weight": 7810,
+    "refined_bound": 186497,
+    "strict_fresh_records_checked": 16,
+    "within_bound": true
+  },
+  "digit_dp_regression": {
+    "caps_per_radix": 400,
+    "radices": 3,
+    "total_cases": 1200
+  },
+  "digit_energy": [
+    {
+      "attaining_absolute_value": 125658471745828,
+      "attaining_digits_least_significant_first": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "coarse_bound": 256,
+      "digit_count": 16,
+      "exact_maximum_energy": 249,
+      "negative_sign_restore_has_same_energy": true,
+      "radix": 8
+    },
+    {
+      "attaining_absolute_value": 138573370230816,
+      "attaining_digits_least_significant_first": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        31
+      ],
+      "coarse_bound": 8192,
+      "digit_count": 8,
+      "exact_maximum_energy": 8129,
+      "negative_sign_restore_has_same_energy": true,
+      "radix": 64
+    },
+    {
+      "attaining_absolute_value": 138555780243520,
+      "attaining_digits_least_significant_first": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        31
+      ],
+      "coarse_bound": 28672,
+      "digit_count": 7,
+      "exact_maximum_energy": 25537,
+      "negative_sign_restore_has_same_energy": true,
+      "radix": 128
+    }
+  ],
+  "evidence_type": "COMPUTED",
+  "status": "PASS"
+}

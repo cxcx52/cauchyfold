@@ -1,0 +1,56 @@
+[
+  {
+    "P_bytes": 66565,
+    "S0": 80643,
+    "V_bytes": 8170,
+    "k": 2,
+    "max_accepted_bytes": 1226213,
+    "old_total_bytes": 117248,
+    "total_bytes": 74735
+  },
+  {
+    "P_bytes": 83775,
+    "S0": 95765,
+    "V_bytes": 8257,
+    "k": 4,
+    "max_accepted_bytes": 1249711,
+    "old_total_bytes": 136962,
+    "total_bytes": 92032
+  },
+  {
+    "P_bytes": 107546,
+    "S0": 126009,
+    "V_bytes": 8752,
+    "k": 8,
+    "max_accepted_bytes": 1352682,
+    "old_total_bytes": 166885,
+    "total_bytes": 116298
+  },
+  {
+    "P_bytes": 146990,
+    "S0": 186497,
+    "V_bytes": 9332,
+    "k": 16,
+    "max_accepted_bytes": 1477294,
+    "old_total_bytes": 215196,
+    "total_bytes": 156322
+  },
+  {
+    "P_bytes": 128569,
+    "S0": 307473,
+    "V_bytes": 26251,
+    "k": 32,
+    "max_accepted_bytes": 4145561,
+    "old_total_bytes": 244521,
+    "total_bytes": 154820
+  },
+  {
+    "P_bytes": 128563,
+    "S0": 7807985,
+    "V_bytes": 48854,
+    "k": 1024,
+    "max_accepted_bytes": 7711155,
+    "old_total_bytes": 280832,
+    "total_bytes": 177417
+  }
+]

@@ -1,9 +1,11 @@
-# Arity-1024 component profile
+# Earlier arity-1024 profile
+
+This directory preserves the parameters before the CBC and norm-bound updates. Current parameters and estimates are in [`../../../profiles/compact/`](../../../profiles/compact/).
 
 This directory records an experimental `k=1024` CauchyFold profile. It is
 included to make the front-end scaling calculation and its concrete evidence
 reproducible. It is not the repository's main concrete profile.
-It uses the compact message grammar and is separate from the earlier projection configurations under [`../../reference/`](../../reference/).
+It uses the compact message grammar and is separate from the earlier projection configurations under [`../../`](../../).
 
 The parameter derivation and projection argument are collected in
 [METHOD.md](METHOD.md).
@@ -45,16 +47,16 @@ proof size.
 Regenerate and check the parameter ledger:
 
 ```sh
-python profiles/arity-1024/src/profile.py
-python profiles/arity-1024/src/check_transcript.py
+python reference/compact/arity-1024/src/profile.py
+python reference/compact/arity-1024/src/check_transcript.py
 ```
 
 To inspect the full sparse compiler artifacts, first unpack the compressed
 files and then run the complete template check:
 
 ```sh
-python profiles/arity-1024/src/unpack_compiler_data.py
-python profiles/arity-1024/src/check_compiler.py
+python reference/compact/arity-1024/src/unpack_compiler_data.py
+python reference/compact/arity-1024/src/check_compiler.py
 ```
 
 The unpacked compiler directory is about 2 GiB and is ignored by Git.
