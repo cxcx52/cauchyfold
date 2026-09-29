@@ -1,4 +1,4 @@
-"""Exact parameter accounting for the unchanged CauchyFold message grammar."""
+"""Exact parameters for the selected CauchyFold encodings and five-point extraction."""
 from pathlib import Path
 from fractions import Fraction as F
 from math import isqrt, log2
@@ -103,6 +103,16 @@ def bounds(raw, S, s, rho, a):
     return dict(next_raw=raw1, next_S=S1, beta_A=ba, beta_aux=bx,
                 digits=ell, bt_columns=bt, bh_columns=bh, digit_energy=E, E_t=Et, E_h=Eh)
 
+def exact_rice(n,T):
+    choices=[]
+    for h in range(1,(2*isqrt(T)).bit_length()+3):
+        U=T//(1<<(2*h-2));a=isqrt(U//n);r=min(n-1,(U-n*a*a)//(2*a+1))
+        Z=n*a+r;bits=n*(h+1)+Z
+        choices.append((bits,h,Z,a,r))
+    bits,h,Z,a,r=min(choices)
+    return dict(n=n,T=T,parameter=h,bits=bits,bytes=(bits+7)//8,
+                exact_quotient_sum=Z,attaining_low=(1<<(h-1))*a,attaining_high=(1<<(h-1))*(a+1),attaining_high_count=r)
+
 def build(k, path=None, ranks=None):
     baseline = json.loads((ROOT/'schedules'/f'arity-{k}.json').read_text(encoding='utf-8'))
     large = k == 1024
@@ -117,11 +127,11 @@ def build(k, path=None, ranks=None):
     ap = ranks['pivot']
     f = layout.front(k, split_aux=not large, rank=af)
     f['initial_linear_rows']=(k+3+len(f['auxiliary_chunks']))*af*D+13
-    f['wrapper_p_bytes']=(2+len(f['auxiliary_chunks']))*af*384+96*f['field_rounds']+72
+    f['wrapper_p_bytes']=(2+len(f['auxiliary_chunks']))*af*384+(48 if large else 96)*f['field_rounds']+72
     P = f['wrapper_p_bytes']
     V = f['wrapper_v_bytes']
     raw = f['capacity']
-    S = compiler_s0_formula(k)
+    S = 49*(84*k+728)+1 if large else compiler_s0_formula(k)
     initial_S = S
     lr = f['initial_linear_rows']
     roles = []
@@ -145,7 +155,7 @@ def build(k, path=None, ranks=None):
         aug = lr+pad+PROJ
         degree = cd(aug, 4)-1
         sd = seed(N, S)
-        pc = rice(PROJ, PROJ*S)
+        pc = (exact_rice if large else rice)(PROJ, PROJ*S)
         assert Q*Q > 176**2*SIGMA2*S
         assert F(4121, 100)*SIGMA2 >= PROJ
         vi = sd['bytes']+42+24*s
@@ -156,7 +166,7 @@ def build(k, path=None, ranks=None):
         if rho is None:
             assert i == len(path)-1
             ba = csqrt(27*TOP**2*G)
-            zc = rice(D*n, G)
+            zc = (exact_rice if large else rice)(D*n, G)
             reg(f'A_{i}', a, n, ba, 'ceil(sqrt(27*T_op^2*G_L))')
             reg('B_pivot', ap, a*16, csqrt(8**2*D*a*16), 'ceil(8*sqrt(d*a_L*16))')
             pi = (s-1)*a*384+ap*384+pc['bytes']+3*s*(s+1)//2*384-18+zc['bytes']+2
@@ -180,7 +190,7 @@ def build(k, path=None, ranks=None):
     epsilon = F(1, 2**192)+F(1, 2**150)
     projection = len(layers)*(1-(1-epsilon)**RP)
     aggregation = sum((F(1, Q**3)+(1-F(1, Q**3))*F(x['aggregation_degree'], q4) for x in layers), F(0))
-    coordinate = 3*RC*(F(sum(x['s'] for x in layers)-1, M)+F(1, M-1))
+    coordinate = 10*RC*(F(sum(x['s'] for x in layers)-1, M)+F(1, M-1))
     terms = dict(field=field, cauchy=cauchy, projection=projection,
                  aggregation=aggregation, coordinate=coordinate)
     stat = sum(terms.values(), F(0))
@@ -197,6 +207,8 @@ def build(k, path=None, ranks=None):
     stats = {'terms': {n: frac(v) for n, v in terms.items()}, 'total': frac(stat),
              'negative_log2_display': log2(stat.denominator)-log2(stat.numerator),
              'less_than_2neg130': True, 'kind': 'statistical_error_bound',
+             'extraction_points_per_fiber': 5,
+             'coordinate_expression': '10*R_C*((sum(s_i)-1)/5^64+1/(5^64-1))',
              'field_expression': '1-(1-q^-4)^ell_F*(1-3*q^-4)^ell_F',
              'projection_expression': 'layers*(1-(1-(2^-192+2^-150))^160)'}
     out = dict(k=k, q=Q, d=D, front=f, used=f['used'], S0=initial_S,
@@ -215,6 +227,13 @@ def build(k, path=None, ranks=None):
                selection='retained block/radix schedule; common matrix ranks screened with the pinned official estimator after norm propagation; no global minimum claim',
                old_total_bytes=baseline['previous_total_bytes'],
                old_S0=baseline['previous_S0'])
+    out['encoding'] = ('fixed-coordinate elimination; specialized comparator; two-coefficient sumcheck; exact Rice capacity'
+                       if large else 'reference prefix comparator and message formats')
+    out['extractor_runtime'] = dict(recurrence='T_i <= W_i^(5) + 2 R_C,i (1+4 s_i) (H_i+T_(i+1))',
+        terminal='T_L <= W_L^(5) + 2 R_C,L (1+4 s_L) H_L',
+        comparison_work='W_i^(5) includes up to 100 cross-trial kernels per coordinate and shared-center comparisons',
+        layers=[dict(layer=z['i'],expected_oracle_calls=1+4*z['s'],continuation_multiplier=2*RC*(1+4*z['s']),
+            cross_trial_candidate_limit=100*z['s']) for z in layers])
     return out
 
 def main():

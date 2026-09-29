@@ -1,6 +1,6 @@
 # Compact profiles
 
-Concrete parameters for folding arities 2, 4, 8, 16, 32, and 1024. These profiles use the shared-center compare-before-clearing bound, exact digit energies, seeded projections, and structured aggregation.
+Concrete parameters for folding arities 2, 4, 8, 16, 32, and 1024. These profiles use five-point extraction with the compare-before-clearing radius, exact digit energies, seeded projections, and structured aggregation.
 
 ## Data
 
@@ -25,11 +25,11 @@ python profiles/compact/count_operations.py
 
 Both scripts use the standard library. The first writes the per-arity profiles, exact rational error terms, communication totals, and estimator inputs. The second writes selected typed operation counts. Incoming commitments and CRS storage are separate fields. These are syntax and arithmetic counts, not timings or measured proof files.
 
-The relation compiler and field-transcript code remain with their [earlier artifacts](../../reference/compact/). The current layout uses the same relation and encoding; updated commitment dimensions and norm bounds are recorded here.
+The [compiler](../../compiler/) provides fixed-coordinate elimination, a specialized canonical comparator, and two-coefficient sumcheck messages. The large-arity profile uses these changes and exact Rice capacities; smaller selected profiles retain their reference encoding and message formats. All six statistical certificates and extraction-time formulas use five-point recovery. This recovery change does not alter the honest transcript or registered SIS radii.
 
 ## Estimator
 
-Saved results use official lattice-estimator commit `53da5982597709ba0fdf94ea37a84d822310fd84`, SageMath 10.9, coefficient-expanded Euclidean SIS, and classical/quantum MATZOV cost models. There are 88 distinct jobs: 86 finite outputs and two non-finite outputs, both for the arity-2 carrier matrix. A non-finite output does not establish a security bound. The results also identify estimates outside the model's documented block-size range.
+Saved results use official lattice-estimator commit `53da5982597709ba0fdf94ea37a84d822310fd84`, SageMath 10.9, coefficient-expanded Euclidean SIS, and classical/quantum MATZOV cost models. The arity-2 carrier matrix has non-finite outputs in both cost models. A non-finite output does not establish a security bound. The results also identify estimates outside the model's documented block-size range.
 
 To run the estimator separately in a Linux SageMath environment:
 

@@ -1,0 +1,33 @@
+{
+  "all_generated_rows_checked": true,
+  "auxiliary_bits": 3800352,
+  "auxiliary_columns": 59381,
+  "auxiliary_padding": 32,
+  "categories": {
+    "Q_output": 4,
+    "Q_products": 36,
+    "count_boolean": 520464,
+    "folded_E": 4,
+    "folded_z": 69,
+    "low_restrictions": 173488,
+    "masked_bit": 86744,
+    "public_coordinates": 4106,
+    "value_boolean": 4163712,
+    "zero_count": 86744,
+    "zero_test_product": 433720
+  },
+  "columns": 5204641,
+  "energy_bound": 4250457,
+  "fixed_energy": 689152,
+  "free_coefficients": 86744,
+  "honest_energy": 2354257,
+  "k": 1024,
+  "nnz": [
+    5562711,
+    19555250,
+    527376
+  ],
+  "physical_bits": 18967200,
+  "rows": 5469091,
+  "special": true
+}

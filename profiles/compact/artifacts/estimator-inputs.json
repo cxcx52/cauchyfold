@@ -579,13 +579,13 @@
     },
     {
       "arity": 1024,
-      "beta": 17060,
+      "beta": 12587,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S0))",
       "columns": 219,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 17060,
+        "length_bound": 12587,
         "m": 14016,
         "n": 256,
         "norm": 2
@@ -597,13 +597,13 @@
     },
     {
       "arity": 1024,
-      "beta": 17060,
+      "beta": 12587,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S0))",
       "columns": 12288,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 17060,
+        "length_bound": 12587,
         "m": 786432,
         "n": 256,
         "norm": 2
@@ -615,14 +615,14 @@
     },
     {
       "arity": 1024,
-      "beta": 17060,
+      "beta": 12587,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S0))",
-      "columns": 237198,
+      "columns": 59381,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 17060,
-        "m": 15180672,
+        "length_bound": 12587,
+        "m": 3800384,
         "n": 256,
         "norm": 2
       },
@@ -633,14 +633,14 @@
     },
     {
       "arity": 1024,
-      "beta": 3735070856,
+      "beta": 2827705411,
       "beta_formula": "ceil(sqrt(27*T_op^2*(1+rho^2)*sigma_squared*S_child))",
-      "columns": 15807,
+      "columns": 2711,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 3735070856,
-        "m": 1011648,
+        "length_bound": 2827705411,
+        "m": 173504,
         "n": 1024,
         "norm": 2
       },
@@ -651,13 +651,13 @@
     },
     {
       "arity": 1024,
-      "beta": 273906,
+      "beta": 207365,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 3840,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 273906,
+        "length_bound": 207365,
         "m": 245760,
         "n": 384,
         "norm": 2
@@ -669,13 +669,13 @@
     },
     {
       "arity": 1024,
-      "beta": 273906,
+      "beta": 207365,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 11160,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 273906,
+        "length_bound": 207365,
         "m": 714240,
         "n": 384,
         "norm": 2
@@ -687,14 +687,14 @@
     },
     {
       "arity": 1024,
-      "beta": 7039823783,
+      "beta": 5962830476,
       "beta_formula": "ceil(sqrt(27*T_op^2*(1+rho^2)*sigma_squared*S_child))",
-      "columns": 3330,
+      "columns": 1459,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 7039823783,
-        "m": 213120,
+        "length_bound": 5962830476,
+        "m": 93376,
         "n": 1024,
         "norm": 2
       },
@@ -705,13 +705,13 @@
     },
     {
       "arity": 1024,
-      "beta": 258151,
+      "beta": 218658,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 1568,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 258151,
+        "length_bound": 218658,
         "m": 100352,
         "n": 384,
         "norm": 2
@@ -723,13 +723,13 @@
     },
     {
       "arity": 1024,
-      "beta": 258151,
+      "beta": 218658,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 2205,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 258151,
+        "length_bound": 218658,
         "m": 141120,
         "n": 384,
         "norm": 2
@@ -741,14 +741,14 @@
     },
     {
       "arity": 1024,
-      "beta": 4581582547,
+      "beta": 4166255944,
       "beta_formula": "ceil(sqrt(27*T_op^2*(1+rho^2)*sigma_squared*S_child))",
-      "columns": 1305,
+      "columns": 837,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 4581582547,
-        "m": 83520,
+        "length_bound": 4166255944,
+        "m": 53568,
         "n": 1024,
         "norm": 2
       },
@@ -759,13 +759,13 @@
     },
     {
       "arity": 1024,
-      "beta": 168007,
+      "beta": 152777,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 896,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 168007,
+        "length_bound": 152777,
         "m": 57344,
         "n": 384,
         "norm": 2
@@ -777,13 +777,13 @@
     },
     {
       "arity": 1024,
-      "beta": 168007,
+      "beta": 152777,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 756,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 168007,
+        "length_bound": 152777,
         "m": 48384,
         "n": 384,
         "norm": 2
@@ -795,14 +795,14 @@
     },
     {
       "arity": 1024,
-      "beta": 3566215950,
+      "beta": 3394633258,
       "beta_formula": "ceil(sqrt(27*T_op^2*(1+rho^2)*sigma_squared*S_child))",
-      "columns": 711,
+      "columns": 555,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 3566215950,
-        "m": 45504,
+        "length_bound": 3394633258,
+        "m": 35520,
         "n": 1024,
         "norm": 2
       },
@@ -813,13 +813,13 @@
     },
     {
       "arity": 1024,
-      "beta": 130774,
+      "beta": 124482,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 672,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 130774,
+        "length_bound": 124482,
         "m": 43008,
         "n": 384,
         "norm": 2
@@ -831,13 +831,13 @@
     },
     {
       "arity": 1024,
-      "beta": 130774,
+      "beta": 124482,
       "beta_formula": "ceil(2*sqrt(sigma_squared*S_child))",
       "columns": 441,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 130774,
+        "length_bound": 124482,
         "m": 28224,
         "n": 384,
         "norm": 2
@@ -849,14 +849,14 @@
     },
     {
       "arity": 1024,
-      "beta": 146029331,
+      "beta": 139003366,
       "beta_formula": "ceil(sqrt(27*T_op^2*G_L))",
-      "columns": 507,
+      "columns": 445,
       "d": 64,
       "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
       "expanded_sis": {
-        "length_bound": 146029331,
-        "m": 32448,
+        "length_bound": 139003366,
+        "m": 28480,
         "n": 1024,
         "norm": 2
       },

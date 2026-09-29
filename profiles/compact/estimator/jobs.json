@@ -1,2032 +1,2028 @@
-{
-  "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
-  "input_sha256": "060300c5fef0cbdc8ae15e7b6af767dd52cccefbdf0ec5c73f29540b7a57493d",
-  "jobs": [
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 7039823783,
-          "columns": 3330,
-          "d": 64,
-          "matrix_id": "A_1",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 7039823783,
-        "m": 213120,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "01a7bbe488b68a8431946c0f",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 3735070856,
-          "columns": 15807,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 3735070856,
-        "m": 1011648,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "0381c98185e3e39920660700",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 1344756971,
-          "columns": 1765,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+[
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 1344756971,
-        "m": 112960,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "04d18931287685115b31cb89",
-      "model": "classical"
+        "columns": 1765,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 1344756971,
+      "m": 112960,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 273906,
-          "columns": 3840,
-          "d": 64,
-          "matrix_id": "B_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 273906,
-        "m": 245760,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "06da149e0b3894beb8727c49",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 3566215950,
-          "columns": 711,
-          "d": 64,
-          "matrix_id": "A_3",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 3566215950,
-        "m": 45504,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "08178b3f96244db40949b425",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 17060,
-          "columns": 237198,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
-        "beta": 17060,
-        "m": 15180672,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "08a93e7bfe251648004e61cc",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 130774,
-          "columns": 441,
-          "d": 64,
-          "matrix_id": "D_3",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 130774,
-        "m": 28224,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "08f530278e2ba15b6e70cf30",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 130774,
-          "columns": 672,
-          "d": 64,
-          "matrix_id": "B_3",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 130774,
-        "m": 43008,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "092377da3fef25194e825ea6",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 168007,
-          "columns": 896,
-          "d": 64,
-          "matrix_id": "B_2",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 168007,
-        "m": 57344,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "0ed6befe8f9e072ce7f94768",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2637,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "04d18931287685115b31cb89",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2637,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "0f167f812ad4264c9ddf720e",
-      "model": "classical"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2637,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 258151,
-          "columns": 1568,
-          "d": 64,
-          "matrix_id": "B_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 258151,
-        "m": 100352,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "100b70d2a089d8fed0e9693f",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 77951,
-          "columns": 504,
-          "d": 64,
-          "matrix_id": "D_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "0f167f812ad4264c9ddf720e",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 77951,
-        "m": 32256,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "111c32b37737c2dc51024494",
-      "model": "classical"
+        "columns": 504,
+        "d": 64,
+        "matrix_id": "D_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 77951,
+      "m": 32256,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2637,
-          "columns": 192,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "111c32b37737c2dc51024494",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2637,
-        "m": 12288,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "15373fde798da193b684bd08",
-      "model": "classical"
+        "columns": 192,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2637,
+      "m": 12288,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 2109693,
-          "columns": 981,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "15373fde798da193b684bd08",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 2109693,
-        "m": 62784,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "1b5eae6ca6dd7dd915bb5347",
-      "model": "classical"
+        "columns": 981,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2109693,
+      "m": 62784,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 258151,
-          "columns": 1568,
-          "d": 64,
-          "matrix_id": "B_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 258151,
-        "m": 100352,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "1d89891b483fb7899d7ba554",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 4,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 8,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 16,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 32,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 1024,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        }
-      ],
-      "instance": {
+    "job_id": "1b5eae6ca6dd7dd915bb5347",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1024,
-        "m": 16384,
-        "n": 128,
-        "norm": 2,
-        "q": 281474976710597
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
       },
-      "job_id": "1e1c94214e70697eda645127",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 273906,
-          "columns": 11160,
-          "d": 64,
-          "matrix_id": "D_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 273906,
-        "m": 714240,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
+      {
+        "arity": 4,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
       },
-      "job_id": "26fc8c049c1ee2b8067799c5",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 17060,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
-        "beta": 17060,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
+      {
+        "arity": 8,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
       },
-      "job_id": "284ed11591b4a40c3badc11c",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 146029331,
-          "columns": 507,
-          "d": 64,
-          "matrix_id": "A_4",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 146029331,
-        "m": 32448,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
+      {
+        "arity": 16,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
       },
-      "job_id": "2f056d5545ae6edb531b55fd",
-      "model": "classical"
+      {
+        "arity": 32,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 1024,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      }
+    ],
+    "instance": {
+      "beta": 1024,
+      "m": 16384,
+      "n": 128,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 384,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "1e1c94214e70697eda645127",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 24576,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "3063507e1b2364b06b683751",
-      "model": "quantum"
+        "columns": 384,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 24576,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 1062967643,
-          "columns": 961,
-          "d": 64,
-          "matrix_id": "A_1",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "3063507e1b2364b06b683751",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 1062967643,
-        "m": 61504,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "30c3983e9bb5cf2145476438",
-      "model": "classical"
+        "columns": 961,
+        "d": 64,
+        "matrix_id": "A_1",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 1062967643,
+      "m": 61504,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 1890,
-          "columns": 1578,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "30c3983e9bb5cf2145476438",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 1890,
-        "m": 100992,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "336deb96cae17538a9155940",
-      "model": "quantum"
+        "columns": 1578,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1890,
+      "m": 100992,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 130774,
-          "columns": 441,
-          "d": 64,
-          "matrix_id": "D_3",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 130774,
-        "m": 28224,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "34e5457ca5a539a7fef2b481",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 3735070856,
-          "columns": 15807,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 3735070856,
-        "m": 1011648,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "3621e2fcfdbd5cc20934d817",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2944094,
-          "columns": 1415,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "336deb96cae17538a9155940",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2944094,
-        "m": 90560,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "374336cfd7802729b3552212",
-      "model": "quantum"
+        "columns": 1415,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2944094,
+      "m": 90560,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1935972,
-          "columns": 673,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "374336cfd7802729b3552212",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1935972,
-        "m": 43072,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "385540a883b9e2db82baf48c",
-      "model": "classical"
+        "columns": 673,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 1935972,
+      "m": 43072,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 258151,
-          "columns": 2205,
-          "d": 64,
-          "matrix_id": "D_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 258151,
-        "m": 141120,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "38dc2fbab9ce069242067e61",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1734,
-          "columns": 24,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "385540a883b9e2db82baf48c",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1734,
-        "m": 1536,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "3ae8dd006c6c022a097817ba",
-      "model": "classical"
+        "columns": 24,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1734,
+      "m": 1536,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 1890,
-          "columns": 48,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "3ae8dd006c6c022a097817ba",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 1890,
-        "m": 3072,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "3c5bb0d0b0cf30d7df32f2ec",
-      "model": "quantum"
+        "columns": 48,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1890,
+      "m": 3072,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2168,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "3c5bb0d0b0cf30d7df32f2ec",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2168,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "44ca5298a55c3503fbbf271a",
-      "model": "quantum"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2168,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2637,
-          "columns": 4350,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "44ca5298a55c3503fbbf271a",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2637,
-        "m": 278400,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "4da3fe99cb23ab9366f70aad",
-      "model": "classical"
+        "columns": 4350,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2637,
+      "m": 278400,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2168,
-          "columns": 2502,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "4da3fe99cb23ab9366f70aad",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2168,
-        "m": 160128,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "4f802f5084204147ee067623",
-      "model": "quantum"
+        "columns": 2502,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2168,
+      "m": 160128,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2637,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "4f802f5084204147ee067623",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2637,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "53a896d0d92356ce0f2d9eb6",
-      "model": "quantum"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2637,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 87044782,
-          "columns": 639,
-          "d": 64,
-          "matrix_id": "A_2",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "53a896d0d92356ce0f2d9eb6",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 87044782,
-        "m": 40896,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "556c058e1ca13bd12b321a71",
-      "model": "quantum"
+        "columns": 639,
+        "d": 64,
+        "matrix_id": "A_2",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 87044782,
+      "m": 40896,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 3566215950,
-          "columns": 711,
-          "d": 64,
-          "matrix_id": "A_3",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 3566215950,
-        "m": 45504,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "5767a5e46a44e25551a9200c",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2168,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "556c058e1ca13bd12b321a71",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2168,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "586e115030a81652f46285bd",
-      "model": "classical"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2168,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 77951,
-          "columns": 768,
-          "d": 64,
-          "matrix_id": "B_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "586e115030a81652f46285bd",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 77951,
-        "m": 49152,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "5c8082ca83d9a07b592da307",
-      "model": "quantum"
+        "columns": 768,
+        "d": 64,
+        "matrix_id": "B_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 77951,
+      "m": 49152,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 273906,
-          "columns": 11160,
-          "d": 64,
-          "matrix_id": "D_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 273906,
-        "m": 714240,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "6128f1e39f2ae831d9bece1a",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 7039823783,
-          "columns": 3330,
-          "d": 64,
-          "matrix_id": "A_1",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 7039823783,
-        "m": 213120,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "6275b285cd93a35e14852c27",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 384,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "5c8082ca83d9a07b592da307",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 24576,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "648afea46620d19ba8317d1c",
-      "model": "classical"
+        "columns": 384,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 24576,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2168,
-          "columns": 96,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "648afea46620d19ba8317d1c",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2168,
-        "m": 6144,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "691bb81f42c1437487a4bf9f",
-      "model": "quantum"
+        "columns": 96,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2168,
+      "m": 6144,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2637,
-          "columns": 192,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "691bb81f42c1437487a4bf9f",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2637,
-        "m": 12288,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "6b7d6a281b6a793560ab6598",
-      "model": "quantum"
+        "columns": 192,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2637,
+      "m": 12288,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 3696,
-          "d": 64,
-          "matrix_id": "A_aux1",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "6b7d6a281b6a793560ab6598",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 236544,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "6d102d9bd991c3ad82106812",
-      "model": "classical"
+        "columns": 3696,
+        "d": 64,
+        "matrix_id": "A_aux1",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 236544,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 17060,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
-        "beta": 17060,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "72394eaa088a580279000efb",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2637,
-          "columns": 4350,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "6d102d9bd991c3ad82106812",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2637,
-        "m": 278400,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "7906924606a9a165515f9fca",
-      "model": "quantum"
+        "columns": 4350,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2637,
+      "m": 278400,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 4,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 8,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 16,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 32,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        },
-        {
-          "arity": 1024,
-          "beta": 1024,
-          "columns": 256,
-          "d": 64,
-          "matrix_id": "B_pivot",
-          "q": 281474976710597,
-          "rows": 2
-        }
-      ],
-      "instance": {
+    "job_id": "7906924606a9a165515f9fca",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1024,
-        "m": 16384,
-        "n": 128,
-        "norm": 2,
-        "q": 281474976710597
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
       },
-      "job_id": "7b52f3ba83ce00274141ae27",
-      "model": "quantum"
+      {
+        "arity": 4,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 8,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 16,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 32,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      },
+      {
+        "arity": 1024,
+        "beta": 1024,
+        "columns": 256,
+        "d": 64,
+        "matrix_id": "B_pivot",
+        "q": 281474976710597,
+        "rows": 2
+      }
+    ],
+    "instance": {
+      "beta": 1024,
+      "m": 16384,
+      "n": 128,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "7b52f3ba83ce00274141ae27",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "7c3d7b98a8f5ccbff97df43c",
-      "model": "classical"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1734,
-          "columns": 1116,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "7c3d7b98a8f5ccbff97df43c",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1734,
-        "m": 71424,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "80409258ab593a9677d43de8",
-      "model": "quantum"
+        "columns": 1116,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1734,
+      "m": 71424,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1734,
-          "columns": 1116,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "80409258ab593a9677d43de8",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1734,
-        "m": 71424,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "853ae2f568534e39e8c6be5f",
-      "model": "classical"
+        "columns": 1116,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1734,
+      "m": 71424,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 98616,
-          "columns": 1080,
-          "d": 64,
-          "matrix_id": "D_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "853ae2f568534e39e8c6be5f",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 98616,
-        "m": 69120,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "86df896795ea55ab8c16be6f",
-      "model": "quantum"
+        "columns": 1080,
+        "d": 64,
+        "matrix_id": "D_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 98616,
+      "m": 69120,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 130774,
-          "columns": 672,
-          "d": 64,
-          "matrix_id": "B_3",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 130774,
-        "m": 43008,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "86ebd5ab8e25900adf89322c",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 4350,
-          "d": 64,
-          "matrix_id": "A_aux0",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "86df896795ea55ab8c16be6f",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 278400,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "93aab37210fa65098414a9f8",
-      "model": "classical"
+        "columns": 4350,
+        "d": 64,
+        "matrix_id": "A_aux0",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 278400,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 98616,
-          "columns": 1152,
-          "d": 64,
-          "matrix_id": "B_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "93aab37210fa65098414a9f8",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 98616,
-        "m": 73728,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "95fd9410331de7c4da5157d9",
-      "model": "classical"
+        "columns": 1152,
+        "d": 64,
+        "matrix_id": "B_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 98616,
+      "m": 73728,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2420007,
-          "columns": 1198,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "95fd9410331de7c4da5157d9",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2420007,
-        "m": 76672,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "9d131eeb8a2158615823d0ca",
-      "model": "quantum"
+        "columns": 1198,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2420007,
+      "m": 76672,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 17060,
-          "columns": 12288,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
-        "beta": 17060,
-        "m": 786432,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "a110ff78a2f9a46ebc473b68",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 168007,
-          "columns": 896,
-          "d": 64,
-          "matrix_id": "B_2",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 168007,
-        "m": 57344,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "a5a61aceeafc35c7ac2085a8",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 168007,
-          "columns": 756,
-          "d": 64,
-          "matrix_id": "D_2",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 168007,
-        "m": 48384,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "b4f9abbc5d66eec8d47c35f3",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 17060,
-          "columns": 237198,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
-        "beta": 17060,
-        "m": 15180672,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "bb612549156487f9de90afc3",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 258151,
-          "columns": 2205,
-          "d": 64,
-          "matrix_id": "D_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 258151,
-        "m": 141120,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "bcd2885369a0687746ed9cf6",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 16,
-          "beta": 2944094,
-          "columns": 1415,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "9d131eeb8a2158615823d0ca",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 16,
         "beta": 2944094,
-        "m": 90560,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "bd9ed7b7c64cb45b56029ef3",
-      "model": "classical"
+        "columns": 1415,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2944094,
+      "m": 90560,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1734,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "bd9ed7b7c64cb45b56029ef3",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1734,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "bf41a1ddcfdf2506e5cd66f1",
-      "model": "quantum"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1734,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 4581582547,
-          "columns": 1305,
-          "d": 64,
-          "matrix_id": "A_2",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 4581582547,
-        "m": 83520,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "c0a478e0759de11545b61021",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 2109693,
-          "columns": 981,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "bf41a1ddcfdf2506e5cd66f1",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 2109693,
-        "m": 62784,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "c1af9d50f105a1200a846d78",
-      "model": "quantum"
+        "columns": 981,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2109693,
+      "m": 62784,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 77951,
-          "columns": 768,
-          "d": 64,
-          "matrix_id": "B_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "c1af9d50f105a1200a846d78",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 77951,
-        "m": 49152,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "c3a764d98e5345344d046cea",
-      "model": "classical"
+        "columns": 768,
+        "d": 64,
+        "matrix_id": "B_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 77951,
+      "m": 49152,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1935972,
-          "columns": 673,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "c3a764d98e5345344d046cea",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1935972,
-        "m": 43072,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "c6d7b2261c999f2e9ccf9a9a",
-      "model": "quantum"
+        "columns": 673,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 1935972,
+      "m": 43072,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 4350,
-          "d": 64,
-          "matrix_id": "A_aux0",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "c6d7b2261c999f2e9ccf9a9a",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 278400,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "c76d63c8bba6d520cbde0119",
-      "model": "quantum"
+        "columns": 4350,
+        "d": 64,
+        "matrix_id": "A_aux0",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 278400,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 98616,
-          "columns": 1152,
-          "d": 64,
-          "matrix_id": "B_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "c76d63c8bba6d520cbde0119",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 98616,
-        "m": 73728,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "c921babbe4d5a43ff0f8a876",
-      "model": "quantum"
+        "columns": 1152,
+        "d": 64,
+        "matrix_id": "B_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 98616,
+      "m": 73728,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1734,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "c921babbe4d5a43ff0f8a876",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1734,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "cad3ace7083554bc00a33f17",
-      "model": "classical"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1734,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2168,
-          "columns": 96,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "cad3ace7083554bc00a33f17",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2168,
-        "m": 6144,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "d1551174ba6c57ef256823d6",
-      "model": "classical"
+        "columns": 96,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2168,
+      "m": 6144,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 2,
-          "beta": 1734,
-          "columns": 24,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "d1551174ba6c57ef256823d6",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 2,
         "beta": 1734,
-        "m": 1536,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "d5586815161afea060b0db70",
-      "model": "quantum"
+        "columns": 24,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1734,
+      "m": 1536,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 3696,
-          "d": 64,
-          "matrix_id": "A_aux1",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "d5586815161afea060b0db70",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 236544,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "da48ca51baf57e590d68dc73",
-      "model": "quantum"
+        "columns": 3696,
+        "d": 64,
+        "matrix_id": "A_aux1",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 236544,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 77951,
-          "columns": 504,
-          "d": 64,
-          "matrix_id": "D_1",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "da48ca51baf57e590d68dc73",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 77951,
-        "m": 32256,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "da527282cca4dbb1b3f815a1",
-      "model": "quantum"
+        "columns": 504,
+        "d": 64,
+        "matrix_id": "D_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 77951,
+      "m": 32256,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 273906,
-          "columns": 3840,
-          "d": 64,
-          "matrix_id": "B_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 273906,
-        "m": 245760,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "dc237476b993311e9ae2d781",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 17060,
-          "columns": 12288,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
-        "beta": 17060,
-        "m": 786432,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "dc976b8ac690a0488ffee040",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2168,
-          "columns": 2502,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "da527282cca4dbb1b3f815a1",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2168,
-        "m": 160128,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "e0241af5ce04601d2580c2fd",
-      "model": "classical"
+        "columns": 2502,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 2168,
+      "m": 160128,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 8,
-          "beta": 2420007,
-          "columns": 1198,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "e0241af5ce04601d2580c2fd",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 8,
         "beta": 2420007,
-        "m": 76672,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "e2f990b0353ae1ee7751d84d",
-      "model": "classical"
+        "columns": 1198,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2420007,
+      "m": 76672,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 3386,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "e2f990b0353ae1ee7751d84d",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 3386,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "e4e15d13252cd45ec4dfea37",
-      "model": "quantum"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 3386,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 98616,
-          "columns": 1080,
-          "d": 64,
-          "matrix_id": "D_0",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
+    "job_id": "e4e15d13252cd45ec4dfea37",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 98616,
-        "m": 69120,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "e683b1562646e4cb650545db",
-      "model": "classical"
+        "columns": 1080,
+        "d": 64,
+        "matrix_id": "D_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 98616,
+      "m": 69120,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 87044782,
-          "columns": 639,
-          "d": 64,
-          "matrix_id": "A_2",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "e683b1562646e4cb650545db",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 87044782,
-        "m": 40896,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "e6aa016c0fde149c91872412",
-      "model": "classical"
+        "columns": 639,
+        "d": 64,
+        "matrix_id": "A_2",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 87044782,
+      "m": 40896,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 1890,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "e6aa016c0fde149c91872412",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 1890,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "ecf40bd606ff0594d49ff84d",
-      "model": "classical"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1890,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 1344756971,
-          "columns": 1765,
-          "d": 64,
-          "matrix_id": "A_0",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "ecf40bd606ff0594d49ff84d",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 1344756971,
-        "m": 112960,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "f1b1d58d0dcd99bef3cc373f",
-      "model": "quantum"
+        "columns": 1765,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 1344756971,
+      "m": 112960,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 146029331,
-          "columns": 507,
-          "d": 64,
-          "matrix_id": "A_4",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 146029331,
-        "m": 32448,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "f236ea0f9487de7456325ec9",
-      "model": "quantum"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 1890,
-          "columns": 1578,
-          "d": 64,
-          "matrix_id": "A_aux",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "f1b1d58d0dcd99bef3cc373f",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 1890,
-        "m": 100992,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "f4a775e494324305a423a1a6",
-      "model": "classical"
+        "columns": 1578,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1890,
+      "m": 100992,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 32,
-          "beta": 1062967643,
-          "columns": 961,
-          "d": 64,
-          "matrix_id": "A_1",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
+    "job_id": "f4a775e494324305a423a1a6",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 32,
         "beta": 1062967643,
-        "m": 61504,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "f59cc97cd20f9dc8efad7e7f",
-      "model": "quantum"
+        "columns": 961,
+        "d": 64,
+        "matrix_id": "A_1",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 1062967643,
+      "m": 61504,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 1890,
-          "columns": 219,
-          "d": 64,
-          "matrix_id": "A_st",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "f59cc97cd20f9dc8efad7e7f",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 1890,
-        "m": 14016,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "f612047ab2939ae7f17a2963",
-      "model": "quantum"
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1890,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
     },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 168007,
-          "columns": 756,
-          "d": 64,
-          "matrix_id": "D_2",
-          "q": 281474976710597,
-          "rows": 6
-        }
-      ],
-      "instance": {
-        "beta": 168007,
-        "m": 48384,
-        "n": 384,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "f996930a1448abdb139db0f3",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 1024,
-          "beta": 4581582547,
-          "columns": 1305,
-          "d": 64,
-          "matrix_id": "A_2",
-          "q": 281474976710597,
-          "rows": 16
-        }
-      ],
-      "instance": {
-        "beta": 4581582547,
-        "m": 83520,
-        "n": 1024,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "fe1844cb27f966b85bbcf63b",
-      "model": "classical"
-    },
-    {
-      "aliases": [
-        {
-          "arity": 4,
-          "beta": 1890,
-          "columns": 48,
-          "d": 64,
-          "matrix_id": "A_H",
-          "q": 281474976710597,
-          "rows": 4
-        }
-      ],
-      "instance": {
+    "job_id": "f612047ab2939ae7f17a2963",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 4,
         "beta": 1890,
-        "m": 3072,
-        "n": 256,
-        "norm": 2,
-        "q": 281474976710597
-      },
-      "job_id": "fef50a16f1cb57e007102eaf",
-      "model": "classical"
-    }
-  ]
-}
+        "columns": 48,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 1890,
+      "m": 3072,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "fef50a16f1cb57e007102eaf",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 12587,
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 12587,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "11b9c2607987bd64da1435e6",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 12587,
+        "columns": 59381,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 12587,
+      "m": 3800384,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "121784f34a1694375e9880fa",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 152777,
+        "columns": 896,
+        "d": 64,
+        "matrix_id": "B_2",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 152777,
+      "m": 57344,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "17feaae311cd27c90714b642",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 4166255944,
+        "columns": 837,
+        "d": 64,
+        "matrix_id": "A_2",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 4166255944,
+      "m": 53568,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "18a754791ad4af33b677e41b",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 207365,
+        "columns": 11160,
+        "d": 64,
+        "matrix_id": "D_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 207365,
+      "m": 714240,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "19247f4f471e0b961c743949",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 12587,
+        "columns": 219,
+        "d": 64,
+        "matrix_id": "A_st",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 12587,
+      "m": 14016,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "1d4f992ef7645ac1ac9cb70b",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 4166255944,
+        "columns": 837,
+        "d": 64,
+        "matrix_id": "A_2",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 4166255944,
+      "m": 53568,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "2377d7b3735f4d1f8162aefe",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 139003366,
+        "columns": 445,
+        "d": 64,
+        "matrix_id": "A_4",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 139003366,
+      "m": 28480,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "2c277ef40503866d397a2a28",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 3394633258,
+        "columns": 555,
+        "d": 64,
+        "matrix_id": "A_3",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 3394633258,
+      "m": 35520,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "352855054fe26b0417694f6b",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 152777,
+        "columns": 896,
+        "d": 64,
+        "matrix_id": "B_2",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 152777,
+      "m": 57344,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "36b345a4017d768beb99b9af",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 2827705411,
+        "columns": 2711,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2827705411,
+      "m": 173504,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "41a05b458b3640f92781605a",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 5962830476,
+        "columns": 1459,
+        "d": 64,
+        "matrix_id": "A_1",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 5962830476,
+      "m": 93376,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "44c8ce1aaae1e31c029faf67",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 218658,
+        "columns": 1568,
+        "d": 64,
+        "matrix_id": "B_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 218658,
+      "m": 100352,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "493ffff2b4f8dc63bc4b14d9",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 2827705411,
+        "columns": 2711,
+        "d": 64,
+        "matrix_id": "A_0",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 2827705411,
+      "m": 173504,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "52696cab7e189db0fe6b94a2",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 12587,
+        "columns": 12288,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 12587,
+      "m": 786432,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "5fc12a58edcf8711cce69997",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 124482,
+        "columns": 441,
+        "d": 64,
+        "matrix_id": "D_3",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 124482,
+      "m": 28224,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "60f31bca78f7ab1ad901b3da",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 218658,
+        "columns": 2205,
+        "d": 64,
+        "matrix_id": "D_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 218658,
+      "m": 141120,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "63dfe7ec75771f61f3b24770",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 3394633258,
+        "columns": 555,
+        "d": 64,
+        "matrix_id": "A_3",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 3394633258,
+      "m": 35520,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "64a393ceeba001ee33d9ff6e",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 152777,
+        "columns": 756,
+        "d": 64,
+        "matrix_id": "D_2",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 152777,
+      "m": 48384,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "7b3ae9f89ca1dbe5a0964cd2",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 152777,
+        "columns": 756,
+        "d": 64,
+        "matrix_id": "D_2",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 152777,
+      "m": 48384,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "85c8d6ff912bfbad18bea201",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 207365,
+        "columns": 3840,
+        "d": 64,
+        "matrix_id": "B_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 207365,
+      "m": 245760,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "88832521f82ce4a25740264e",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 5962830476,
+        "columns": 1459,
+        "d": 64,
+        "matrix_id": "A_1",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 5962830476,
+      "m": 93376,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "8bfd4e71bd74bb51300aee88",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 139003366,
+        "columns": 445,
+        "d": 64,
+        "matrix_id": "A_4",
+        "q": 281474976710597,
+        "rows": 16
+      }
+    ],
+    "instance": {
+      "beta": 139003366,
+      "m": 28480,
+      "n": 1024,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "96124bab6f8a11b6c81047a6",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 124482,
+        "columns": 672,
+        "d": 64,
+        "matrix_id": "B_3",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 124482,
+      "m": 43008,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "a6385941240861a9b34f8edf",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 207365,
+        "columns": 11160,
+        "d": 64,
+        "matrix_id": "D_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 207365,
+      "m": 714240,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "b7482e7e28a06230e8b6bf85",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 207365,
+        "columns": 3840,
+        "d": 64,
+        "matrix_id": "B_0",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 207365,
+      "m": 245760,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "ba47b81fffcbdd16421d2c1a",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 12587,
+        "columns": 12288,
+        "d": 64,
+        "matrix_id": "A_H",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 12587,
+      "m": 786432,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "ba89af33074a3d9e869c0b1e",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 12587,
+        "columns": 59381,
+        "d": 64,
+        "matrix_id": "A_aux",
+        "q": 281474976710597,
+        "rows": 4
+      }
+    ],
+    "instance": {
+      "beta": 12587,
+      "m": 3800384,
+      "n": 256,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "c142d6f935ae285fab5cd95d",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 218658,
+        "columns": 1568,
+        "d": 64,
+        "matrix_id": "B_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 218658,
+      "m": 100352,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "c3ec5899ec3b40dd5401cda7",
+    "model": "quantum"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 124482,
+        "columns": 441,
+        "d": 64,
+        "matrix_id": "D_3",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 124482,
+      "m": 28224,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "e4485435ab7951ab067bd76c",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 218658,
+        "columns": 2205,
+        "d": 64,
+        "matrix_id": "D_1",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 218658,
+      "m": 141120,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "ead1af5033f7ee06eaa2717f",
+    "model": "classical"
+  },
+  {
+    "aliases": [
+      {
+        "arity": 1024,
+        "beta": 124482,
+        "columns": 672,
+        "d": 64,
+        "matrix_id": "B_3",
+        "q": 281474976710597,
+        "rows": 6
+      }
+    ],
+    "instance": {
+      "beta": 124482,
+      "m": 43008,
+      "n": 384,
+      "norm": 2,
+      "q": 281474976710597
+    },
+    "job_id": "fd83e1b52c7c706832c70a91",
+    "model": "classical"
+  }
+]

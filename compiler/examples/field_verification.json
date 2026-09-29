@@ -1,0 +1,11 @@
+{
+  "dense_table_allocated_bytes": 12582912,
+  "field_sumcheck_verified": true,
+  "fixture_coins_not_production": true,
+  "independent_raw_MLE_verified": true,
+  "lattice_backend_verified": false,
+  "rounds": 23,
+  "rows": 5469091,
+  "streamed_rounds": 6,
+  "wire_bytes": 2280
+}

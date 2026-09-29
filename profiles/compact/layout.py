@@ -17,6 +17,23 @@ def ceil_log2(n:int)->int:
 def front(k:int,capacity:int|None=None,split_aux:bool=False, *, rank:int)->dict:
     if type(k) is not int or not 1<=k<Q:
         raise ValueError('this concrete pole convention requires 1 <= k < q')
+    if k == 1024:
+        free=84*k+728; used=60*free+1
+        cap=used if capacity is None else capacity
+        if cap<used: raise ValueError('capacity smaller than active witness')
+        aux_bits=3696*k+15648; aux_cols=ceildiv(aux_bits,64)
+        categories=dict(value_boolean=48*free,count_boolean=6*free,zero_count=free,
+            zero_test_product=5*free,masked_bit=free,low_restrictions=2*free,
+            public_coordinates=4*k+10,folded_z=69,folded_E=4,Q_products=36,Q_output=4,
+            reserved_zeros=cap-used)
+        rows=sum(categories.values()); ell=ceil_log2(rows)
+        return dict(k=k,auxiliary_chunks=[aux_cols],canonical_K_values=77*k+182,
+            carrier_K_values=4*k,carrier_private_bits=768*k,carrier_columns=12*k,
+            auxiliary_private_bits=aux_bits,auxiliary_columns=aux_cols,auxiliary_padding=64*aux_cols-aux_bits,
+            used=used,capacity=cap,reserved_zeros=cap-used,field_rows=rows,
+            field_padded_rows=1<<ell,field_rounds=ell,categories=categories,
+            initial_linear_rows=(k+4)*rank*D+13+(cap-used),
+            wrapper_p_bytes=3*rank*RING_BYTES+48*ell+72,wrapper_v_bytes=24+48*ell)
     used=29568*k+69889
     cap=used if capacity is None else capacity
     if cap<used:

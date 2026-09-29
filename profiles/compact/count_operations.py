@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from build_profiles import dump
+from field_counts import operations
 
 ROOT = Path(__file__).resolve().parent
 
@@ -44,7 +45,7 @@ def main():
         record = {
             'arity':k,
             'cost_model':'Selected algebraic subroutines, one attempt; no total across unlike units.',
-            'excluded_work':'Sparse field applications and sumcheck are unchanged by these parameters. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.',
+            'excluded_work':'Detailed specialized field counts are included for the large-arity profile. Structured public-operator application is separate from expansion. No machine-instruction or elapsed-time estimate.',
             'carrier':{'streaming_B_evaluations':k+k*(k-1)//2,
                        'streaming_J_conversions':k+k*(k-1)//2,
                        'pole_residue_B_evaluations':k,'pole_residue_J_conversions':k,
@@ -59,6 +60,9 @@ def main():
             'literal_CRS_bytes':x['crs_bytes'],
             'one_projection_scan_total_ternary_entries':x['projection_trits'],
         }
+        if k==1024:
+            compiler=json.loads((ROOT.parents[1]/'compiler/examples/compiler.json').read_text(encoding='utf-8'))
+            record['compiled_frontend_and_backend']=operations(x,compiler)
         records.append(record)
     dump(ROOT/'artifacts/operation_counts.json',records)
 

@@ -16,7 +16,9 @@ The current parameter sets cover `k = 2, 4, 8, 16, 32, 1024` and live in [`profi
 | Arithmetic operation counts | [`operation_counts.json`](profiles/compact/artifacts/operation_counts.json) |
 | Classical and quantum lattice-attack estimates | [`estimator/results.md`](profiles/compact/estimator/results.md) |
 
-The [relation compiler and field-transcript code](reference/compact/) remain with the earlier artifacts and use the same relation and encoding. [`reference/`](reference/) separates earlier compact, seeded-projection, and explicit-projection parameter sets; their communication figures belong to those earlier configurations.
+The [relation compiler and field checks](compiler/) include fixed-coordinate elimination and a comparator specialized to the field modulus. The selected large-arity profile uses this encoding; smaller profiles retain their reference layouts. All current statistical bounds use five-point extraction.
+
+[`reference/`](reference/) separates earlier compact, seeded-projection, and explicit-projection configurations. Their counts and statistical bounds belong to those earlier configurations.
 
 ## Recalculate the parameters and counts
 
@@ -40,7 +42,7 @@ Saved estimator results can be viewed directly. To recompute them separately, fo
 | 8 | 113.57 KiB |
 | 16 | 152.66 KiB |
 | 32 | 151.19 KiB |
-| 1024 | 173.26 KiB |
+| 1024 | 162.67 KiB |
 
 Each row counts both directions of one fold using its selected parameters. The counts follow the specified message format and exclude incoming commitments, the CRS, and application-level public-input encodings. They are communication calculations, not measured proof files or running times. The byte totals are in [`summary.json`](profiles/compact/artifacts/summary.json).
 

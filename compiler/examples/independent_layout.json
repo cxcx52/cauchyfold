@@ -1,0 +1,24 @@
+{
+  "actual_affine_reconstruction": true,
+  "all_CSR_entries_checked": true,
+  "all_row_pointers_checked": true,
+  "cleared_comparison_offsets_cancel": true,
+  "comparator_nnz_per_coefficient": [
+    64,
+    175,
+    6
+  ],
+  "disjoint_fixed_support": true,
+  "finite_regression_not_proof": true,
+  "injective_insertion": true,
+  "k": 1024,
+  "mode": "special",
+  "nnz": [
+    5562711,
+    19555250,
+    527376
+  ],
+  "scalar_rows": 5469091,
+  "seed": 20260928,
+  "status": "PASS"
+}

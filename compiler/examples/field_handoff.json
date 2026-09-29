@@ -1,0 +1,7 @@
+{
+  "actual_dense_transposes_checked": 3,
+  "all_match_terminal_claims": true,
+  "columns": 5204641,
+  "k": 1024,
+  "rounds": 23
+}

@@ -1,0 +1,9 @@
+{
+  "all_segment_commitment_scalar_equations": 2048,
+  "arity": 4,
+  "deterministic_test_matrices_not_production_CRS": true,
+  "independent_key_families": 3,
+  "ring_degree": 64,
+  "state_key_reused": true,
+  "status": "PASS"
+}

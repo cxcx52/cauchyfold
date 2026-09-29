@@ -1,47 +1,11 @@
 {
   "aliases": [
     {
-      "arity": 2,
+      "arity": 1024,
       "beta": 1024,
       "columns": 256,
       "d": 64,
-      "matrix_id": "B_pivot",
-      "q": 281474976710597,
-      "rows": 2
-    },
-    {
-      "arity": 4,
-      "beta": 1024,
-      "columns": 256,
-      "d": 64,
-      "matrix_id": "B_pivot",
-      "q": 281474976710597,
-      "rows": 2
-    },
-    {
-      "arity": 8,
-      "beta": 1024,
-      "columns": 256,
-      "d": 64,
-      "matrix_id": "B_pivot",
-      "q": 281474976710597,
-      "rows": 2
-    },
-    {
-      "arity": 16,
-      "beta": 1024,
-      "columns": 256,
-      "d": 64,
-      "matrix_id": "B_pivot",
-      "q": 281474976710597,
-      "rows": 2
-    },
-    {
-      "arity": 32,
-      "beta": 1024,
-      "columns": 256,
-      "d": 64,
-      "matrix_id": "B_pivot",
+      "matrix_id": "prefix/B_pivot",
       "q": 281474976710597,
       "rows": 2
     },
@@ -50,7 +14,7 @@
       "beta": 1024,
       "columns": 256,
       "d": 64,
-      "matrix_id": "B_pivot",
+      "matrix_id": "special/B_pivot",
       "q": 281474976710597,
       "rows": 2
     }

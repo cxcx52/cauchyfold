@@ -1,6 +1,6 @@
 # Reference configurations
 
-These configurations preserve earlier parameter choices. The [current profiles](../profiles/compact/) incorporate the updated CBC and norm bounds.
+These configurations preserve earlier parameter choices. The [current profiles](../profiles/compact/) incorporate the updated compiler, norm bounds, and five-point extraction. Use their statistical certificates for current claims; the certificates here describe earlier extraction analyses.
 
 | Configuration | Arity | No-retry interaction |
 |---|---:|---:|

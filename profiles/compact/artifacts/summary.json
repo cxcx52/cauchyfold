@@ -45,12 +45,12 @@
     "total_bytes": 154820
   },
   {
-    "P_bytes": 128563,
-    "S0": 7807985,
-    "V_bytes": 48854,
+    "P_bytes": 120224,
+    "S0": 4250457,
+    "V_bytes": 46355,
     "k": 1024,
-    "max_accepted_bytes": 7711155,
+    "max_accepted_bytes": 7325872,
     "old_total_bytes": 280832,
-    "total_bytes": 177417
+    "total_bytes": 166579
   }
 ]
