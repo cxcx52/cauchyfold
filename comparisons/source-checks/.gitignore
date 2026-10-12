@@ -1,0 +1,6 @@
+**/logs/
+**/results/arity-*/*.ent
+**/results/arity-*/*.ptr
+**/results/arity-*/*.u8
+**/results/arity-*/*.u32
+**/results/arity-*/*.u64

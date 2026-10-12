@@ -18,6 +18,8 @@ The current parameter sets cover `k = 2, 4, 8, 16, 32, 1024` and live in [`profi
 
 The [relation compiler and field checks](compiler/) include fixed-coordinate elimination and a comparator specialized to the field modulus. The selected large-arity profile uses this encoding; smaller profiles retain their reference layouts. All current statistical bounds use five-point extraction.
 
+[`comparisons/source-checks/`](comparisons/source-checks/) compares the carrier with direct source checks, including both compilers, communication calculations, estimator results, and field-arithmetic checks. These alternative configurations are separate from the current profiles above.
+
 [`reference/`](reference/) separates earlier compact, seeded-projection, and explicit-projection configurations. Their counts and statistical bounds belong to those earlier configurations.
 
 ## Recalculate the parameters and counts

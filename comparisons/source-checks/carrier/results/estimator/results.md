@@ -1,0 +1,47 @@
+# Official SIS estimates
+
+Coefficient-expanded Euclidean SIS; pinned official lattice-estimator 53da5982597709ba0fdf94ea37a84d822310fd84. Classical and quantum costs use MATZOV. These are heuristic attack-cost estimates, not full-protocol computational-security bits.
+
+Weakest roles below are selected **among completed finite outputs**. Official +Infinity outputs are retained as UNKNOWN_NONFINITE; they receive no security-bit assignment and are excluded from this ranking.
+
+| Arity | Model | Weakest finite role | log2(rop) | Block size | Range |
+|---:|---|---|---:|---:|---|
+| 1024 | classical | A_1 | 155.624033 | 441 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | quantum | A_1 | 148.846747 | 441 | WITHIN_DOCUMENTED_UPPER_RANGE |
+
+| Arity | Role | Model | n | m | Radius | log2(rop) | Block size | Range |
+|---:|---|---|---:|---:|---:|---:|---:|---|
+| 1024 | A_0 | classical | 1024 | 173248 | 2827383099 | 167.895295 | 485 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_0 | quantum | 1024 | 173248 | 2827383099 | 159.887834 | 485 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_1 | classical | 1024 | 93376 | 5962820581 | 155.624033 | 441 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_1 | quantum | 1024 | 93376 | 5962820581 | 148.846747 | 441 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_2 | classical | 1024 | 53568 | 4166255717 | 161.201326 | 461 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_2 | quantum | 1024 | 53568 | 4166255717 | 153.865031 | 461 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_3 | classical | 1024 | 35520 | 3394633254 | 164.548142 | 473 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_3 | quantum | 1024 | 35520 | 3394633254 | 156.876311 | 473 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_4 | classical | 1024 | 28480 | 139003366 | 236.647845 | 731 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_4 | quantum | 1024 | 28480 | 139003366 | 221.742853 | 731 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_H | classical | 256 | 786432 | 12577 | 231.596237 | 718 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_H | quantum | 256 | 786432 | 12577 | 217.056441 | 718 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_aux | classical | 256 | 3791744 | 12577 | 231.596237 | 718 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_aux | quantum | 256 | 3791744 | 12577 | 217.056441 | 718 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_st | classical | 256 | 14016 | 12577 | 231.596237 | 718 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | A_st | quantum | 256 | 14016 | 12577 | 217.056441 | 718 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_0 | classical | 384 | 245760 | 207342 | 202.996641 | 614 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_0 | quantum | 384 | 245760 | 207342 | 191.375865 | 614 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_1 | classical | 384 | 100352 | 218657 | 201.041858 | 607 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_1 | quantum | 384 | 100352 | 218657 | 189.617378 | 607 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_2 | classical | 384 | 57344 | 152777 | 215.285551 | 658 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_2 | quantum | 384 | 57344 | 152777 | 202.430383 | 658 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_3 | classical | 384 | 43008 | 124482 | 224.227762 | 690 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_3 | quantum | 384 | 43008 | 124482 | 210.474313 | 690 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_pivot | classical | 128 | 16384 | 1024 | 210.863760 | 647 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | B_pivot | quantum | 128 | 16384 | 1024 | 198.317273 | 647 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_0 | classical | 384 | 714240 | 207342 | 202.996641 | 614 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_0 | quantum | 384 | 714240 | 207342 | 191.375865 | 614 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_1 | classical | 384 | 141120 | 218657 | 201.041858 | 607 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_1 | quantum | 384 | 141120 | 218657 | 189.617378 | 607 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_2 | classical | 384 | 48384 | 152777 | 215.285551 | 658 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_2 | quantum | 384 | 48384 | 152777 | 202.430383 | 658 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_3 | classical | 384 | 28224 | 124482 | 224.227762 | 690 | WITHIN_DOCUMENTED_UPPER_RANGE |
+| 1024 | D_3 | quantum | 384 | 28224 | 124482 | 210.474313 | 690 | WITHIN_DOCUMENTED_UPPER_RANGE |

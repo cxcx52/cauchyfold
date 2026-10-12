@@ -1,0 +1,200 @@
+{
+  "field_kernels": {
+    "count_scope": "Dense pair and table-fold loops only; scalar round work, equality generation, encoding, commitments and backend excluded",
+    "current_instance": {
+      "advantage_of_algorithm_not_carrier_lower_bound": true,
+      "dense_table_payload_bytes": {
+        "factored_three_tables": 805306368,
+        "generic_four_tables": 1073741824
+      },
+      "factored_equality_K_mul": 75497463,
+      "generic_grouped_K_mul": 117440498,
+      "memory_scope": "Conceptual dense E tables only; excludes weights, artifacts and streamed implementations",
+      "padded_rows": 8388608,
+      "saved_K_mul": 41943035
+    },
+    "seed": 98213,
+    "tests": [
+      {
+        "factor_fold_K_mul": 3,
+        "factor_pair_K_mul": 6,
+        "generic_fold_K_mul": 4,
+        "generic_pair_K_mul": 10,
+        "identical_round_polynomials": true,
+        "padded_rows": 2,
+        "rounds": 1
+      },
+      {
+        "factor_fold_K_mul": 9,
+        "factor_pair_K_mul": 18,
+        "generic_fold_K_mul": 12,
+        "generic_pair_K_mul": 30,
+        "identical_round_polynomials": true,
+        "padded_rows": 4,
+        "rounds": 2
+      },
+      {
+        "factor_fold_K_mul": 21,
+        "factor_pair_K_mul": 42,
+        "generic_fold_K_mul": 28,
+        "generic_pair_K_mul": 70,
+        "identical_round_polynomials": true,
+        "padded_rows": 8,
+        "rounds": 3
+      },
+      {
+        "factor_fold_K_mul": 45,
+        "factor_pair_K_mul": 90,
+        "generic_fold_K_mul": 60,
+        "generic_pair_K_mul": 150,
+        "identical_round_polynomials": true,
+        "padded_rows": 16,
+        "rounds": 4
+      },
+      {
+        "factor_fold_K_mul": 93,
+        "factor_pair_K_mul": 186,
+        "generic_fold_K_mul": 124,
+        "generic_pair_K_mul": 310,
+        "identical_round_polynomials": true,
+        "padded_rows": 32,
+        "rounds": 5
+      },
+      {
+        "factor_fold_K_mul": 189,
+        "factor_pair_K_mul": 378,
+        "generic_fold_K_mul": 252,
+        "generic_pair_K_mul": 630,
+        "identical_round_polynomials": true,
+        "padded_rows": 64,
+        "rounds": 6
+      }
+    ]
+  },
+  "recursive_semantics": {
+    "cases": [
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6927,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 1,
+        "k": 2,
+        "output_is_next_accumulator": true,
+        "output_u_zero": true,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 7032,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 2,
+        "k": 2,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6972,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 3,
+        "k": 2,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6840,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 1,
+        "k": 4,
+        "output_is_next_accumulator": true,
+        "output_u_zero": true,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6943,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 2,
+        "k": 4,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6943,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 3,
+        "k": 4,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6908,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 1,
+        "k": 16,
+        "output_is_next_accumulator": true,
+        "output_u_zero": true,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6931,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 2,
+        "k": 16,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 7130,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 3,
+        "k": 16,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6955,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 1,
+        "k": 1024,
+        "output_is_next_accumulator": true,
+        "output_u_zero": true,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6992,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 2,
+        "k": 1024,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      },
+      {
+        "encoding_bits": 14016,
+        "encoding_squared_norm": 6990,
+        "expansion_matches_output_Q": true,
+        "fold_depth": 3,
+        "k": 1024,
+        "output_is_next_accumulator": true,
+        "output_u_zero": false,
+        "ring_columns": 219
+      }
+    ],
+    "scope": "Finite semantic continuation regression; not recursive proof-system execution",
+    "seed": 20261012
+  }
+}

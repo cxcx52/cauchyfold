@@ -1,0 +1,26 @@
+{
+  "carrier-k4": {
+    "all_polynomials_reconstructed_exactly": true,
+    "compressed_bytes": 1992,
+    "original_bytes": 2376,
+    "rounds": 16,
+    "saved_bytes": 384,
+    "scope": "Exact re-encoding of the stored field transcript; original terminal verification is preserved"
+  },
+  "direct-k1024": {
+    "all_polynomials_reconstructed_exactly": true,
+    "compressed_bytes": 2832,
+    "original_bytes": 3384,
+    "rounds": 23,
+    "saved_bytes": 552,
+    "scope": "Exact re-encoding of the stored field transcript; original terminal verification is preserved"
+  },
+  "direct-k4": {
+    "all_polynomials_reconstructed_exactly": true,
+    "compressed_bytes": 1992,
+    "original_bytes": 2376,
+    "rounds": 16,
+    "saved_bytes": 384,
+    "scope": "Exact re-encoding of the stored field transcript; original terminal verification is preserved"
+  }
+}

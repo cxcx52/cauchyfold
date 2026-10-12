@@ -1,0 +1,22 @@
+{
+  "aliases": [
+    {
+      "arity": 1024,
+      "beta": 12577,
+      "columns": 219,
+      "d": 64,
+      "matrix_id": "A_st",
+      "q": 281474976710597,
+      "rows": 4
+    }
+  ],
+  "instance": {
+    "beta": 12577,
+    "m": 14016,
+    "n": 256,
+    "norm": 2,
+    "q": 281474976710597
+  },
+  "job_id": "9950a4e2d3bff579b4726ce5",
+  "model": "classical"
+}

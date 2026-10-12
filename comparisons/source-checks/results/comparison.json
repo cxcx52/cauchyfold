@@ -1,0 +1,38 @@
+[
+  {
+    "P_bytes": 120224,
+    "S0": 4250457,
+    "V_bytes": 46355,
+    "crs_bytes": 197147136,
+    "field_rounds": 23,
+    "field_rows": 5469091,
+    "independently_sampled_matrices": 17,
+    "name": "original_carrier_two_coefficients",
+    "total_bytes": 166579,
+    "used": 5204641
+  },
+  {
+    "P_bytes": 120776,
+    "S0": 4243401,
+    "V_bytes": 46355,
+    "crs_bytes": 196915200,
+    "field_rounds": 23,
+    "field_rows": 5460019,
+    "independently_sampled_matrices": 17,
+    "name": "grouped_carrier_three_coefficients",
+    "total_bytes": 167131,
+    "used": 5196001
+  },
+  {
+    "P_bytes": 118902,
+    "S0": 3440585,
+    "V_bytes": 46002,
+    "crs_bytes": 169543680,
+    "field_rounds": 23,
+    "field_rows": 4464727,
+    "independently_sampled_matrices": 16,
+    "name": "grouped_direct_three_coefficients",
+    "total_bytes": 164904,
+    "used": 4212961
+  }
+]

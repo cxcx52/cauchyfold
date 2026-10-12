@@ -1,0 +1,149 @@
+{
+  "current_group_layout": {
+    "carrier_factor_core_K_mul": 75497463,
+    "exception_pair_support_per_round": [
+      36943,
+      36943,
+      36943,
+      36943,
+      36943,
+      36943,
+      36943,
+      32768,
+      16384,
+      8192,
+      4096,
+      2048,
+      1024,
+      512,
+      256,
+      128,
+      64,
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "excluded_costs": [
+      "equality weights and initial sparse-delta construction",
+      "scalar round operations",
+      "sparse-map lookups",
+      "encoding and matrix applications",
+      "commitments and lattice backend"
+    ],
+    "generic_core_K_mul": 117440498,
+    "initial_exception_terms": 36943,
+    "padded_terms": 8388608,
+    "sparse_delta_table_peak_entries": 36943,
+    "structured_core_K_mul_upper": 77766415,
+    "sum_exception_pairs": 324136,
+    "terms": 4464727
+  },
+  "generic_three_coefficient_messages": true,
+  "padding_rule": "W(t)=eq(r,t) at padding; A=B=C=0 there, so the Boolean sum is unchanged",
+  "scope": "Exact small-field-transcript regression and actual k=1024 group-layout support counts; no full optimized k=1024 prover run",
+  "seed": 2026101202,
+  "tests": [
+    {
+      "all_polynomials_equal": true,
+      "generic_core_K_mul": 434,
+      "rounds": 5,
+      "sparse_pair_counts": [
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "structured_core_K_mul": 496,
+      "terminal_equal": true
+    },
+    {
+      "all_polynomials_equal": true,
+      "generic_core_K_mul": 882,
+      "rounds": 6,
+      "sparse_pair_counts": [
+        18,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "structured_core_K_mul": 910,
+      "terminal_equal": true
+    },
+    {
+      "all_polynomials_equal": true,
+      "generic_core_K_mul": 1778,
+      "rounds": 7,
+      "sparse_pair_counts": [
+        18,
+        18,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "structured_core_K_mul": 1612,
+      "terminal_equal": true
+    },
+    {
+      "all_polynomials_equal": true,
+      "generic_core_K_mul": 3570,
+      "rounds": 8,
+      "sparse_pair_counts": [
+        18,
+        18,
+        18,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "structured_core_K_mul": 2890,
+      "terminal_equal": true
+    },
+    {
+      "all_polynomials_equal": true,
+      "generic_core_K_mul": 7154,
+      "rounds": 9,
+      "sparse_pair_counts": [
+        18,
+        18,
+        18,
+        18,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "structured_core_K_mul": 5320,
+      "terminal_equal": true
+    },
+    {
+      "all_polynomials_equal": true,
+      "generic_core_K_mul": 14322,
+      "rounds": 10,
+      "sparse_pair_counts": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "structured_core_K_mul": 10054,
+      "terminal_equal": true
+    }
+  ]
+}
